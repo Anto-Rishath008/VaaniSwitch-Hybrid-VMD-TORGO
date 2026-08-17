@@ -1,0 +1,3 @@
+backend: pyttsx3
+offline_preferred: true
+voice_clone: false

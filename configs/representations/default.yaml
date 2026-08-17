@@ -1,0 +1,87 @@
+schema_version: "1.0"
+implementation: vaaniswitch_numpy_representations_v1
+
+source:
+  manifest_path: data/manifests/torgo_manifest.jsonl
+  module0_summary_path: artifacts/metrics/module0_dataset_summary.json
+  module1_summary_path: artifacts/metrics/module1_vmd_summary.json
+  module1_signoff_path: artifacts/metrics/module1_full_signoff_audit.json
+  module1_cache_root: data/processed/vmd
+  module1_config_hash: bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685
+  default_subset: core
+
+mel:
+  sample_rate: 16000
+  n_fft: 512
+  win_length: 400
+  hop_length: 160
+  window: hann_periodic
+  n_mels: 80
+  mel_scale: htk
+  filter_normalization: slaney_area
+  f_min_hz: 20.0
+  f_max_hz: 8000.0
+  power: 2.0
+  log_transform: power_db
+  epsilon: 1.0e-10
+  fixed_duration_seconds: 8.0
+  crop_policy: center
+  pad_policy: right_zero
+  frequency_resize: linear
+  time_resize: area_average
+  output_height: 224
+  output_width: 224
+  output_dtype: float32
+
+recurrence:
+  output_size: 224
+  scalar_reduction: block_rms
+  scalar_standardization: zscore
+  embedding_dimension: 3
+  delay: 2
+  distance: euclidean
+  threshold_mode: off_diagonal_recurrence_rate
+  recurrence_rate: 0.15
+  include_diagonal: true
+  output_dtype: uint8
+  epsilon: 1.0e-12
+
+visibility_graph:
+  max_nodes: 256
+  scalar_reduction: block_rms
+  scalar_standardization: zscore
+  criterion: natural_visibility_strict
+  node_features: [normalized_time, standardized_amplitude]
+  store_bidirectional_edges: true
+  store_self_loops: false
+  edge_dtype: int16
+  adjacency_contract: module3_add_self_loops_then_symmetric_degree_normalize
+  epsilon: 1.0e-12
+
+cache:
+  enabled: true
+  resume: true
+  root: data/processed/representations
+
+execution:
+  progress_every: 1
+  diagnostic_examples: 2
+  smoke_logical_ids:
+    - F01/Session1/0082
+    - FC03/Session3/0151
+    - M04/Session1/0125
+    - MC03/Session2/0232
+    - F03/Session1/0179
+    - FC01/Session1/0007
+    - M02/Session1/0133
+    - MC04/Session1/0022
+    - F04/Session1/0038
+    - FC02/Session2/0151
+    - M03/Session2/0096
+    - MC02/Session2/0142
+
+outputs:
+  summary: artifacts/metrics/module2_representation_summary.json
+  failures: artifacts/logs/module2_representation_failures.csv
+  pipeline_log: artifacts/logs/module2_representation_pipeline.log
+  plots: artifacts/plots/module2_representations

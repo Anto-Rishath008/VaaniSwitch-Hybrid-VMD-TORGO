@@ -1,0 +1,94 @@
+schema_version: "1.0"
+dataset_id: TORGO
+language: en
+raw_root: data/raw/torgo/extracted
+logical_key: [speaker_id, session_id, prompt_id]
+
+groups:
+  F:
+    condition: dysarthric
+    gender: female
+    speaker_pattern: '^F\d+$'
+  M:
+    condition: dysarthric
+    gender: male
+    speaker_pattern: '^M\d+$'
+  FC:
+    condition: control
+    gender: female
+    speaker_pattern: '^FC\d+$'
+  MC:
+    condition: control
+    gender: male
+    speaker_pattern: '^MC\d+$'
+
+discovery:
+  session_pattern: '^Session\d+(?:_\d+)*$'
+  prompt_id_pattern: '^\d{4}$'
+  prompt_directory: prompts
+  prompt_extension: .txt
+  transcript_encodings: [utf-8-sig, cp1252]
+  microphones:
+    head:
+      directory: wav_headMic
+    array:
+      directory: wav_arrayMic
+  microphone_priority: [head, array]
+
+quality:
+  chunk_frames: 65536
+  max_workers: 4
+  compute_sha256: true
+  extremely_short_seconds: 0.1
+  near_silent_dbfs: -60.0
+  clipping_amplitude_ratio: 0.9999
+  clipping_fraction_threshold: 0.01
+  review_flags:
+    - extremely_short
+    - near_silent
+    - possible_clipping
+    - placeholder_transcript
+    - malformed_transcript_control_characters
+
+downstream_subsets:
+  core:
+    normal_speech_eligible: true
+    usability_statuses: [usable]
+    prompt_types: [word, sentence]
+    experiment_role: default_clean_classification
+  extended:
+    normal_speech_eligible: true
+    usability_statuses: [usable, review]
+    prompt_types: [word, sentence]
+    experiment_role: quality_flag_robustness_ablation
+
+evaluation:
+  group_by: speaker_id
+  requested_max_folds: 5
+  minimum_folds: 2
+  hard_strata: [condition, gender]
+  balance_statuses: [usable, review]
+  seed: 42
+
+outputs:
+  manifest_jsonl: data/manifests/torgo_manifest.jsonl
+  manifest_csv: data/manifests/torgo_manifest.csv
+  speaker_folds: data/splits/speaker_folds.json
+  dataset_summary: artifacts/metrics/module0_dataset_summary.json
+  exclusions: artifacts/logs/module0_exclusions.csv
+  audio_quality: artifacts/logs/module0_audio_quality.csv
+  microphone_coverage: artifacts/logs/module0_microphone_coverage.csv
+  leakage_report: artifacts/logs/module0_leakage_report.json
+  pipeline_log: artifacts/logs/module0_pipeline.log
+
+# These values are comparison targets only. The pipeline always recomputes them from raw files.
+manual_audit_reference:
+  extracted_files: 82772
+  wav_files: 17635
+  prompt_records: 9494
+  microphone_both: 7764
+  microphone_head_only: 450
+  microphone_array_only: 1276
+  microphone_neither: 4
+  direct_head_wavs: 8218
+  direct_array_wavs: 9417

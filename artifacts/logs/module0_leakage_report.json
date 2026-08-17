@@ -1,0 +1,166 @@
+{
+  "manifest_audit": {
+    "duplicate_logical_id_count": 0,
+    "duplicate_primary_path_count": 0,
+    "logical_record_count": 9494,
+    "missing_primary_audio_count": 4,
+    "missing_primary_audio_logical_ids": [
+      "F03/Session2/0117",
+      "M04/Session1/0066",
+      "MC04/Session1/0655",
+      "MC04/Session1/0656"
+    ],
+    "missing_transcript_count": 0,
+    "missing_transcript_logical_ids": []
+  },
+  "orphan_audio_audit": {
+    "by_reason": {
+      "malformed_audio_filename_or_prompt_id": 4,
+      "missing_prompt_metadata": 377
+    },
+    "orphan_audio_path_count": 381,
+    "orphan_logical_stem_count": 379
+  },
+  "per_fold_audit": [
+    {
+      "fold_id": 1,
+      "shared_prompt_id_count": 1000,
+      "shared_prompt_policy": "expected_and_allowed_across_independent_speakers",
+      "shared_transcript_count": 756,
+      "train_evaluation_audio_path_overlap_count": 0,
+      "train_evaluation_content_hash_overlap_count": 0,
+      "train_evaluation_logical_id_overlap_count": 0,
+      "train_evaluation_speaker_overlap_count": 0
+    },
+    {
+      "fold_id": 2,
+      "shared_prompt_id_count": 1000,
+      "shared_prompt_policy": "expected_and_allowed_across_independent_speakers",
+      "shared_transcript_count": 812,
+      "train_evaluation_audio_path_overlap_count": 0,
+      "train_evaluation_content_hash_overlap_count": 0,
+      "train_evaluation_logical_id_overlap_count": 0,
+      "train_evaluation_speaker_overlap_count": 0
+    },
+    {
+      "fold_id": 3,
+      "shared_prompt_id_count": 421,
+      "shared_prompt_policy": "expected_and_allowed_across_independent_speakers",
+      "shared_transcript_count": 822,
+      "train_evaluation_audio_path_overlap_count": 0,
+      "train_evaluation_content_hash_overlap_count": 0,
+      "train_evaluation_logical_id_overlap_count": 0,
+      "train_evaluation_speaker_overlap_count": 0
+    }
+  ],
+  "policy": {
+    "hard_failure_on_speaker_or_microphone_leakage": true,
+    "logical_unit": "speaker_id+session_id+prompt_id",
+    "microphone_copies": "bound_to_one_logical_record",
+    "repeated_prompts_across_speakers": "allowed_and_reported",
+    "split_unit": "speaker_id"
+  },
+  "raw_audio_duplicate_audit": {
+    "audited_wav_count": 17635,
+    "cross_speaker_duplicate_hash_group_count": 0,
+    "duplicate_hash_group_count": 3,
+    "duplicate_hash_groups": [
+      {
+        "cross_speaker": false,
+        "logical_ids": [
+          "F03/Session3/0061",
+          "F03/Session3/0062"
+        ],
+        "paths": [
+          "data/raw/torgo/extracted/F/F03/Session3/wav_arrayMic/0061.wav",
+          "data/raw/torgo/extracted/F/F03/Session3/wav_arrayMic/0062.wav"
+        ],
+        "sha256": "b8923411ee68e6b1f7846f650d91a9e23c74e228634e428bc6beae2c56e9c24a",
+        "speaker_ids": [
+          "F03"
+        ]
+      },
+      {
+        "cross_speaker": false,
+        "logical_ids": [
+          "FC02/Session3/0765",
+          "FC02/Session3/0767"
+        ],
+        "paths": [
+          "data/raw/torgo/extracted/FC/FC02/Session3/wav_arrayMic/0765.wav",
+          "data/raw/torgo/extracted/FC/FC02/Session3/wav_arrayMic/0767.wav"
+        ],
+        "sha256": "badf80d783cf60b40b5dbf2951520edce82924c2fd8216ede3cbc7f6702ed2f6",
+        "speaker_ids": [
+          "FC02"
+        ]
+      },
+      {
+        "cross_speaker": false,
+        "logical_ids": [
+          "F01/Session1/0067",
+          "F01/Session1/0068"
+        ],
+        "paths": [
+          "data/raw/torgo/extracted/F/F01/Session1/wav_headMic/0067.wav",
+          "data/raw/torgo/extracted/F/F01/Session1/wav_headMic/0068.wav"
+        ],
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "speaker_ids": [
+          "F01"
+        ]
+      }
+    ],
+    "unique_sha256_count": 17632
+  },
+  "schema_version": "1.0",
+  "source": {
+    "manifest_sha256": "91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061",
+    "speaker_folds_sha256": "5ab4e1af6c54f97af940c3e5ba5d447c77d827102b88656bf19cd5227b5fee27"
+  },
+  "split_validation": {
+    "all_logical_records_evaluated_once": true,
+    "all_speakers_evaluated_once": true,
+    "condition_gender_supported_in_every_fold": true,
+    "condition_supported_in_every_fold": true,
+    "fold_count": 3,
+    "folds": [
+      {
+        "all_condition_gender_strata_present": true,
+        "audio_path_overlap_count": 0,
+        "both_conditions_present": true,
+        "fold_id": 1,
+        "logical_id_overlap_count": 0,
+        "speaker_overlap_count": 0
+      },
+      {
+        "all_condition_gender_strata_present": true,
+        "audio_path_overlap_count": 0,
+        "both_conditions_present": true,
+        "fold_id": 2,
+        "logical_id_overlap_count": 0,
+        "speaker_overlap_count": 0
+      },
+      {
+        "all_condition_gender_strata_present": true,
+        "audio_path_overlap_count": 0,
+        "both_conditions_present": true,
+        "fold_id": 3,
+        "logical_id_overlap_count": 0,
+        "speaker_overlap_count": 0
+      }
+    ],
+    "microphone_paths_disjoint": true,
+    "speaker_disjoint": true
+  },
+  "status": "PASS",
+  "violation_count": 0,
+  "violations": {
+    "alternate_paths_used_as_other_primaries": [],
+    "audio_paths_assigned_to_multiple_logical_ids": {},
+    "cross_fold_duplicate_content_hashes": [],
+    "cross_speaker_duplicate_content_hashes": [],
+    "duplicate_logical_ids": [],
+    "duplicate_primary_audio_paths": []
+  }
+}

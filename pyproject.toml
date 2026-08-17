@@ -1,0 +1,68 @@
+[build-system]
+requires=["setuptools>=68","wheel"]
+build-backend="setuptools.build_meta"
+
+[project]
+name="vaaniswitch-final-hybrid-vmd-torgo"
+version="1.0.0"
+description="Shared-VMD token-level hybrid dysarthria classification and English reconstruction"
+requires-python=">=3.11"
+dependencies=[
+    "numpy>=1.26,<2.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev=[
+    "mypy>=1.10",
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.6",
+    "types-PyYAML>=6.0",
+]
+
+[project.scripts]
+vaaniswitch-m0="vaaniswitch.m0_data.cli:main"
+vaaniswitch-m1="vaaniswitch.m1_vmd.cli:main"
+vaaniswitch-m2="vaaniswitch.m2_representations.cli:main"
+
+[tool.setuptools.packages.find]
+where=["src"]
+
+[tool.pytest.ini_options]
+testpaths=["tests"]
+addopts="-ra --strict-config --strict-markers"
+pythonpath=["src"]
+
+[tool.coverage.run]
+branch=true
+source=["vaaniswitch.m0_data", "vaaniswitch.m1_vmd", "vaaniswitch.m2_representations"]
+
+[tool.coverage.report]
+fail_under=80
+show_missing=true
+skip_covered=true
+
+[tool.ruff]
+line-length=100
+target-version="py311"
+
+[tool.ruff.lint]
+select=["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version="3.11"
+files=[
+    "src/vaaniswitch/m0_data",
+    "src/vaaniswitch/m1_vmd",
+    "src/vaaniswitch/m2_representations",
+    "tests/m0_data",
+    "tests/m1_vmd",
+    "tests/m2_representations",
+]
+strict=true
+warn_unused_configs=true
+
+[[tool.mypy.overrides]]
+module="yaml"
+ignore_missing_imports=true

@@ -1,0 +1,2 @@
+dataset_id,dataset_name,language,speech_condition,local_path,project_role,status
+TORGO,TORGO Database,English,dysarthric + control,data/raw/torgo,Primary/only corpus,audited_module0_complete

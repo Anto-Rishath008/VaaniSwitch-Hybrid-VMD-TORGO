@@ -1,0 +1,498 @@
+{
+  "long_record_audit": {
+    "condition_counts": {
+      "control": 30,
+      "dysarthric": 205
+    },
+    "count": 235,
+    "duration_seconds": {
+      "max": 193.828625,
+      "mean": 13.376457180851066,
+      "median": 10.225,
+      "min": 8.0050625,
+      "p90": 17.3000375,
+      "p95": 21.344999999999974,
+      "p99": 42.697762499999996
+    },
+    "gender_counts": {
+      "female": 34,
+      "male": 201
+    },
+    "percentage_of_core": 2.709558399631039,
+    "speaker_counts": {
+      "F01": 4,
+      "F03": 17,
+      "F04": 5,
+      "FC01": 2,
+      "FC02": 3,
+      "FC03": 3,
+      "M01": 14,
+      "M02": 18,
+      "M03": 4,
+      "M04": 67,
+      "M05": 76,
+      "MC01": 8,
+      "MC02": 6,
+      "MC03": 1,
+      "MC04": 7
+    },
+    "threshold_counts": {
+      ">10": 128,
+      ">12": 72,
+      ">20": 13,
+      ">30": 6,
+      ">8": 235
+    },
+    "threshold_seconds": 8.0
+  },
+  "longest_record": {
+    "condition": "dysarthric",
+    "diagnostic_path": "artifacts/plots/module2_crop_audit/F03__Session1__0118_real_crop_diagnostic.svg",
+    "duration_seconds": 193.828625,
+    "gender": "female",
+    "logical_id": "F03/Session1/0118",
+    "primary_microphone": "head",
+    "prompt_path": "data/raw/torgo/extracted/F/F03/Session1/prompts/0118.txt",
+    "prompt_type": "word",
+    "speaker": "F03",
+    "transcript": "no",
+    "usability_status": "usable"
+  },
+  "module": "2_multirepresentation_generation",
+  "panel_selection": {
+    "logical_ids": [
+      "F03/Session1/0024",
+      "FC02/Session3/0317",
+      "MC04/Session1/0210",
+      "M05/Session2/0242",
+      "M03/Session2/0027",
+      "F03/Session1/0118"
+    ],
+    "method": "fixed descriptive duration/condition/gender strata selected without representation or model performance"
+  },
+  "policy_decision": {
+    "decision": "RETAINED",
+    "mel_fixed_duration_seconds": 8.0,
+    "rationale": "The real crop path passed; 97.2904% of CORE avoids cropping, while 8 s preserves about 35.7 ms per final time pixel. The 235 cropped records remain a documented Module 5 robustness limitation."
+  },
+  "purpose": "real_production_center_crop_pre_full_build_gate",
+  "records": [
+    {
+      "condition": "dysarthric",
+      "duration_seconds": 9.97325,
+      "gender": "female",
+      "logical_id": "F03/Session1/0024",
+      "mel": {
+        "crop_end_seconds": 8.986625,
+        "crop_start_sample": 15786,
+        "crop_start_seconds": 0.986625,
+        "crop_stop_sample_exclusive": 143786,
+        "cropped_seconds": 1.97325,
+        "deterministic": true,
+        "dtype": "float32",
+        "equals_explicit_center_slice_transform": true,
+        "finite": true,
+        "fixed_frame_count": 798,
+        "fixed_sample_count": 128000,
+        "maximum": -8.73784351348877,
+        "minimum": -100.0,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "cropped"
+      },
+      "recurrence": {
+        "binary": true,
+        "density": 0.15385841836734693,
+        "differs_from_center_crop_reference": true,
+        "dtype": "uint8",
+        "finite": true,
+        "input_sample_count": 159572,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true
+      },
+      "source": {
+        "complete_reconstruction_passed_to_recurrence": true,
+        "complete_reconstruction_passed_to_visibility_graph": true,
+        "reconstruction_path": "data/processed/vmd/bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685/F03/Session1/0024/reconstruction.npy",
+        "reconstruction_sha256": "739988ef849905c1a03991b8be656a27286e1286af85875500a691f38a81c0f4",
+        "sample_count": 159572,
+        "sample_duration_seconds": 9.97325
+      },
+      "speaker": "F03",
+      "timing_seconds": {
+        "mel": 0.01181800001359079,
+        "recurrence": 0.007747700001345947,
+        "representations_total": 0.04204670000763144,
+        "visibility_graph": 0.022480999992694706
+      },
+      "visibility_graph": {
+        "bidirectional": true,
+        "connected_component_count": 1,
+        "density": 0.046599264705882354,
+        "differs_from_center_crop_reference": true,
+        "directed_edge_count": 3042,
+        "edge_indices_valid": true,
+        "edges_unique": true,
+        "input_sample_count": 159572,
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "self_loops": 0,
+        "undirected_edge_count": 1521
+      }
+    },
+    {
+      "condition": "control",
+      "duration_seconds": 9.555,
+      "gender": "female",
+      "logical_id": "FC02/Session3/0317",
+      "mel": {
+        "crop_end_seconds": 8.7775,
+        "crop_start_sample": 12440,
+        "crop_start_seconds": 0.7775,
+        "crop_stop_sample_exclusive": 140440,
+        "cropped_seconds": 1.555,
+        "deterministic": true,
+        "dtype": "float32",
+        "equals_explicit_center_slice_transform": true,
+        "finite": true,
+        "fixed_frame_count": 798,
+        "fixed_sample_count": 128000,
+        "maximum": -6.571731090545654,
+        "minimum": -100.0,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "cropped"
+      },
+      "recurrence": {
+        "binary": true,
+        "density": 0.15385841836734693,
+        "differs_from_center_crop_reference": true,
+        "dtype": "uint8",
+        "finite": true,
+        "input_sample_count": 152880,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true
+      },
+      "source": {
+        "complete_reconstruction_passed_to_recurrence": true,
+        "complete_reconstruction_passed_to_visibility_graph": true,
+        "reconstruction_path": "data/processed/vmd/bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685/FC02/Session3/0317/reconstruction.npy",
+        "reconstruction_sha256": "d13c8b330d28265357066a09c77254b41edacd636f2006cef71e3d31dd05d013",
+        "sample_count": 152880,
+        "sample_duration_seconds": 9.555
+      },
+      "speaker": "FC02",
+      "timing_seconds": {
+        "mel": 0.009571800008416176,
+        "recurrence": 0.008091199997579679,
+        "representations_total": 0.04213900001195725,
+        "visibility_graph": 0.024476000005961396
+      },
+      "visibility_graph": {
+        "bidirectional": true,
+        "connected_component_count": 1,
+        "density": 0.0446078431372549,
+        "differs_from_center_crop_reference": true,
+        "directed_edge_count": 2912,
+        "edge_indices_valid": true,
+        "edges_unique": true,
+        "input_sample_count": 152880,
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "self_loops": 0,
+        "undirected_edge_count": 1456
+      }
+    },
+    {
+      "condition": "control",
+      "duration_seconds": 10.015,
+      "gender": "male",
+      "logical_id": "MC04/Session1/0210",
+      "mel": {
+        "crop_end_seconds": 9.0075,
+        "crop_start_sample": 16120,
+        "crop_start_seconds": 1.0075,
+        "crop_stop_sample_exclusive": 144120,
+        "cropped_seconds": 2.015,
+        "deterministic": true,
+        "dtype": "float32",
+        "equals_explicit_center_slice_transform": true,
+        "finite": true,
+        "fixed_frame_count": 798,
+        "fixed_sample_count": 128000,
+        "maximum": -7.1914873123168945,
+        "minimum": -100.0,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "cropped"
+      },
+      "recurrence": {
+        "binary": true,
+        "density": 0.15385841836734693,
+        "differs_from_center_crop_reference": true,
+        "dtype": "uint8",
+        "finite": true,
+        "input_sample_count": 160240,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true
+      },
+      "source": {
+        "complete_reconstruction_passed_to_recurrence": true,
+        "complete_reconstruction_passed_to_visibility_graph": true,
+        "reconstruction_path": "data/processed/vmd/bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685/MC04/Session1/0210/reconstruction.npy",
+        "reconstruction_sha256": "fb5749c39c69c96e9d5bf55be2412394a758cc2d0f601169d5ca5a00e00f4dc4",
+        "sample_count": 160240,
+        "sample_duration_seconds": 10.015
+      },
+      "speaker": "MC04",
+      "timing_seconds": {
+        "mel": 0.008638200000859797,
+        "recurrence": 0.008957500001997687,
+        "representations_total": 0.044850600010249764,
+        "visibility_graph": 0.02725490000739228
+      },
+      "visibility_graph": {
+        "bidirectional": true,
+        "connected_component_count": 1,
+        "density": 0.04108455882352941,
+        "differs_from_center_crop_reference": true,
+        "directed_edge_count": 2682,
+        "edge_indices_valid": true,
+        "edges_unique": true,
+        "input_sample_count": 160240,
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "self_loops": 0,
+        "undirected_edge_count": 1341
+      }
+    },
+    {
+      "condition": "dysarthric",
+      "duration_seconds": 19.63,
+      "gender": "male",
+      "logical_id": "M05/Session2/0242",
+      "mel": {
+        "crop_end_seconds": 13.815,
+        "crop_start_sample": 93040,
+        "crop_start_seconds": 5.815,
+        "crop_stop_sample_exclusive": 221040,
+        "cropped_seconds": 11.63,
+        "deterministic": true,
+        "dtype": "float32",
+        "equals_explicit_center_slice_transform": true,
+        "finite": true,
+        "fixed_frame_count": 798,
+        "fixed_sample_count": 128000,
+        "maximum": -9.642115592956543,
+        "minimum": -100.0,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "cropped"
+      },
+      "recurrence": {
+        "binary": true,
+        "density": 0.15385841836734693,
+        "differs_from_center_crop_reference": true,
+        "dtype": "uint8",
+        "finite": true,
+        "input_sample_count": 314080,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true
+      },
+      "source": {
+        "complete_reconstruction_passed_to_recurrence": true,
+        "complete_reconstruction_passed_to_visibility_graph": true,
+        "reconstruction_path": "data/processed/vmd/bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685/M05/Session2/0242/reconstruction.npy",
+        "reconstruction_sha256": "3fca10cbe06b9e15cb0602413879ea5650282a8ad3c3153bccd71cacc67bf698",
+        "sample_count": 314080,
+        "sample_duration_seconds": 19.63
+      },
+      "speaker": "M05",
+      "timing_seconds": {
+        "mel": 0.011257100006332621,
+        "recurrence": 0.006910099997185171,
+        "representations_total": 0.042131100010010414,
+        "visibility_graph": 0.023963900006492622
+      },
+      "visibility_graph": {
+        "bidirectional": true,
+        "connected_component_count": 1,
+        "density": 0.046629901960784315,
+        "differs_from_center_crop_reference": true,
+        "directed_edge_count": 3044,
+        "edge_indices_valid": true,
+        "edges_unique": true,
+        "input_sample_count": 314080,
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "self_loops": 0,
+        "undirected_edge_count": 1522
+      }
+    },
+    {
+      "condition": "dysarthric",
+      "duration_seconds": 43.1550625,
+      "gender": "male",
+      "logical_id": "M03/Session2/0027",
+      "mel": {
+        "crop_end_seconds": 25.5775,
+        "crop_start_sample": 281240,
+        "crop_start_seconds": 17.5775,
+        "crop_stop_sample_exclusive": 409240,
+        "cropped_seconds": 35.1550625,
+        "deterministic": true,
+        "dtype": "float32",
+        "equals_explicit_center_slice_transform": true,
+        "finite": true,
+        "fixed_frame_count": 798,
+        "fixed_sample_count": 128000,
+        "maximum": -8.195406913757324,
+        "minimum": -100.0,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "cropped"
+      },
+      "recurrence": {
+        "binary": true,
+        "density": 0.15385841836734693,
+        "differs_from_center_crop_reference": true,
+        "dtype": "uint8",
+        "finite": true,
+        "input_sample_count": 690481,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true
+      },
+      "source": {
+        "complete_reconstruction_passed_to_recurrence": true,
+        "complete_reconstruction_passed_to_visibility_graph": true,
+        "reconstruction_path": "data/processed/vmd/bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685/M03/Session2/0027/reconstruction.npy",
+        "reconstruction_sha256": "e3b808149faec3ba6b1df8aa65c1959c4b729424cd75e33cd7ad487fc4b1efab",
+        "sample_count": 690481,
+        "sample_duration_seconds": 43.1550625
+      },
+      "speaker": "M03",
+      "timing_seconds": {
+        "mel": 0.013932200003182516,
+        "recurrence": 0.01047860000107903,
+        "representations_total": 0.04980039999645669,
+        "visibility_graph": 0.025389599992195144
+      },
+      "visibility_graph": {
+        "bidirectional": true,
+        "connected_component_count": 1,
+        "density": 0.027481617647058823,
+        "differs_from_center_crop_reference": true,
+        "directed_edge_count": 1794,
+        "edge_indices_valid": true,
+        "edges_unique": true,
+        "input_sample_count": 690481,
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "self_loops": 0,
+        "undirected_edge_count": 897
+      }
+    },
+    {
+      "condition": "dysarthric",
+      "duration_seconds": 193.828625,
+      "gender": "female",
+      "logical_id": "F03/Session1/0118",
+      "mel": {
+        "crop_end_seconds": 100.9143125,
+        "crop_start_sample": 1486629,
+        "crop_start_seconds": 92.9143125,
+        "crop_stop_sample_exclusive": 1614629,
+        "cropped_seconds": 185.828625,
+        "deterministic": true,
+        "dtype": "float32",
+        "equals_explicit_center_slice_transform": true,
+        "finite": true,
+        "fixed_frame_count": 798,
+        "fixed_sample_count": 128000,
+        "maximum": -10.543458938598633,
+        "minimum": -100.0,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "cropped"
+      },
+      "recurrence": {
+        "binary": true,
+        "density": 0.15385841836734693,
+        "differs_from_center_crop_reference": true,
+        "dtype": "uint8",
+        "finite": true,
+        "input_sample_count": 3101258,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true
+      },
+      "source": {
+        "complete_reconstruction_passed_to_recurrence": true,
+        "complete_reconstruction_passed_to_visibility_graph": true,
+        "reconstruction_path": "data/processed/vmd/bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685/F03/Session1/0118/reconstruction.npy",
+        "reconstruction_sha256": "45a9725e7de2539a78be117dba5c8becf7b1d1fdcfd9512ac01be1493f4875c2",
+        "sample_count": 3101258,
+        "sample_duration_seconds": 193.828625
+      },
+      "speaker": "F03",
+      "timing_seconds": {
+        "mel": 0.019396000003325753,
+        "recurrence": 0.0295200999971712,
+        "representations_total": 0.07978970000112895,
+        "visibility_graph": 0.030873600000631995
+      },
+      "visibility_graph": {
+        "bidirectional": true,
+        "connected_component_count": 1,
+        "density": 0.029595588235294117,
+        "differs_from_center_crop_reference": true,
+        "directed_edge_count": 1932,
+        "edge_indices_valid": true,
+        "edges_unique": true,
+        "input_sample_count": 3101258,
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "self_loops": 0,
+        "undirected_edge_count": 966
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "source": {
+    "core_record_count": 8673,
+    "manifest_fingerprint": "91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061",
+    "module1_config_hash": "bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685",
+    "representation_config_hash": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d",
+    "subset": "core"
+  },
+  "status": "PASS"
+}

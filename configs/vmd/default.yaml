@@ -1,0 +1,48 @@
+schema_version: "1.0"
+implementation: vaaniswitch_numpy_vmd_v1
+
+dataset:
+  manifest_path: data/manifests/torgo_manifest.jsonl
+  module0_summary_path: artifacts/metrics/module0_dataset_summary.json
+  module0_leakage_report_path: artifacts/logs/module0_leakage_report.json
+  raw_root: data/raw/torgo/extracted
+  default_subset: core
+
+audio:
+  target_sample_rate: 16000
+  target_channels: 1
+  normalization: rms
+  target_rms: 0.1
+  max_gain: 10.0
+  peak_limit: 0.99
+  silence_epsilon: 1.0e-12
+
+vmd:
+  modes_k: 5
+  alpha: 2000
+  tau: 0.0
+  dc: false
+  init: 1
+  tolerance: 1.0e-7
+  max_iterations: 500
+
+reconstruction:
+  default: all_modes
+  selected_modes_ablation:
+    enabled: false
+    mode_indices: []
+
+cache:
+  enabled: true
+  resume: true
+  root: data/processed/vmd
+
+execution:
+  progress_every: 25
+  plot_examples: 2
+
+outputs:
+  summary: artifacts/metrics/module1_vmd_summary.json
+  failures: artifacts/logs/module1_vmd_failures.csv
+  pipeline_log: artifacts/logs/module1_vmd_pipeline.log
+  plots: artifacts/plots/module1_vmd

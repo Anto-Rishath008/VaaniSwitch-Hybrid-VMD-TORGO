@@ -1,0 +1,1063 @@
+{
+  "audio_quality": {
+    "all_direct_microphone_wavs": {
+      "bit_depth_distribution": {
+        "16": 17633
+      },
+      "channel_distribution": {
+        "1": 17633
+      },
+      "clipped_sample_fraction": {
+        "count": 17632,
+        "max": 0.225893387,
+        "mean": 0.000923742,
+        "median": 0.0,
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p95": 0.00430282,
+        "p99": 0.022741321
+      },
+      "clipping_fraction_counts": {
+        "at_or_above_0.01": 462,
+        "at_or_above_0.05": 26,
+        "at_or_above_0.10": 2
+      },
+      "compression_type_distribution": {
+        "NONE": 17633
+      },
+      "duration_bands": {
+        "over_30.0": 9,
+        "under_0.1": 33,
+        "under_0.25": 39,
+        "under_0.5": 65,
+        "under_1.0": 206
+      },
+      "duration_seconds": {
+        "count": 17633,
+        "max": 193.828625,
+        "mean": 3.098828681,
+        "median": 2.55,
+        "min": 0.0,
+        "p01": 0.9210775,
+        "p05": 1.2,
+        "p25": 1.825,
+        "p75": 3.49,
+        "p95": 6.82065,
+        "p99": 11.79702
+      },
+      "empty_frame_count": 1,
+      "extremely_short_count": 33,
+      "file_count": 17635,
+      "file_size_bytes": {
+        "count": 17635,
+        "max": 6202560.0,
+        "mean": 99195.266685568,
+        "median": 81644.0,
+        "min": 0.0,
+        "p01": 28844.0,
+        "p05": 38444.0,
+        "p25": 58444.0,
+        "p75": 111724.0,
+        "p95": 218281.6,
+        "p99": 377532.68
+      },
+      "full_scale_sample_indicator_count": 3359,
+      "near_silent_count": 78,
+      "possible_clipping_count": 462,
+      "quality_flag_counts": {
+        "empty_audio": 1,
+        "extremely_short": 33,
+        "near_silent": 78,
+        "possible_clipping": 462,
+        "unreadable": 2,
+        "zero_byte": 2
+      },
+      "readable_count": 17633,
+      "rms_dbfs": {
+        "count": 17632,
+        "max": -3.289396759,
+        "mean": -26.735492716,
+        "median": -26.532423838,
+        "min": -73.17906044,
+        "p01": -56.098804665,
+        "p05": -40.150263875,
+        "p25": -32.644949739,
+        "p75": -19.644529975,
+        "p95": -13.674969522,
+        "p99": -9.9373117
+      },
+      "rms_threshold_counts": {
+        "at_or_below_minus_40": 914,
+        "at_or_below_minus_50": 442,
+        "at_or_below_minus_60": 78,
+        "digital_silence": 0
+      },
+      "sample_rate_distribution": {
+        "16000": 17633
+      },
+      "sample_width_bytes_distribution": {
+        "2": 17633
+      },
+      "structural_issue_counts": {
+        "empty_audio": 1,
+        "unreadable": 2,
+        "zero_byte": 2
+      },
+      "structurally_unusable_count": 3,
+      "structurally_usable_count": 17632,
+      "total_duration_hours": 15.178235035,
+      "total_duration_seconds": 54641.646125,
+      "unreadable_count": 2,
+      "zero_byte_count": 2
+    },
+    "alternate_wavs": {
+      "bit_depth_distribution": {
+        "16": 7762
+      },
+      "channel_distribution": {
+        "1": 7762
+      },
+      "clipped_sample_fraction": {
+        "count": 7762,
+        "max": 0.00089723,
+        "mean": 7.47e-07,
+        "median": 0.0,
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p95": 0.0,
+        "p99": 0.0
+      },
+      "clipping_fraction_counts": {
+        "at_or_above_0.01": 0,
+        "at_or_above_0.05": 0,
+        "at_or_above_0.10": 0
+      },
+      "compression_type_distribution": {
+        "NONE": 7762
+      },
+      "duration_bands": {
+        "over_30.0": 3,
+        "under_0.1": 0,
+        "under_0.25": 5,
+        "under_0.5": 7,
+        "under_1.0": 29
+      },
+      "duration_seconds": {
+        "count": 7762,
+        "max": 42.8428125,
+        "mean": 3.128992777,
+        "median": 2.6470625,
+        "min": 0.15,
+        "p01": 1.05,
+        "p05": 1.35,
+        "p25": 1.95,
+        "p75": 3.6,
+        "p95": 6.75,
+        "p99": 11.1273
+      },
+      "empty_frame_count": 0,
+      "extremely_short_count": 0,
+      "file_count": 7764,
+      "file_size_bytes": {
+        "count": 7764,
+        "max": 1371014.0,
+        "mean": 100145.964708913,
+        "median": 84477.0,
+        "min": 0.0,
+        "p01": 33644.0,
+        "p05": 43244.0,
+        "p25": 62444.0,
+        "p75": 115244.0,
+        "p95": 216044.0,
+        "p99": 356072.8
+      },
+      "full_scale_sample_indicator_count": 45,
+      "near_silent_count": 0,
+      "possible_clipping_count": 0,
+      "quality_flag_counts": {
+        "unreadable": 2,
+        "zero_byte": 2
+      },
+      "readable_count": 7762,
+      "rms_dbfs": {
+        "count": 7762,
+        "max": -5.269886031,
+        "mean": -29.953798123,
+        "median": -30.659097616,
+        "min": -56.778382638,
+        "p01": -45.717079108,
+        "p05": -40.130986886,
+        "p25": -34.68073743,
+        "p75": -26.220607629,
+        "p95": -16.528985457,
+        "p99": -12.150130628
+      },
+      "rms_threshold_counts": {
+        "at_or_below_minus_40": 406,
+        "at_or_below_minus_50": 56,
+        "at_or_below_minus_60": 0,
+        "digital_silence": 0
+      },
+      "sample_rate_distribution": {
+        "16000": 7762
+      },
+      "sample_width_bytes_distribution": {
+        "2": 7762
+      },
+      "structural_issue_counts": {
+        "unreadable": 2,
+        "zero_byte": 2
+      },
+      "structurally_unusable_count": 2,
+      "structurally_usable_count": 7762,
+      "total_duration_hours": 6.746456094,
+      "total_duration_seconds": 24287.2419375,
+      "unreadable_count": 2,
+      "zero_byte_count": 2
+    },
+    "orphan_wavs": {
+      "bit_depth_distribution": {
+        "16": 381
+      },
+      "channel_distribution": {
+        "1": 381
+      },
+      "clipped_sample_fraction": {
+        "count": 380,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p95": 0.0,
+        "p99": 0.0
+      },
+      "clipping_fraction_counts": {
+        "at_or_above_0.01": 0,
+        "at_or_above_0.05": 0,
+        "at_or_above_0.10": 0
+      },
+      "compression_type_distribution": {
+        "NONE": 381
+      },
+      "duration_bands": {
+        "over_30.0": 0,
+        "under_0.1": 1,
+        "under_0.25": 1,
+        "under_0.5": 3,
+        "under_1.0": 37
+      },
+      "duration_seconds": {
+        "count": 381,
+        "max": 13.95,
+        "mean": 2.403288386,
+        "median": 1.8,
+        "min": 0.0,
+        "p01": 0.72,
+        "p05": 0.9,
+        "p25": 1.2,
+        "p75": 3.0,
+        "p95": 5.1,
+        "p99": 9.33
+      },
+      "empty_frame_count": 1,
+      "extremely_short_count": 1,
+      "file_count": 381,
+      "file_size_bytes": {
+        "count": 381,
+        "max": 446444.0,
+        "mean": 76949.228346457,
+        "median": 57644.0,
+        "min": 44.0,
+        "p01": 23084.0,
+        "p05": 28844.0,
+        "p25": 38444.0,
+        "p75": 96044.0,
+        "p95": 163244.0,
+        "p99": 298604.0
+      },
+      "full_scale_sample_indicator_count": 0,
+      "near_silent_count": 0,
+      "possible_clipping_count": 0,
+      "quality_flag_counts": {
+        "empty_audio": 1,
+        "extremely_short": 1
+      },
+      "readable_count": 381,
+      "rms_dbfs": {
+        "count": 380,
+        "max": -17.294184706,
+        "mean": -33.197618073,
+        "median": -33.001266185,
+        "min": -53.009907129,
+        "p01": -44.468357815,
+        "p05": -41.633776146,
+        "p25": -36.509125954,
+        "p75": -29.457767867,
+        "p95": -25.064535732,
+        "p99": -22.616065067
+      },
+      "rms_threshold_counts": {
+        "at_or_below_minus_40": 43,
+        "at_or_below_minus_50": 3,
+        "at_or_below_minus_60": 0,
+        "digital_silence": 0
+      },
+      "sample_rate_distribution": {
+        "16000": 381
+      },
+      "sample_width_bytes_distribution": {
+        "2": 381
+      },
+      "structural_issue_counts": {
+        "empty_audio": 1
+      },
+      "structurally_unusable_count": 1,
+      "structurally_usable_count": 380,
+      "total_duration_hours": 0.254348021,
+      "total_duration_seconds": 915.652875,
+      "unreadable_count": 0,
+      "zero_byte_count": 0
+    },
+    "policy_note": "Extremely short, near-silent, and possible clipping are review flags, not automatic deletions. HEAD is preferred only when structurally usable; a valid ARRAY is the primary when HEAD fails structural audit.",
+    "selected_primary_wavs": {
+      "bit_depth_distribution": {
+        "16": 9490
+      },
+      "channel_distribution": {
+        "1": 9490
+      },
+      "clipped_sample_fraction": {
+        "count": 9490,
+        "max": 0.225893387,
+        "mean": 0.00171566,
+        "median": 0.0,
+        "min": 0.0,
+        "p01": 0.0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "p75": 0.000359712,
+        "p95": 0.009537655,
+        "p99": 0.030944609
+      },
+      "clipping_fraction_counts": {
+        "at_or_above_0.01": 462,
+        "at_or_above_0.05": 26,
+        "at_or_above_0.10": 2
+      },
+      "compression_type_distribution": {
+        "NONE": 9490
+      },
+      "duration_bands": {
+        "over_30.0": 6,
+        "under_0.1": 32,
+        "under_0.25": 33,
+        "under_0.5": 55,
+        "under_1.0": 140
+      },
+      "duration_seconds": {
+        "count": 9490,
+        "max": 193.828625,
+        "mean": 3.102081276,
+        "median": 2.495,
+        "min": 0.00825,
+        "p01": 0.899524375,
+        "p05": 1.268165625,
+        "p25": 1.82,
+        "p75": 3.45,
+        "p95": 6.975465625,
+        "p99": 12.2371
+      },
+      "empty_frame_count": 0,
+      "extremely_short_count": 32,
+      "file_count": 9490,
+      "file_size_bytes": {
+        "count": 9490,
+        "max": 6202560.0,
+        "mean": 99310.600842993,
+        "median": 79884.0,
+        "min": 308.0,
+        "p01": 28828.78,
+        "p05": 40625.3,
+        "p25": 58284.0,
+        "p75": 110444.0,
+        "p95": 223258.899999999,
+        "p99": 391631.200000002
+      },
+      "full_scale_sample_indicator_count": 3314,
+      "near_silent_count": 78,
+      "possible_clipping_count": 462,
+      "quality_flag_counts": {
+        "extremely_short": 32,
+        "near_silent": 78,
+        "possible_clipping": 462
+      },
+      "readable_count": 9490,
+      "rms_dbfs": {
+        "count": 9490,
+        "max": -3.289396759,
+        "mean": -23.844439586,
+        "median": -21.92028287,
+        "min": -73.17906044,
+        "p01": -59.566549059,
+        "p05": -39.69184316,
+        "p25": -27.765608399,
+        "p75": -17.447156948,
+        "p95": -12.393484006,
+        "p99": -9.154324909
+      },
+      "rms_threshold_counts": {
+        "at_or_below_minus_40": 465,
+        "at_or_below_minus_50": 383,
+        "at_or_below_minus_60": 78,
+        "digital_silence": 0
+      },
+      "sample_rate_distribution": {
+        "16000": 9490
+      },
+      "sample_width_bytes_distribution": {
+        "2": 9490
+      },
+      "structural_issue_counts": {},
+      "structurally_unusable_count": 0,
+      "structurally_usable_count": 9490,
+      "total_duration_hours": 8.17743092,
+      "total_duration_seconds": 29438.7513125,
+      "unreadable_count": 0,
+      "zero_byte_count": 0
+    }
+  },
+  "dataset_id": "TORGO",
+  "discovery_warnings": {
+    "count": 0,
+    "items": []
+  },
+  "downstream_subset_policy": {
+    "core": {
+      "experiment_role": "default_clean_classification",
+      "normal_speech_eligible": true,
+      "prompt_types": [
+        "sentence",
+        "word"
+      ],
+      "record_count": 8673,
+      "usability_statuses": [
+        "usable"
+      ]
+    },
+    "default_subset": "core",
+    "excluded_prompt_types": [
+      "articulation_task",
+      "instruction_or_nonstandard",
+      "unknown"
+    ],
+    "extended": {
+      "experiment_role": "quality_flag_robustness_ablation",
+      "normal_speech_eligible": true,
+      "prompt_types": [
+        "sentence",
+        "word"
+      ],
+      "record_count": 9222,
+      "usability_statuses": [
+        "review",
+        "usable"
+      ]
+    }
+  },
+  "language": "en",
+  "leakage_and_duplicates": {
+    "cross_speaker_duplicate_hash_group_count": 0,
+    "duplicate_hash_group_count": 3,
+    "duplicate_logical_id_count": 0,
+    "duplicate_primary_path_count": 0,
+    "status": "PASS",
+    "violation_count": 0
+  },
+  "limitations": [
+    "Condition and gender come from TORGO directory groups; no medical severity is inferred.",
+    "Repeated prompts across independent speakers are expected and allowed by the speaker split policy.",
+    "Quality flags are signal indicators and are not medical or perceptual diagnoses.",
+    "Module 0 performs no resampling, VMD, feature extraction, ASR, or model training."
+  ],
+  "logical_utterances": {
+    "by_usability_status": {
+      "excluded": 4,
+      "review": 627,
+      "usable": 8863
+    },
+    "excluded_count": 4,
+    "exclusion_reasons": {
+      "missing_primary_audio": 4
+    },
+    "normal_speech_eligible_count": 9222,
+    "total": 9494
+  },
+  "manual_audit_verification": {
+    "all_documented_values_match": true,
+    "note": "All values were recalculated; documented values were comparison targets only.",
+    "values": {
+      "direct_array_wavs": {
+        "documented": 9417,
+        "matches": true,
+        "recalculated": 9417
+      },
+      "direct_head_wavs": {
+        "documented": 8218,
+        "matches": true,
+        "recalculated": 8218
+      },
+      "extracted_files": {
+        "documented": 82772,
+        "matches": true,
+        "recalculated": 82772
+      },
+      "microphone_array_only": {
+        "documented": 1276,
+        "matches": true,
+        "recalculated": 1276
+      },
+      "microphone_both": {
+        "documented": 7764,
+        "matches": true,
+        "recalculated": 7764
+      },
+      "microphone_head_only": {
+        "documented": 450,
+        "matches": true,
+        "recalculated": 450
+      },
+      "microphone_neither": {
+        "documented": 4,
+        "matches": true,
+        "recalculated": 4
+      },
+      "prompt_records": {
+        "documented": 9494,
+        "matches": true,
+        "recalculated": 9494
+      },
+      "wav_files": {
+        "documented": 17635,
+        "matches": true,
+        "recalculated": 17635
+      }
+    }
+  },
+  "microphone_coverage": {
+    "array_only": 1276,
+    "both_microphones": 7764,
+    "direct_array_wavs": 9417,
+    "direct_head_wavs": 8218,
+    "head_only": 450,
+    "neither_microphone": 4,
+    "orphan_array_wavs": 377,
+    "orphan_head_wavs": 4,
+    "primary_selection_reasons": {
+      "array_structurally_usable_head_missing": 1276,
+      "head_structurally_usable": 8212,
+      "head_unusable_array_fallback": 2,
+      "no_structurally_usable_audio": 4
+    },
+    "prompt_records": 9494,
+    "selected_array_primary": 1278,
+    "selected_head_primary": 8212
+  },
+  "module": "0_torgo_manifest_evaluation",
+  "orphan_audio": {
+    "by_reason": {
+      "malformed_audio_filename_or_prompt_id": 4,
+      "missing_prompt_metadata": 377
+    },
+    "logical_stem_count": 379,
+    "path_count": 381
+  },
+  "outputs": {
+    "audio_quality": "artifacts/logs/module0_audio_quality.csv",
+    "dataset_summary": "artifacts/metrics/module0_dataset_summary.json",
+    "exclusions": "artifacts/logs/module0_exclusions.csv",
+    "leakage_report": "artifacts/logs/module0_leakage_report.json",
+    "manifest_csv": "data/manifests/torgo_manifest.csv",
+    "manifest_jsonl": "data/manifests/torgo_manifest.jsonl",
+    "microphone_coverage": "artifacts/logs/module0_microphone_coverage.csv",
+    "pipeline_log": "artifacts/logs/module0_pipeline.log",
+    "speaker_folds": "data/splits/speaker_folds.json"
+  },
+  "prompt_types": {
+    "articulation_task": 118,
+    "instruction_or_nonstandard": 92,
+    "sentence": 2287,
+    "unknown": 59,
+    "word": 6938
+  },
+  "raw_data_immutability": {
+    "metadata_sha256": "206041a4be1fad47975d25ba38c73bb49fe68e3957ebfb046d0db15c0b14c76a",
+    "raw_root": "data/raw/torgo/extracted",
+    "verified_unchanged_during_run": true
+  },
+  "raw_inventory": {
+    "extension_counts": {
+      "(none)": 31,
+      ".PHN": 4503,
+      ".PHN#": 2,
+      ".PHN~": 44,
+      ".all": 7089,
+      ".amp": 14366,
+      ".calset": 2,
+      ".cpd": 7183,
+      ".csv": 14,
+      ".doc": 3,
+      ".gitkeep": 1,
+      ".ini": 7183,
+      ".log": 24,
+      ".mat": 100,
+      ".pat": 19,
+      ".phn": 681,
+      ".pos": 14360,
+      ".txt": 9532,
+      ".wav": 17635
+    },
+    "file_count": 82772,
+    "metadata_sha256": "206041a4be1fad47975d25ba38c73bb49fe68e3957ebfb046d0db15c0b14c76a",
+    "total_bytes": 15845129970,
+    "zero_byte_file_count": 40
+  },
+  "schema_version": "1.0",
+  "sessions": {
+    "by_speaker": {
+      "F01": [
+        "Session1"
+      ],
+      "F03": [
+        "Session1",
+        "Session2",
+        "Session3"
+      ],
+      "F04": [
+        "Session1",
+        "Session2"
+      ],
+      "FC01": [
+        "Session1"
+      ],
+      "FC02": [
+        "Session2",
+        "Session3"
+      ],
+      "FC03": [
+        "Session1",
+        "Session2",
+        "Session3"
+      ],
+      "M01": [
+        "Session1",
+        "Session2_3"
+      ],
+      "M02": [
+        "Session1",
+        "Session2"
+      ],
+      "M03": [
+        "Session2"
+      ],
+      "M04": [
+        "Session1",
+        "Session2"
+      ],
+      "M05": [
+        "Session1",
+        "Session2"
+      ],
+      "MC01": [
+        "Session1",
+        "Session2",
+        "Session3"
+      ],
+      "MC02": [
+        "Session1",
+        "Session2"
+      ],
+      "MC03": [
+        "Session1",
+        "Session2"
+      ],
+      "MC04": [
+        "Session1",
+        "Session2"
+      ]
+    },
+    "total": 30
+  },
+  "source": {
+    "manifest_sha256": "91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061",
+    "speaker_folds_sha256": "5ab4e1af6c54f97af940c3e5ba5d447c77d827102b88656bf19cd5227b5fee27"
+  },
+  "speaker_evaluation": {
+    "folds": [
+      {
+        "evaluation_counts": {
+          "balance_records": 3092,
+          "by_condition": {
+            "control": 2093,
+            "dysarthric": 1003
+          },
+          "by_condition_gender": {
+            "control|female": 164,
+            "control|male": 1929,
+            "dysarthric|female": 578,
+            "dysarthric|male": 425
+          },
+          "by_gender": {
+            "female": 742,
+            "male": 2354
+          },
+          "by_prompt_type": {
+            "articulation_task": 47,
+            "instruction_or_nonstandard": 31,
+            "sentence": 735,
+            "unknown": 23,
+            "word": 2260
+          },
+          "by_usability_status": {
+            "excluded": 4,
+            "review": 203,
+            "usable": 2889
+          },
+          "logical_records": 3096,
+          "speaker_count": 5
+        },
+        "evaluation_speakers": [
+          "F03",
+          "FC01",
+          "M04",
+          "MC03",
+          "MC04"
+        ],
+        "fold_id": 1
+      },
+      {
+        "evaluation_counts": {
+          "balance_records": 3211,
+          "by_condition": {
+            "control": 1967,
+            "dysarthric": 1244
+          },
+          "by_condition_gender": {
+            "control|female": 1269,
+            "control|male": 698,
+            "dysarthric|female": 449,
+            "dysarthric|male": 795
+          },
+          "by_gender": {
+            "female": 1718,
+            "male": 1493
+          },
+          "by_prompt_type": {
+            "articulation_task": 38,
+            "instruction_or_nonstandard": 32,
+            "sentence": 767,
+            "unknown": 17,
+            "word": 2357
+          },
+          "by_usability_status": {
+            "review": 276,
+            "usable": 2935
+          },
+          "logical_records": 3211,
+          "speaker_count": 5
+        },
+        "evaluation_speakers": [
+          "F04",
+          "FC02",
+          "M01",
+          "M02",
+          "MC02"
+        ],
+        "fold_id": 2
+      },
+      {
+        "evaluation_counts": {
+          "balance_records": 3187,
+          "by_condition": {
+            "control": 2111,
+            "dysarthric": 1076
+          },
+          "by_condition_gender": {
+            "control|female": 1003,
+            "control|male": 1108,
+            "dysarthric|female": 132,
+            "dysarthric|male": 944
+          },
+          "by_gender": {
+            "female": 1135,
+            "male": 2052
+          },
+          "by_prompt_type": {
+            "articulation_task": 33,
+            "instruction_or_nonstandard": 29,
+            "sentence": 785,
+            "unknown": 19,
+            "word": 2321
+          },
+          "by_usability_status": {
+            "review": 148,
+            "usable": 3039
+          },
+          "logical_records": 3187,
+          "speaker_count": 5
+        },
+        "evaluation_speakers": [
+          "F01",
+          "FC03",
+          "M03",
+          "M05",
+          "MC01"
+        ],
+        "fold_id": 3
+      }
+    ],
+    "strategy": {
+      "balance_measure": "non_excluded_primary_logical_records",
+      "balance_statuses": [
+        "review",
+        "usable"
+      ],
+      "group_key": "speaker_id",
+      "hard_strata": [
+        "condition",
+        "gender"
+      ],
+      "minimum_folds": 2,
+      "name": "condition_gender_stratified_speaker_group_cv",
+      "requested_max_folds": 5,
+      "seed": 42,
+      "selected_folds": 3,
+      "selection_reason": "Selected 3 folds instead of 5: 3 is the largest count for which every evaluation fold contains all observed condition-by-gender strata.",
+      "stratum_speaker_counts": {
+        "control|female": 3,
+        "control|male": 4,
+        "dysarthric|female": 3,
+        "dysarthric|male": 5
+      }
+    },
+    "validation": {
+      "all_logical_records_evaluated_once": true,
+      "all_speakers_evaluated_once": true,
+      "condition_gender_supported_in_every_fold": true,
+      "condition_supported_in_every_fold": true,
+      "fold_count": 3,
+      "folds": [
+        {
+          "all_condition_gender_strata_present": true,
+          "audio_path_overlap_count": 0,
+          "both_conditions_present": true,
+          "fold_id": 1,
+          "logical_id_overlap_count": 0,
+          "speaker_overlap_count": 0
+        },
+        {
+          "all_condition_gender_strata_present": true,
+          "audio_path_overlap_count": 0,
+          "both_conditions_present": true,
+          "fold_id": 2,
+          "logical_id_overlap_count": 0,
+          "speaker_overlap_count": 0
+        },
+        {
+          "all_condition_gender_strata_present": true,
+          "audio_path_overlap_count": 0,
+          "both_conditions_present": true,
+          "fold_id": 3,
+          "logical_id_overlap_count": 0,
+          "speaker_overlap_count": 0
+        }
+      ],
+      "microphone_paths_disjoint": true,
+      "speaker_disjoint": true
+    }
+  },
+  "speakers": {
+    "by_condition": {
+      "control": 7,
+      "dysarthric": 8
+    },
+    "by_condition_gender": {
+      "control|female": 3,
+      "control|male": 4,
+      "dysarthric|female": 3,
+      "dysarthric|male": 5
+    },
+    "by_gender": {
+      "female": 6,
+      "male": 9
+    },
+    "by_group": {
+      "F": 3,
+      "FC": 3,
+      "M": 5,
+      "MC": 4
+    },
+    "details": [
+      {
+        "condition": "dysarthric",
+        "excluded": 0,
+        "gender": "female",
+        "logical_records": 132,
+        "review": 0,
+        "speaker_group": "F",
+        "speaker_id": "F01",
+        "usable": 132
+      },
+      {
+        "condition": "dysarthric",
+        "excluded": 1,
+        "gender": "female",
+        "logical_records": 578,
+        "review": 14,
+        "speaker_group": "F",
+        "speaker_id": "F03",
+        "usable": 563
+      },
+      {
+        "condition": "dysarthric",
+        "excluded": 0,
+        "gender": "female",
+        "logical_records": 449,
+        "review": 112,
+        "speaker_group": "F",
+        "speaker_id": "F04",
+        "usable": 337
+      },
+      {
+        "condition": "control",
+        "excluded": 0,
+        "gender": "female",
+        "logical_records": 164,
+        "review": 2,
+        "speaker_group": "FC",
+        "speaker_id": "FC01",
+        "usable": 162
+      },
+      {
+        "condition": "control",
+        "excluded": 0,
+        "gender": "female",
+        "logical_records": 1269,
+        "review": 8,
+        "speaker_group": "FC",
+        "speaker_id": "FC02",
+        "usable": 1261
+      },
+      {
+        "condition": "control",
+        "excluded": 0,
+        "gender": "female",
+        "logical_records": 1003,
+        "review": 10,
+        "speaker_group": "FC",
+        "speaker_id": "FC03",
+        "usable": 993
+      },
+      {
+        "condition": "dysarthric",
+        "excluded": 0,
+        "gender": "male",
+        "logical_records": 386,
+        "review": 82,
+        "speaker_group": "M",
+        "speaker_id": "M01",
+        "usable": 304
+      },
+      {
+        "condition": "dysarthric",
+        "excluded": 0,
+        "gender": "male",
+        "logical_records": 409,
+        "review": 73,
+        "speaker_group": "M",
+        "speaker_id": "M02",
+        "usable": 336
+      },
+      {
+        "condition": "dysarthric",
+        "excluded": 0,
+        "gender": "male",
+        "logical_records": 421,
+        "review": 4,
+        "speaker_group": "M",
+        "speaker_id": "M03",
+        "usable": 417
+      },
+      {
+        "condition": "dysarthric",
+        "excluded": 1,
+        "gender": "male",
+        "logical_records": 425,
+        "review": 19,
+        "speaker_group": "M",
+        "speaker_id": "M04",
+        "usable": 405
+      },
+      {
+        "condition": "dysarthric",
+        "excluded": 0,
+        "gender": "male",
+        "logical_records": 523,
+        "review": 134,
+        "speaker_group": "M",
+        "speaker_id": "M05",
+        "usable": 389
+      },
+      {
+        "condition": "control",
+        "excluded": 0,
+        "gender": "male",
+        "logical_records": 1108,
+        "review": 0,
+        "speaker_group": "MC",
+        "speaker_id": "MC01",
+        "usable": 1108
+      },
+      {
+        "condition": "control",
+        "excluded": 0,
+        "gender": "male",
+        "logical_records": 698,
+        "review": 1,
+        "speaker_group": "MC",
+        "speaker_id": "MC02",
+        "usable": 697
+      },
+      {
+        "condition": "control",
+        "excluded": 0,
+        "gender": "male",
+        "logical_records": 900,
+        "review": 3,
+        "speaker_group": "MC",
+        "speaker_id": "MC03",
+        "usable": 897
+      },
+      {
+        "condition": "control",
+        "excluded": 2,
+        "gender": "male",
+        "logical_records": 1029,
+        "review": 165,
+        "speaker_group": "MC",
+        "speaker_id": "MC04",
+        "usable": 862
+      }
+    ],
+    "total": 15
+  }
+}
