@@ -1,28 +1,29 @@
 VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project/
 ├── README.md
-├── START_HERE.md
-├── PROJECT_SCOPE_LOCK.md
-├── FINAL_WORKFLOW.md
-├── ARCHITECTURE_RATIONALE.md
-├── ACCURACY_STRATEGY.md
-├── ACCURACY_EXPERIMENT_MATRIX.md
-├── TORGO_CURRENT_AUDIT.md
-├── DATA_COPY_INSTRUCTIONS.md
-├── MODULE_TRACKER.md
-├── DIRECTORY_MAP.md
-├── TESTING_STRATEGY.md
-├── CODEX_MASTER_GUIDE.md
-├── AGENTS.md
-├── PROJECT_STATUS.md
 ├── CHANGELOG.md
+├── PROJECT_TREE.txt
 ├── configs/
-├── apps/
 ├── artifacts/
+├── components/
 ├── docs/
-├── notebooks/
-├── scripts/
-├── src/
-├── tests/
-└── third_party/
+│   ├── development/
+│   │   ├── ACCURACY_EXPERIMENT_MATRIX.md
+│   │   ├── ACCURACY_STRATEGY.md
+│   │   ├── ARCHITECTURE_RATIONALE.md
+│   │   ├── DIRECTORY_MAP.md
+│   │   ├── FINAL_WORKFLOW.md
+│   │   ├── MODULE_TRACKER.md
+│   │   ├── PROJECT_SCOPE_LOCK.md
+│   │   ├── PROJECT_STATUS.md
+│   │   ├── TESTING_STRATEGY.md
+│   │   └── TORGO_CURRENT_AUDIT.md
+│   ├── architecture/
+│   ├── datasets/
+│   ├── defects/
+│   ├── modules/
+│   ├── presentation/
+│   ├── reports/
+│   └── testing/
+└── tests/
 
 NO data/ folder is included.

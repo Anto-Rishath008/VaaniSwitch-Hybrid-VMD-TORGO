@@ -23,11 +23,21 @@ artifacts/representations/
 *.7z
 
 # Generated logs, plots, and oversized machine-readable reports
-artifacts/logs/*.log
-artifacts/plots/**
-!artifacts/plots/.gitkeep
-artifacts/logs/module0_audio_quality.csv
-artifacts/metrics/module1_vmd_summary.json
+artifacts/*
+!artifacts/.gitkeep
+!artifacts/metrics/
+!artifacts/metrics/.gitkeep
+!artifacts/metrics/module0_dataset_summary.json
+!artifacts/metrics/module1_full_signoff_audit.json
+!artifacts/metrics/module1_vmd_summary.json
+!artifacts/**/.gitkeep
+
+# Local dataset manifests and splits
+data/manifests/*
+!data/manifests/.gitkeep
+!data/manifests/torgo_manifest.jsonl
+data/splits/*
+!data/splits/.gitkeep
 
 # Python bytecode, build products, and environments
 __pycache__/

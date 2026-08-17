@@ -68,3 +68,77 @@ Raw TORGO audio, production VMD caches, representation caches, and other large g
 artifacts are intentionally excluded from this repository. This research software is not
 a medical diagnostic system, and no trained-classifier accuracy is claimed at the current
 project stage.
+
+## Setup and Installation
+
+This project is built using Python 3.11+ and uses `uv` for package resolution.
+
+### Using `uv` (Recommended)
+1. Install `uv` if not already present:
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+2. Sync the dependencies and setup the virtual environment:
+   ```bash
+   uv sync
+   ```
+3. Run the test suite to verify everything works:
+   ```bash
+   uv run pytest
+   ```
+
+### Using Standard `pip` and Virtualenv
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+pytest
+```
+
+---
+
+## Execution Guide
+
+The workflow is managed by standard CLI commands. You can run preprocessing or start the dashboard using the registered scripts:
+
+### 1. Preprocessing Pipeline (End-to-End)
+To build manifests, cache VMD, and extract representations sequentially:
+```bash
+# Run preprocessing end-to-end
+uv run vaaniswitch-preprocess run
+
+# Validate all generated outputs
+uv run vaaniswitch-preprocess validate
+```
+
+### 2. Gradio Web Application UI
+To launch the interactive dashboard for speech classification and reconstruction:
+```bash
+uv run vaaniswitch-app
+```
+
+### 3. Placeholders
+Future modules can be run via:
+```bash
+# Train the models (coming soon)
+uv run vaaniswitch-train
+
+# Run evaluations (coming soon)
+uv run vaaniswitch-test
+```
+
+---
+
+## Development Documentation
+
+The detailed research design plans and guidelines are located in the [docs/development/](docs/development/) directory:
+- [PROJECT_SCOPE_LOCK.md](docs/development/PROJECT_SCOPE_LOCK.md) — Requirements and system scope
+- [FINAL_WORKFLOW.md](docs/development/FINAL_WORKFLOW.md) — Complete execution workflow
+- [MODULE_TRACKER.md](docs/development/MODULE_TRACKER.md) — Progress tracker for project modules
+- [PROJECT_STATUS.md](docs/development/PROJECT_STATUS.md) — Active status, caching, and validation report
+- [ARCHITECTURE_RATIONALE.md](docs/development/ARCHITECTURE_RATIONALE.md) — Technical choices and reasoning
+- [ACCURACY_STRATEGY.md](docs/development/ACCURACY_STRATEGY.md) & [ACCURACY_EXPERIMENT_MATRIX.md](docs/development/ACCURACY_EXPERIMENT_MATRIX.md) — Evaluation rules and baselines
+- [TESTING_STRATEGY.md](docs/development/TESTING_STRATEGY.md) — Validation criteria and tools
+- [TORGO_CURRENT_AUDIT.md](docs/development/TORGO_CURRENT_AUDIT.md) — Input data quality metrics
+- [DIRECTORY_MAP.md](docs/development/DIRECTORY_MAP.md) — Folder mapping structure
+

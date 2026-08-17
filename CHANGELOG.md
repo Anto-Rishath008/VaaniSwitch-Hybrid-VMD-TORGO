@@ -60,7 +60,7 @@
 - Inventoried 8,673 complete cache directories and 26,019 expected files occupying
   19,981,366,416 bytes (18.6091 GiB), with no partial, temporary, or unexpected files.
 - Passed the full 144-test Module 0+1 suite, 81.70% branch-aware coverage gate, Ruff,
-  strict mypy, compileall, and full `vaaniswitch-m1 validate` gate.
+  strict mypy, compileall, and full `components-m1 validate` gate.
 - Marked Module 1 complete and signed off. Module 2 remains not started.
 
 ## 2026-08-16 — Module 1 pre-full-build tau fidelity check
