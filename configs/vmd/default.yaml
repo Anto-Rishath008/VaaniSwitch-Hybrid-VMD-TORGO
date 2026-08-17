@@ -1,5 +1,5 @@
 schema_version: "1.0"
-implementation: vaaniswitch_numpy_vmd_v1
+implementation: components_numpy_vmd_v1
 
 dataset:
   manifest_path: data/manifests/torgo_manifest.jsonl

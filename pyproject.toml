@@ -3,13 +3,14 @@ requires=["setuptools>=68","wheel"]
 build-backend="setuptools.build_meta"
 
 [project]
-name="vaaniswitch-final-hybrid-vmd-torgo"
+name="components-final-hybrid-vmd-torgo"
 version="1.0.0"
 description="Shared-VMD token-level hybrid dysarthria classification and English reconstruction"
 requires-python=">=3.11"
 dependencies=[
     "numpy>=1.26,<2.0",
     "PyYAML>=6.0",
+    "gradio>=4.0",
 ]
 
 [project.optional-dependencies]
@@ -22,12 +23,13 @@ dev=[
 ]
 
 [project.scripts]
-vaaniswitch-m0="vaaniswitch.m0_data.cli:main"
-vaaniswitch-m1="vaaniswitch.m1_vmd.cli:main"
-vaaniswitch-m2="vaaniswitch.m2_representations.cli:main"
+vaaniswitch-preprocess="components.preprocess:main"
+vaaniswitch-train="components.train:main"
+vaaniswitch-test="components.test:main"
+vaaniswitch-app="components.app:main"
 
 [tool.setuptools.packages.find]
-where=["src"]
+where=["."]
 
 [tool.pytest.ini_options]
 testpaths=["tests"]
@@ -36,7 +38,7 @@ pythonpath=["src"]
 
 [tool.coverage.run]
 branch=true
-source=["vaaniswitch.m0_data", "vaaniswitch.m1_vmd", "vaaniswitch.m2_representations"]
+source=["components.data", "components.vmd", "components.representations"]
 
 [tool.coverage.report]
 fail_under=80
@@ -53,12 +55,12 @@ select=["E", "F", "I", "UP", "B", "SIM", "RUF"]
 [tool.mypy]
 python_version="3.11"
 files=[
-    "src/vaaniswitch/m0_data",
-    "src/vaaniswitch/m1_vmd",
-    "src/vaaniswitch/m2_representations",
-    "tests/m0_data",
-    "tests/m1_vmd",
-    "tests/m2_representations",
+    "src/components/data",
+    "src/components/vmd",
+    "src/components/representations",
+    "tests/data",
+    "tests/vmd",
+    "tests/representations",
 ]
 strict=true
 warn_unused_configs=true
