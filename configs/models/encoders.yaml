@@ -1,0 +1,18 @@
+common_token_dim: 192
+mel:
+  backbone: resnet18
+  pretrained: true
+  adaptive_pool: [4, 4]
+  tokens: 16
+  freeze_backbone_initially: true
+graph:
+  implementation: pure_pytorch_gcn
+  layers: 2
+  hidden_dim: 96
+  pooling: mean_plus_max
+  tokens: 1
+recurrence:
+  implementation: small_cnn
+  channels: [16, 32, 64]
+  adaptive_pool: [4, 4]
+  tokens: 16

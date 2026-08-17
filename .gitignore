@@ -1,0 +1,76 @@
+# Local datasets and generated scientific caches
+data/raw/
+data/processed/
+artifacts/checkpoints/
+artifacts/representations/
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Raw audio and dataset archives
+*.wav
+*.flac
+*.mp3
+*.m4a
+*.tar
+*.tar.gz
+*.tgz
+*.bz2
+*.zip
+*.7z
+
+# Generated logs, plots, and oversized machine-readable reports
+artifacts/logs/*.log
+artifacts/plots/**
+!artifacts/plots/.gitkeep
+artifacts/logs/module0_audio_quality.csv
+artifacts/metrics/module1_vmd_summary.json
+
+# Python bytecode, build products, and environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Test, type-check, lint, and coverage caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.secret
+
+# Notebook, editor, OS, and local agent metadata
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.codex/
+.DS_Store
+Thumbs.db
+
+# Obsolete workstation-specific bootstrap notes
+DATA_COPY_INSTRUCTIONS.md
+START_HERE.md
+
+# Temporary artifacts
+*.tmp
+*.temp
+*.bak
+.tmp/
+temp/

@@ -1,0 +1,4 @@
+backend: frozen_whisper_family
+model_size: small.en
+fine_tune: false
+language: en

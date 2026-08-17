@@ -1,0 +1,1062 @@
+{
+  "completion": {
+    "cache_hits": 0,
+    "computed": 12,
+    "failed": 0,
+    "successful": 12
+  },
+  "configuration": {
+    "processing_identity": {
+      "implementation": "vaaniswitch_numpy_representations_v1",
+      "mel": {
+        "crop_policy": "center",
+        "epsilon": 1e-10,
+        "f_max_hz": 8000.0,
+        "f_min_hz": 20.0,
+        "filter_normalization": "slaney_area",
+        "fixed_duration_seconds": 8.0,
+        "frequency_resize": "linear",
+        "hop_length": 160,
+        "log_transform": "power_db",
+        "mel_scale": "htk",
+        "n_fft": 512,
+        "n_mels": 80,
+        "output_dtype": "float32",
+        "output_height": 224,
+        "output_width": 224,
+        "pad_policy": "right_zero",
+        "power": 2.0,
+        "sample_rate": 16000,
+        "time_resize": "area_average",
+        "win_length": 400,
+        "window": "hann_periodic"
+      },
+      "module1_config_hash": "bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685",
+      "recurrence": {
+        "delay": 2,
+        "distance": "euclidean",
+        "embedding_dimension": 3,
+        "epsilon": 1e-12,
+        "include_diagonal": true,
+        "output_dtype": "uint8",
+        "output_size": 224,
+        "recurrence_rate": 0.15,
+        "scalar_reduction": "block_rms",
+        "scalar_standardization": "zscore",
+        "threshold_mode": "off_diagonal_recurrence_rate"
+      },
+      "schema_version": "1.0",
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "criterion": "natural_visibility_strict",
+        "edge_dtype": "int16",
+        "epsilon": 1e-12,
+        "max_nodes": 256,
+        "node_features": [
+          "normalized_time",
+          "standardized_amplitude"
+        ],
+        "scalar_reduction": "block_rms",
+        "scalar_standardization": "zscore",
+        "store_bidirectional_edges": true,
+        "store_self_loops": false
+      }
+    },
+    "representation_config_hash": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d"
+  },
+  "core_duration_audit": {
+    "count": 8673,
+    "cropping": {
+      "count": 235,
+      "maximum_discarded_seconds": 185.828625,
+      "percentage": 2.709558399631039
+    },
+    "fixed_duration_seconds": 8.0,
+    "padding": {
+      "count": 8438,
+      "percentage": 97.29044160036896
+    },
+    "seconds": {
+      "max": 193.828625,
+      "mean": 2.993402981955494,
+      "median": 2.4383125,
+      "min": 0.15,
+      "p90": 4.76,
+      "p95": 6.3,
+      "p99": 11.538817500000055
+    }
+  },
+  "failures": [],
+  "module": "2_multirepresentation_generation",
+  "outputs": {
+    "cache_root": "data/processed/representations",
+    "failures": "artifacts/logs/module2_representation_failures.csv",
+    "pipeline_log": "artifacts/logs/module2_representation_pipeline.log",
+    "plots": [
+      "artifacts/plots/module2_representations/F01__Session1__0082.svg",
+      "artifacts/plots/module2_representations/FC03__Session3__0151.svg"
+    ]
+  },
+  "performance_seconds": {
+    "estimate_note": "Both estimates are smoke-scaled, not measured full-corpus runtimes; the pipeline estimate includes source validation, writes, reporting, and plots.",
+    "estimated_full_core_pipeline_seconds": 1707.7132663485827,
+    "estimated_full_core_seconds": 320.5897838489327,
+    "mel": {
+      "count": 12,
+      "max": 0.012359700005617924,
+      "mean": 0.010252691670757486,
+      "median": 0.010176100011449307,
+      "min": 0.008679300008225255
+    },
+    "pipeline_elapsed": 2.362799399998039,
+    "recurrence": {
+      "count": 12,
+      "max": 0.009663899996667169,
+      "mean": 0.005554833330582672,
+      "median": 0.004981649995897897,
+      "min": 0.003560299999662675
+    },
+    "representations_total": {
+      "count": 12,
+      "max": 0.048728700014180504,
+      "mean": 0.03696411666654361,
+      "median": 0.03836539999610977,
+      "min": 0.025680200007627718
+    },
+    "visibility_graph": {
+      "count": 12,
+      "max": 0.03067519998876378,
+      "mean": 0.02115659166520345,
+      "median": 0.0216508499943302,
+      "min": 0.013440599999739788
+    }
+  },
+  "records": [
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/F01/Session1/0082",
+      "condition": "dysarthric",
+      "duration_seconds": 1.014625,
+      "gender": "female",
+      "logical_id": "F01/Session1/0082",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -10.261451721191406,
+        "minimum": -100.0,
+        "native_frame_count": 99,
+        "padded_seconds": 6.985375,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "head",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.04200303864436525
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 16234,
+        "sample_rate": 16000
+      },
+      "speaker_id": "F01",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.012359700005617924,
+        "recurrence": 0.007003999999142252,
+        "representations_total": 0.04369449999649078,
+        "source_validation": 0.002164200006518513,
+        "visibility_graph": 0.0243307999917306
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.05704656862745098,
+        "directed_edge_count": 3724,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          3724
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 1862
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/FC03/Session3/0151",
+      "condition": "control",
+      "duration_seconds": 0.997625,
+      "gender": "female",
+      "logical_id": "FC03/Session3/0151",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -9.69598388671875,
+        "minimum": -100.0,
+        "native_frame_count": 98,
+        "padded_seconds": 7.002375,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "head",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.05886187602893586
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 15962,
+        "sample_rate": 16000
+      },
+      "speaker_id": "FC03",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.008679300008225255,
+        "recurrence": 0.003560299999662675,
+        "representations_total": 0.025680200007627718,
+        "source_validation": 0.0019445000070845708,
+        "visibility_graph": 0.013440599999739788
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.06099877450980392,
+        "directed_edge_count": 3982,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          3982
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 1991
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/M04/Session1/0125",
+      "condition": "dysarthric",
+      "duration_seconds": 1.05,
+      "gender": "male",
+      "logical_id": "M04/Session1/0125",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -6.023290157318115,
+        "minimum": -100.0,
+        "native_frame_count": 103,
+        "padded_seconds": 6.95,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "array",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.03740275065128009
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 16800,
+        "sample_rate": 16000
+      },
+      "speaker_id": "M04",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.008758099997066893,
+        "recurrence": 0.0036445000005187467,
+        "representations_total": 0.02641020000737626,
+        "source_validation": 0.001946700009284541,
+        "visibility_graph": 0.014007600009790622
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.07738970588235294,
+        "directed_edge_count": 5052,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          5052
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 2526
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/MC03/Session2/0232",
+      "condition": "control",
+      "duration_seconds": 1.2,
+      "gender": "male",
+      "logical_id": "MC03/Session2/0232",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -14.248388290405273,
+        "minimum": -100.0,
+        "native_frame_count": 118,
+        "padded_seconds": 6.8,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "array",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.031814547193363484
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 19200,
+        "sample_rate": 16000
+      },
+      "speaker_id": "MC03",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.008907900002668612,
+        "recurrence": 0.0037272999907145277,
+        "representations_total": 0.02791350000188686,
+        "source_validation": 0.002228199999080971,
+        "visibility_graph": 0.01527830000850372
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.06115196078431372,
+        "directed_edge_count": 3992,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          3992
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 1996
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/F03/Session1/0179",
+      "condition": "dysarthric",
+      "duration_seconds": 2.4945,
+      "gender": "female",
+      "logical_id": "F03/Session1/0179",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -8.805320739746094,
+        "minimum": -100.0,
+        "native_frame_count": 247,
+        "padded_seconds": 5.5055,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "head",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.5822797012968562
+      },
+      "source": {
+        "module1_converged": false,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 39912,
+        "sample_rate": 16000
+      },
+      "speaker_id": "F03",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.012226999999256805,
+        "recurrence": 0.005428500007838011,
+        "representations_total": 0.03851850000501145,
+        "source_validation": 0.0033217000018339604,
+        "visibility_graph": 0.02086299999791663
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.050949754901960784,
+        "directed_edge_count": 3326,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          3326
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 1663
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/FC01/Session1/0007",
+      "condition": "control",
+      "duration_seconds": 2.42,
+      "gender": "female",
+      "logical_id": "FC01/Session1/0007",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -14.810420989990234,
+        "minimum": -100.0,
+        "native_frame_count": 240,
+        "padded_seconds": 5.58,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "head",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.11182435558242494
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 38720,
+        "sample_rate": 16000
+      },
+      "speaker_id": "FC01",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.011515899997903034,
+        "recurrence": 0.004815599997527897,
+        "representations_total": 0.04512869998870883,
+        "source_validation": 0.003174800003762357,
+        "visibility_graph": 0.0287971999932779
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.04733455882352941,
+        "directed_edge_count": 3090,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          3090
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 1545
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/M02/Session1/0133",
+      "condition": "dysarthric",
+      "duration_seconds": 2.4973125,
+      "gender": "male",
+      "logical_id": "M02/Session1/0133",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -5.701127529144287,
+        "minimum": -100.0,
+        "native_frame_count": 248,
+        "padded_seconds": 5.5026875,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "head",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.007429390853740881
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 39957,
+        "sample_rate": 16000
+      },
+      "speaker_id": "M02",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.009879900011583231,
+        "recurrence": 0.007881400000769645,
+        "representations_total": 0.048436500001116656,
+        "source_validation": 0.0026098999951500446,
+        "visibility_graph": 0.03067519998876378
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.11654411764705883,
+        "directed_edge_count": 7608,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          7608
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 3804
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/MC04/Session1/0022",
+      "condition": "control",
+      "duration_seconds": 2.5,
+      "gender": "male",
+      "logical_id": "MC04/Session1/0022",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -1.416121006011963,
+        "minimum": -100.0,
+        "native_frame_count": 248,
+        "padded_seconds": 5.5,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "head",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.011938919915608238
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 40000,
+        "sample_rate": 16000
+      },
+      "speaker_id": "MC04",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.008871500001987442,
+        "recurrence": 0.003744299989193678,
+        "representations_total": 0.027683199994498864,
+        "source_validation": 0.002569400006905198,
+        "visibility_graph": 0.015067400003317744
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.07334558823529412,
+        "directed_edge_count": 4788,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          4788
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 2394
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/F04/Session1/0038",
+      "condition": "dysarthric",
+      "duration_seconds": 5.85,
+      "gender": "female",
+      "logical_id": "F04/Session1/0038",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -6.4539690017700195,
+        "minimum": -100.0,
+        "native_frame_count": 583,
+        "padded_seconds": 2.15,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "array",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.2541482510334929
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 93600,
+        "sample_rate": 16000
+      },
+      "speaker_id": "F04",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.00901940000767354,
+        "recurrence": 0.004170100000919774,
+        "representations_total": 0.029312600003322586,
+        "source_validation": 0.0029792999994242564,
+        "visibility_graph": 0.016123099994729273
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.0635110294117647,
+        "directed_edge_count": 4146,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          4146
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 2073
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/FC02/Session2/0151",
+      "condition": "control",
+      "duration_seconds": 6.0,
+      "gender": "female",
+      "logical_id": "FC02/Session2/0151",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -6.695070266723633,
+        "minimum": -100.0,
+        "native_frame_count": 598,
+        "padded_seconds": 2.0,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "array",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.004153549683064978
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 96000,
+        "sample_rate": 16000
+      },
+      "speaker_id": "FC02",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.010625900002196431,
+        "recurrence": 0.005147699994267896,
+        "representations_total": 0.0382122999872081,
+        "source_validation": 0.003419999993639067,
+        "visibility_graph": 0.02243869999074377
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.09044117647058823,
+        "directed_edge_count": 5904,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          5904
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 2952
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/M03/Session2/0096",
+      "condition": "dysarthric",
+      "duration_seconds": 6.005,
+      "gender": "male",
+      "logical_id": "M03/Session2/0096",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -9.966681480407715,
+        "minimum": -100.0,
+        "native_frame_count": 599,
+        "padded_seconds": 1.995,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "head",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.8324571551348183
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 96080,
+        "sample_rate": 16000
+      },
+      "speaker_id": "M03",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.011715400003595278,
+        "recurrence": 0.009663899996667169,
+        "representations_total": 0.048728700014180504,
+        "source_validation": 0.003956000000471249,
+        "visibility_graph": 0.027349400013918057
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.04185049019607843,
+        "directed_edge_count": 2732,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          2732
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 1366
+      }
+    },
+    {
+      "cache_directory": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d/MC02/Session2/0142",
+      "condition": "control",
+      "duration_seconds": 6.0,
+      "gender": "male",
+      "logical_id": "MC02/Session2/0142",
+      "mel": {
+        "cropped_seconds": 0.0,
+        "dtype": "float32",
+        "fixed_frame_count": 798,
+        "maximum": -10.735971450805664,
+        "minimum": -100.0,
+        "native_frame_count": 598,
+        "padded_seconds": 2.0,
+        "shape": [
+          224,
+          224
+        ],
+        "time_handling": "padded"
+      },
+      "primary_microphone": "array",
+      "recurrence": {
+        "density": 0.15385841836734693,
+        "dtype": "uint8",
+        "embedded_state_count": 224,
+        "scalar_state_count": 228,
+        "shape": [
+          224,
+          224
+        ],
+        "symmetric": true,
+        "threshold": 0.0062980123549242
+      },
+      "source": {
+        "module1_converged": true,
+        "reconstruction_policy": "all_modes",
+        "sample_count": 96000,
+        "sample_rate": 16000
+      },
+      "speaker_id": "MC02",
+      "status": "computed",
+      "timing_seconds": {
+        "mel": 0.010472300011315383,
+        "recurrence": 0.007870399989769794,
+        "representations_total": 0.043850499991094694,
+        "source_validation": 0.00357879999501165,
+        "visibility_graph": 0.025507799990009516
+      },
+      "visibility_graph": {
+        "adjacency_contract": "module3_add_self_loops_then_symmetric_degree_normalize",
+        "connected_component_count": 1,
+        "density": 0.07028186274509804,
+        "directed_edge_count": 4588,
+        "edge_dtype": "int16",
+        "edge_shape": [
+          2,
+          4588
+        ],
+        "isolated_node_count": 0,
+        "node_count": 256,
+        "node_dtype": "float32",
+        "node_shape": [
+          256,
+          2
+        ],
+        "undirected_edge_count": 2294
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "selection": {
+    "full_core_record_count": 8673,
+    "limit": 12,
+    "logical_ids": [
+      "F01/Session1/0082",
+      "FC03/Session3/0151",
+      "M04/Session1/0125",
+      "MC03/Session2/0232",
+      "F03/Session1/0179",
+      "FC01/Session1/0007",
+      "M02/Session1/0133",
+      "MC04/Session1/0022",
+      "F04/Session1/0038",
+      "FC02/Session2/0151",
+      "M03/Session2/0096",
+      "MC02/Session2/0142"
+    ],
+    "selected_record_count": 12
+  },
+  "smoke_statistics": {
+    "mel": {
+      "dtype": "float32",
+      "finite_maximum": -1.416121006011963,
+      "finite_minimum": -100.0,
+      "native_frame_count": {
+        "count": 12,
+        "max": 599.0,
+        "mean": 314.9166666666667,
+        "median": 247.5,
+        "min": 98.0
+      },
+      "shape": [
+        224,
+        224
+      ],
+      "time_handling_counts": {
+        "padded": 12
+      }
+    },
+    "recurrence": {
+      "all_symmetric": true,
+      "density": {
+        "count": 12,
+        "max": 0.15385841836734693,
+        "mean": 0.15385841836734693,
+        "median": 0.15385841836734693,
+        "min": 0.15385841836734693
+      },
+      "dtype": "uint8",
+      "shape": [
+        224,
+        224
+      ]
+    },
+    "visibility_graph": {
+      "connected_component_count": {
+        "count": 12,
+        "max": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0
+      },
+      "density": {
+        "count": 12,
+        "max": 0.11654411764705883,
+        "mean": 0.0675704656862745,
+        "median": 0.062331495098039216,
+        "min": 0.04185049019607843
+      },
+      "isolated_node_count": {
+        "count": 12,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0
+      },
+      "node_count": {
+        "count": 12,
+        "max": 256.0,
+        "mean": 256.0,
+        "median": 256.0,
+        "min": 256.0
+      },
+      "undirected_edge_count": {
+        "count": 12,
+        "max": 3804.0,
+        "mean": 2205.5,
+        "median": 2034.5,
+        "min": 1366.0
+      }
+    }
+  },
+  "source": {
+    "manifest_fingerprint": "91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061",
+    "module1_cache_root": "data/processed/vmd",
+    "module1_config_hash": "bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685",
+    "raw_metadata_fingerprint": "206041a4be1fad47975d25ba38c73bb49fe68e3957ebfb046d0db15c0b14c76a",
+    "reconstruction_filename": "reconstruction.npy",
+    "reconstruction_policy": "all_modes",
+    "subset": "core"
+  },
+  "status": "smoke_validated",
+  "storage": {
+    "estimate_note": "Scaled from complete smoke cache directories, including metadata and NumPy headers.",
+    "estimated_full_core_bytes": 2393568758.0,
+    "estimated_full_core_gib": 2.2291846182197332,
+    "mean_bytes_per_record": 275979.3333333333,
+    "smoke_total_bytes": 3311752
+  }
+}

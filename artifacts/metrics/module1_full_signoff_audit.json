@@ -1,0 +1,322 @@
+{
+  "cache": {
+    "experimental_namespaces": [
+      {
+        "file_count": 36,
+        "logical_cache_directories": 12,
+        "metadata_json_count": 12,
+        "modes_npy_count": 12,
+        "reconstruction_npy_count": 12,
+        "root": "data/processed/vmd_fidelity_sweep/1a0f0ae53c9c70318d326d392723ef66d8e5836bd004a8a1466d6f8becc1c9c7",
+        "temporary_files": [],
+        "total_bytes": 29254754,
+        "total_gib": 0.02724561281502247,
+        "unexpected_files": []
+      },
+      {
+        "file_count": 36,
+        "logical_cache_directories": 12,
+        "metadata_json_count": 12,
+        "modes_npy_count": 12,
+        "reconstruction_npy_count": 12,
+        "root": "data/processed/vmd_fidelity_sweep/bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685",
+        "temporary_files": [],
+        "total_bytes": 29254740,
+        "total_gib": 0.027245599776506424,
+        "unexpected_files": []
+      },
+      {
+        "file_count": 36,
+        "logical_cache_directories": 12,
+        "metadata_json_count": 12,
+        "modes_npy_count": 12,
+        "reconstruction_npy_count": 12,
+        "root": "data/processed/vmd_fidelity_sweep/c7735786d68d69e32bcd8cb941bf3c230050454250a61388bc0056b25aba68ba",
+        "temporary_files": [],
+        "total_bytes": 29254748,
+        "total_gib": 0.02724560722708702,
+        "unexpected_files": []
+      },
+      {
+        "file_count": 36,
+        "logical_cache_directories": 12,
+        "metadata_json_count": 12,
+        "modes_npy_count": 12,
+        "reconstruction_npy_count": 12,
+        "root": "data/processed/vmd_fidelity_sweep/f623d65c572e3317df405388c151a9bf5f3adaa77a792774574bab645fb31c17",
+        "temporary_files": [],
+        "total_bytes": 29254782,
+        "total_gib": 0.027245638892054558,
+        "unexpected_files": []
+      }
+    ],
+    "experimental_root": "data/processed/vmd_fidelity_sweep",
+    "file_count": 26019,
+    "logical_cache_directories": 8673,
+    "metadata_json_count": 8673,
+    "modes_npy_count": 8673,
+    "production_namespaces": [
+      "bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685"
+    ],
+    "reconstruction_npy_count": 8673,
+    "root": "data/processed/vmd/bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685",
+    "temporary_files": [],
+    "total_bytes": 19981366416,
+    "total_gib": 18.609097614884377,
+    "unexpected_files": []
+  },
+  "completion": {
+    "cache_hits": 6,
+    "computed": 8667,
+    "converged": 8625,
+    "expected": 8673,
+    "failed": 0,
+    "nonconverged": 48,
+    "subset": "core",
+    "summary_records": 8673,
+    "valid_structural_cache_entries": 8673
+  },
+  "configuration": {
+    "all_mode_default": true,
+    "config_hash": "bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685",
+    "processing_identity": {
+      "audio": {
+        "max_gain": 10.0,
+        "normalization": "rms",
+        "peak_limit": 0.99,
+        "silence_epsilon": 1e-12,
+        "target_channels": 1,
+        "target_rms": 0.1,
+        "target_sample_rate": 16000
+      },
+      "implementation": "vaaniswitch_numpy_vmd_v1",
+      "reconstruction": {
+        "default": "all_modes",
+        "selected_modes_ablation": {
+          "enabled": false,
+          "mode_indices": []
+        }
+      },
+      "schema_version": "1.0",
+      "vmd": {
+        "alpha": 2000.0,
+        "dc": false,
+        "init": 1,
+        "max_iterations": 500,
+        "modes_k": 5,
+        "tau": 0.0,
+        "tolerance": 1e-07
+      }
+    },
+    "selected_mode_ablation_enabled": false
+  },
+  "full_distributions": {
+    "correlation_coefficient": {
+      "count": 8673,
+      "max": 0.9999077082950771,
+      "mean": 0.9930799535192815,
+      "median": 0.9946053592735405,
+      "min": 0.9363744637504624
+    },
+    "energy_ratio": {
+      "count": 8673,
+      "max": 0.9982708124807307,
+      "mean": 0.8949181606951595,
+      "median": 0.908971629193172,
+      "min": 0.5910813627776542
+    },
+    "iterations": {
+      "count": 8673,
+      "max": 500.0,
+      "mean": 93.46097082900957,
+      "median": 69.0,
+      "min": 7.0
+    },
+    "mse": {
+      "count": 8673,
+      "max": 0.000983246247467154,
+      "mean": 0.0001373162324768444,
+      "median": 0.00010580525187260792,
+      "min": 8.585599052768007e-07
+    },
+    "normalized_reconstruction_error": {
+      "count": 8673,
+      "max": 0.38748610900846114,
+      "mean": 0.12063792085689976,
+      "median": 0.1135748898533183,
+      "min": 0.013607795225430097
+    },
+    "record_total_seconds": {
+      "count": 8673,
+      "max": 315.5463701999979,
+      "mean": 1.4061707624466597,
+      "median": 0.6403923999896506,
+      "min": 0.062409699996351264
+    },
+    "rmse": {
+      "count": 8673,
+      "max": 0.03135675760449658,
+      "mean": 0.010794244889751666,
+      "median": 0.010286167987769202,
+      "min": 0.0009265850771930232
+    },
+    "vmd_seconds": {
+      "count": 8673,
+      "max": 306.63050269999076,
+      "mean": 1.3078512469965127,
+      "median": 0.5477873999916483,
+      "min": 0.015980900003341958
+    }
+  },
+  "generated_at_utc": "2026-08-17T04:24:52.985599+00:00",
+  "nonconverged": {
+    "all_arrays_finite": true,
+    "all_cache_valid": true,
+    "all_center_frequencies_valid": true,
+    "all_dimensions_valid": true,
+    "all_reconstruction_metrics_recomputed": true,
+    "all_reconstructions_exact_mode_sums": true,
+    "all_source_primary_hashes_valid": true,
+    "conditions": {
+      "control": 33,
+      "dysarthric": 15
+    },
+    "count": 48,
+    "distributions": {
+      "correlation_coefficient": {
+        "count": 48,
+        "max": 0.9996032730646904,
+        "mean": 0.9967889044275795,
+        "median": 0.9971747079489075,
+        "min": 0.9906044362548954
+      },
+      "energy_ratio": {
+        "count": 48,
+        "max": 0.9858542718875848,
+        "mean": 0.9512891604242367,
+        "median": 0.9565826885835877,
+        "min": 0.8961148812436504
+      },
+      "final_delta": {
+        "count": 48,
+        "max": 0.0009671531327884117,
+        "mean": 3.728321125194875e-05,
+        "median": 1.0788959063601702e-06,
+        "min": 1.0156805568755365e-07
+      },
+      "iterations": {
+        "count": 48,
+        "max": 500.0,
+        "mean": 500.0,
+        "median": 500.0,
+        "min": 500.0
+      },
+      "mse": {
+        "count": 48,
+        "max": 0.0001599289043036034,
+        "mean": 6.559496924882478e-05,
+        "median": 5.7846033027588885e-05,
+        "min": 8.585599052768007e-07
+      },
+      "normalized_reconstruction_error": {
+        "count": 48,
+        "max": 0.14250471229991096,
+        "mean": 0.07917792972139515,
+        "median": 0.07796444680106622,
+        "min": 0.03016931823095634
+      },
+      "rmse": {
+        "count": 48,
+        "max": 0.012646300024260194,
+        "mean": 0.0076106074935900865,
+        "median": 0.007605593218147834,
+        "min": 0.0009265850771930232
+      }
+    },
+    "logical_ids": [
+      "F03/Session1/0179",
+      "F03/Session2/0063",
+      "FC02/Session3/0233",
+      "FC02/Session3/0234",
+      "FC02/Session3/0607",
+      "M02/Session1/0036",
+      "M02/Session1/0062",
+      "M02/Session1/0076",
+      "M02/Session1/0114",
+      "M02/Session1/0131",
+      "M02/Session1/0134",
+      "M02/Session1/0159",
+      "M02/Session1/0182",
+      "M03/Session2/0024",
+      "M03/Session2/0027",
+      "M03/Session2/0088",
+      "M03/Session2/0238",
+      "M03/Session2/0252",
+      "MC01/Session1/0006",
+      "MC01/Session1/0140",
+      "MC01/Session1/0169",
+      "MC01/Session2/0109",
+      "MC01/Session2/0112",
+      "MC01/Session2/0117",
+      "MC01/Session2/0360",
+      "MC01/Session3/0004",
+      "MC01/Session3/0014",
+      "MC01/Session3/0082",
+      "MC01/Session3/0094",
+      "MC01/Session3/0128",
+      "MC01/Session3/0334",
+      "MC01/Session3/0358",
+      "MC01/Session3/0364",
+      "MC02/Session1/0022",
+      "MC02/Session1/0076",
+      "MC02/Session1/0111",
+      "MC02/Session1/0141",
+      "MC02/Session1/0324",
+      "MC02/Session1/0367",
+      "MC02/Session2/0028",
+      "MC02/Session2/0040",
+      "MC02/Session2/0237",
+      "MC03/Session1/0010",
+      "MC03/Session1/0120",
+      "MC03/Session1/0232",
+      "MC03/Session1/0581",
+      "MC03/Session2/0038",
+      "MC04/Session2/0954"
+    ],
+    "speakers": {
+      "F03": 2,
+      "FC02": 3,
+      "M02": 8,
+      "M03": 5,
+      "MC01": 15,
+      "MC02": 9,
+      "MC03": 5,
+      "MC04": 1
+    }
+  },
+  "primary_binding": {
+    "checked": 8673,
+    "mismatches": 0
+  },
+  "runtime": {
+    "aggregate_record_total_seconds": 12195.71902269988,
+    "aggregate_record_vmd_seconds": 11342.993865200755,
+    "measured_pipeline_elapsed_seconds": 12219.264231499998,
+    "slowest_vmd_record": {
+      "iterations": 179,
+      "logical_id": "F03/Session1/0118",
+      "sample_count": 3101258,
+      "seconds": 306.63050269999076
+    }
+  },
+  "schema_version": "1.0",
+  "scope": "module1_full_core_final_signoff",
+  "source": {
+    "config": "configs/vmd/default.yaml",
+    "config_hash": "bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685",
+    "manifest_sha256": "91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061",
+    "raw_metadata_sha256": "206041a4be1fad47975d25ba38c73bb49fe68e3957ebfb046d0db15c0b14c76a",
+    "summary": "artifacts/metrics/module1_vmd_summary.json"
+  },
+  "status": "PASS"
+}

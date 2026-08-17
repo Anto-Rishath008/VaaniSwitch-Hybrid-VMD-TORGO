@@ -1,0 +1,17 @@
+token_dim: 192
+attention:
+  type: cross_attention
+  query: mel_tokens
+  key_value: nonlinear_tokens
+  heads: 4
+  blocks: 1
+  dropout: 0.2
+  residual: true
+  layer_norm: true
+pooling:
+  attended_mel: mean
+  nonlinear: mean
+classifier:
+  hidden_dim: 128
+  dropout: 0.3
+  classes: 2

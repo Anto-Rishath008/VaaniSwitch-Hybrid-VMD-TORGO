@@ -1,0 +1,5 @@
+host: 127.0.0.1
+port: 8000
+max_upload_mb: 20
+max_audio_duration_sec: 60
+retain_user_audio: false
