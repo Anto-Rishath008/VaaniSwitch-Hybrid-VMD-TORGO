@@ -10,6 +10,8 @@ requires-python=">=3.11"
 dependencies=[
     "numpy>=1.26,<2.0",
     "PyYAML>=6.0",
+    "torch>=2.6,<3.0",
+    "torchvision>=0.21,<1.0",
 ]
 
 [project.optional-dependencies]
@@ -25,6 +27,9 @@ dev=[
 vaaniswitch-m0="vaaniswitch.m0_data.cli:main"
 vaaniswitch-m1="vaaniswitch.m1_vmd.cli:main"
 vaaniswitch-m2="vaaniswitch.m2_representations.cli:main"
+vaaniswitch-m3="vaaniswitch.m3_encoders.cli:main"
+vaaniswitch-m4="vaaniswitch.m4_fusion.cli:main"
+vaaniswitch-m5="vaaniswitch.m5_experiments.cli:main"
 
 [tool.setuptools.packages.find]
 where=["src"]
@@ -36,7 +41,14 @@ pythonpath=["src"]
 
 [tool.coverage.run]
 branch=true
-source=["vaaniswitch.m0_data", "vaaniswitch.m1_vmd", "vaaniswitch.m2_representations"]
+source=[
+    "vaaniswitch.m0_data",
+    "vaaniswitch.m1_vmd",
+    "vaaniswitch.m2_representations",
+    "vaaniswitch.m3_encoders",
+    "vaaniswitch.m4_fusion",
+    "vaaniswitch.m5_experiments",
+]
 
 [tool.coverage.report]
 fail_under=80
@@ -56,13 +68,19 @@ files=[
     "src/vaaniswitch/m0_data",
     "src/vaaniswitch/m1_vmd",
     "src/vaaniswitch/m2_representations",
+    "src/vaaniswitch/m3_encoders",
+    "src/vaaniswitch/m4_fusion",
+    "src/vaaniswitch/m5_experiments",
     "tests/m0_data",
     "tests/m1_vmd",
     "tests/m2_representations",
+    "tests/m3_encoders",
+    "tests/m4_fusion",
+    "tests/m5_experiments",
 ]
 strict=true
 warn_unused_configs=true
 
 [[tool.mypy.overrides]]
-module="yaml"
+module=["yaml", "torchvision", "torchvision.*"]
 ignore_missing_imports=true

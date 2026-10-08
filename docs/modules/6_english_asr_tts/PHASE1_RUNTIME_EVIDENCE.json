@@ -1,0 +1,645 @@
+{
+  "schema": "vaaniswitch_module6_phase1_v1",
+  "date_local": "2026-10-08",
+  "timezone": "Asia/Calcutta",
+  "phase0_status": "PASS",
+  "phase1_status": "PASS",
+  "module6_implementation": "IN PROGRESS",
+  "module6_signed_off": false,
+  "interruption_recovery": {
+    "state": "PARTIAL_SAFE",
+    "reused": [
+      "artifacts/module6/setup/preservation_before.json"
+    ],
+    "preexisting_runtime": false,
+    "packages_installed": false,
+    "model_downloaded": false,
+    "asr_executed": false,
+    "tts_executed": false,
+    "protected_phase0_files": 124,
+    "protected_changes": [],
+    "git_delta_after_recovery_and_first_authorized_edits": [
+      " M .gitignore",
+      "?? artifacts/module6/",
+      "?? configs/module6/"
+    ]
+  },
+  "run_path": "artifacts/module6/60db6bb2d5d8ae87716e1bbd3b990a5935677eac294acfc616d2458410156209/phase1_20261008T035618759610Z",
+  "run_completion_sha256": "0a6d92d330849df0c66a17114288defc852ca587b1d26c3c1c42c3b53f4d8862",
+  "config_sha256": "60db6bb2d5d8ae87716e1bbd3b990a5935677eac294acfc616d2458410156209",
+  "module6_code_sha256": "389867ef6a26c3802ed6d02796f115aed88d1b0264590293a688bcc59f1c38fc",
+  "environment": {
+    "base_prefix": "C:\\Users\\antor\\AppData\\Local\\Programs\\Python\\Python312",
+    "environment_cfg_sha256": "016dd4e7743ce300dfd41130efa6fb3a628f93a7d0c9653a7f47f24ffe4cdaa0",
+    "environment_path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\.venv-m6",
+    "executable": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\.venv-m6\\Scripts\\python.exe",
+    "hardware": {
+      "cpu": "13th Gen Intel(R) Core(TM) i9-13980HX",
+      "nvidia_smi": "name, driver_version, memory.total [MiB], memory.free [MiB]\nNVIDIA GeForce RTX 4070 Laptop GPU, 617.14, 8188 MiB, 6589 MiB",
+      "os": "Microsoft Windows 11 Pro",
+      "os_version": "10.0.26300",
+      "ram_bytes": 33959800832
+    },
+    "identity_sha256": "72768a3d0dd312030d5ef54d604174b4620c60bf9465d24d5d103d16210e3d0f",
+    "lock_sha256": "49cc7da351e802a277bd5435dc520c35e1ad15b36fc8d52b4c6f9cc0bc5d6af1",
+    "packages": {
+      "Jinja2": "3.1.6",
+      "MarkupSafe": "3.0.4",
+      "PyYAML": "6.0.3",
+      "Pygments": "2.21.0",
+      "RapidFuzz": "3.14.6",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.5.2",
+      "click": "8.5.0",
+      "colorama": "0.4.6",
+      "comtypes": "1.4.17",
+      "coverage": "7.16.2",
+      "filelock": "4.0.12",
+      "fsspec": "2026.9.0",
+      "idna": "3.20",
+      "iniconfig": "2.3.1",
+      "jiwer": "4.0.0",
+      "llvmlite": "0.50.0",
+      "more-itertools": "11.1.0",
+      "mpmath": "1.3.0",
+      "mypy": "1.18.2",
+      "mypy_extensions": "1.1.0",
+      "networkx": "3.7",
+      "numba": "0.68.0",
+      "numpy": "1.26.4",
+      "openai-whisper": "20250625",
+      "packaging": "26.3",
+      "pathspec": "1.1.1",
+      "pluggy": "1.6.0",
+      "pypiwin32": "223",
+      "pytest": "8.4.2",
+      "pytest-cov": "7.0.0",
+      "pyttsx3": "2.99",
+      "pywin32": "312",
+      "regex": "2026.9.29",
+      "requests": "2.34.2",
+      "ruff": "0.14.0",
+      "setuptools": "84.0.0",
+      "sympy": "1.14.0",
+      "tiktoken": "0.14.0",
+      "torch": "2.13.0+cu126",
+      "tqdm": "4.70.1",
+      "types-PyYAML": "6.0.12.20250915",
+      "typing_extensions": "4.16.0",
+      "urllib3": "2.8.0",
+      "vaaniswitch-final-hybrid-vmd-torgo": "1.0.0"
+    },
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.2",
+    "python_executable_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5",
+    "python_full": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]"
+  },
+  "installed_packages": {
+    "Jinja2": "3.1.6",
+    "MarkupSafe": "3.0.4",
+    "PyYAML": "6.0.3",
+    "Pygments": "2.21.0",
+    "RapidFuzz": "3.14.6",
+    "certifi": "2026.7.22",
+    "charset-normalizer": "3.5.2",
+    "click": "8.5.0",
+    "colorama": "0.4.6",
+    "comtypes": "1.4.17",
+    "coverage": "7.16.2",
+    "filelock": "4.0.12",
+    "fsspec": "2026.9.0",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "jiwer": "4.0.0",
+    "llvmlite": "0.50.0",
+    "more-itertools": "11.1.0",
+    "mpmath": "1.3.0",
+    "mypy": "1.18.2",
+    "mypy_extensions": "1.1.0",
+    "networkx": "3.7",
+    "numba": "0.68.0",
+    "numpy": "1.26.4",
+    "openai-whisper": "20250625",
+    "packaging": "26.3",
+    "pathspec": "1.1.1",
+    "pluggy": "1.6.0",
+    "pypiwin32": "223",
+    "pytest": "8.4.2",
+    "pytest-cov": "7.0.0",
+    "pyttsx3": "2.99",
+    "pywin32": "312",
+    "regex": "2026.9.29",
+    "requests": "2.34.2",
+    "ruff": "0.14.0",
+    "setuptools": "84.0.0",
+    "sympy": "1.14.0",
+    "tiktoken": "0.14.0",
+    "torch": "2.13.0+cu126",
+    "tqdm": "4.70.1",
+    "types-PyYAML": "6.0.12.20250915",
+    "typing_extensions": "4.16.0",
+    "urllib3": "2.8.0"
+  },
+  "installed_package_count": 44,
+  "lock_path": "configs/module6/environment/requirements-win-py312.lock",
+  "lock_sha256": "49cc7da351e802a277bd5435dc520c35e1ad15b36fc8d52b4c6f9cc0bc5d6af1",
+  "torch_source": "https://download.pytorch.org/whl/cu126/torch/",
+  "torch_wheel_url": "https://download-r2.pytorch.org/whl/cu126/torch-2.13.0%2Bcu126-cp312-cp312-win_amd64.whl",
+  "torch_wheel_sha256": "380081ea098bf2b9e727aa85205d94790d884d17c62df3bb00a4f6a1047010a2",
+  "model_acquisition": {
+    "bytes": 483615683,
+    "elapsed_seconds": 46.21071600000141,
+    "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\artifacts\\module6\\models\\whisper\\small.en.pt",
+    "reused": false,
+    "sha256": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+    "source": "https://openaipublic.azureedge.net/main/whisper/models/f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872/small.en.pt"
+  },
+  "asr": {
+    "audio": {
+      "bit_depth": 16,
+      "bytes": 122764,
+      "channels": 1,
+      "container": "RIFF/WAVE",
+      "duration_seconds": 3.835,
+      "encoding": "PCM",
+      "finite_samples": true,
+      "frame_count": 61360,
+      "nonzero_samples": 61328,
+      "sample_rate": 16000
+    },
+    "backend_json_sha256": "8362b435fe9478a2c88706f7457274328a4b210d340a9e55ce9732040e5e3191",
+    "backend_result": {
+      "language": "en",
+      "segments": [
+        {
+          "avg_logprob": -0.35298935572306317,
+          "compression_ratio": 0.8421052631578947,
+          "end": 3.7600000000000002,
+          "id": 0,
+          "no_speech_prob": 0.0035885742399841547,
+          "seek": 0,
+          "start": 0.0,
+          "temperature": 0.0,
+          "text": " Well, he is nearly 93 years old.",
+          "tokens": [
+            50363,
+            3894,
+            11,
+            339,
+            318,
+            3016,
+            10261,
+            812,
+            1468,
+            13,
+            50551
+          ]
+        }
+      ],
+      "text": " Well, he is nearly 93 years old."
+    },
+    "checkpoint_path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\artifacts\\module6\\models\\whisper\\small.en.pt",
+    "checkpoint_sha256": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+    "decoding": {
+      "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+      "beam_size": null,
+      "best_of": null,
+      "carry_initial_prompt": false,
+      "clip_timestamps": "0",
+      "compression_ratio_threshold": 2.4,
+      "condition_on_previous_text": false,
+      "fp16": true,
+      "hallucination_silence_threshold": null,
+      "initial_prompt": null,
+      "language": "en",
+      "length_penalty": null,
+      "logprob_threshold": -1.0,
+      "max_initial_timestamp": 1.0,
+      "no_speech_threshold": 0.6,
+      "patience": null,
+      "prefix": null,
+      "prepend_punctuations": "\"'“¿([{-",
+      "sample_len": null,
+      "suppress_blank": true,
+      "suppress_tokens": "-1",
+      "task": "transcribe",
+      "temperature": 0.0,
+      "verbose": null,
+      "without_timestamps": false,
+      "word_timestamps": false
+    },
+    "device": "cuda",
+    "dtype": "float16",
+    "elapsed_seconds": 1.4373374999995576,
+    "input_float32_sha256": "01683185460767037bb9c8de3aa534b66f8b791e1d97787386a4543ae44abb9e",
+    "input_frames": 61360,
+    "model_probe": {
+      "all_parameters_frozen": true,
+      "cpu_threads": 8,
+      "cuda_allocation": true,
+      "cuda_available": true,
+      "cuda_device_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "device": "cuda",
+      "device_capability": [
+        8,
+        9
+      ],
+      "dtype": "float16",
+      "model_device": "cuda:0",
+      "model_load_seconds": 2.1351468000066234,
+      "parameter_storage_dtype": "torch.float32",
+      "torch_cuda": "12.6",
+      "torch_version": "2.13.0+cu126"
+    },
+    "model_source": "https://openaipublic.azureedge.net/main/whisper/models/f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872/small.en.pt",
+    "raw_text": " Well, he is nearly 93 years old.",
+    "raw_text_sha256": "54cd8822591656297bf66716a57c213646300d4dbb9ac291a21af386199d23d6",
+    "record_id": "M03/Session2/0013",
+    "reference_context_used": false,
+    "source": {
+      "frame_count": 61360,
+      "logical_id": "M03/Session2/0013",
+      "primary_audio_path": "data/raw/torgo/extracted/M/M03/Session2/wav_headMic/0013.wav",
+      "primary_audio_sha256": "e4f57347c2442e49f650e1d4adf2b73bab47e248220c07ef42c35972a8c87689"
+    },
+    "whisper_package_version": "20250625"
+  },
+  "tts": {
+    "actual_settings": {
+      "rate": 175,
+      "voice_id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_EN-US_ZIRA_11.0",
+      "volume": 1.0
+    },
+    "backend": "pyttsx3",
+    "driver": "sapi5",
+    "elapsed_seconds": 0.35484549999819137,
+    "listening_check": "NOT PERFORMED",
+    "package_version": "2.99",
+    "selected_voice": {
+      "age": "Adult",
+      "gender": "Female",
+      "id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_EN-US_ZIRA_11.0",
+      "languages": [
+        "en-US"
+      ],
+      "name": "Microsoft Zira Desktop - English (United States)"
+    },
+    "synthesis_text": "This is the VaaniSwitch English speech synthesis runtime test.",
+    "validation": {
+      "bit_depth": 16,
+      "bytes": 161396,
+      "channels": 1,
+      "container": "RIFF/WAVE",
+      "duration_seconds": 3.6587301587301586,
+      "encoding": "PCM",
+      "finite_samples": true,
+      "frame_count": 80675,
+      "nonzero_samples": 64528,
+      "sample_rate": 22050
+    },
+    "wav_path": "artifacts/module6/60db6bb2d5d8ae87716e1bbd3b990a5935677eac294acfc616d2458410156209/phase1_20261008T035618759610Z/tts/clear.wav",
+    "wav_sha256": "67c77b7c5778bb8d6e2771055af530fd5068dac8bfab95d1ff202c22290ad370"
+  },
+  "configuration": {
+    "asr": {
+      "backend": "openai-whisper",
+      "checkpoint": "artifacts/module6/models/whisper/small.en.pt",
+      "decoding": {
+        "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+        "beam_size": null,
+        "best_of": null,
+        "carry_initial_prompt": false,
+        "clip_timestamps": "0",
+        "compression_ratio_threshold": 2.4,
+        "condition_on_previous_text": false,
+        "hallucination_silence_threshold": null,
+        "initial_prompt": null,
+        "language": "en",
+        "length_penalty": null,
+        "logprob_threshold": -1.0,
+        "max_initial_timestamp": 1.0,
+        "no_speech_threshold": 0.6,
+        "patience": null,
+        "prefix": null,
+        "prepend_punctuations": "\"'“¿([{-",
+        "sample_len": null,
+        "suppress_blank": true,
+        "suppress_tokens": "-1",
+        "task": "transcribe",
+        "temperature": 0.0,
+        "verbose": null,
+        "without_timestamps": false,
+        "word_timestamps": false
+      },
+      "model": "small.en",
+      "package_version": "20250625",
+      "sha256": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+      "source": "https://openaipublic.azureedge.net/main/whisper/models/f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872/small.en.pt"
+    },
+    "execution": {
+      "asr_timeout_seconds": 300,
+      "cpu_fallback": {
+        "automatic": false,
+        "cpu_threads": 8,
+        "device": "cpu",
+        "dtype": "float32"
+      },
+      "cpu_threads": 8,
+      "device": "cuda",
+      "dtype": "float16"
+    },
+    "schema": "module6_phase1_v1",
+    "seed": 42,
+    "smoke": {
+      "correction_enabled": false,
+      "metrics_enabled": false,
+      "record_id": "M03/Session2/0013"
+    },
+    "tts": {
+      "backend": "pyttsx3",
+      "driver": "sapi5",
+      "package_version": "2.99",
+      "rate": 175,
+      "smoke_text": "This is the VaaniSwitch English speech synthesis runtime test.",
+      "timeout_seconds": 60,
+      "voice_id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_EN-US_ZIRA_11.0",
+      "volume": 1.0
+    }
+  },
+  "runtime_attempts": [
+    {
+      "path": "artifacts/module6/60db6bb2d5d8ae87716e1bbd3b990a5935677eac294acfc616d2458410156209/phase1_20261008T035139679012Z",
+      "status": "ASR PASS / TTS TIMEOUT",
+      "failure": {
+        "device": "cuda",
+        "elapsed_seconds": 69.25070379998942,
+        "error": "TimeoutExpired(['C:\\\\Users\\\\antor\\\\OneDrive\\\\Desktop\\\\7th sem\\\\Speech processing\\\\Project\\\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\\\.venv-m6\\\\Scripts\\\\python.exe', '-B', '-m', 'vaaniswitch.m6_reconstruction.runtime', '--root', 'C:\\\\Users\\\\antor\\\\OneDrive\\\\Desktop\\\\7th sem\\\\Speech processing\\\\Project\\\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project', '--config', 'C:\\\\Users\\\\antor\\\\OneDrive\\\\Desktop\\\\7th sem\\\\Speech processing\\\\Project\\\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\\\configs\\\\module6\\\\pipeline.yaml', '--run', 'C:\\\\Users\\\\antor\\\\OneDrive\\\\Desktop\\\\7th sem\\\\Speech processing\\\\Project\\\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\\\artifacts\\\\module6\\\\60db6bb2d5d8ae87716e1bbd3b990a5935677eac294acfc616d2458410156209\\\\phase1_20261008T035139679012Z', 'tts-worker'], 60.0)"
+      },
+      "new_asr_transcriptions": 1,
+      "tts_save_attempts": 1,
+      "partial_wav_preserved": true
+    },
+    {
+      "path": "artifacts/module6/setup/runtime_tts_resume.log",
+      "status": "FAIL BEFORE WORKERS: Windows locale JSON decoding",
+      "new_asr_transcriptions": 0,
+      "tts_save_attempts": 0
+    },
+    {
+      "path": "artifacts/module6/60db6bb2d5d8ae87716e1bbd3b990a5935677eac294acfc616d2458410156209/phase1_20261008T035618759610Z",
+      "status": "PASS",
+      "new_asr_transcriptions": 0,
+      "tts_save_attempts": 1,
+      "asr_reuse": {
+        "files_sha256": {
+          "asr_smoke.json": "e2eb45d5e87f5788679a36b5b71dfc6dc68bb3621643c2f7965f033982e58dfc",
+          "backend_result.json": "8362b435fe9478a2c88706f7457274328a4b210d340a9e55ce9732040e5e3191",
+          "cuda_model_probe.json": "9e33bdfdd5432f3df8c3772820fbad8195f3597c91d6f621658e545cde04ca81",
+          "raw_asr.txt": "54cd8822591656297bf66716a57c213646300d4dbb9ac291a21af386199d23d6"
+        },
+        "parent_asr_sha256": "e2eb45d5e87f5788679a36b5b71dfc6dc68bb3621643c2f7965f033982e58dfc",
+        "parent_environment_sha256": "4373560abc92b6b75c5ab4e258b9cf8c6feebd9c8242c19ac38de04986cbd8f3",
+        "parent_reproducibility_sha256": "4513a477f512d0b14b072427030fbc9972e7fb13863640f220b4ec0f220561ab",
+        "parent_run": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\artifacts\\module6\\60db6bb2d5d8ae87716e1bbd3b990a5935677eac294acfc616d2458410156209\\phase1_20261008T035139679012Z",
+        "reason": "TTS-only repair; successful CUDA ASR retained without another forward"
+      }
+    }
+  ],
+  "setup_note": "An import was attempted while uv was still copying torch; it failed. After installation completed, imports, uv pip check, CUDA allocation and actual Whisper inference all passed without a torch version change.",
+  "execution_counts": {
+    "real_asr_transcriptions": 1,
+    "development_records": 1,
+    "evaluation_records": 0,
+    "tts_save_attempts": 2,
+    "accepted_tts_wavs": 1,
+    "metrics_computed": 0,
+    "module5_execution": 0,
+    "module7_work": 0
+  },
+  "tests": {
+    "ordinary": {
+      "passed": 45,
+      "skipped_opt_in": 1,
+      "elapsed_seconds": 6.27
+    },
+    "retained_runtime_evidence": {
+      "passed": 1,
+      "elapsed_seconds": 0.29
+    },
+    "ruff": "PASS",
+    "strict_mypy": {
+      "status": "PASS",
+      "files": 16,
+      "python_target": "3.12"
+    },
+    "package_check": "PASS",
+    "coverage": {
+      "covered_lines": 257,
+      "num_statements": 437,
+      "percent_covered": 54.592720970537265,
+      "percent_covered_display": "55",
+      "missing_lines": 180,
+      "excluded_lines": 0,
+      "percent_statements_covered": 58.81006864988559,
+      "percent_statements_covered_display": "59",
+      "num_branches": 140,
+      "num_partial_branches": 22,
+      "covered_branches": 58,
+      "missing_branches": 82,
+      "percent_branches_covered": 41.42857142857143,
+      "percent_branches_covered_display": "41"
+    },
+    "coverage_scope": "M6 only; excludes actual prior subprocess smoke",
+    "whitespace_and_file_inventory": {
+      "status": "PASS",
+      "files_checked": 28,
+      "runtime_artifact_hashes": "PASS",
+      "runtime_source_hashes": "PASS"
+    }
+  },
+  "regressions": [
+    {
+      "id": "M6-CONFIG-001",
+      "before": "3 failed",
+      "after": "included in 45 passing tests"
+    },
+    {
+      "id": "M6-TTS-001",
+      "before": "1 failed plus real 60-second timeout",
+      "after": "synthetic test and real TTS retry PASS"
+    },
+    {
+      "id": "M6-IO-001",
+      "before": "1 failed plus actual Windows UnicodeDecodeError",
+      "after": "synthetic retained-ASR test and real TTS resume PASS"
+    }
+  ],
+  "preservation": {
+    "phase0_protected_files_compared": 124,
+    "changed_protected_files": [],
+    "frozen_scientific_code_sha256": "7696cad010914ec37f494d9f1a11a2e1761e46f353e61d97a07399f746a34ff8",
+    "scientific_source_files": 92,
+    "scientific_code_matches": true,
+    "scientific_venv_files_compared": 20366,
+    "changed_venv_files": [],
+    "ledger_files_compared": 39,
+    "changed_ledger_files": [],
+    "primary_wavs_compared": 134,
+    "changed_primary_wavs": [],
+    "protocol_identity": "677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9",
+    "protocol_check": "Frozen protocol file and defining scientific code byte-identical",
+    "phase0_evidence_sha256": "0dd875290726e83a92eefc9f5c234785631034b411226239effad1beee78c8b8",
+    "checkpoint_checks": [
+      {
+        "candidate": "stronger_dropout",
+        "checkpoint_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold1_C2_stronger_dropout_seed42_677ad640faf5/final/d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24.pt",
+        "checkpoint_sha256": "d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24",
+        "experiment_id": "fold1_C2_stronger_dropout_seed42_677ad640faf5",
+        "outer_fold": 1,
+        "selected_epoch": 1,
+        "selection_sha256": "f907371d49f50d2a0b10f75a71a93e21de010bd0475eae07217d28922d9c40f0",
+        "current_sha256": "d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24",
+        "match": true
+      },
+      {
+        "candidate": "stronger_decay",
+        "checkpoint_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold2_C2_stronger_decay_seed42_677ad640faf5/final/cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d.pt",
+        "checkpoint_sha256": "cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d",
+        "experiment_id": "fold2_C2_stronger_decay_seed42_677ad640faf5",
+        "outer_fold": 2,
+        "selected_epoch": 2,
+        "selection_sha256": "ff1c4e5a100e503dbc8e95f1772cd92dcf613a50d4f34cb90fd7b5db091cb8d5",
+        "current_sha256": "cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d",
+        "match": true
+      },
+      {
+        "candidate": "baseline",
+        "checkpoint_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold3_C2_baseline_seed42_677ad640faf5/final/a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508.pt",
+        "checkpoint_sha256": "a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508",
+        "experiment_id": "fold3_C2_baseline_seed42_677ad640faf5",
+        "outer_fold": 3,
+        "selected_epoch": 2,
+        "selection_sha256": "9f0afa3ae6f2790c87e555f004d9c1edff20bb5e00d3370ec484e1490ae5e41d",
+        "current_sha256": "a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508",
+        "match": true
+      }
+    ],
+    "fold1_a1": "RECOVERED_PROTOCOL_EXCEPTION",
+    "original_native_forward_count": "UNKNOWN",
+    "scope": "Targeted preservation only; no Module 5 execution or full raw-tree audit",
+    "status": "PASS"
+  },
+  "phase0_identity_checks": {
+    "final_closure/module5_final_closure.json": {
+      "sha256": "449b1a8237efbb21e7912868d4a0586bdca30e85806248ca646b6d647f5683e2",
+      "expected": "449b1a8237efbb21e7912868d4a0586bdca30e85806248ca646b6d647f5683e2",
+      "match": true
+    },
+    "final_closure/cross_fold_metrics.json": {
+      "sha256": "41d1d316841c7779a8d11e5ab70ed58b1fb7a44a473585cbc271e9b981369d9f",
+      "expected": "41d1d316841c7779a8d11e5ab70ed58b1fb7a44a473585cbc271e9b981369d9f",
+      "match": true
+    },
+    "final_closure/module6_handoff.json": {
+      "sha256": "36f5a276137922fd585dfe052e2402218fe36a4b0569384e0c4bd4e241b2235f",
+      "expected": "36f5a276137922fd585dfe052e2402218fe36a4b0569384e0c4bd4e241b2235f",
+      "match": true
+    },
+    "final_closure/evidence_manifest.json": {
+      "sha256": "f9d4e56917b2bfc63abbf312e2b389457aa2ad29734424f01da5ee03109a8a6d",
+      "expected": "f9d4e56917b2bfc63abbf312e2b389457aa2ad29734424f01da5ee03109a8a6d",
+      "match": true
+    },
+    "final_closure_validation/delivery_checks.json": {
+      "sha256": "7dbdb25053426621cb42f1fa61f501c1e078c9234c16170a772e87a601a8fd20",
+      "expected": "7dbdb25053426621cb42f1fa61f501c1e078c9234c16170a772e87a601a8fd20",
+      "match": true
+    }
+  },
+  "acceptance_gates": {
+    "A_isolated_environment": true,
+    "B_dependencies_hash_locked": true,
+    "C_previous_environment_and_root_locks_unchanged": true,
+    "D_checkpoint_in_module6_cache": true,
+    "E_checkpoint_digest_matches": true,
+    "F_model_loaded": true,
+    "G_development_inference": true,
+    "H_raw_and_provenance_persisted": true,
+    "I_no_reference_context": true,
+    "J_zira_identified": true,
+    "K_real_valid_pcm_wav": true,
+    "L_focused_tests_pass": true,
+    "M_upstream_identity_unchanged": true,
+    "N_no_panel_evaluation": true,
+    "O_no_final_wer_cer": true,
+    "P_no_module7": true
+  },
+  "deviations": [
+    {
+      "id": "M6-TTS-001",
+      "change": "Flush settings using public startLoop(False)/iterate/endLoop, then save_to_file/runAndWait in a fresh queue barrier.",
+      "reason": "pyttsx3 2.99 idle-proxy synchronous save stranded the second runAndWait; the first attempt was stopped at 60 seconds. Backend, version, Zira, rate and volume unchanged.",
+      "evidence": "artifacts/module6/setup/regression_sapi_before.log; regression_sapi_after.log"
+    },
+    {
+      "id": "PHASE1_LAYOUT",
+      "change": "Use a minimal Phase-1 smoke directory and explicit runtime launcher; reference/metric/review/full CLI layers are deferred.",
+      "reason": "This authorization is runtime foundation only, not the entire Phase-0 implementation plan."
+    },
+    {
+      "id": "CONFIG_LOCATION",
+      "change": "Freeze operational ASR/TTS policy in configs/module6/pipeline.yaml; existing configs/asr/default.yaml and configs/tts/default.yaml unchanged.",
+      "reason": "No modification of those placeholders is required for the isolated launcher."
+    }
+  ],
+  "dependency_proposal_deviations": [],
+  "known_limitations": [
+    "Mechanical smoke only, not a benchmark or Module 6 sign-off. No WER/CER was computed.",
+    "Only one predetermined 3.835-second development recording was transcribed. No quality-based sample selection or tuning.",
+    "No listening check was performed; WAV validity does not establish perceptual intelligibility.",
+    "CPU fallback is declared (CPU/float32/8 threads) but unexercised because CUDA succeeded.",
+    "ASR decoding uses float16 on CUDA; checkpoint parameter storage is torch.float32, as recorded by Whisper.",
+    "The ordinary synthetic suite covers 54.592720970537265 percent of Module 6 statements plus branches. Runtime subprocess/model/acquisition branches are independently smoke-validated, not included in that coverage number. No Phase-1 coverage percentage gate was specified.",
+    "Runtime environment metadata lists the local project distribution because the launcher exposes src metadata. It was not installed into .venv-m6; the standalone installed inventory and lock contain 44 distributions.",
+    "Preservation is targeted: 124 Phase-0 files, the complete prior .venv file inventory, 39 ledger files and 134 planned WAV hashes. No full raw corpus/cache audit or scientific-result recalculation.",
+    "Windows voice output is platform-dependent; no cross-device or cross-installation byte identity claim.",
+    "M6-REF-001 remains OPEN for the next phase; no reference eligibility/normalization/metric implementation occurred."
+  ],
+  "files_created": [
+    "configs/module6/environment/coverage.ini",
+    "configs/module6/environment/requirements-win-py312.lock",
+    "configs/module6/environment/requirements.in",
+    "configs/module6/pipeline.yaml",
+    "docs/modules/6_english_asr_tts/PHASE1_RUNTIME_EVIDENCE.json",
+    "docs/modules/6_english_asr_tts/PHASE1_RUNTIME_REPORT.md",
+    "scripts/module6_preservation.py",
+    "scripts/module6_runtime.py",
+    "src/vaaniswitch/m6_reconstruction/artifacts.py",
+    "src/vaaniswitch/m6_reconstruction/asr.py",
+    "src/vaaniswitch/m6_reconstruction/audio.py",
+    "src/vaaniswitch/m6_reconstruction/config.py",
+    "src/vaaniswitch/m6_reconstruction/provenance.py",
+    "src/vaaniswitch/m6_reconstruction/runtime.py",
+    "src/vaaniswitch/m6_reconstruction/tts.py",
+    "tests/m6_reconstruction/conftest.py",
+    "tests/m6_reconstruction/test_audio_asr.py",
+    "tests/m6_reconstruction/test_config_artifacts.py",
+    "tests/m6_reconstruction/test_resume.py",
+    "tests/m6_reconstruction/test_runtime_smoke.py",
+    "tests/m6_reconstruction/test_tts_runtime.py"
+  ],
+  "files_modified": [
+    ".gitignore",
+    "PROJECT_STATUS.md",
+    "MODULE_TRACKER.md",
+    "CHANGELOG.md",
+    "docs/modules/6_english_asr_tts/MODULE.md",
+    "docs/modules/6_english_asr_tts/TEST_REPORT.md",
+    "docs/defects/DEFECT_LOG.md"
+  ],
+  "local_runtime_trees_created": [
+    ".venv-m6/",
+    "artifacts/module6/"
+  ],
+  "next_phase": "Module 6 Phase 2: reference eligibility, normalization/metric and immutable transcript/artifact contracts with synthetic tests; separately authorize execution. No panel run or sign-off yet."
+}

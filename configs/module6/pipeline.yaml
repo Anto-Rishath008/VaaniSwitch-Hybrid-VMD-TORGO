@@ -1,0 +1,58 @@
+schema: module6_phase1_v1
+seed: 42
+asr:
+  backend: openai-whisper
+  package_version: '20250625'
+  model: small.en
+  checkpoint: artifacts/module6/models/whisper/small.en.pt
+  sha256: f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872
+  source: https://openaipublic.azureedge.net/main/whisper/models/f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872/small.en.pt
+  decoding:
+    task: transcribe
+    language: en
+    temperature: 0.0
+    beam_size: null
+    best_of: null
+    initial_prompt: null
+    prefix: null
+    condition_on_previous_text: false
+    carry_initial_prompt: false
+    word_timestamps: false
+    clip_timestamps: '0'
+    verbose: null
+    compression_ratio_threshold: 2.4
+    logprob_threshold: -1.0
+    no_speech_threshold: 0.6
+    hallucination_silence_threshold: null
+    patience: null
+    length_penalty: null
+    sample_len: null
+    suppress_tokens: '-1'
+    suppress_blank: true
+    without_timestamps: false
+    max_initial_timestamp: 1.0
+    prepend_punctuations: "\"'“¿([{-"
+    append_punctuations: "\"'.。,，!！?？:：”)]}、"
+execution:
+  device: cuda
+  dtype: float16
+  cpu_threads: 8
+  asr_timeout_seconds: 300
+  cpu_fallback:
+    device: cpu
+    dtype: float32
+    cpu_threads: 8
+    automatic: false
+tts:
+  backend: pyttsx3
+  package_version: '2.99'
+  driver: sapi5
+  voice_id: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0
+  rate: 175
+  volume: 1.0
+  timeout_seconds: 60
+  smoke_text: This is the VaaniSwitch English speech synthesis runtime test.
+smoke:
+  record_id: M03/Session2/0013
+  metrics_enabled: false
+  correction_enabled: false

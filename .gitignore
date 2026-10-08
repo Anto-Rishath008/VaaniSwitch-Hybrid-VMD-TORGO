@@ -38,6 +38,9 @@ __pycache__/
 build/
 dist/
 .venv/
+.venv-m6/
+artifacts/module6/setup/uv-cache/
+artifacts/module6/models/
 venv/
 env/
 

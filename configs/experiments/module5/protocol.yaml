@@ -1,0 +1,25 @@
+schema_version: "1.0"
+implementation: vaaniswitch_nested_experiments_v1
+seed: 42
+training:
+  optimizer: adamw
+  batch_size: 16
+  max_epochs: 30
+  patience: 5
+  min_delta: 0.0001
+  threshold: 0.5
+  augmentation: none
+  backbone: frozen
+selection:
+  metric: macro_f1
+  tie_breakers: [balanced_accuracy, roc_auc, lower_loss, fewer_trainable_parameters]
+  ablation_policy: share_outer_fold_selected_c2_candidate
+candidates:
+  - {id: baseline, learning_rate: 0.0003, weight_decay: 0.0001, classifier_dropout: 0.30}
+  - {id: lower_lr, learning_rate: 0.0001, weight_decay: 0.0001, classifier_dropout: 0.30}
+  - {id: stronger_decay, learning_rate: 0.0003, weight_decay: 0.001, classifier_dropout: 0.30}
+  - {id: stronger_dropout, learning_rate: 0.0003, weight_decay: 0.0001, classifier_dropout: 0.40}
+ablations: [A0, A1, B1, B2, B3, C1, C2]
+c3: disabled_design_only
+execution:
+  cpu_threads: 2
