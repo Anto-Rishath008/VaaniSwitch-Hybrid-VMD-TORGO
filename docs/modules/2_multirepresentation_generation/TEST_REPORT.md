@@ -1,9 +1,174 @@
 # Module 2 Test Report — Mel, Visibility-Graph & Recurrence Representation Generation
 
-**Status:** PASSED — IMPLEMENTATION READY / AWAITING FULL MANUAL CORE BUILD  
-**Scope:** implementation, 12-record production smoke, and six-record real production
-crop gate only; no full CORE build, encoder, GCN, attention, training, ASR, or TTS was
-run.
+**Status:** COMPLETE / PASSED / SIGNED OFF
+**Scope:** implementation, historical smoke and real-crop gates, full 8,673-record CORE
+build and validation, complete numerical/provenance/cache audit, protected-input audit,
+and final regression gates. No encoder, GCN, attention, classifier training, ASR, TTS, or
+UI work was run.
+
+## Authoritative full CORE sign-off — 2026-09-01
+
+The manual production build and the independently re-run strict validator both pass. The
+final build computed 8,661 entries and resumed 12 previously valid smoke entries:
+
+| Completion item | Count |
+|---|---:|
+| Expected CORE | 8,673 |
+| Selected | 8,673 |
+| Newly computed | 8,661 |
+| Cache hits | 12 |
+| Successful | 8,673 |
+| Failed | 0 |
+| Strictly validated | 8,673 |
+
+The validator returned `status=PASS` with representation hash
+`d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d`, Module 1 hash
+`bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685`, and manifest
+fingerprint `91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061`.
+
+### Production cache inventory and storage
+
+| Item | Count / bytes |
+|---|---:|
+| Logical cache directories | 8,673 |
+| `mel.npy` | 8,673 |
+| `recurrence.npy` | 8,673 |
+| `graph_nodes.npy` | 8,673 |
+| `graph_edges.npy` | 8,673 |
+| `metadata.json` | 8,673 |
+| Total production files | 43,365 |
+| Partial / temporary / unexpected / zero-byte files | 0 / 0 / 0 / 0 |
+| Duplicate logical IDs | 0 |
+| Total bytes | 2,378,359,184 |
+| Total GiB | 2.215019599 |
+| Mean bytes per logical record | 274,225.664 |
+
+Artifact contributions are 1,741,815,936 bytes for Mel, 436,286,592 for recurrence,
+18,872,448 for graph nodes, 138,923,656 for graph edges, and 42,460,552 for metadata.
+These are measured full-namespace values, not the historical smoke-scaled estimate.
+
+### Full-corpus Mel audit
+
+All 8,673 arrays are finite `float32[224,224]`; there are no NaN, Inf, wrong-shape, or
+wrong-dtype outputs. Metadata reports 8,438 padded, 235 cropped, and zero exact records.
+
+| Statistic | Minimum | Mean | Median | Maximum |
+|---|---:|---:|---:|---:|
+| Per-record Mel minimum (dB) | -100.000000 | -99.991930 | -100.000000 | -84.354958 |
+| Per-record Mel maximum (dB) | -37.631699 | -8.126929 | -7.766419 | 2.315351 |
+| Native frame count | 13 | 297.506630 | 242 | 19,381 |
+| Padded seconds, all records | 0 | 5.152275 | 5.561688 | 7.850000 |
+| Cropped seconds, all records | 0 | 0.145678 | 0 | 185.828625 |
+| Positive padded seconds (8,438) | 0.009313 | 5.295767 | 5.600000 | 7.850000 |
+| Positive cropped seconds (235) | 0.005063 | 5.376457 | 2.225000 | 185.828625 |
+
+### Full-corpus recurrence audit
+
+All 8,673 arrays are binary `uint8[224,224]`, finite, symmetric, and have a unit
+diagonal. The total density is 0.153858418 for every record. Off-diagonal density is
+0.150064061 for every record, only 0.000064061 above the 0.15 target because the finite
+symmetric matrix admits discrete recurrence counts. No record exceeds 0.16, so no
+substantial tie-driven excess occurs.
+
+| Statistic | Minimum | Mean | Median | Maximum |
+|---|---:|---:|---:|---:|
+| Total recurrence density | 0.153858 | 0.153858 | 0.153858 | 0.153858 |
+| Off-diagonal density | 0.150064 | 0.150064 | 0.150064 | 0.150064 |
+| Distance threshold | 0.002011 | 0.109399 | 0.055559 | 1.276016 |
+
+### Full-corpus visibility-graph audit
+
+All 8,673 graphs have finite `float32[N,2]` nodes and `int16[2,E]` edges with valid
+indices, no stored self-loops, no duplicate directed edges, and both directions for every
+undirected edge. No graph has an isolated node or more than one connected component.
+
+| Statistic | Minimum | Mean | Median | Maximum |
+|---|---:|---:|---:|---:|
+| Node count | 256 | 256 | 256 | 256 |
+| Undirected edge count | 604 | 1,986.243399 | 1,822 | 5,640 |
+| Graph density | 0.018505 | 0.060853 | 0.055821 | 0.172794 |
+| Isolated node count | 0 | 0 | 0 | 0 |
+| Connected component count | 1 | 1 | 1 | 1 |
+
+Invalid graphs: zero. Graphs requiring isolated/disconnected follow-up: zero.
+
+### Full 235-record long-signal regeneration
+
+Every CORE record longer than eight seconds was regenerated from its complete signed
+Module 1 reconstruction and compared bit for bit with its production cache. All 235 Mel
+arrays match both full-input generation and the explicit centered 128,000-sample slice.
+All 235 recurrence arrays and all 235 visibility graphs match generation from the complete
+reconstruction; zero regeneration mismatches occurred.
+
+For `F03/Session1/0118`, the signed source is 3,101,258 samples / 193.828625 seconds. Its
+Mel crop spans samples 1,486,629 through 1,614,628, or 92.9143125–100.9143125 seconds.
+The cached Mel equals the explicit center-crop transform. The cached recurrence and graph
+equal full-signal regeneration and each differs from the 8-second crop reference. Thus the
+8-second policy affects Mel only.
+
+### Source integrity and protected inputs
+
+Every cache entry has a unique production source path and is bound to its logical ID,
+manifest fingerprint, Module 1 production hash, reconstruction path, reconstruction
+SHA-256, and Module 2 configuration hash. All paths are under
+`data/processed/vmd/bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685/<speaker>/<session>/<prompt>/reconstruction.npy`. No source
+uses `data/raw`, `vmd_fidelity_sweep`, selected-mode reconstruction, a tau namespace, or
+another VMD configuration.
+
+The signed raw TORGO subtree remains exactly 82,772 files / 15,845,129,970 bytes with
+path-size-mtime SHA-256
+`206041a4be1fad47975d25ba38c73bb49fe68e3957ebfb046d0db15c0b14c76a`.
+The Module 1 production namespace remains exactly 26,019 files / 19,981,366,416 bytes
+with path-size-mtime SHA-256
+`b4944b720c6664d55e57180c94e1c0c6149ac080b49705035ac12ca16be54baa`.
+
+The failure CSV contains only its header and zero failure rows. No second root-level
+`DEFECT_LOG.md` exists.
+
+### Measured full-corpus runtime
+
+The full production pipeline measured 1,062.363907 seconds (17.7061 minutes), including
+source validation, cache writes, reporting, and plots. Per-record times below are measured
+metadata from all production entries; source validation is reported separately.
+
+| Stage | Mean (s) | Median (s) | Maximum (s) |
+|---|---:|---:|---:|
+| Source validation | 0.021107 | 0.019087 | 0.614292 |
+| Mel | 0.010351 | 0.010119 | 0.021938 |
+| Recurrence | 0.004260 | 0.005259 | 0.019240 |
+| Visibility graph | 0.016520 | 0.017668 | 0.081800 |
+| Three transforms total | 0.031131 | 0.033787 | 0.099927 |
+
+The slowest combined transform was `M05/Session2/0236` at 0.099927 seconds, dominated by
+0.081800 seconds for the visibility graph. Historical smoke-scaled runtime values below
+remain provenance only and are not the final runtime.
+
+### Final regression gates
+
+```text
+uv run --python 3.12 --extra dev pytest tests/m2_representations
+# 40 passed in 4.54 s
+
+uv run --python 3.12 --extra dev pytest
+# 184 passed in 6.82 s
+
+uv run --python 3.12 --extra dev pytest --cov=vaaniswitch.m0_data --cov=vaaniswitch.m1_vmd --cov=vaaniswitch.m2_representations --cov-branch --cov-report=term-missing
+# 184 passed; 82.07% branch-aware coverage; 80% gate passed
+
+uv run --python 3.12 --extra dev ruff check .
+# All checks passed
+
+uv run --python 3.12 --extra dev mypy src/vaaniswitch/m0_data src/vaaniswitch/m1_vmd src/vaaniswitch/m2_representations tests/m0_data tests/m1_vmd tests/m2_representations
+# Success: no issues found in 62 source files
+
+uv run --python 3.12 python -m compileall -q src tests
+# PASS
+```
+
+No new implementation defect was found during final audit. The centralized defect log
+records the retained fixed-duration Mel crop as `M2-SCI-001` `ACCEPTED_LIMITATION`.
+No classifier has been trained, and these deterministic representation checks establish no
+classification or diagnostic performance.
 
 ## Signed input contract
 
@@ -133,7 +298,7 @@ Undirected edge count ranged 1,366–3,804 (mean 2,205.5, median 2,034.5); densi
 0.041850–0.116544 (mean 0.067570, median 0.062331). Stored edge counts are twice the
 undirected counts because `edge_index` contains both directions.
 
-## Performance and storage
+## Historical smoke performance and storage
 
 | Stage | Mean (s) | Median (s) | Maximum (s) |
 |---|---:|---:|---:|
@@ -178,6 +343,7 @@ uv run --python 3.12 python -m compileall -q src tests
 
 ## Artifacts
 
+- `artifacts/metrics/module2_full_signoff_audit.json`
 - `artifacts/metrics/module2_representation_summary.json`
 - `artifacts/logs/module2_representation_failures.csv` (header only; zero failures)
 - `artifacts/logs/module2_representation_pipeline.log`
@@ -202,16 +368,15 @@ frequency conversion remains deterministic linear interpolation.
   2.7096% of CORE; the six extreme >30-second records dominate maximum discarded time.
   This is a required Module 5 robustness-analysis target.
 - The 80-to-224 frequency interpolation adds spatial sampling, not new spectral detail.
-- Recurrence-rate ties can produce density above the nominal target; this did not occur
-  beyond the expected diagonal contribution in smoke.
-- Runtime and storage are smoke-scaled estimates until the manual full build finishes.
+- Recurrence-rate ties can produce density above the nominal target. Across full CORE,
+  off-diagonal density was uniformly 0.150064061; no substantial tie excess occurred.
+- The smoke runtime and storage values in the historical section above are superseded by
+  the measured full-corpus values in the authoritative sign-off section.
 - No representation parameter was tuned using classification accuracy.
 
-✅ Implementation and smoke gate passed. Module 2 remains **not complete** and **not
-signed off** until the manual 8,673-record build and subsequent full validation pass.
-Module 3 remains not started.
+✅ Module 2 is **COMPLETE / PASSED / SIGNED OFF**. Module 3 remains not started.
 
-Eventual manual commands:
+Executed full-build commands retained for provenance:
 
 ```text
 uv run --python 3.12 --extra dev vaaniswitch-m2 build --config configs/representations/default.yaml --subset core

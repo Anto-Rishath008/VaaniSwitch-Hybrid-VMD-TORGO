@@ -1,6 +1,6 @@
 # Module 2 — Mel, Visibility-Graph & Recurrence Representation Generation
 
-**Status:** IMPLEMENTATION READY / AWAITING FULL MANUAL CORE BUILD  
+**Status:** COMPLETE / PASSED / SIGNED OFF
 **Code:** `src/vaaniswitch/m2_representations/`  
 **Tests:** `tests/m2_representations/`
 
@@ -87,16 +87,18 @@ Production representation config hash:
 
 `d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d`
 
-## Current gate
+## Acceptance
 
-- [x] Implementation and 40 Module 2 tests pass.
-- [x] Twelve-record production smoke build and strict validation pass.
-- [x] Six-record real production center-crop audit passes, including the longest CORE record.
-- [x] Diagnostic SVGs exist for one dysarthric and one control record.
-- [x] Full 184-test regression, 82.07% branch coverage, Ruff, strict mypy, and compileall pass.
-- [x] Raw TORGO and the production Module 1 cache are unchanged.
-- [ ] Full 8,673-record CORE representation cache has been built manually.
-- [ ] Full CORE Module 2 validation has passed.
+- [x] Implementation.
+- [x] Smoke validation.
+- [x] Real crop validation.
+- [x] Full 8,673-record CORE build.
+- [x] Full 8,673-record CORE validation.
+- [x] Full numerical, provenance, inventory, storage, runtime, and immutability audit.
+- [x] Regression gates.
+- [x] Signed off.
 
-Module 2 is not complete or signed off until the two unchecked full-build gates pass.
-Do not start Module 3 automatically.
+The production namespace contains 8,673 complete logical caches and 43,365 expected
+files, with zero failures or incomplete entries. The measured size is 2,378,359,184 bytes
+(2.21502 GiB). All 235 long records pass the Mel-crop-only/full-RP/full-NVG contract.
+Module 3 remains not started and requires explicit authorization.

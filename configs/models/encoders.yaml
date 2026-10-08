@@ -1,18 +1,67 @@
-common_token_dim: 192
+schema_version: "1.0"
+implementation: vaaniswitch_pytorch_encoders_v1
+
+source:
+  manifest_path: data/manifests/torgo_manifest.jsonl
+  speaker_folds_path: data/splits/speaker_folds.json
+  module2_config_path: configs/representations/default.yaml
+  module2_signoff_path: artifacts/metrics/module2_full_signoff_audit.json
+  representation_cache_root: data/processed/representations
+  representation_config_hash: d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d
+  module1_config_hash: bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685
+  manifest_fingerprint: 91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061
+  subset: core
+
+common_token_dim: 128
 mel:
   backbone: resnet18
-  pretrained: true
+  input_channels: 3
+  pretrained_weights: IMAGENET1K_V1
+  replicate_single_channel: true
+  fixed_db_min: -100.0
+  fixed_db_max: 20.0
+  imagenet_normalization: true
   adaptive_pool: [4, 4]
   tokens: 16
   freeze_backbone_initially: true
 graph:
   implementation: pure_pytorch_gcn
+  input_dim: 2
   layers: 2
   hidden_dim: 96
+  graph_feature_dim: 128
+  activation: gelu
   pooling: mean_plus_max
   tokens: 1
+  add_self_loops: true
+  adjacency_normalization: symmetric
 recurrence:
   implementation: small_cnn
+  input_channels: 1
   channels: [16, 32, 64]
+  normalization: groupnorm
+  activation: gelu
   adaptive_pool: [4, 4]
   tokens: 16
+
+regularization:
+  dropout: 0.20
+
+execution:
+  smoke_logical_ids:
+    - F01/Session1/0082
+    - FC03/Session3/0151
+    - M04/Session1/0125
+    - MC03/Session2/0232
+    - F03/Session1/0179
+    - F03/Session1/0118
+    - FC01/Session1/0007
+    - M02/Session1/0133
+    - F04/Session1/0038
+    - MC02/Session2/0142
+
+outputs:
+  summary: artifacts/metrics/module3_encoder_summary.json
+  failures: artifacts/logs/module3_encoder_failures.csv
+  pipeline_log: artifacts/logs/module3_encoder_pipeline.log
+  parameter_audit: artifacts/metrics/module3_parameter_audit.json

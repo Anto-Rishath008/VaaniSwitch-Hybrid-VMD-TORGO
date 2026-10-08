@@ -1,17 +1,55 @@
-token_dim: 192
+schema_version: "1.0"
+implementation: vaaniswitch_pytorch_fusion_v1
+source:
+  encoder_config_path: configs/models/encoders.yaml
+  module3_signoff_path: artifacts/metrics/module3_full_signoff_audit.json
+  encoder_config_hash: 7c8e44eddb11704d08e45a1b63bc9cc54b28d679f5e3a3ae1a474b61e3a40383
+  representation_config_hash: d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d
+  module1_config_hash: bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685
+  manifest_fingerprint: 91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061
+  core_record_count: 8673
+token_dim: 128
 attention:
   type: cross_attention
   query: mel_tokens
-  key_value: nonlinear_tokens
+  key: nonlinear_tokens
+  value: nonlinear_tokens
+  query_tokens: 16
+  key_value_tokens: 17
   heads: 4
   blocks: 1
-  dropout: 0.2
+  batch_first: true
+  dropout: 0.10
   residual: true
-  layer_norm: true
+  normalization: layernorm
 pooling:
-  attended_mel: mean
+  mel: mean
   nonlinear: mean
 classifier:
+  input_dim: 256
   hidden_dim: 128
-  dropout: 0.3
-  classes: 2
+  output_dim: 1
+  activation: gelu
+  dropout: 0.30
+loss:
+  type: bce_with_logits
+  label_positive: dysarthric
+  training_pos_weight: train_split_only
+training:
+  optimizer: adamw
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  batch_size: 16
+  max_epochs: 30
+  patience: 5
+  min_delta: 0.0001
+  selection_metric: validation_macro_f1
+  threshold: 0.5
+  seed: 42
+  inner_split: class_stratified_speaker_sha256_v1
+  augmentation: none
+  resampling: none
+  scheduler: none
+  freeze_mel_backbone: true
+execution:
+  cpu_threads: 2

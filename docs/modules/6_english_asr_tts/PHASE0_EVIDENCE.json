@@ -1,0 +1,1116 @@
+{
+  "schema": "vaaniswitch_module6_phase0_v1",
+  "date_local": "2026-10-07",
+  "timezone": "Asia/Calcutta",
+  "phase0_status": "PASS",
+  "implementation_status": "NOT STARTED",
+  "runtime_acceptance": "NOT TESTED",
+  "module6_signed_off": false,
+  "audit_scope": "Read-only targeted identity, reference and hardware inspection. Documentation-only session. No accepted Module 5 audit or experiments rerun.",
+  "upstream_verification": {
+    "protocol_hash": "677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9",
+    "frozen_code_hash": "7696cad010914ec37f494d9f1a11a2e1761e46f353e61d97a07399f746a34ff8",
+    "source_files": 92,
+    "identity_checks": {
+      "final_closure/module5_final_closure.json": {
+        "sha256": "449b1a8237efbb21e7912868d4a0586bdca30e85806248ca646b6d647f5683e2",
+        "expected": "449b1a8237efbb21e7912868d4a0586bdca30e85806248ca646b6d647f5683e2",
+        "match": true
+      },
+      "final_closure/cross_fold_metrics.json": {
+        "sha256": "41d1d316841c7779a8d11e5ab70ed58b1fb7a44a473585cbc271e9b981369d9f",
+        "expected": "41d1d316841c7779a8d11e5ab70ed58b1fb7a44a473585cbc271e9b981369d9f",
+        "match": true
+      },
+      "final_closure/module6_handoff.json": {
+        "sha256": "36f5a276137922fd585dfe052e2402218fe36a4b0569384e0c4bd4e241b2235f",
+        "expected": "36f5a276137922fd585dfe052e2402218fe36a4b0569384e0c4bd4e241b2235f",
+        "match": true
+      },
+      "final_closure/evidence_manifest.json": {
+        "sha256": "f9d4e56917b2bfc63abbf312e2b389457aa2ad29734424f01da5ee03109a8a6d",
+        "expected": "f9d4e56917b2bfc63abbf312e2b389457aa2ad29734424f01da5ee03109a8a6d",
+        "match": true
+      },
+      "final_closure_validation/delivery_checks.json": {
+        "sha256": "7dbdb25053426621cb42f1fa61f501c1e078c9234c16170a772e87a601a8fd20",
+        "expected": "7dbdb25053426621cb42f1fa61f501c1e078c9234c16170a772e87a601a8fd20",
+        "match": true
+      }
+    },
+    "closure_package_checks": {
+      "ablation_summary.csv": true,
+      "cross_fold_metrics.csv": true,
+      "cross_fold_metrics.json": true,
+      "final_outer_audit.json": true,
+      "module5_final_closure.json": true,
+      "module6_handoff.json": true,
+      "robustness_summary.json": true,
+      "validation_checks.json": true
+    },
+    "primary_checkpoints": [
+      {
+        "candidate": "stronger_dropout",
+        "checkpoint_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold1_C2_stronger_dropout_seed42_677ad640faf5/final/d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24.pt",
+        "checkpoint_sha256": "d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24",
+        "experiment_id": "fold1_C2_stronger_dropout_seed42_677ad640faf5",
+        "outer_fold": 1,
+        "selected_epoch": 1,
+        "selection_sha256": "f907371d49f50d2a0b10f75a71a93e21de010bd0475eae07217d28922d9c40f0",
+        "current_sha256": "d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24",
+        "match": true
+      },
+      {
+        "candidate": "stronger_decay",
+        "checkpoint_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold2_C2_stronger_decay_seed42_677ad640faf5/final/cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d.pt",
+        "checkpoint_sha256": "cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d",
+        "experiment_id": "fold2_C2_stronger_decay_seed42_677ad640faf5",
+        "outer_fold": 2,
+        "selected_epoch": 2,
+        "selection_sha256": "ff1c4e5a100e503dbc8e95f1772cd92dcf613a50d4f34cb90fd7b5db091cb8d5",
+        "current_sha256": "cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d",
+        "match": true
+      },
+      {
+        "candidate": "baseline",
+        "checkpoint_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold3_C2_baseline_seed42_677ad640faf5/final/a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508.pt",
+        "checkpoint_sha256": "a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508",
+        "experiment_id": "fold3_C2_baseline_seed42_677ad640faf5",
+        "outer_fold": 3,
+        "selected_epoch": 2,
+        "selection_sha256": "9f0afa3ae6f2790c87e555f004d9c1edff20bb5e00d3370ec484e1490ae5e41d",
+        "current_sha256": "a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508",
+        "match": true
+      }
+    ],
+    "closure_status": "COMPLETE / PASSED / SIGNED OFF",
+    "delivery_status": "PASS",
+    "protected_file_count": 124,
+    "protected_sha256": {
+      "src/vaaniswitch/__init__.py": "27e8febb48ada44153ea2add9969a2c50a9831a74d9755fdd53c549a888b1cc2",
+      "src/vaaniswitch/m0_data/audio_audit.py": "ebe2c2fb317f8bc1d653d70e91653b71eb7bb0b4ab0d41bc4cefa21ce2770739",
+      "src/vaaniswitch/m0_data/cli.py": "45e382110818029ea6b1dd4ae5ea76bff458d9c23241fe6b6bdae39867ced849",
+      "src/vaaniswitch/m0_data/config.py": "444878ec3836e05453c4f1ea88b76d257784fd1bcc88e57cbdbde0a2a121bf09",
+      "src/vaaniswitch/m0_data/discovery.py": "5d3283686027200e502381fa5f36df550db8d93798bab7c53d11f4be7d8811a4",
+      "src/vaaniswitch/m0_data/leakage.py": "bff44902a919b9ebb386762dafc89c9af21fe0351f9fa451c70513dab9a9cd8a",
+      "src/vaaniswitch/m0_data/manifest.py": "e77860cc0d8893a99bfa7a9c6e25bf7fa6d5e3049a860a01b6b5e8c37a3c4d70",
+      "src/vaaniswitch/m0_data/metadata.py": "c97de02abd0118c33f7e1d1960482b638e4c2141a775ee84f2b6a275d5823874",
+      "src/vaaniswitch/m0_data/pipeline.py": "7c73089cca0474d4089dac638f330850c9dc78525aa3807a4b45b22ce8ce908a",
+      "src/vaaniswitch/m0_data/prompt_types.py": "e7fb8f97ad01564756871aacabb94612e833bbcd0e7eaf8008f2a7f2c57cbbd3",
+      "src/vaaniswitch/m0_data/reporting.py": "e61b028cedc31f60a73978fae78e0f72692e741503e630c7943e1c7115a7248d",
+      "src/vaaniswitch/m0_data/schemas.py": "3666d00e4dbca9ab06e067fa9354e9ddbdba5c178cd48e562ec1932edf8263f0",
+      "src/vaaniswitch/m0_data/splits.py": "6a0ca8dafb43e6b4faf7c56de1930cbfa76dd4227d779787e71a61a61b0c7a19",
+      "src/vaaniswitch/m0_data/__init__.py": "f95f24401490cc231d62c65ed39611a9c038fa922fe4527e2886c5caf08e72f6",
+      "src/vaaniswitch/m0_data/__main__.py": "7c071a9f7fb43d74e45e8341a7aebdf0eb6c1587b51720789666ac3d93fc44ec",
+      "src/vaaniswitch/m1_vmd/audio.py": "8b01221c867dd06cf5be0a69c85849210326bc422542f7d1eb98675034f5db34",
+      "src/vaaniswitch/m1_vmd/cache.py": "a0574168ad6915c0007ce4d3362f71088b5f25b1aab086c4b4729f69a4a03673",
+      "src/vaaniswitch/m1_vmd/cli.py": "2411a1bec35d2f16a666be193a604904013ac0854aab6c34da63ca54ced00d68",
+      "src/vaaniswitch/m1_vmd/config.py": "551c9ebacdfb3239212e406bee774ad089ba939d6dd9282940dfcff1b2fdd306",
+      "src/vaaniswitch/m1_vmd/manifest.py": "8349789ba200a9a30c35dabddfe725bfc835838c852c42af86495b14c46f60c3",
+      "src/vaaniswitch/m1_vmd/metrics.py": "1e7e0c9b30966a059d31d4659ebb5f7b7d3e965631e3ebf84f608a7ed4cd4738",
+      "src/vaaniswitch/m1_vmd/pipeline.py": "329940cc11a963205b0fd362705d81a09b20eaf45571d3e26c489c31244c2978",
+      "src/vaaniswitch/m1_vmd/plots.py": "9d70a649dc22e4d66d4ec33e942cba9928e2aa9da30ca23b09fe035cb08a66b0",
+      "src/vaaniswitch/m1_vmd/reconstruction.py": "8acdcc0e95e3c6adbff18f55ce27b8ea1de82f7318c30c0699dbf16f821ddd84",
+      "src/vaaniswitch/m1_vmd/vmd.py": "7e6abdf7f99ad52656edf161c53110bd9e9186203406f171f0bf5d282586c3e4",
+      "src/vaaniswitch/m1_vmd/__init__.py": "29d7193010ba7ed5e818c897454cd74ddb1070e349ecf7950bf30101930dc9cc",
+      "src/vaaniswitch/m1_vmd/__main__.py": "994ad8eb6d3d2bd89c6507c4e8c9ef0e90af51085597cf505c073dcc684b3bf5",
+      "src/vaaniswitch/m2_representations/cache.py": "ccc6c8fff82e2eea3618aa5ed47ee9d9fe2f43db2cef8db549a663def32a3dad",
+      "src/vaaniswitch/m2_representations/cli.py": "b9bb81acccf153032d2b01a126f65a59f2cadce06d70340daf12ab32e9304f81",
+      "src/vaaniswitch/m2_representations/config.py": "21993d8dfa2336facacae0a5134415d1688206b6dbdc7e8c642d47f9a9520191",
+      "src/vaaniswitch/m2_representations/mel.py": "2cb0264694f99afc7dbd6239acd1cd968b365cb72b2f3e9c96f466b19d694049",
+      "src/vaaniswitch/m2_representations/pipeline.py": "c26978c1eac26b475ed863f2b394009e5abf9405a302f309b9d97df3ccc30172",
+      "src/vaaniswitch/m2_representations/plots.py": "f4952420b804b1fbb1f79444daf073debf3711c1f0f2bd9f8ddaf1e795bf9391",
+      "src/vaaniswitch/m2_representations/recurrence.py": "b9e64d3f21d7b7703755574a93c74501530afefa4880a2a47ce1bd3b0efaeb64",
+      "src/vaaniswitch/m2_representations/reduction.py": "aa2fbeb8e3ed5fdd1be6495a6242871755623be9e07499b8dd08506069efc597",
+      "src/vaaniswitch/m2_representations/schemas.py": "388e5215d5d2936960e15fa2b3dfcd507eb785b4b25f55b7c63985dee2ff9e83",
+      "src/vaaniswitch/m2_representations/source.py": "b5a4faff4f4a7485d824e6bbcb942ecaafb68ce4a19903f16bc48346bad11ab4",
+      "src/vaaniswitch/m2_representations/visibility.py": "291d6efa6c4fd9f22234dc73125e530499e3b710db542f27cd3e4a8667d16a88",
+      "src/vaaniswitch/m2_representations/__init__.py": "7573ed8432857d4977c33c37acdb7a3a4cf261153e6ba49b76d0c4160fcee66f",
+      "src/vaaniswitch/m2_representations/__main__.py": "80a683fe363cfe775cd82a59240d48f8179d86f86df95f61691e664889d1d3f4",
+      "src/vaaniswitch/m3_encoders/cli.py": "d0e2cf1f0fc42808a074f0ccf36b57a791bb3cc3a979c2e4f5ba4c8848e0f5a3",
+      "src/vaaniswitch/m3_encoders/collate.py": "40182fa454fb1fbce2b767e8f081767412d9f7ce4ff19e7435dcc1ab7aa17ea4",
+      "src/vaaniswitch/m3_encoders/config.py": "b4a196e5f4ed0d0f500963a142621552fb290a70cc8b659be38c3053ce23c8f0",
+      "src/vaaniswitch/m3_encoders/dataset.py": "e8840ffb234d057cac29460a3553e8068c9884c9ebdc1d30ca7dff90e6b42756",
+      "src/vaaniswitch/m3_encoders/diagnostics.py": "a73867401d59c227921066d18470cd1c176e5c4f92f3d0640dcf382a2dc1597d",
+      "src/vaaniswitch/m3_encoders/graph_encoder.py": "8e18cffbedf7bfae9b790f2ec27ac0769bfaa0e61b360f3e4fe3e47744dd23e7",
+      "src/vaaniswitch/m3_encoders/graph_ops.py": "8e33e980e7054cc5d02f6587cf99ec66888c84eca6d82848aa3b14d5ca8dd229",
+      "src/vaaniswitch/m3_encoders/mel_encoder.py": "a341930794dd309fa2dd4a00b782ef89561e2dea7d78b3851fed751d59904117",
+      "src/vaaniswitch/m3_encoders/models.py": "80681aab5527010762e66efca3c6765b5f7b74145e44863192e10219d0693517",
+      "src/vaaniswitch/m3_encoders/pipeline.py": "51779462aee33a5f8d5c94989c57537e566d7e26a56b28f2040dcfbf60e0f2be",
+      "src/vaaniswitch/m3_encoders/preprocessing.py": "5b3ec67ca5222b6bbf10428caaadadf2867ac7b81cda4305a6cdcde6cc8dde23",
+      "src/vaaniswitch/m3_encoders/recurrence_encoder.py": "c2b34ba092351bec8bd6e2e301f0c5fb4612c8296a8a3da1f98a33d039b79f27",
+      "src/vaaniswitch/m3_encoders/schemas.py": "9f7612df9f26ccb5e21f12bd79a1c3880f1363f3bc074ffe4eab03737138d172",
+      "src/vaaniswitch/m3_encoders/source.py": "ae179c267fa0ad0ed069747908555c63d3f2fdf6b91c979decbd3cb8f8286295",
+      "src/vaaniswitch/m3_encoders/__init__.py": "10bc7ed6c6ac4422de21eb2d5a49735175a3dc17902ac8aaad406ccfbd10225b",
+      "src/vaaniswitch/m3_encoders/__main__.py": "54db7e9f9bc81a4b65b30e1020fb1e988890c066befb036b0b091667983838dd",
+      "src/vaaniswitch/m4_fusion/attention.py": "6ba5d4ba1c6b35ef25d13dff753d3fbe445781143c046bebc725b0ea9e3e4d1c",
+      "src/vaaniswitch/m4_fusion/checkpoint.py": "d5d83eacc6463aedf10dcd0ff7974234c1b8a544685171c081881bfadbd67dc1",
+      "src/vaaniswitch/m4_fusion/cli.py": "cfe31ac8302db809d3defbdff0454385bd126cac5e4079162408bd84b96b6717",
+      "src/vaaniswitch/m4_fusion/config.py": "c751358fbd1ba6e0e9d02e082390e47d1e65e1bfa37982f3c9d9c5a8a1f70c68",
+      "src/vaaniswitch/m4_fusion/diagnostics.py": "e7077c89cb59e544e27c8dd2556dde86eef49b98a88cdfb32674be4526c2ecc4",
+      "src/vaaniswitch/m4_fusion/losses.py": "26c2c2034f6523bcd5547e8847af441d10c5e2016005b8dcf9494055cea4443b",
+      "src/vaaniswitch/m4_fusion/metrics.py": "00882a4f506351d58b36557ea0ec32e61ae421f9de9664f5313a1e53c567862f",
+      "src/vaaniswitch/m4_fusion/model.py": "409c07f4a8e256acf4f94e64ef152a1d82843d56953d5ebc24c5a4a4d1284f51",
+      "src/vaaniswitch/m4_fusion/pipeline.py": "106a768cb63d0f00e8941b71907114969819db848d3c93d099ad4c9e25f791aa",
+      "src/vaaniswitch/m4_fusion/reporting.py": "a32adfe561f5fa2df9bd52756a1c15adc6dbf9ba60643d42f518f453453afc4c",
+      "src/vaaniswitch/m4_fusion/reproducibility.py": "83f766604263f932cbb2d493372a811ac580e3cd529f9a3a72148e29d280dd5b",
+      "src/vaaniswitch/m4_fusion/schemas.py": "217a73b19dae63115a3c24431d44ef0eb55916e2ad7d77c48a4bda99b7a9b816",
+      "src/vaaniswitch/m4_fusion/source.py": "4cacec2e4fc2434d8b8064903ab5c0bae3c9ae0df15bc5b1240e5a6503133aab",
+      "src/vaaniswitch/m4_fusion/splits.py": "cbdd04bf8b58b0f7cef68996a3830ecbe29436802d0a030feb284243f9c4ea5b",
+      "src/vaaniswitch/m4_fusion/trainer.py": "b5713990492396965179b1f7a735b91bbe87052082aa5ec1bbdd5ee0ee6b2bc1",
+      "src/vaaniswitch/m4_fusion/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/vaaniswitch/m4_fusion/__main__.py": "f9c92326c1062c5f2d7784c8e211f2263da4e9065e0d48958e1fa5dd1cedc95a",
+      "src/vaaniswitch/m5_experiments/ablation_models.py": "6f7b3d0418ec0cc1a1caeb0f516d3b94968d96163a0b4e2b885920f6e7d9aea5",
+      "src/vaaniswitch/m5_experiments/aggregation.py": "5113cf7275cc622d92a34dce44917d1c23c29ec8ad2b80f5b6675a57900b1e8f",
+      "src/vaaniswitch/m5_experiments/checkpoint.py": "2b587e6b72173eed0d7364bed10d51a47a1dd1069902493376a0c304069e2443",
+      "src/vaaniswitch/m5_experiments/cli.py": "fe9a1087f96b7ff15b5ff3d0903ad3b659448861612a848d207982692c775e87",
+      "src/vaaniswitch/m5_experiments/config.py": "a788efdde858be39d9b5935985b54b873fb5e51d49e8271ac08e691923829d82",
+      "src/vaaniswitch/m5_experiments/data.py": "05446a6a86d52836a3a40d384b4e32aef9c00fc1f47e798a6886f77baf3761f5",
+      "src/vaaniswitch/m5_experiments/diagnostics.py": "aa9dc7a45e0860ad7b4c99f9ef2dbd215fd6d530491d9e7bdbd3079bd6cc8a25",
+      "src/vaaniswitch/m5_experiments/evaluator.py": "14b60792fdfacb2e78fe6c0f907c9e8056a9cefffc143bd0fe6c7207232e42f9",
+      "src/vaaniswitch/m5_experiments/ledger.py": "b568ebff7390ad5feec3717c36b95509d166080c270e3613de28aa8693961299",
+      "src/vaaniswitch/m5_experiments/no_vmd.py": "0cf772b9199c426f29b71988a5172f4ba3c06eac70a9306b2abc65c626833e8a",
+      "src/vaaniswitch/m5_experiments/pipeline.py": "358492260c456e7495fe08a599779f281e6ae98bcdc8f33dd991611a073752b4",
+      "src/vaaniswitch/m5_experiments/reporting.py": "34a59c926b8b0a40a0ddf8e2b646a17929cd6195701d961404f2d2f98ab7e4ce",
+      "src/vaaniswitch/m5_experiments/robustness.py": "809fc321d2d7b4da3ac99e4649bd181b14613662f19c03f0544f171733fc6ab6",
+      "src/vaaniswitch/m5_experiments/search.py": "ce18b06dbaa7e7f04e506cf9b17eeb9e3514c83387daad5c58e6b46d92e10fac",
+      "src/vaaniswitch/m5_experiments/source.py": "e623fd772f42e6304ab0c946b2b8a576ce6377dc24e2f3952056ccd3cf280004",
+      "src/vaaniswitch/m5_experiments/splits.py": "ce8aebcfbfd5922073b95f1159203e07f3db47722a3efcd6aecef77534675e38",
+      "src/vaaniswitch/m5_experiments/trainer.py": "53f423fa8026088dc8d7ffb1c9d7eef80e237cfab7b4f23954907e241a9a39e8",
+      "src/vaaniswitch/m5_experiments/__init__.py": "0686cea8f744a8e789d75d90976800d02e2716a911b588ebce27a6ca47dc3b23",
+      "src/vaaniswitch/m5_experiments/__main__.py": "6deeeea4df48ef88946d6b0066f6619ecefb3685c2ea5c9a9f1fa8205056d89b",
+      "src/vaaniswitch/m5_optimization/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/vaaniswitch/m6_reconstruction/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/vaaniswitch/m7_app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/vaaniswitch/shared/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "configs/app/local.yaml": "330f949c6415598960316cc97cea9a2fff1e89be361b19dfce2c91c413c28cb2",
+      "configs/asr/default.yaml": "2f28e5003f231f43cd4ea0dc6247da0b6a54d2ba2f1b1f7b7f29e3bf26448f72",
+      "configs/data/torgo.yaml": "89384a1b55342a7d03e69f14fee759f90bfe58349c0b5087779856a624d556d5",
+      "configs/models/encoders.yaml": "8024b4aad36df35b770d8b70db5cf05d11b26c45cc151a78352e3b50e7195e80",
+      "configs/models/fusion.yaml": "d782887a0e42958463dca862e53d221b68db73636f2c31e9e071aef6bb173d3c",
+      "configs/representations/default.yaml": "ebdce3f14a1c1d064af6f5b7aee05d41bdab2f5d67c54b30122dd7d469b8537d",
+      "configs/tts/default.yaml": "cc22043d048ef0c54232e4bef5e9e5d76ff1b97a869c46caa4f71187edbbc0b8",
+      "configs/vmd/default.yaml": "bbc5f7aeff4fa90a6eebc645b5a46687b13263d6d500c71f9878ace53f96a10e",
+      "configs/experiments/module5/protocol.yaml": "7ff205c16a99cdd267b23648b45b10c4f9372b91c4c1e297a7211e63184eeb36",
+      "pyproject.toml": "48d5afc447fac0263d5506588e0d89e259037d11a8110cecc652ba16404faa8d",
+      "uv.lock": "1ce287300c999fb902410460205fd16cd520cb8aa047498374847f850b5f9bd6",
+      ".venv/pyvenv.cfg": "c8d3c1c0cdd6b2e2cf3b798f33be8fbbfa6e1ed495e0aa999e5fca57d886930c",
+      "data/manifests/torgo_manifest.jsonl": "91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061",
+      "data/manifests/torgo_manifest.csv": "d188a115852e8f1dadaf100912ef34a5192dba45155b50c9cc62d72f3e38d274",
+      "data/splits/speaker_folds.json": "3d0303d9cb8af96da7b0bd4e4ad26b67ea0350c24a5607a7571d067e3a08aa8c",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/final_closure/ablation_summary.csv": "c561e2a755e56d9cda01abaebfa3caa975bba75f4874db60e61415db0bb6c467",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/final_closure/cross_fold_metrics.csv": "2caa53e973a01f0a41dc74618850107b20512fd8c7b75367156f939199587a91",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/final_closure/cross_fold_metrics.json": "41d1d316841c7779a8d11e5ab70ed58b1fb7a44a473585cbc271e9b981369d9f",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/final_closure/evidence_manifest.json": "f9d4e56917b2bfc63abbf312e2b389457aa2ad29734424f01da5ee03109a8a6d",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/final_closure/final_outer_audit.json": "d14a0eb4ce5d54e295b0e0c4866c040439aef0adeacdd02fd2b6aeb63eeb6331",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/final_closure/module5_final_closure.json": "449b1a8237efbb21e7912868d4a0586bdca30e85806248ca646b6d647f5683e2",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/final_closure/module6_handoff.json": "36f5a276137922fd585dfe052e2402218fe36a4b0569384e0c4bd4e241b2235f",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/final_closure/robustness_summary.json": "a0ac89fc49f9be536cfed686ddbbcd5be08c41e6b903911876071bf607c1499a",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/final_closure/validation_checks.json": "6416d9963d3620a4e3d333ec75b0d9484d82b15387aa03986d34e529b03ec8e1",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/final_closure_validation/delivery_checks.json": "7dbdb25053426621cb42f1fa61f501c1e078c9234c16170a772e87a601a8fd20",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold1_C2_stronger_dropout_seed42_677ad640faf5/final/d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24.pt": "d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold2_C2_stronger_decay_seed42_677ad640faf5/final/cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d.pt": "cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d",
+      "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold3_C2_baseline_seed42_677ad640faf5/final/a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508.pt": "a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508"
+    }
+  },
+  "reference_audit": {
+    "records": 9494,
+    "core_records": 8673,
+    "speakers": 15,
+    "prompt_types": {
+      "articulation_task": 118,
+      "instruction_or_nonstandard": 92,
+      "word": 6938,
+      "sentence": 2287,
+      "unknown": 59
+    },
+    "core_prompt_types": {
+      "word": 6569,
+      "sentence": 2104
+    },
+    "core_duration_seconds": 25961.7840625,
+    "core_over_30_seconds": 6,
+    "core_over_60_seconds": 2,
+    "prompt_read_elapsed_seconds": 9.6,
+    "reference_mismatches_or_errors": [],
+    "encodings": {
+      "utf-8-sig": 9494
+    },
+    "prompt_inventory_sha256": "9844ba7652f4b3d8e326115943d8a4888e75627b331b1a5a9d5904897930344e",
+    "flags": {
+      "sense_clarifier": {
+        "all_count": 85,
+        "core_count": 81,
+        "unique_core_text": [
+          "bow [as in \"bow and arrow\"]",
+          "lead [as in \"I will lead you\"]",
+          "lead [as in I will lead you]",
+          "read [as in \"I can read\"]",
+          "read [as in I can read]",
+          "tear [as in \"tear in my eye\"]",
+          "tear [as in \"tear up that paper\"]",
+          "tear [as in tear in my eye]",
+          "tear [as in tear up that paper]"
+        ],
+        "examples": [
+          {
+            "id": "F01/Session1/0007",
+            "text": "tear [as in tear up that paper]",
+            "type": "word",
+            "status": "usable"
+          },
+          {
+            "id": "F01/Session1/0092",
+            "text": "read [as in I can read]",
+            "type": "word",
+            "status": "usable"
+          },
+          {
+            "id": "F01/Session1/0103",
+            "text": "lead [as in I will lead you]",
+            "type": "word",
+            "status": "usable"
+          },
+          {
+            "id": "F01/Session1/0107",
+            "text": "read [as in I can read]",
+            "type": "word",
+            "status": "usable"
+          }
+        ]
+      },
+      "image_reference": {
+        "all_count": 118,
+        "core_count": 111,
+        "unique_core_text": [
+          "input/images/kitchen.jpg",
+          "input/images/story_starters_15.jpg",
+          "input/images/story_starters_16.jpg",
+          "input/images/story_starters_17.jpg",
+          "input/images/story_starters_22.jpg",
+          "input/images/story_starters_26.jpg",
+          "input/images/story_starters_3.jpg",
+          "input/images/story_starters_31.jpg",
+          "input/images/story_starters_31r.jpg",
+          "input/images/story_starters_32.jpg",
+          "input/images/story_starters_37.jpg",
+          "input/images/story_starters_4.jpg",
+          "input/images/story_starters_46.jpg",
+          "input/images/story_starters_5.jpg",
+          "input/images/story_starters_56.jpg",
+          "input/images/story_starters_58.jpg",
+          "input/images/story_starters_59.jpg"
+        ],
+        "examples": [
+          {
+            "id": "F01/Session1/0077",
+            "text": "input/images/kitchen.jpg",
+            "type": "word",
+            "status": "usable"
+          },
+          {
+            "id": "F01/Session1/0078",
+            "text": "input/images/kitchen.jpg",
+            "type": "word",
+            "status": "usable"
+          },
+          {
+            "id": "F01/Session1/0127",
+            "text": "input/images/story_starters_15.jpg",
+            "type": "word",
+            "status": "usable"
+          },
+          {
+            "id": "F03/Session1/0023",
+            "text": "input/images/kitchen.jpg",
+            "type": "word",
+            "status": "usable"
+          }
+        ]
+      },
+      "bracket": {
+        "all_count": 296,
+        "core_count": 81,
+        "unique_core_text": [
+          "bow [as in \"bow and arrow\"]",
+          "lead [as in \"I will lead you\"]",
+          "lead [as in I will lead you]",
+          "read [as in \"I can read\"]",
+          "read [as in I can read]",
+          "tear [as in \"tear in my eye\"]",
+          "tear [as in \"tear up that paper\"]",
+          "tear [as in tear in my eye]",
+          "tear [as in tear up that paper]"
+        ],
+        "examples": [
+          {
+            "id": "F01/Session1/0001",
+            "text": "[say Ah-P-Eee repeatedly]",
+            "type": "articulation_task",
+            "status": "usable"
+          },
+          {
+            "id": "F01/Session1/0002",
+            "text": "[say Ah-P-Eee repeatedly]",
+            "type": "articulation_task",
+            "status": "usable"
+          },
+          {
+            "id": "F01/Session1/0003",
+            "text": "[say Pah-Tah-Kah repeatedly]",
+            "type": "articulation_task",
+            "status": "usable"
+          },
+          {
+            "id": "F01/Session1/0004",
+            "text": "[say Eee-P-Ah repeatedly]",
+            "type": "articulation_task",
+            "status": "usable"
+          }
+        ]
+      },
+      "placeholder": {
+        "all_count": 58,
+        "core_count": 0,
+        "unique_core_text": [],
+        "examples": [
+          {
+            "id": "F03/Session2/0024",
+            "text": "xxx",
+            "type": "unknown",
+            "status": "review"
+          },
+          {
+            "id": "F03/Session2/0097",
+            "text": "xxx",
+            "type": "unknown",
+            "status": "review"
+          },
+          {
+            "id": "F03/Session2/0111",
+            "text": "xxx",
+            "type": "unknown",
+            "status": "review"
+          },
+          {
+            "id": "F03/Session2/0139",
+            "text": "xxx",
+            "type": "unknown",
+            "status": "review"
+          }
+        ]
+      },
+      "digit": {
+        "all_count": 134,
+        "core_count": 97,
+        "unique_core_text": [
+          "Today's date. February 13th",
+          "input/images/story_starters_15.jpg",
+          "input/images/story_starters_16.jpg",
+          "input/images/story_starters_17.jpg",
+          "input/images/story_starters_22.jpg",
+          "input/images/story_starters_26.jpg",
+          "input/images/story_starters_3.jpg",
+          "input/images/story_starters_31.jpg",
+          "input/images/story_starters_31r.jpg",
+          "input/images/story_starters_32.jpg",
+          "input/images/story_starters_37.jpg",
+          "input/images/story_starters_4.jpg",
+          "input/images/story_starters_46.jpg",
+          "input/images/story_starters_5.jpg",
+          "input/images/story_starters_56.jpg",
+          "input/images/story_starters_58.jpg",
+          "input/images/story_starters_59.jpg"
+        ],
+        "examples": [
+          {
+            "id": "F01/Session1/0096",
+            "text": "[say Ah for 5 seconds]",
+            "type": "articulation_task",
+            "status": "usable"
+          },
+          {
+            "id": "F01/Session1/0120",
+            "text": "[say Ah for 5 seconds]",
+            "type": "articulation_task",
+            "status": "usable"
+          },
+          {
+            "id": "F01/Session1/0127",
+            "text": "input/images/story_starters_15.jpg",
+            "type": "word",
+            "status": "usable"
+          },
+          {
+            "id": "F03/Session1/0019",
+            "text": "[say Ah for 5 seconds]",
+            "type": "articulation_task",
+            "status": "usable"
+          }
+        ]
+      },
+      "underscore": {
+        "all_count": 101,
+        "core_count": 96,
+        "unique_core_text": [
+          "input/images/story_starters_15.jpg",
+          "input/images/story_starters_16.jpg",
+          "input/images/story_starters_17.jpg",
+          "input/images/story_starters_22.jpg",
+          "input/images/story_starters_26.jpg",
+          "input/images/story_starters_3.jpg",
+          "input/images/story_starters_31.jpg",
+          "input/images/story_starters_31r.jpg",
+          "input/images/story_starters_32.jpg",
+          "input/images/story_starters_37.jpg",
+          "input/images/story_starters_4.jpg",
+          "input/images/story_starters_46.jpg",
+          "input/images/story_starters_5.jpg",
+          "input/images/story_starters_56.jpg",
+          "input/images/story_starters_58.jpg",
+          "input/images/story_starters_59.jpg"
+        ],
+        "examples": [
+          {
+            "id": "F01/Session1/0127",
+            "text": "input/images/story_starters_15.jpg",
+            "type": "word",
+            "status": "usable"
+          },
+          {
+            "id": "F03/Session1/0088",
+            "text": "input/images/story_starters_15.jpg",
+            "type": "word",
+            "status": "usable"
+          },
+          {
+            "id": "F03/Session2/0010",
+            "text": "input/images/story_starters_17.jpg",
+            "type": "word",
+            "status": "usable"
+          },
+          {
+            "id": "F03/Session2/0011",
+            "text": "input/images/story_starters_16.jpg",
+            "type": "word",
+            "status": "usable"
+          }
+        ]
+      }
+    }
+  },
+  "provisional_reference_eligibility": {
+    "provisional_eligible": 8562,
+    "prompt_types": {
+      "word": 6458,
+      "sentence": 2104
+    },
+    "image_references": 111,
+    "over30_eligible": [
+      {
+        "id": "F03/Session1/0118",
+        "seconds": 193.828625,
+        "text": "no"
+      },
+      {
+        "id": "M01/Session2_3/0180",
+        "seconds": 179.943125,
+        "text": "hill"
+      }
+    ],
+    "nonascii_unique": [],
+    "slash_unique": []
+  },
+  "proposed_panel": {
+    "selection": "CORE minus image refs; duration inclusive 0.5..15s; lexicographic logical_id first five per word/sentence per non-development speaker; first one per type per development speaker",
+    "development_speakers": [
+      "M03",
+      "MC02"
+    ],
+    "development_smoke": [
+      {
+        "id": "M03/Session2/0002",
+        "text": "now",
+        "seconds": 5.1950625
+      },
+      {
+        "id": "M03/Session2/0013",
+        "text": "Well, he is nearly ninety-three years old;",
+        "seconds": 3.835
+      },
+      {
+        "id": "MC02/Session1/0007",
+        "text": "jagged",
+        "seconds": 2.32
+      },
+      {
+        "id": "MC02/Session1/0006",
+        "text": "he slowly takes a short walk in the open air each day.",
+        "seconds": 4.7250625
+      }
+    ],
+    "evaluation_records": 130,
+    "evaluation_speakers": 13,
+    "evaluation_seconds": 545.6203125,
+    "evaluation_fold_counts": {
+      "1": 50,
+      "2": 40,
+      "3": 40
+    },
+    "evaluation_condition_counts": {
+      "dysarthric": 70,
+      "control": 60
+    },
+    "availability": {
+      "F01": {
+        "word": 98,
+        "sentence": 20
+      },
+      "F03": {
+        "word": 406,
+        "sentence": 137
+      },
+      "F04": {
+        "word": 261,
+        "sentence": 61
+      },
+      "FC01": {
+        "word": 125,
+        "sentence": 26
+      },
+      "FC02": {
+        "word": 905,
+        "sentence": 316
+      },
+      "FC03": {
+        "word": 703,
+        "sentence": 261
+      },
+      "M01": {
+        "word": 229,
+        "sentence": 66
+      },
+      "M02": {
+        "word": 273,
+        "sentence": 51
+      },
+      "M03": {
+        "word": 311,
+        "sentence": 95
+      },
+      "M04": {
+        "word": 292,
+        "sentence": 72
+      },
+      "M05": {
+        "word": 278,
+        "sentence": 92
+      },
+      "MC01": {
+        "word": 793,
+        "sentence": 285
+      },
+      "MC02": {
+        "word": 507,
+        "sentence": 169
+      },
+      "MC03": {
+        "word": 649,
+        "sentence": 220
+      },
+      "MC04": {
+        "word": 624,
+        "sentence": 210
+      }
+    },
+    "evaluation_ids": [
+      "F01/Session1/0006",
+      "F01/Session1/0007",
+      "F01/Session1/0009",
+      "F01/Session1/0010",
+      "F01/Session1/0011",
+      "F01/Session1/0008",
+      "F01/Session1/0014",
+      "F01/Session1/0020",
+      "F01/Session1/0022",
+      "F01/Session1/0027",
+      "F03/Session1/0005",
+      "F03/Session1/0006",
+      "F03/Session1/0007",
+      "F03/Session1/0008",
+      "F03/Session1/0009",
+      "F03/Session1/0011",
+      "F03/Session1/0012",
+      "F03/Session1/0024",
+      "F03/Session1/0025",
+      "F03/Session1/0028",
+      "F04/Session1/0005",
+      "F04/Session1/0007",
+      "F04/Session1/0008",
+      "F04/Session1/0009",
+      "F04/Session1/0010",
+      "F04/Session1/0006",
+      "F04/Session1/0015",
+      "F04/Session1/0025",
+      "F04/Session1/0027",
+      "F04/Session1/0034",
+      "FC01/Session1/0005",
+      "FC01/Session1/0006",
+      "FC01/Session1/0007",
+      "FC01/Session1/0008",
+      "FC01/Session1/0009",
+      "FC01/Session1/0015",
+      "FC01/Session1/0026",
+      "FC01/Session1/0033",
+      "FC01/Session1/0036",
+      "FC01/Session1/0040",
+      "FC02/Session2/0005",
+      "FC02/Session2/0006",
+      "FC02/Session2/0007",
+      "FC02/Session2/0008",
+      "FC02/Session2/0009",
+      "FC02/Session2/0015",
+      "FC02/Session2/0016",
+      "FC02/Session2/0017",
+      "FC02/Session2/0019",
+      "FC02/Session2/0029",
+      "FC03/Session1/0005",
+      "FC03/Session1/0006",
+      "FC03/Session1/0007",
+      "FC03/Session1/0008",
+      "FC03/Session1/0009",
+      "FC03/Session1/0026",
+      "FC03/Session1/0035",
+      "FC03/Session1/0049",
+      "FC03/Session1/0053",
+      "FC03/Session1/0054",
+      "M01/Session1/0007",
+      "M01/Session1/0008",
+      "M01/Session1/0014",
+      "M01/Session1/0017",
+      "M01/Session1/0020",
+      "M01/Session2_3/0013",
+      "M01/Session2_3/0029",
+      "M01/Session2_3/0033",
+      "M01/Session2_3/0035",
+      "M01/Session2_3/0042",
+      "M02/Session1/0006",
+      "M02/Session1/0007",
+      "M02/Session1/0008",
+      "M02/Session1/0009",
+      "M02/Session1/0010",
+      "M02/Session1/0020",
+      "M02/Session1/0023",
+      "M02/Session1/0034",
+      "M02/Session1/0035",
+      "M02/Session1/0036",
+      "M04/Session1/0005",
+      "M04/Session1/0006",
+      "M04/Session1/0007",
+      "M04/Session1/0010",
+      "M04/Session1/0011",
+      "M04/Session1/0020",
+      "M04/Session1/0036",
+      "M04/Session1/0040",
+      "M04/Session1/0047",
+      "M04/Session1/0052",
+      "M05/Session1/0006",
+      "M05/Session1/0008",
+      "M05/Session1/0011",
+      "M05/Session1/0018",
+      "M05/Session1/0035",
+      "M05/Session2/0001",
+      "M05/Session2/0002",
+      "M05/Session2/0008",
+      "M05/Session2/0013",
+      "M05/Session2/0019",
+      "MC01/Session1/0006",
+      "MC01/Session1/0007",
+      "MC01/Session1/0008",
+      "MC01/Session1/0009",
+      "MC01/Session1/0010",
+      "MC01/Session1/0005",
+      "MC01/Session1/0015",
+      "MC01/Session1/0016",
+      "MC01/Session1/0019",
+      "MC01/Session1/0020",
+      "MC03/Session1/0006",
+      "MC03/Session1/0007",
+      "MC03/Session1/0008",
+      "MC03/Session1/0009",
+      "MC03/Session1/0010",
+      "MC03/Session1/0013",
+      "MC03/Session1/0050",
+      "MC03/Session1/0052",
+      "MC03/Session1/0057",
+      "MC03/Session1/0060",
+      "MC04/Session1/0005",
+      "MC04/Session1/0006",
+      "MC04/Session1/0007",
+      "MC04/Session1/0008",
+      "MC04/Session1/0010",
+      "MC04/Session1/0012",
+      "MC04/Session1/0023",
+      "MC04/Session1/0036",
+      "MC04/Session1/0072",
+      "MC04/Session1/0073"
+    ],
+    "ids_sha256": "15703d20490c83ac814664c48c3d8c8bf1197d2054d7d9d5ce495c68804a536b",
+    "duration_selection_is_new_m6_policy": true
+  },
+  "panel_audio_verification": {
+    "proposed_panel_plus_smoke_audio_files_verified": 134,
+    "audio_hash_or_header_errors": [],
+    "formats": {
+      "(1, 2, 16000, 'NONE')": 134
+    },
+    "microphones": {
+      "head": 104,
+      "array": 30
+    },
+    "primary_audio_hashes": {
+      "F01/Session1/0006": "3b89f6c8433261438f5de45a695089d1bc327a3193de5f7770757e9a21c3c32c",
+      "F01/Session1/0007": "e71bfc61e0db64d9b334af1008c834685dc4526bb6810eb8a57a6827e3737715",
+      "F01/Session1/0009": "ba21d9def2c7eff2b862a0b45e52dc285563e8a61df8ae0cb51bfa631750f29d",
+      "F01/Session1/0010": "d4ff52a8509a1fc56c31ab7b6cb9cb0aba3f736e916b486f8791b0ee57e6d7e8",
+      "F01/Session1/0011": "6c2f8d84f9576f94d5e3fa4d9f596f3ecb4e719b01a3344968014c1b7bf7960b",
+      "F01/Session1/0008": "f391249a5cdcfd563b4d34f073150ea740027562307a58143d4b19c3f48a2588",
+      "F01/Session1/0014": "a1dfb8048078e87eda4783ecad592e513c34bcb650a3872d098676a4350b1ce5",
+      "F01/Session1/0020": "d77569325b0006b9be1b8b32c234fd60bfac0fb3e5037525402bcc263f39ecc6",
+      "F01/Session1/0022": "a428595fe5c8c36d778e260d3db1494ee170655048083ddc46ff31c3a45f527b",
+      "F01/Session1/0027": "766a338c1158ae90cdd4a1b5787efa3d5f866b62ed6101ccee8eb282931cfb0a",
+      "F03/Session1/0005": "850924f2296afe8b7fcd9bfe7e3b6bcd979f2803dab9f1413d9b3aa96b132d0d",
+      "F03/Session1/0006": "bcf3f95fcb0d7c9d625b04bdab97e2cf86f84a1304df238f1f0b5f49422e857b",
+      "F03/Session1/0007": "d2f7682140b37cf23d541075f65a213458d79e5db6a94290e3e3245f478af98e",
+      "F03/Session1/0008": "257cece8fbf078adbd1ab2f93979e43f32ddf60a38ee45ce9e68932cbb5b519f",
+      "F03/Session1/0009": "0ff90058dd5f093c422e807db6adbda726b71e0c6ae1147d505d082d3e88b274",
+      "F03/Session1/0011": "f6bf58f82a8bc9885b5e43261a7ae26b4e564b2d9ef2145106e0c685bad087f2",
+      "F03/Session1/0012": "656e0772514c593c743da905475c5326aae4d9279c20b4927bcf6b52ec818e3e",
+      "F03/Session1/0024": "7273b6d8c8437ac3c02a9983bc3e28cbf96b55cdb71ec262bc328936521bc447",
+      "F03/Session1/0025": "547a05cb8da62c772786cc7b6b1de824d0af3a96aff48b9db06b96bb46b5024a",
+      "F03/Session1/0028": "b4c19f2124069796b31aa3ee9d581da3af9ae71ff41b1e5d8a3d8e6845c497bf",
+      "F04/Session1/0005": "53914028975b98c23defc5b03d5ec36954435737be40b2b47d80365d5ffd8230",
+      "F04/Session1/0007": "9e8e48a4b44ffe03416b469ae32ceaf6cf854a1ae8770bf0e2f03715c9bb0319",
+      "F04/Session1/0008": "79e040353172dbf5aa18ef2513cae80f2b3f6d9bd34378c8d9dc5c1ab86de68c",
+      "F04/Session1/0009": "33a283a8c47caadc4549ab69050e69ed5f1034d9148c8fc7efeaa5cd12fd4ae4",
+      "F04/Session1/0010": "c9f68778552eee17369e2d121146e8331c3ef1b02f97ecfeb3a6136a5e7d3cc4",
+      "F04/Session1/0006": "0dcf04f864e5e2836eec8617851964c10440398a71acea0367e4b4c4726f676a",
+      "F04/Session1/0015": "6324b148bf8a1c698f13746fb15df4307b0181e10523d464c38795a3647b4ab9",
+      "F04/Session1/0025": "cf1fbd96474b1398927441ab88780addc20ccdb4028df38d59f0721acdc241c4",
+      "F04/Session1/0027": "9e7840fe1880fa44eb57ca8ddbe3469b547e4c35aa6462c4f03407e130a54cac",
+      "F04/Session1/0034": "56416ed0c15c544b2ce19ff91d4b893583172ed8a685a116553616e9ce739fc6",
+      "FC01/Session1/0005": "6b083ed95ac240762968e44aaef5ca7f97b137e65a3af1299524cfa6200f5d46",
+      "FC01/Session1/0006": "17e895b1692b336d03c06cb6573b86a8d8995f90e8646ef1c3573a369fb4fdb2",
+      "FC01/Session1/0007": "d2b24b2be4a9606388dc27b28f96f9984112711c93e08cc00fad79dd6cc56b62",
+      "FC01/Session1/0008": "6fb1f7a805f5bea29bb9c642d855780ff48e533b3675e08dfded9163f9b33979",
+      "FC01/Session1/0009": "07f9f204479529bd9fe475f10331ba92e3d14d3343ed52a59b79666a4f9c7493",
+      "FC01/Session1/0015": "e6f7e7b9e9663c6be66f5f1f21fe99c7078aa5356ca5b982ed920e76e15eab37",
+      "FC01/Session1/0026": "903b41298e35260b02840458a7ee9c229fcb309e172185617b8fd9e62e07bc36",
+      "FC01/Session1/0033": "8b640beee3933cdcffc567651a8fc0b5c3061324228743f185d76adaa7374b6e",
+      "FC01/Session1/0036": "2cf419a063e7747f6f5f4c177a2d525583e50917225b5a315b77661d441eb328",
+      "FC01/Session1/0040": "4b21b24e1edf9efe045352e7dc77e0e7c07694f73ebd2d31c88b0c0de7a96ff9",
+      "FC02/Session2/0005": "4ba054d0d8a6deae4aafa102054223e6f897e1ee2ced667732dfde5a90f93224",
+      "FC02/Session2/0006": "26d470b8ccce94ea0a989009cc225555cab9a4b239396d8ed46de8e74f62c580",
+      "FC02/Session2/0007": "eb349031ef61b8a67376604c0614b44f003d8e93f6c8ae082c3a757a0358ab70",
+      "FC02/Session2/0008": "3f35dc08819119524ff68d3c692cfcb1e3162a5b0b48b43ce36dfa5266ebab01",
+      "FC02/Session2/0009": "90a619434b66cb0b9743c295032fd789bc2c3a7e6ed926601c7c3e2d92e28019",
+      "FC02/Session2/0015": "a8323ec4d53e057b5a6725312057ddfd83b52882d27acff3cfebabb5f5e67285",
+      "FC02/Session2/0016": "8fd757da5cbff77926f8a7a797aeb20a5e26b482ede872e96b76650d3da0b1ed",
+      "FC02/Session2/0017": "de3e5d7f0a8b2b6dfb719707d9c57aee8ff036c73f79c9d707c422a7e439851f",
+      "FC02/Session2/0019": "994a2f8600a7d13bfb40c920cdec11d001f61ecef6772fd3b67ace6323fbb533",
+      "FC02/Session2/0029": "d92ab65571cf960e8b71870ed802637e100000561a27abbe8606b7d32937f4fe",
+      "FC03/Session1/0005": "daef4a942226aeeaa897f67783cb1388e5719747991fc51f5d00673bdf09160b",
+      "FC03/Session1/0006": "ca8dbb5002f6aded06a17d9a0249c9f27dde1cea4e47523603d67824a0b09e1a",
+      "FC03/Session1/0007": "a88d544c336856298d99df59e82bd076bec3aa0bf6d1ac08674e1c4247a44555",
+      "FC03/Session1/0008": "9cf6d1176427c92f5d9db6474763795a362c861769da17a015c1d0f6c10e3a83",
+      "FC03/Session1/0009": "be0bda8b68537f52ca31ef3630e81a7614bfcd8ae70cbf4c4c9d7807c1e99faf",
+      "FC03/Session1/0026": "aa76663cfda8a66fae3def435d484d7596333580e33a661eeefe3bd4546b2849",
+      "FC03/Session1/0035": "3c8538c58e5f99729f921af1f1bfda9024032db93ed3e2e08dbdbb5612920b1d",
+      "FC03/Session1/0049": "f8ad2ce3dee6a1511145169cb697d95282cda284cd279974ea67056da4593dcf",
+      "FC03/Session1/0053": "d95bd28810e5664b7f6ad05a8e60f8ead852d36302ee9b794e5787be1aa97025",
+      "FC03/Session1/0054": "eb543341229562add5a2b75d0596cc75ef15c75b4b6131169c69179972ef29ce",
+      "M01/Session1/0007": "932952115252e32944534f68d9618febb7d260ee1e069df6d9f0999549f8b8cb",
+      "M01/Session1/0008": "f26d9007142c0a3c2e6c1bacddf06d8e3a5f29a9705bf1b689d35ef70ee99458",
+      "M01/Session1/0014": "7ba62962dfd075607496f93d4020e967f8f07ea3dc12b499c90e9216b829c6fc",
+      "M01/Session1/0017": "dd48d341cfb8ee19bee0ca22ea08c59cc0f57531c2f9f37e5875da8961651d33",
+      "M01/Session1/0020": "820b899f0e8e811bc38c3b114cb14e5ddbc331c7ca5f0af6d8547ad142333450",
+      "M01/Session2_3/0013": "f01a36128834a6e6b11d20cc8c3a7d38434afdaf90b44404733c733afb10eb20",
+      "M01/Session2_3/0029": "579c2a3657df0a4915476ceaa83df4c3034034773eb5dd2fec5b17b485eadacc",
+      "M01/Session2_3/0033": "6be954de917296a68632b0ec0fcf5a7e6c4dc1645a84d9362514a225471c5fe5",
+      "M01/Session2_3/0035": "12d21d4aa9361973b12cf08e4403ad7e7137714a49df79d3e2b1f33b246b9e15",
+      "M01/Session2_3/0042": "a7fb7a661c8afb9e7aff1df6603bdaf2277152189408a2e7749bbce99ee464b7",
+      "M02/Session1/0006": "82e569a374dc09e94bae213451effcfeb71c6ab33ea681abe0e7569e6a1f074a",
+      "M02/Session1/0007": "66949f27c2b34384c1f75ec47470c0cb9a2bbdab03bdfc8282f36b414da49386",
+      "M02/Session1/0008": "e4b9ba2c61699d454977445162e99166a45d623fba6d7e5a065db39bb0b7ad71",
+      "M02/Session1/0009": "568832ea95ccfaba3d411cd38ff04ff00964a299b52ee7af0c81098acba84d1c",
+      "M02/Session1/0010": "df4c89c98cce77afbfb27bc19a05d9ce25310c85a635ba8142f355e00575c22f",
+      "M02/Session1/0020": "f75d1799e1c66d7b7bc7c4f5c728b122ffd94ea6ae17036fafa8f3560d2e38b9",
+      "M02/Session1/0023": "d4af6083bcd1d64cacc0b28580f68a6900e491278bd634f156e192bb08b7ed63",
+      "M02/Session1/0034": "3cc0b26454a56e41445e4d215b857e22a417fe72b9d8bbf236b8a6d495488c06",
+      "M02/Session1/0035": "aa83bcd586d3723c96f6453a6262994ee938594e2807bcb162ed4f327d6e5ca4",
+      "M02/Session1/0036": "a3e3a45be07e3d4ae0f783ef31a7bc17d257b73c264843694e3cd9ddc988d877",
+      "M03/Session2/0002": "b32929be68e8506c1ac27481e8a7f0cf36d89a0c26604a0163f1d74b650e608c",
+      "M03/Session2/0013": "e4f57347c2442e49f650e1d4adf2b73bab47e248220c07ef42c35972a8c87689",
+      "M04/Session1/0005": "403428f5cf095e43354fd6c2cd81963272ff3cfd216dca258aba4d08615cebbe",
+      "M04/Session1/0006": "cfde53a3d4eaa1350192519a9f1c932ccda0922dbafa4f3dce507ce72763d94d",
+      "M04/Session1/0007": "2a0f31ce89870eb8ca0ca6dc65a9a101c439bf8f3db48b0aaf979ac522bf3cc9",
+      "M04/Session1/0010": "af552ef0da0195a78448b542f667c407e40fb43d2dfa6d650aece0d54f2892d8",
+      "M04/Session1/0011": "e55e413d5f588f666d6525e725c5cde45e15c62c88b421fc0d566f5ea66d9f2d",
+      "M04/Session1/0020": "e37582b711b73ada6dab6828c64add7639aa1977974416e1f7966b9547617a56",
+      "M04/Session1/0036": "fc89a9863d5f0679e4bd40a11ed1f6509909f7981820073e6ab9679a978c0a5a",
+      "M04/Session1/0040": "b86e34ae9615aad74a78ffc0433639cec02eb811d9bb179d3c2bccd275aa03f7",
+      "M04/Session1/0047": "ae585202ec76fa5d5a8f52fe138445f443e9e0f76e3aea9537ba84801a9538ba",
+      "M04/Session1/0052": "5308557c7963f8f0217aea96a094b00f91d7dab64981c694a6e281ccd65953f2",
+      "M05/Session1/0006": "5891681216a8f0944215d56c4fcf24307f3b07e981fbdb586fc33edc2e3b6525",
+      "M05/Session1/0008": "e445b1f641a4c7eac1edceb2610c6bdbe7cbd063631612a163d950ba6f8f315d",
+      "M05/Session1/0011": "0b6657c01eb8b34c1ff12ee89c3e5d67a77fc3a2acc57615179665c9e9ccd4a8",
+      "M05/Session1/0018": "ab576ca150c8bec6f808b07cea51dd925132e426924524a2f539eb08de93effb",
+      "M05/Session1/0035": "3de1db99594633f94009f9fc9562542a96f1eb7c477f67bb5871dcaf428fb2e1",
+      "M05/Session2/0001": "593b105e0ec927816695de4ab1d034269741edf7006dc1e66d040494b5b3a0ad",
+      "M05/Session2/0002": "a8d179d0ca7898a4b17c10d4931c663577fbba01814378eb349257adbc62f2fa",
+      "M05/Session2/0008": "120d3974bf881ae49dfce691bcecd94423298efea34a691b5c2df703cc866ba3",
+      "M05/Session2/0013": "2e1d84acd3bd1a2598fa7f05e6c14a98ff893aabb1d70121e330d708db60df37",
+      "M05/Session2/0019": "660400c53dc6e5865959ea3e5f4371f74c097672234d71d6cbcc7880fc735064",
+      "MC01/Session1/0006": "c06e36a18b417b775582ee4a373a4e799db4c042428e3b3274983db736ca146d",
+      "MC01/Session1/0007": "1474338d06b445c21c4f062c5d2e034538e494e316d7c5b2848f741a298109e9",
+      "MC01/Session1/0008": "374eea652b182664046b8961576bf2436fc57523fde9f1cb3bd1a55a0f10379d",
+      "MC01/Session1/0009": "5a36afe492391386a5320d48f0192aec706386460aa94aa6ab8eca2e77418a77",
+      "MC01/Session1/0010": "ed4663d6536e343ed9c0c92bf9ee3473256bbb567b0e2fb107da5d3100652eb8",
+      "MC01/Session1/0005": "e48570886d715ece2539860a3edcb6b7088ea3b4ce8d2896535af7b15519ee21",
+      "MC01/Session1/0015": "a3c327fd1b9377988eef6ecf747b0e390cab8d1f2826134bfebf4fa47f96fc90",
+      "MC01/Session1/0016": "8f840cdb32d1a6d2c63d6e5c822880886034c8e95e6a1f1e26c546a4ced18e2d",
+      "MC01/Session1/0019": "802327bb8a8d55242e428688a9e2331d3ec24730d53596e27d4fd6b2aae4524c",
+      "MC01/Session1/0020": "1d30f48a8593a3d985ba2ea4a591f0b355060c6f297154474f15ef6678f47b00",
+      "MC02/Session1/0007": "b354f9e986a2eae7a976b4fb8147808c113f702e8f41806d9a3b645bd9bdf310",
+      "MC02/Session1/0006": "85dbc6243fb56d9dcfec4df4a03e76a8a828efb7e21e38735f6931c570684a1d",
+      "MC03/Session1/0006": "a7fb246148d310fa34596908166fcefe11042bc2d15dd82709580b1b6e1726a5",
+      "MC03/Session1/0007": "6acee1727d86b232440eeb92b7e1c7ac02f4b4490c67da7065a5ccbcf0b63e85",
+      "MC03/Session1/0008": "1a5918ff842f4e45d5515307c820359bf5c021a98c4b18aa3f4f6f1b79fcd7d6",
+      "MC03/Session1/0009": "5f8ad1c85933f3d5ee3d76f260ad58427f7b974cb2655135488c45cc561fc037",
+      "MC03/Session1/0010": "8e5998f2fef8000e6aa83864b67b4e7c37c59e4d06bc79075c5149c249f8951e",
+      "MC03/Session1/0013": "245e254aa831b57b509956dc5a1267f2d2b370ae07c6cd3c3b63058d08b4e03b",
+      "MC03/Session1/0050": "0110b833a785c676a5b92067d0d1313601685249132208beae60a5bd9f9cc45e",
+      "MC03/Session1/0052": "84952f2238986c0e186f787e603149bf32c84bd960b1e60f1aaaa014b34221bd",
+      "MC03/Session1/0057": "844621676b61d4c48096c2b79f48d0d756efc25a8d9c5f24139ce7d5581117a0",
+      "MC03/Session1/0060": "099c1e4e4f8d5a35d4c0617ba1b40665edb11a919e4084502a8dd35f83b168a2",
+      "MC04/Session1/0005": "aae19251e1c37e57d7ba2e70a98c6c669dede6deda8e476857c5a25412ef9e23",
+      "MC04/Session1/0006": "0e0ef7d5f447dcf80ef53115de554278be2dde65a22ba905c4b53ceb73ae101f",
+      "MC04/Session1/0007": "1bdc789543612f508f194bc822a976163b913dbe40743a75d728e311a6019664",
+      "MC04/Session1/0008": "d2c127d0e2322547f30af9d68268790ba8203f8dab4c45f814e3cb5faf9c7252",
+      "MC04/Session1/0010": "c55a453dd78cfbc2d4e5b356c384a3ff2110ee336aa266e6bbca6bb84f5fad4c",
+      "MC04/Session1/0012": "a58e02040b82914703e30eb59d2b959a999bec7842daddd48fb0e5c77c189338",
+      "MC04/Session1/0023": "085bdc6e1f6b8beaf1411156e6ac6105e8d5ed6361ca2f23b51480c7b0440dbb",
+      "MC04/Session1/0036": "cfb1102c7d5dbd4509779ce32f816a8b2aa8e21078de4efdf140ec73fc4adeeb",
+      "MC04/Session1/0072": "a72492d19edd8ebe36061c602ca09ab9b95dfd49c46f1f64401c72dd60252b7a",
+      "MC04/Session1/0073": "4f735614f10bfdf0ea142f721882596139b4c59d7c0a09b30c7ee82879f57978"
+    }
+  },
+  "existing_structure": {
+    "src/vaaniswitch/m6_reconstruction": [
+      ".gitkeep",
+      "AGENTS.md",
+      "README.md",
+      "__init__.py",
+      "__pycache__"
+    ],
+    "tests/m6_reconstruction": [
+      ".gitkeep",
+      "README.md"
+    ],
+    "scripts": [
+      ".gitkeep",
+      "audit_module1_full_build.py",
+      "audit_module2_real_crop.py",
+      "audit_module4_baseline.py",
+      "audit_module4_protected_inputs.py",
+      "audit_module5_final_retraining.py",
+      "audit_module5_phase5a.py",
+      "audit_module5_phase5b.py",
+      "audit_module5_phase5c.py",
+      "audit_module5_protected_inputs.py",
+      "module5_final_closure.py",
+      "module5_outer_evidence.py",
+      "module5_outer_exception_continuation.py",
+      "module5_outer_exception_report.py",
+      "module5_outer_fold2_a1_continuation.py",
+      "module5_outer_fold2_b1_continuation.py",
+      "module5_outer_fold2_b2_continuation.py",
+      "module5_outer_fold2_b3_continuation.py",
+      "module5_outer_fold2_c1_continuation.py",
+      "module5_outer_fold2_continuation.py",
+      "module5_outer_remaining_sequence.py",
+      "module5_recover_outer_exception.py",
+      "report_module5_phase5b.py",
+      "smoke_module5_implementation.py",
+      "__pycache__"
+    ],
+    "apps": [
+      "api",
+      "demo"
+    ],
+    "artifacts": [
+      "attention_maps",
+      "checkpoints",
+      "demo_outputs",
+      "logs",
+      "metrics",
+      "module5",
+      "module5_compileall.log",
+      "module5_coverage.log",
+      "module5_diff_check.log",
+      "module5_full_project_tests.log",
+      "module5_mypy.log",
+      "module5_protected_inputs_console.log",
+      "module5_real_smoke_console.log",
+      "module5_ruff.log",
+      "module5_selection_recovery_reproduction.log",
+      "module5_targeted_tests.log",
+      "module5_tests_before_smoke.log",
+      "module5_test_initial.log",
+      "module5_test_second.log",
+      "module5_test_targeted.log",
+      "module5_test_workflow.log",
+      "plots",
+      "predictions",
+      "representations"
+    ],
+    "data/annotations": [
+      ".gitkeep"
+    ]
+  },
+  "hardware": {
+    "os": "Windows 11 Pro",
+    "os_version": "10.0.26300",
+    "cpu": "Intel Core i9-13980HX",
+    "cores": 24,
+    "logical_processors": 32,
+    "ram_gib": 31.63,
+    "c_free_gib": 32.29,
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "driver": "617.14",
+    "gpu_memory_total_mib": 8188,
+    "gpu_memory_free_mib": 6759,
+    "voice_tokens": [
+      "TTS_MS_EN-GB_HAZEL_11.0",
+      "TTS_MS_EN-US_DAVID_11.0",
+      "TTS_MS_EN-US_ZIRA_11.0"
+    ],
+    "ffmpeg_on_path": false,
+    "python": "3.12.2",
+    "torch": "2.14.0",
+    "torchvision": "0.29.0",
+    "numpy": "1.26.4",
+    "torch_cuda": null,
+    "cuda_available": false,
+    "whisper_default_cache_files": [],
+    "m6_packages_installed": false
+  },
+  "proposed_dependency_metadata": [
+    {
+      "package": "openai-whisper",
+      "version": "20250625",
+      "requires_python": ">=3.8",
+      "requires_dist": [
+        "more-itertools",
+        "numba",
+        "numpy",
+        "tiktoken",
+        "torch",
+        "tqdm",
+        "triton>=2; (platform_machine == \"x86_64\" and sys_platform == \"linux\") or sys_platform == \"linux2\"",
+        "black; extra == \"dev\"",
+        "flake8; extra == \"dev\"",
+        "isort; extra == \"dev\"",
+        "pytest; extra == \"dev\"",
+        "scipy; extra == \"dev\""
+      ],
+      "url": "https://pypi.org/pypi/openai-whisper/json"
+    },
+    {
+      "package": "pyttsx3",
+      "version": "2.99",
+      "requires_python": null,
+      "requires_dist": [
+        "comtypes; platform_system == \"Windows\"",
+        "pyobjc>=2.4; platform_system == \"Darwin\"",
+        "pypiwin32; platform_system == \"Windows\"",
+        "pywin32; platform_system == \"Windows\""
+      ],
+      "url": "https://pypi.org/pypi/pyttsx3/json"
+    },
+    {
+      "package": "jiwer",
+      "version": "4.0.0",
+      "requires_python": ">=3.8",
+      "requires_dist": [
+        "click>=8.1.8",
+        "rapidfuzz>=3.9.7"
+      ],
+      "url": "https://pypi.org/pypi/jiwer/json"
+    }
+  ],
+  "proposed_model": {
+    "backend": "openai-whisper",
+    "model": "small.en",
+    "checkpoint_sha256": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+    "downloaded": false
+  },
+  "documentation_before": {
+    "README.md": {
+      "sha256": "937898cc130c0ea4d4e622dc78aaf3ed06cdfb00676b458e2f05c909c6f86057",
+      "bytes": 6022
+    },
+    "PROJECT_STATUS.md": {
+      "sha256": "0a173b8f95609d09536a5069a47870a8e60f2f36377bc1787f9b9a585a242a92",
+      "bytes": 11594
+    },
+    "MODULE_TRACKER.md": {
+      "sha256": "0c9d544581b742553a18e278ca1054c2cff2bcd4b0a2729bf14757b7378dc82e",
+      "bytes": 4871
+    },
+    "CHANGELOG.md": {
+      "sha256": "9fb5bbc70179d46ec0591ad82c053993f9dcab7c7bf6dd3a7d432ba72512912a",
+      "bytes": 28351
+    },
+    "docs/defects/DEFECT_LOG.md": {
+      "sha256": "04ed390259d4241039d0094e1d6ccdeac2db6fe74e426d9b6f877383664105a0",
+      "bytes": 22659
+    },
+    "docs/modules/6_english_asr_tts/MODULE.md": {
+      "sha256": "334524b0fff04c23d9142175418f855e5dc636e84a0e200f3b8912ef82151bcc",
+      "bytes": 680
+    },
+    "docs/modules/6_english_asr_tts/TEST_REPORT.md": {
+      "sha256": "8bdf4b15a7b01bfcf5a8815618576a308ed447a0a213f0faa2e164f8154ed8f7",
+      "bytes": 254
+    }
+  },
+  "execution": {
+    "model_downloads": 0,
+    "package_installs": 0,
+    "model_forwards": 0,
+    "training": 0,
+    "module5_audit_reruns": 0,
+    "tts_synthesis": 0,
+    "wer_cer_measured": false
+  },
+  "verification_limitations": [
+    "No full raw/audio/cache tree revalidation.",
+    "No audio listening or verbatim transcription validation.",
+    "Package compatibility and new-environment CUDA are untested.",
+    "Proposed panel is a convenience sample, not a full TORGO benchmark.",
+    "Existing working tree had substantial prior modifications; they were preserved."
+  ],
+  "final_preservation_check": {
+    "status": "PASS",
+    "protected_files_compared": 124,
+    "changed_protected_files": [],
+    "raw_prompt_files_compared": 9494,
+    "raw_prompt_inventory_sha256": "9844ba7652f4b3d8e326115943d8a4888e75627b331b1a5a9d5904897930344e",
+    "reference_mismatches": [],
+    "primary_wavs_compared": 134,
+    "changed_primary_wavs": [],
+    "panel_membership_digest_and_disjointness": "PASS",
+    "scope": "Targeted documentation-session preservation; no scientific audit or inference rerun."
+  }
+}
