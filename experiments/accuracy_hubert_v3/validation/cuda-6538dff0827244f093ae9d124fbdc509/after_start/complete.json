@@ -1,0 +1,193 @@
+{
+  "augmented_count": 0,
+  "candidate": {
+    "C": 0.1,
+    "augmentation": false,
+    "complexity": 0,
+    "id": "ref_L09_C0.1_B0_N0_A0",
+    "layer": 9,
+    "normalization": "N0",
+    "weighting": "B0"
+  },
+  "checkpoint": {
+    "epoch": 0,
+    "identity": "aa8b1ae0f03a911b73b387b64e5bf3b24d2188b9929304118f92c34117e61398",
+    "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\validation\\cuda-6538dff0827244f093ae9d124fbdc509\\after_start\\epoch-000-cf8b575ca6d74c6c8f64175c28228efd.pt",
+    "sha256": "af558886386dde03133e54fc7ebf88c6301b15ed2025315b3c0063c2d11b47c7"
+  },
+  "effective_weights": {
+    "additional_class_weight": null,
+    "classes": {
+      "0": 6.0,
+      "1": 10.0
+    },
+    "max": 1.0,
+    "max_to_min": 1.0,
+    "min": 1.0,
+    "speakers": {
+      "F01": 2.0,
+      "F04": 2.0,
+      "FC02": 2.0,
+      "FC03": 2.0,
+      "M01": 2.0,
+      "M02": 2.0,
+      "M05": 2.0,
+      "MC01": 2.0
+    },
+    "total": 16.0
+  },
+  "evidence_kind": "REAL_DEVELOPMENT",
+  "finite_state": "PASS",
+  "identity": "aa8b1ae0f03a911b73b387b64e5bf3b24d2188b9929304118f92c34117e61398",
+  "iterations": [
+    22
+  ],
+  "iterative_loss_history": null,
+  "normalized_gradient_norm": 0.001229875829892235,
+  "normalizer_fit": {
+    "allowed": [
+      "F01",
+      "F04",
+      "FC02",
+      "FC03",
+      "M01",
+      "M02",
+      "M05",
+      "MC01"
+    ],
+    "evidence_kind": "REAL_DEVELOPMENT",
+    "forbidden": [
+      "F03",
+      "FC01",
+      "M04",
+      "MC03",
+      "MC04"
+    ],
+    "ids": [
+      "F01/Session1/0082",
+      "F01/Session1/0035",
+      "F04/Session1/0016",
+      "F04/Session1/0088",
+      "FC02/Session2/0005",
+      "FC02/Session3/0317",
+      "FC03/Session3/0151",
+      "FC03/Session1/0036",
+      "M01/Session2_3/0004",
+      "M01/Session2_3/0180",
+      "M02/Session2/0155",
+      "M02/Session1/0062",
+      "M05/Session1/0120",
+      "M05/Session2/0242",
+      "MC01/Session2/0033",
+      "MC01/Session3/0358"
+    ],
+    "role": "train"
+  },
+  "original_count": 16,
+  "original_weights": {
+    "additional_class_weight": null,
+    "classes": {
+      "0": 6.0,
+      "1": 10.0
+    },
+    "max": 1.0,
+    "max_to_min": 1.0,
+    "min": 1.0,
+    "speakers": {
+      "F01": 2.0,
+      "F04": 2.0,
+      "FC02": 2.0,
+      "FC03": 2.0,
+      "M01": 2.0,
+      "M02": 2.0,
+      "M05": 2.0,
+      "MC01": 2.0
+    },
+    "total": 16.0
+  },
+  "parameter_count": 1537,
+  "predictions": [
+    {
+      "evidence_kind": "REAL_DEVELOPMENT",
+      "label": 1,
+      "logical_id": "M03/Session2/0306",
+      "microphone": "head",
+      "prediction": 0,
+      "probability": 0.15317449651501402,
+      "speaker_id": "M03"
+    },
+    {
+      "evidence_kind": "REAL_DEVELOPMENT",
+      "label": 1,
+      "logical_id": "M03/Session2/0354",
+      "microphone": "head",
+      "prediction": 0,
+      "probability": 0.1514436911600903,
+      "speaker_id": "M03"
+    },
+    {
+      "evidence_kind": "REAL_DEVELOPMENT",
+      "label": 0,
+      "logical_id": "MC02/Session2/0239",
+      "microphone": "array",
+      "prediction": 1,
+      "probability": 0.6490020569625968,
+      "speaker_id": "MC02"
+    },
+    {
+      "evidence_kind": "REAL_DEVELOPMENT",
+      "label": 0,
+      "logical_id": "MC02/Session1/0058",
+      "microphone": "head",
+      "prediction": 1,
+      "probability": 0.5796586772843646,
+      "speaker_id": "MC02"
+    }
+  ],
+  "rng_checkpointed": true,
+  "training_seconds": 0.009466300005442463,
+  "validation_metrics": {
+    "accuracy": 0.0,
+    "balanced_accuracy": 0.0,
+    "brier": 0.5485922736793383,
+    "confusion_matrix": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "ece_10_equal_width": 0.7310106366429643,
+    "log_loss": 1.4193455116094684,
+    "macro_f1": 0.0,
+    "precision": 0.0,
+    "record_count": 4,
+    "reliability_bins": [
+      {
+        "bin": 1,
+        "count": 2,
+        "mean_probability": 0.15230909383755215,
+        "positive_fraction": 1.0
+      },
+      {
+        "bin": 5,
+        "count": 1,
+        "mean_probability": 0.5796586772843646,
+        "positive_fraction": 0.0
+      },
+      {
+        "bin": 6,
+        "count": 1,
+        "mean_probability": 0.6490020569625968,
+        "positive_fraction": 0.0
+      }
+    ],
+    "roc_auc": 0.0,
+    "sensitivity": 0.0,
+    "specificity": 0.0,
+    "threshold": 0.5
+  }
+}

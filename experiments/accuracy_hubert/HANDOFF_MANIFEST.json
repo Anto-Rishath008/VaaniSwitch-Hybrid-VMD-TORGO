@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-13",
+  "files": {
+    ".gitignore": "548f55a180cf27f93e793858d05f6d4f341b3d1493f0b1ae861afb9103045b03",
+    "ARCHITECTURE.md": "2ff60513e549ae795c0db972cfbd9abcb5ca0dc0d1ac100c0b7be23d1e0fddaf",
+    "CHANGELOG.md": "458652098947e798806d9d2f9e0ccb5df51d4c32b1b694dd1615d374e71775e9",
+    "DEFECT_LOG.md": "f26605c7d351bc264cea7a2a5de633439c44fd221b087402cd9fc99552f58bbf",
+    "EXPERIMENT_PROTOCOL.md": "3f8cbb175f47360333bd8c80c60c2f0d72966557a3def6f8fd4f4320b797fc46",
+    "EXPERIMENT_TRACKER.md": "4569702537f819876aa21e07dc5e482d98a465095d653967e4126e5b0093f93e",
+    "IMPLEMENTATION_REPORT.md": "a238c7c0def9cdb575a70ecdba375f24db7e5012f4ef7362055cf613c84fdb77",
+    "README.md": "85c2766a1a9c776e407832c1b1d2e7d207efc6237a8f36da3791f49c37f94252",
+    "TEST_REPORT.md": "38791a2da792794e4e7adbe84c5524db46943a8caa79316be02cd0b8fec786fd",
+    "TRAINING_CONFIG.yaml": "ade9fce5b1f80d3d3f002acdf39ba65766c911ffc63810ff028a8a0354013ecb",
+    "run_all.ps1": "94ebe99fe859aed8f3352a0495f27a79839097468a67173e1c52d2f68b749ab3",
+    "src/__init__.py": "839df6ee05f1e6f5e806291a3da7ccfb185cf21c0bbdfdd3168337bceed1dc55",
+    "src/common.py": "d7232c525a73ee0b4ad33278cfc8ae855289fb7aa66de75da4f1391256bcc596",
+    "src/data.py": "bb5334594e0a11fdde27cb918a613cb1582bb861b376d14e4cc3bb9a9bc3289e",
+    "src/features.py": "2a5f3d2ed914e8b9d7abdea20214a70c8a638bb2a83b2d3bb831bcae5a7ea3e6",
+    "src/models.py": "edb2dcf459eea06db40aff34ca88e32daaba6689f2329052ba8bf8feda949d61",
+    "src/native_b2_contract.py": "8aa3bd02ac10280c23b006bd7f737af8b09851cbe10f04fbe9aa9e5753214ad5",
+    "src/native_b2_encoder.py": "bd6bae4b9c42dc61ac646b397ecfcc912c23137c3ca10f9fa71d955ef8712048",
+    "src/native_b2_preprocessing.py": "5b3ec67ca5222b6bbf10428caaadadf2867ac7b81cda4305a6cdcde6cc8dde23",
+    "src/pipeline.py": "4c4c5e3a7b7dbdbafe676fb7462b4e2c9935716eb770ed52b12e6bd7bd8f8cf9",
+    "src/reporting.py": "ea579f573f9f928294f84bf333a281f2e485eea883e8b5e19bcee516122e7242",
+    "src/training.py": "72d709e684e5da3504eb0a65b67832f977c3427290b515f977e3b08cd77b9f04",
+    "tests/test_contracts.py": "2d40fa1f494197234ed10e9f70053d7a793fe052cdfbcbeec136024a589387a7",
+    "tests/test_pipeline.py": "2300dd5c5ab5910d6934eb61edc69ab04b071e202af51bfd24b26155846ff869",
+    "tests/test_recovery.py": "5cee490c14c91e86476bca5a697707bdc6b430ad008fd9e3085a863e78f486ab"
+  },
+  "status": "PASS",
+  "validation": {
+    "cuda_smoke_status": "PASS",
+    "full_experiment_started": false,
+    "implementation_status": "PASS",
+    "preservation_summary_sha256": "e6209c194ebd3c0b617ce35831d463a7c2d42791d4c0b03bdbc282a4ca1be0ac",
+    "real_outer_forwards": 0,
+    "smoke": {
+      "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert\\smoke\\cuda-1abefcda4275498b9684a48562d589c1\\SMOKE_REPORT.json",
+      "sha256": "a5444a93c6e0aba8c620c11efd1dc029d547dbd8430ba04bef25be755f42c834"
+    },
+    "source_identity": {
+      "TRAINING_CONFIG.yaml": "ade9fce5b1f80d3d3f002acdf39ba65766c911ffc63810ff028a8a0354013ecb",
+      "run_all.ps1": "94ebe99fe859aed8f3352a0495f27a79839097468a67173e1c52d2f68b749ab3",
+      "src/__init__.py": "839df6ee05f1e6f5e806291a3da7ccfb185cf21c0bbdfdd3168337bceed1dc55",
+      "src/common.py": "d7232c525a73ee0b4ad33278cfc8ae855289fb7aa66de75da4f1391256bcc596",
+      "src/data.py": "bb5334594e0a11fdde27cb918a613cb1582bb861b376d14e4cc3bb9a9bc3289e",
+      "src/features.py": "2a5f3d2ed914e8b9d7abdea20214a70c8a638bb2a83b2d3bb831bcae5a7ea3e6",
+      "src/models.py": "edb2dcf459eea06db40aff34ca88e32daaba6689f2329052ba8bf8feda949d61",
+      "src/native_b2_contract.py": "8aa3bd02ac10280c23b006bd7f737af8b09851cbe10f04fbe9aa9e5753214ad5",
+      "src/native_b2_encoder.py": "bd6bae4b9c42dc61ac646b397ecfcc912c23137c3ca10f9fa71d955ef8712048",
+      "src/native_b2_preprocessing.py": "5b3ec67ca5222b6bbf10428caaadadf2867ac7b81cda4305a6cdcde6cc8dde23",
+      "src/pipeline.py": "4c4c5e3a7b7dbdbafe676fb7462b4e2c9935716eb770ed52b12e6bd7bd8f8cf9",
+      "src/reporting.py": "ea579f573f9f928294f84bf333a281f2e485eea883e8b5e19bcee516122e7242",
+      "src/training.py": "72d709e684e5da3504eb0a65b67832f977c3427290b515f977e3b08cd77b9f04"
+    },
+    "tests": {
+      "count": 38,
+      "log_sha256": "e32dceb1c1aaf9b9a29e13dd7e9dd574701413e938bbe74949bf77a638489c54",
+      "seconds": 16.208
+    }
+  }
+}

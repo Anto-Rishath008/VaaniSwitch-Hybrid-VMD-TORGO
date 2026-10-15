@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "changes": {
+    "original": [],
+    "original_git": [],
+    "study": [],
+    "study_git": []
+  },
+  "counts": {
+    "original": {
+      "total": 240570,
+      "byte_hashed": 30802,
+      "metadata_only": 209768
+    },
+    "study": {
+      "total": 54234,
+      "byte_hashed": 20170,
+      "metadata_only": 34064
+    }
+  },
+  "scope": "Every file except Git internals and V4. Raw/processed and existing venvs: path,size,mtime only. All other files including V1/V2/V3: SHA256,size,mtime. Git HEAD, branch and refs checked."
+}

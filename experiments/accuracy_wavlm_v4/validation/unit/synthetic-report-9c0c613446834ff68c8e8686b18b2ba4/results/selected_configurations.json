@@ -1,0 +1,44 @@
+{
+  "1": {
+    "final_fit_epochs": {
+      "frozen_reference": null,
+      "selected": null
+    },
+    "frozen_reference": {
+      "family": "A",
+      "id": "synthetic_A"
+    },
+    "selected": {
+      "family": "A",
+      "id": "synthetic_A"
+    }
+  },
+  "2": {
+    "final_fit_epochs": {
+      "frozen_reference": null,
+      "selected": null
+    },
+    "frozen_reference": {
+      "family": "A",
+      "id": "synthetic_A"
+    },
+    "selected": {
+      "family": "A",
+      "id": "synthetic_A"
+    }
+  },
+  "3": {
+    "final_fit_epochs": {
+      "frozen_reference": null,
+      "selected": null
+    },
+    "frozen_reference": {
+      "family": "A",
+      "id": "synthetic_A"
+    },
+    "selected": {
+      "family": "A",
+      "id": "synthetic_A"
+    }
+  }
+}

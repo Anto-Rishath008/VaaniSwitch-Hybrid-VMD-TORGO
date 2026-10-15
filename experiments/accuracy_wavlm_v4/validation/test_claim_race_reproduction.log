@@ -1,0 +1,20 @@
+test_outer_claim_race_cannot_forward_twice (test_v4.ExecutionGates.test_outer_claim_race_cannot_forward_twice) ... FAIL
+
+======================================================================
+FAIL: test_outer_claim_race_cannot_forward_twice (test_v4.ExecutionGates.test_outer_claim_race_cannot_forward_twice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\tests\test_v4.py", line 338, in test_outer_claim_race_cannot_forward_twice
+    seal(root, identity, lambda: self.fail('Concurrent claim winner already owns inference'))
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\src\evaluation.py", line 27, in seal
+    result = {'identity': identity, **infer()}
+                                      ^^^^^^^
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\tests\test_v4.py", line 338, in <lambda>
+    seal(root, identity, lambda: self.fail('Concurrent claim winner already owns inference'))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Concurrent claim winner already owns inference
+
+----------------------------------------------------------------------
+Ran 1 test in 0.007s
+
+FAILED (failures=1)

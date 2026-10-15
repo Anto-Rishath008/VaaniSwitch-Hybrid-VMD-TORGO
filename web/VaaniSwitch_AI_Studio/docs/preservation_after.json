@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "inventory_changes": [],
+  "sha256_changes": [],
+  "git_status_changes": [],
+  "files_inventoried": 313416,
+  "files_hashed": 679,
+  "v4_seal": {
+    "status": "PASS",
+    "files": {
+      "experiments\\accuracy_wavlm_v4\\figures\\accuracy_comparison.png": true,
+      "experiments\\accuracy_wavlm_v4\\figures\\confusion_matrix.png": true,
+      "experiments\\accuracy_wavlm_v4\\figures\\gpu_memory_analysis.png": true,
+      "experiments\\accuracy_wavlm_v4\\figures\\speaker_accuracy_analysis.png": true,
+      "experiments\\accuracy_wavlm_v4\\figures\\training_curves.png": true,
+      "experiments\\accuracy_wavlm_v4\\results\\DEVELOPMENT_REPORT.md": true,
+      "experiments\\accuracy_wavlm_v4\\results\\FINAL_EXPERIMENT_REPORT.md": true,
+      "experiments\\accuracy_wavlm_v4\\results\\ablation_results.csv": true,
+      "experiments\\accuracy_wavlm_v4\\results\\final_results.json": true,
+      "experiments\\accuracy_wavlm_v4\\results\\fold_results.csv": true,
+      "experiments\\accuracy_wavlm_v4\\results\\record_predictions.csv": true,
+      "experiments\\accuracy_wavlm_v4\\results\\selected_configurations.json": true,
+      "experiments\\accuracy_wavlm_v4\\results\\speaker_predictions.csv": true
+    },
+    "seal_sha256": "8b4701308f547670644f34e9f901856fccf3fde7162ef353aa0ab46b8d293512",
+    "identity": "b709bea65e182a731842b075955516731835ef229d9a9be216cebb1e008bc2fa"
+  },
+  "additional_assets_hashed": 3,
+  "unique_files_hashed": 682
+}

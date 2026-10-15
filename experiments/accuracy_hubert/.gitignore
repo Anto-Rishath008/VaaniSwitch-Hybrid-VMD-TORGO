@@ -1,0 +1,13 @@
+/cache/
+/checkpoints/
+/logs/
+/smoke/
+/results/
+/plots/
+__pycache__/
+*.tmp
+*.pt
+*.npy
+*.npz
+*.bin
+*.safetensors

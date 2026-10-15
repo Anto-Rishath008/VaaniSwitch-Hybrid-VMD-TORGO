@@ -1,0 +1,38 @@
+{
+  "status": "PASS_IMPLEMENTATION_AND_BOUNDED_VALIDATION",
+  "tests": 53,
+  "test_seconds": 14.906,
+  "cuda_report": {
+    "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\validation\\cuda-d8319ed921b147b4bc864f3a98294b5e\\REPORT.json",
+    "sha256": "1fe6a6240b31f69523bcff01bb3a5c13c5d05bf38444fab40eb142a04946cfe7"
+  },
+  "preservation": {
+    "status": "PASS",
+    "changes": {
+      "original": [],
+      "original_git": [],
+      "study": [],
+      "study_git": []
+    },
+    "counts": {
+      "original": {
+        "total": 240570,
+        "byte_hashed": 30802,
+        "metadata_only": 209768
+      },
+      "study": {
+        "total": 54234,
+        "byte_hashed": 20170,
+        "metadata_only": 34064
+      }
+    },
+    "scope": "Every file except Git internals and V4. Raw/processed and existing venvs: path,size,mtime only. All other files including V1/V2/V3: SHA256,size,mtime. Git HEAD, branch and refs checked."
+  },
+  "model_revision": "4c66d4806a428f2e922ccfa1a962776e232d487b",
+  "full_development_executed": false,
+  "real_outer_inference_executed": false,
+  "v4_accuracy": null,
+  "peak_allocated": 899546112,
+  "peak_reserved": 996147200,
+  "source_identity_matches_final_smoke": true
+}

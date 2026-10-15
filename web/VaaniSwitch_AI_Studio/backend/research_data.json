@@ -1,0 +1,1130 @@
+{
+  "models": [
+    {
+      "id": "c2",
+      "display_name": "Hybrid CNN\u2013GCN Cross-Attention",
+      "family": "Original",
+      "architecture": "Shared VMD \u2192 16 Mel + 17 nonlinear tokens \u2192 cross-attention",
+      "source_project": "original",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "historical_only",
+      "research_role": "historical evaluated model",
+      "evaluation_metrics": {
+        "accuracy": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5523235189783611,
+            0.7302471284371737,
+            0.6678966789667896
+          ],
+          "mean": 0.6501557754607747,
+          "sample_std": 0.09027877626341815
+        },
+        "macro_f1": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5018899065715767,
+            0.7152181695559356,
+            0.6599036682403896
+          ],
+          "mean": 0.6256705814559673,
+          "sample_std": 0.11070756577611708
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": null,
+      "integrity_status": "verified local assets",
+      "runtime_validated": false,
+      "blocker": "Frozen corpus-bound VMD/representation normalization and model adapters have not been validated for arbitrary uploads.",
+      "preprocessing": "Shared all-mode VMD; frozen representation settings and train-only normalization."
+    },
+    {
+      "id": "b2",
+      "display_name": "Recurrence CNN Baseline",
+      "family": "Original",
+      "architecture": "Shared VMD \u2192 recurrence plot \u2192 CNN",
+      "source_project": "original",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "historical_only",
+      "research_role": "historical evaluated model",
+      "evaluation_metrics": {
+        "accuracy": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5164952110677545,
+            0.8242255482074486,
+            0.7507547802750755
+          ],
+          "mean": 0.6971585131834263,
+          "sample_std": 0.16071375169426855
+        },
+        "macro_f1": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5158362362642382,
+            0.8029517344373409,
+            0.7162138597197275
+          ],
+          "mean": 0.6783339434737689,
+          "sample_std": 0.14725825397544906
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": null,
+      "integrity_status": "verified local assets",
+      "runtime_validated": false,
+      "blocker": "Frozen corpus-bound VMD/representation normalization and model adapters have not been validated for arbitrary uploads.",
+      "preprocessing": "Shared all-mode VMD; frozen representation settings and train-only normalization."
+    },
+    {
+      "id": "hubert-v2",
+      "display_name": "HuBERT Feature Classifier",
+      "family": "HuBERT V2",
+      "architecture": "Frozen HuBERT \u2192 mean + population std \u2192 logistic regression",
+      "source_project": "study",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60,
+        "segment_seconds": 8
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "research_only",
+      "research_role": "historical evaluated model",
+      "evaluation_metrics": {
+        "accuracy": {
+          "fold_values": [
+            0.6715147215324583,
+            0.8339714584058475,
+            0.7383428379738343
+          ],
+          "mean": 0.7479430059707134,
+          "sample_std": 0.08165274188944076
+        },
+        "macro_f1": {
+          "fold_values": [
+            0.6479728454065368,
+            0.813972483172736,
+            0.7179808751255343
+          ],
+          "mean": 0.7266420679016024,
+          "sample_std": 0.0833380593117904
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": "hubert-v2",
+      "integrity_status": "verified local assets",
+      "runtime_validated": false,
+      "configurations": {
+        "1": {
+          "layer": 12
+        },
+        "2": {
+          "layer": 6
+        },
+        "3": {
+          "layer": 12
+        }
+      },
+      "preprocessing": "Mono arithmetic mean; polyphase resample to 16 kHz; center crop at 8s; no VMD; no right padding."
+    },
+    {
+      "id": "hubert-v3",
+      "display_name": "Improved HuBERT Classifier",
+      "family": "HuBERT V3",
+      "architecture": "Frozen layer 9 \u2192 context-specific normalization / weighting \u2192 logistic regression",
+      "source_project": "study",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60,
+        "segment_seconds": 8
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "research_only",
+      "research_role": "historical evaluated model",
+      "evaluation_metrics": {
+        "accuracy": {
+          "fold_values": [
+            0.7335934728627173,
+            0.8357117995127045,
+            0.7316336799731634
+          ],
+          "mean": 0.7669796507828617,
+          "sample_std": 0.059531851968575654
+        },
+        "macro_f1": {
+          "fold_values": [
+            0.7030569271952137,
+            0.816620327797912,
+            0.7072083132802294
+          ],
+          "mean": 0.7422951894244517,
+          "sample_std": 0.06440091728603121
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": "hubert-v3",
+      "integrity_status": "verified local assets",
+      "runtime_validated": false,
+      "configurations": {
+        "1": {
+          "reference": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C0.01_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          },
+          "selected": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 1,
+            "id": "weight_L09_C0.01_B2_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B2"
+          }
+        },
+        "2": {
+          "reference": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C0.01_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          },
+          "selected": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 1,
+            "id": "robust_L09_C0.01_B0_N1_A0",
+            "layer": 9,
+            "normalization": "N1",
+            "weighting": "B0"
+          }
+        },
+        "3": {
+          "reference": {
+            "C": 1.0,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C1_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          },
+          "selected": {
+            "C": 1.0,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C1_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          }
+        }
+      },
+      "speaker_accuracy": 0.7333333333333333,
+      "preprocessing": "Mono arithmetic mean; polyphase resample to 16 kHz; center crop at 8s; no VMD; no right padding."
+    },
+    {
+      "id": "wavlm-selected",
+      "display_name": "WavLM Adaptive Fine-Tuning",
+      "family": "WavLM V4",
+      "architecture": "Last 2 / 4 layers \u2192 mean / attention pooling \u2192 linear head",
+      "source_project": "study",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60,
+        "segment_seconds": 4
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "research_only",
+      "research_role": "Development-Selected V4",
+      "evaluation_metrics": {
+        "accuracy": {
+          "fold_values": [
+            0.773323873714083,
+            0.8994082840236687,
+            0.7037906742703791
+          ],
+          "mean": 0.7921742773360436,
+          "sample_std": 0.09916181522607728
+        },
+        "macro_f1": {
+          "fold_values": [
+            0.7396366153964009,
+            0.8801365665635681,
+            0.6841139709522281
+          ],
+          "mean": 0.7679623843040657,
+          "sample_std": 0.10103453066011417
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": "wavlm-selected",
+      "integrity_status": "verified local assets",
+      "runtime_validated": false,
+      "outer_fit_reference": {
+        "1": {
+          "identity": "04cdb28f73ff414693296096bd6e63885040c23ec2be7ac1220f77ec2a41e736",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context1\\final\\selected\\state-0000732-85aca5c99c5a4ae994bdc7f171eb46b4.pt",
+          "sha256": "b9375ff96c6e2723848cecfe8274823f8e984f6b323b4b90e61cba6e784e5eef"
+        },
+        "2": {
+          "identity": "addcc9592f5d6de822846c2f46f019006ecc1503985629343ea0818891dae9a6",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context2\\final\\selected\\state-0000725-3518e7545a3a4ed39ca4a129b62652bc.pt",
+          "sha256": "cbf9af37ce265d2a7520247474395a8cebebe7626e678661ff44671c1409c2b7"
+        },
+        "3": {
+          "identity": "13b6ebf545d4142177c62af8124362597a9776d59df263bcb9d30555aece2568",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context3\\final\\selected\\state-0001424-dc62166b1d0c4d54b870b5c607d4727e.pt",
+          "sha256": "11f1b13c930cdae1968da6d7095391a33717247cd8d5eaad7fe43e054e00d1d8"
+        }
+      },
+      "configurations": {
+        "1": {
+          "complexity": 2,
+          "depth": 2,
+          "family": "B",
+          "id": "B_last2_mean",
+          "pooling": "mean"
+        },
+        "2": {
+          "complexity": 3,
+          "depth": 2,
+          "family": "B",
+          "id": "B_last2_attention",
+          "pooling": "attention"
+        },
+        "3": {
+          "complexity": 4,
+          "depth": 4,
+          "family": "B",
+          "id": "B_last4_mean",
+          "pooling": "mean"
+        }
+      },
+      "speaker_accuracy": 0.7333333333333333,
+      "preprocessing": "Mono arithmetic mean; polyphase resample to 16 kHz; center crop at 4s; no VMD; no right padding."
+    },
+    {
+      "id": "wavlm-reference",
+      "display_name": "WavLM Frozen Reference",
+      "family": "WavLM V4",
+      "architecture": "Frozen layer 12 \u2192 mean + population std \u2192 logistic regression C=0.01",
+      "source_project": "study",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60,
+        "segment_seconds": 8
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "research_only",
+      "research_role": "Best Observed Reference",
+      "evaluation_metrics": {
+        "accuracy": {
+          "fold_values": [
+            0.7981553742461865,
+            0.893491124260355,
+            0.7138544112713855
+          ],
+          "mean": 0.8018336365926424,
+          "sample_std": 0.08987482614051263
+        },
+        "macro_f1": {
+          "fold_values": [
+            0.7653529300327904,
+            0.8740397576441137,
+            0.6985346500565457
+          ],
+          "mean": 0.7793091125778165,
+          "sample_std": 0.0885809910237717
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": "wavlm-reference",
+      "integrity_status": "verified local assets",
+      "runtime_validated": false,
+      "configurations": {
+        "1": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        },
+        "2": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        },
+        "3": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        }
+      },
+      "speaker_accuracy": 0.8,
+      "preprocessing": "Mono arithmetic mean; polyphase resample to 16 kHz; center crop at 8s; no VMD; no right padding."
+    }
+  ],
+  "folds": {
+    "frozen_reference": [
+      {
+        "fold": 1,
+        "metrics": {
+          "accuracy": 0.7981553742461865,
+          "balanced_accuracy": 0.7582149709912918,
+          "brier": 0.147722609415153,
+          "confusion_matrix": [
+            [
+              1652,
+              232
+            ],
+            [
+              337,
+              598
+            ]
+          ],
+          "ece_10_equal_width": 0.08760670583335498,
+          "log_loss": 0.48932185304839787,
+          "macro_f1": 0.7653529300327904,
+          "precision": 0.7204819277108434,
+          "record_count": 2819,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 1251,
+              "mean_probability": 0.024684713670020966,
+              "positive_fraction": 0.11031175059952038
+            },
+            {
+              "bin": 1,
+              "count": 285,
+              "mean_probability": 0.14489440564850462,
+              "positive_fraction": 0.23157894736842105
+            },
+            {
+              "bin": 2,
+              "count": 195,
+              "mean_probability": 0.24677631552229062,
+              "positive_fraction": 0.2153846153846154
+            },
+            {
+              "bin": 3,
+              "count": 130,
+              "mean_probability": 0.3447476908955367,
+              "positive_fraction": 0.33076923076923076
+            },
+            {
+              "bin": 4,
+              "count": 128,
+              "mean_probability": 0.44802066294504606,
+              "positive_fraction": 0.375
+            },
+            {
+              "bin": 5,
+              "count": 106,
+              "mean_probability": 0.5542846624176484,
+              "positive_fraction": 0.3490566037735849
+            },
+            {
+              "bin": 6,
+              "count": 97,
+              "mean_probability": 0.650991568756902,
+              "positive_fraction": 0.4742268041237113
+            },
+            {
+              "bin": 7,
+              "count": 99,
+              "mean_probability": 0.7495980957640614,
+              "positive_fraction": 0.6363636363636364
+            },
+            {
+              "bin": 8,
+              "count": 121,
+              "mean_probability": 0.8510547743013419,
+              "positive_fraction": 0.6198347107438017
+            },
+            {
+              "bin": 9,
+              "count": 407,
+              "mean_probability": 0.9748534751799033,
+              "positive_fraction": 0.9262899262899262
+            }
+          ],
+          "roc_auc": 0.8473625350545544,
+          "sensitivity": 0.6395721925133689,
+          "specificity": 0.8768577494692145,
+          "threshold": 0.5
+        },
+        "candidate": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        }
+      },
+      {
+        "fold": 2,
+        "metrics": {
+          "accuracy": 0.893491124260355,
+          "balanced_accuracy": 0.8586255298579608,
+          "brier": 0.08845551986235381,
+          "confusion_matrix": [
+            [
+              1848,
+              73
+            ],
+            [
+              233,
+              719
+            ]
+          ],
+          "ece_10_equal_width": 0.052166279299001916,
+          "log_loss": 0.3370280662363046,
+          "macro_f1": 0.8740397576441137,
+          "precision": 0.9078282828282829,
+          "record_count": 2873,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 1623,
+              "mean_probability": 0.023823106661899577,
+              "positive_fraction": 0.08133086876155268
+            },
+            {
+              "bin": 1,
+              "count": 250,
+              "mean_probability": 0.14376838647740495,
+              "positive_fraction": 0.196
+            },
+            {
+              "bin": 2,
+              "count": 111,
+              "mean_probability": 0.24231422603191854,
+              "positive_fraction": 0.24324324324324326
+            },
+            {
+              "bin": 3,
+              "count": 58,
+              "mean_probability": 0.3419258838659212,
+              "positive_fraction": 0.1724137931034483
+            },
+            {
+              "bin": 4,
+              "count": 39,
+              "mean_probability": 0.4409201103638801,
+              "positive_fraction": 0.38461538461538464
+            },
+            {
+              "bin": 5,
+              "count": 37,
+              "mean_probability": 0.5477540529096633,
+              "positive_fraction": 0.5135135135135135
+            },
+            {
+              "bin": 6,
+              "count": 28,
+              "mean_probability": 0.6533168521050144,
+              "positive_fraction": 0.5
+            },
+            {
+              "bin": 7,
+              "count": 29,
+              "mean_probability": 0.7529903713382061,
+              "positive_fraction": 0.5862068965517241
+            },
+            {
+              "bin": 8,
+              "count": 34,
+              "mean_probability": 0.8417410827212034,
+              "positive_fraction": 0.5882352941176471
+            },
+            {
+              "bin": 9,
+              "count": 664,
+              "mean_probability": 0.9959854266277833,
+              "positive_fraction": 0.9774096385542169
+            }
+          ],
+          "roc_auc": 0.9112999181973676,
+          "sensitivity": 0.7552521008403361,
+          "specificity": 0.9619989588755856,
+          "threshold": 0.5
+        },
+        "candidate": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        }
+      },
+      {
+        "fold": 3,
+        "metrics": {
+          "accuracy": 0.7138544112713855,
+          "balanced_accuracy": 0.7374505015559683,
+          "brier": 0.20570713883351097,
+          "confusion_matrix": [
+            [
+              1400,
+              669
+            ],
+            [
+              184,
+              728
+            ]
+          ],
+          "ece_10_equal_width": 0.20160363543753365,
+          "log_loss": 0.6696887245485855,
+          "macro_f1": 0.6985346500565457,
+          "precision": 0.5211166785969935,
+          "record_count": 2981,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 848,
+              "mean_probability": 0.03354812574146616,
+              "positive_fraction": 0.06839622641509434
+            },
+            {
+              "bin": 1,
+              "count": 226,
+              "mean_probability": 0.1467395192410975,
+              "positive_fraction": 0.168141592920354
+            },
+            {
+              "bin": 2,
+              "count": 201,
+              "mean_probability": 0.2501605701099764,
+              "positive_fraction": 0.15920398009950248
+            },
+            {
+              "bin": 3,
+              "count": 161,
+              "mean_probability": 0.35180041383315364,
+              "positive_fraction": 0.20496894409937888
+            },
+            {
+              "bin": 4,
+              "count": 148,
+              "mean_probability": 0.4509133620414941,
+              "positive_fraction": 0.1554054054054054
+            },
+            {
+              "bin": 5,
+              "count": 125,
+              "mean_probability": 0.5503844650415788,
+              "positive_fraction": 0.168
+            },
+            {
+              "bin": 6,
+              "count": 155,
+              "mean_probability": 0.6505357745756478,
+              "positive_fraction": 0.17419354838709677
+            },
+            {
+              "bin": 7,
+              "count": 147,
+              "mean_probability": 0.751299207535148,
+              "positive_fraction": 0.21768707482993196
+            },
+            {
+              "bin": 8,
+              "count": 182,
+              "mean_probability": 0.8541717595552282,
+              "positive_fraction": 0.3131868131868132
+            },
+            {
+              "bin": 9,
+              "count": 788,
+              "mean_probability": 0.9814767937550939,
+              "positive_fraction": 0.75
+            }
+          ],
+          "roc_auc": 0.8494457658161838,
+          "sensitivity": 0.7982456140350878,
+          "specificity": 0.6766553890768487,
+          "threshold": 0.5
+        },
+        "candidate": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        }
+      }
+    ],
+    "selected": [
+      {
+        "fold": 1,
+        "metrics": {
+          "accuracy": 0.773323873714083,
+          "balanced_accuracy": 0.735596977644561,
+          "brier": 0.18029400864154835,
+          "confusion_matrix": [
+            [
+              1597,
+              287
+            ],
+            [
+              352,
+              583
+            ]
+          ],
+          "ece_10_equal_width": 0.145471130335117,
+          "log_loss": 0.6701634670887546,
+          "macro_f1": 0.7396366153964009,
+          "precision": 0.6701149425287356,
+          "record_count": 2819,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 1361,
+              "mean_probability": 0.02313936945524571,
+              "positive_fraction": 0.16605437178545188
+            },
+            {
+              "bin": 1,
+              "count": 241,
+              "mean_probability": 0.14605965320005457,
+              "positive_fraction": 0.1908713692946058
+            },
+            {
+              "bin": 2,
+              "count": 138,
+              "mean_probability": 0.24280748116797296,
+              "positive_fraction": 0.18840579710144928
+            },
+            {
+              "bin": 3,
+              "count": 119,
+              "mean_probability": 0.3495791041049637,
+              "positive_fraction": 0.2773109243697479
+            },
+            {
+              "bin": 4,
+              "count": 90,
+              "mean_probability": 0.44822430511315664,
+              "positive_fraction": 0.23333333333333334
+            },
+            {
+              "bin": 5,
+              "count": 85,
+              "mean_probability": 0.5525273449280683,
+              "positive_fraction": 0.32941176470588235
+            },
+            {
+              "bin": 6,
+              "count": 86,
+              "mean_probability": 0.6511595997699472,
+              "positive_fraction": 0.32558139534883723
+            },
+            {
+              "bin": 7,
+              "count": 80,
+              "mean_probability": 0.7584966979920864,
+              "positive_fraction": 0.5875
+            },
+            {
+              "bin": 8,
+              "count": 124,
+              "mean_probability": 0.8543149689512868,
+              "positive_fraction": 0.5161290322580645
+            },
+            {
+              "bin": 9,
+              "count": 495,
+              "mean_probability": 0.9752511101539689,
+              "positive_fraction": 0.8404040404040404
+            }
+          ],
+          "roc_auc": 0.791824766965269,
+          "sensitivity": 0.6235294117647059,
+          "specificity": 0.8476645435244161,
+          "threshold": 0.5
+        },
+        "candidate": {
+          "complexity": 2,
+          "depth": 2,
+          "family": "B",
+          "id": "B_last2_mean",
+          "pooling": "mean"
+        }
+      },
+      {
+        "fold": 2,
+        "metrics": {
+          "accuracy": 0.8994082840236687,
+          "balanced_accuracy": 0.8622555216776977,
+          "brier": 0.08638354557333704,
+          "confusion_matrix": [
+            [
+              1868,
+              53
+            ],
+            [
+              236,
+              716
+            ]
+          ],
+          "ece_10_equal_width": 0.06811711831310115,
+          "log_loss": 0.37571620389054333,
+          "macro_f1": 0.8801365665635681,
+          "precision": 0.9310793237971391,
+          "record_count": 2873,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 1911,
+              "mean_probability": 0.012233608602718556,
+              "positive_fraction": 0.09314495028780743
+            },
+            {
+              "bin": 1,
+              "count": 85,
+              "mean_probability": 0.14811915755271912,
+              "positive_fraction": 0.24705882352941178
+            },
+            {
+              "bin": 2,
+              "count": 35,
+              "mean_probability": 0.2491299263068608,
+              "positive_fraction": 0.4
+            },
+            {
+              "bin": 3,
+              "count": 33,
+              "mean_probability": 0.34781087077025213,
+              "positive_fraction": 0.30303030303030304
+            },
+            {
+              "bin": 4,
+              "count": 40,
+              "mean_probability": 0.446635252982378,
+              "positive_fraction": 0.325
+            },
+            {
+              "bin": 5,
+              "count": 20,
+              "mean_probability": 0.5456199795007706,
+              "positive_fraction": 0.45
+            },
+            {
+              "bin": 6,
+              "count": 29,
+              "mean_probability": 0.645467090195623,
+              "positive_fraction": 0.4482758620689655
+            },
+            {
+              "bin": 7,
+              "count": 23,
+              "mean_probability": 0.7511346003283625,
+              "positive_fraction": 0.6086956521739131
+            },
+            {
+              "bin": 8,
+              "count": 30,
+              "mean_probability": 0.863977187871933,
+              "positive_fraction": 0.7
+            },
+            {
+              "bin": 9,
+              "count": 667,
+              "mean_probability": 0.9958306705576369,
+              "positive_fraction": 0.9880059970014993
+            }
+          ],
+          "roc_auc": 0.9187731573628931,
+          "sensitivity": 0.7521008403361344,
+          "specificity": 0.9724102030192608,
+          "threshold": 0.5
+        },
+        "candidate": {
+          "complexity": 3,
+          "depth": 2,
+          "family": "B",
+          "id": "B_last2_attention",
+          "pooling": "attention"
+        }
+      },
+      {
+        "fold": 3,
+        "metrics": {
+          "accuracy": 0.7037906742703791,
+          "balanced_accuracy": 0.7145648906582551,
+          "brier": 0.2643083458877582,
+          "confusion_matrix": [
+            [
+              1421,
+              648
+            ],
+            [
+              235,
+              677
+            ]
+          ],
+          "ece_10_equal_width": 0.2646239717123392,
+          "log_loss": 1.505850030169323,
+          "macro_f1": 0.6841139709522281,
+          "precision": 0.510943396226415,
+          "record_count": 2981,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 1438,
+              "mean_probability": 0.007744038341245468,
+              "positive_fraction": 0.13351877607788595
+            },
+            {
+              "bin": 1,
+              "count": 85,
+              "mean_probability": 0.14656206676188638,
+              "positive_fraction": 0.18823529411764706
+            },
+            {
+              "bin": 2,
+              "count": 45,
+              "mean_probability": 0.2444784512122472,
+              "positive_fraction": 0.17777777777777778
+            },
+            {
+              "bin": 3,
+              "count": 44,
+              "mean_probability": 0.35554929822683334,
+              "positive_fraction": 0.2727272727272727
+            },
+            {
+              "bin": 4,
+              "count": 44,
+              "mean_probability": 0.4526292329484766,
+              "positive_fraction": 0.1590909090909091
+            },
+            {
+              "bin": 5,
+              "count": 38,
+              "mean_probability": 0.5514752613870721,
+              "positive_fraction": 0.13157894736842105
+            },
+            {
+              "bin": 6,
+              "count": 39,
+              "mean_probability": 0.657470458593124,
+              "positive_fraction": 0.15384615384615385
+            },
+            {
+              "bin": 7,
+              "count": 46,
+              "mean_probability": 0.7466619079527648,
+              "positive_fraction": 0.15217391304347827
+            },
+            {
+              "bin": 8,
+              "count": 78,
+              "mean_probability": 0.8555859602414645,
+              "positive_fraction": 0.2564102564102564
+            },
+            {
+              "bin": 9,
+              "count": 1124,
+              "mean_probability": 0.9912783063391349,
+              "positive_fraction": 0.5685053380782918
+            }
+          ],
+          "roc_auc": 0.8139017492983305,
+          "sensitivity": 0.7423245614035088,
+          "specificity": 0.6868052199130015,
+          "threshold": 0.5
+        },
+        "candidate": {
+          "complexity": 4,
+          "depth": 4,
+          "family": "B",
+          "id": "B_last4_mean",
+          "pooling": "mean"
+        }
+      }
+    ]
+  },
+  "speaker_confusions": {
+    "frozen_reference": [
+      [
+        6,
+        1
+      ],
+      [
+        2,
+        6
+      ]
+    ],
+    "selected": [
+      [
+        6,
+        1
+      ],
+      [
+        3,
+        5
+      ]
+    ]
+  },
+  "limitations": [
+    "15 speakers and previously exposed outer results; no untouched external test set.",
+    "No clinical diagnostic validity, significance, SOTA or guaranteed 90 percent claim.",
+    "Equal-fold mean and sample SD; speaker aggregation is descriptive.",
+    "Development search, early stopping, overlapping development contexts and one seed limit inference."
+  ],
+  "dataset": {
+    "speakers": 15,
+    "recordings": 8673,
+    "folds": 3
+  },
+  "report_seal": {
+    "status": "PASS",
+    "files": {
+      "experiments\\accuracy_wavlm_v4\\figures\\accuracy_comparison.png": true,
+      "experiments\\accuracy_wavlm_v4\\figures\\confusion_matrix.png": true,
+      "experiments\\accuracy_wavlm_v4\\figures\\gpu_memory_analysis.png": true,
+      "experiments\\accuracy_wavlm_v4\\figures\\speaker_accuracy_analysis.png": true,
+      "experiments\\accuracy_wavlm_v4\\figures\\training_curves.png": true,
+      "experiments\\accuracy_wavlm_v4\\results\\DEVELOPMENT_REPORT.md": true,
+      "experiments\\accuracy_wavlm_v4\\results\\FINAL_EXPERIMENT_REPORT.md": true,
+      "experiments\\accuracy_wavlm_v4\\results\\ablation_results.csv": true,
+      "experiments\\accuracy_wavlm_v4\\results\\final_results.json": true,
+      "experiments\\accuracy_wavlm_v4\\results\\fold_results.csv": true,
+      "experiments\\accuracy_wavlm_v4\\results\\record_predictions.csv": true,
+      "experiments\\accuracy_wavlm_v4\\results\\selected_configurations.json": true,
+      "experiments\\accuracy_wavlm_v4\\results\\speaker_predictions.csv": true
+    },
+    "seal_sha256": "8b4701308f547670644f34e9f901856fccf3fde7162ef353aa0ab46b8d293512",
+    "identity": "b709bea65e182a731842b075955516731835ef229d9a9be216cebb1e008bc2fa"
+  }
+}

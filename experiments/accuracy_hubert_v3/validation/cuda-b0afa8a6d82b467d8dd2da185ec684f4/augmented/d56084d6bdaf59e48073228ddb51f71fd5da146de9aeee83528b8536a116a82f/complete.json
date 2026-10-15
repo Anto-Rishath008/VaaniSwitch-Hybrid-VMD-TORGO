@@ -1,0 +1,123 @@
+{
+  "diagnostics": {
+    "noise_rms": 0.0014120412690093508,
+    "output_peak": 0.5819743275642395,
+    "peak_rescale": 1.0,
+    "pre_noise_rms": 0.06978617287488183,
+    "silent_input": false
+  },
+  "filename": "features-40394ad071c644a08f27dcb8c4dca960.npy",
+  "identity": {
+    "audio_path": "data/raw/torgo/extracted/M/M02/Session1/wav_headMic/0062.wav",
+    "audio_sha256": "60181a6b6d956ec9c840bafee0bce114ccbf1c70327ec5a9e7f5aea5d1e8ee49",
+    "augmentation": {
+      "echo_delay_ms": 22.939045940259753,
+      "echo_mix": 0.11309223936921545,
+      "gain_db": -0.6836683353211983,
+      "highpass_hz": 92.25134014524897,
+      "lowpass_hz": 5681.452738215562,
+      "peak_limit": 0.99,
+      "profile": "tilt_echo",
+      "sample_rate": 16000,
+      "seed": 10966773632015612454,
+      "snr_db": 33.87843984290633,
+      "tilt_cutoff_hz": 1000.0,
+      "tilt_db": 2.273664745448354,
+      "version": "v3-mild-channel-1"
+    },
+    "extraction": {
+      "augmentation_version": "v3-mild-channel-1",
+      "model_lock": {
+        "files": {
+          "config.json": "56be398848bbd9cbc720172b0d45b2f01cac7652f2968f0f31f5faf9f2986acc",
+          "preprocessor_config.json": "4a93853b74278b7c769d07f5a861e5d12ceb5db2bced5620d335f87238cb9e86",
+          "pytorch_model.bin": "062249fffb353eab67547a2fbc129f7c31a2f459faf641b19e8fb007cc5c48ad"
+        },
+        "model": "facebook/hubert-base-ls960",
+        "revision": "dba3bb02fda4248b6e082697eee756de8fe8aa8a"
+      },
+      "preprocessing": {
+        "config_sha256": "56be398848bbd9cbc720172b0d45b2f01cac7652f2968f0f31f5faf9f2986acc",
+        "crop": "center",
+        "decode_lookahead": 32,
+        "decode_workers": 2,
+        "extraction_batch_cap": 4,
+        "feature_dimension_per_layer": 1536,
+        "group_norm_batching": "exact_length_only_no_padding",
+        "layers": [
+          6,
+          9,
+          12
+        ],
+        "model": "facebook/hubert-base-ls960",
+        "normalization": "checkpoint_zero_mean_unit_variance_on_valid_samples",
+        "pooling": "masked_mean_population_std",
+        "precision": "fp16_autocast_float32_pooling",
+        "preprocessor_sha256": "4a93853b74278b7c769d07f5a861e5d12ceb5db2bced5620d335f87238cb9e86",
+        "revision": "dba3bb02fda4248b6e082697eee756de8fe8aa8a",
+        "sample_rate": 16000,
+        "segment_seconds": 8,
+        "weight_file": "pytorch_model.bin",
+        "weight_sha256": "062249fffb353eab67547a2fbc129f7c31a2f459faf641b19e8fb007cc5c48ad"
+      },
+      "source_code": {
+        "AUGMENTATION_PROTOCOL.md": "dd0f9ffb226059d093273ee2bd96c667fd9ba4dda7b3228344976a5d999a0010",
+        "EXPERIMENT_PROTOCOL.md": "0ea6d93de1b7cf29fd2cc467333d6965560c8a5cdce704e1f464022ad26bcc63",
+        "MODEL_SELECTION_PROTOCOL.md": "6beae1a0800cacca9ec7d36234ebffaf5d9baf4041e980d1cb1f82ffbf5b10c7",
+        "V2_LINEAGE.json": "4dc86015c000fd4890f0ee96f91d9ed58d2784a195efc4e01bd06984b414e749",
+        "configs/study.yaml": "57ad6940a00de87fee9c648041e5bb701be3a18e790bb85decba6f47289c2d5b",
+        "run_all.ps1": "d95811f8e3ca61649f1353482e6110592ef199a732fb85b51cb8ee1f91ccaf1f",
+        "src/__init__.py": "95bcee099e8d7b431dfa5d724d7caede3a40a04c1b8d346dcab1de7715561a38",
+        "src/augmentation.py": "b86322fb1e9bb637abb1a3a578301eed752da35c73b33b64795907a19e997002",
+        "src/calibration.py": "8cbe252b093f59e11673afa1edc0d9abbd20995f8b40cc38368e589afd56bf9d",
+        "src/common.py": "54ca68f3052d898dc8e7d597cf9112cc6e042288b727ae283d3decb521ffa1c1",
+        "src/data.py": "9d8c9caf22aaf848e9a05f9f38c4bc1ecc1838079cfdc724da944a5cde27fb3d",
+        "src/features.py": "9e4299cf168c48ad5a25857e71220fe5b7f29956988ab945579fdb431a50175b",
+        "src/normalization.py": "33f7ae53e203e86c5ab1cf10094062c5f46a0e66d8979b02e572021a1f14a6b8",
+        "src/pipeline.py": "2afdcd3102824570982aadf9383ff60cb1e07dff1b1b8258bea128d25e3214d8",
+        "src/reporting.py": "e63bd1d679b84b64409d3bce17a3ec80e1178ab80da037f43ae2663a37127eb7",
+        "src/reuse.py": "dba61e621b60d9b2b1754d7082215d5ae408536f5b00c65e51168097bfd764e8",
+        "src/selection.py": "193ff74c1a27efd89828bd9da3dec438481864b9dd1de85abfb1bdf7f846dd88",
+        "src/training.py": "a78a945cdba0847f4cc36a4c64f85ca089bf637dc6ac83e225898c006e9c0cca",
+        "src/validation.py": "1a126cabd697012066a559015564c007c145f4145bb8e1b1960f67ce49691055",
+        "src/weighting.py": "25fb5627b5738223e7c2cad58140ac63603178405fec771eb0f32e6743270fe4"
+      },
+      "versions": {
+        "numpy": "1.26.4",
+        "scikit-learn": "1.7.2",
+        "scipy": "1.16.3",
+        "soundfile": "0.14.0",
+        "torch": "2.13.0+cu126",
+        "transformers": "4.57.6"
+      },
+      "waveform_order": "V2 decode-center-crop; channel transform; V2 processor"
+    },
+    "label": 1,
+    "record_id": "M02/Session1/0062",
+    "speaker": "M02"
+  },
+  "layer_hashes": [
+    "189866cb1ff4e025dfce588d7cecf5173187d71d62fe5e85e0530415e47513fd",
+    "bacb56405501d6e0b14e72cbb880445c368e022a992892d35f29c1dc3540df09",
+    "6f25de96509cff87d5f9a4377c864fc9665aee0ef9f61f112fc375660cfb67ae"
+  ],
+  "layers": [
+    6,
+    9,
+    12
+  ],
+  "metadata_sha256": "e952e9b1e28eee9e0edf5941593a509c02a76985d351a4c0eb6267b6b5af92cc",
+  "segment": {
+    "cropped": true,
+    "end_sample_16k": 176718,
+    "right_padding_samples": 0,
+    "source_rate": 16000,
+    "source_samples_16k": 225437,
+    "start_sample_16k": 48718,
+    "target_rate": 16000,
+    "valid_samples": 128000
+  },
+  "sha256": "adef5b877193309f93b68708834448f209c27093b32f3835584d2a7b59404a37",
+  "status": "COMPLETE",
+  "waveform_sha256": "94d9525d727fb85fca599fa333db3f3af297f9b6b4f644059d5a12d0024e108b"
+}

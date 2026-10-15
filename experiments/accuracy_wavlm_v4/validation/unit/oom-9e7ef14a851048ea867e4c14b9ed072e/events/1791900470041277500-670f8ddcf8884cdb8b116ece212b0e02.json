@@ -1,0 +1,22 @@
+{
+  "epoch": 0,
+  "error": "deliberate test injection",
+  "identity": "50efa2e6fea1b8209a9f8903beffe1bccee7481d3e15244f47512d23abfd7d42",
+  "kind": "FAILED",
+  "logical_ids": [
+    "a/session/p1",
+    "b/session/p0",
+    "a/session/p0",
+    "a/session/p2"
+  ],
+  "memory": {
+    "allocated": 0,
+    "peak_allocated": 0,
+    "peak_reserved": 0,
+    "reserved": 0
+  },
+  "offset": 0,
+  "recovery": "No automatic retry. Physical batch one: OOM stops. Resume replays from last complete checkpoint.",
+  "step": 0,
+  "type": "OutOfMemoryError"
+}

@@ -1,0 +1,187 @@
+{
+  "candidate": {
+    "C": 0.1,
+    "complexity": 0,
+    "family": "A",
+    "id": "A_L9_mean_std_C0.1",
+    "layer": 9,
+    "pooling": "mean_std"
+  },
+  "evidence_kind": "DEVELOPMENT_GROUPED_CV",
+  "fits": [
+    {
+      "best_epoch": 1,
+      "candidate": {
+        "C": 0.1,
+        "complexity": 0,
+        "family": "A",
+        "id": "A_L9_mean_std_C0.1",
+        "layer": 9,
+        "pooling": "mean_std"
+      },
+      "checkpoint": {
+        "synthetic": true
+      },
+      "validation_metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "brier": 0.039999999999999994,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "ece_10_equal_width": 0.19999999999999998,
+        "log_loss": 0.22314355131420974,
+        "macro_f1": 1.0,
+        "precision": 1.0,
+        "record_count": 2,
+        "reliability_bins": [
+          {
+            "bin": 2,
+            "count": 1,
+            "mean_probability": 0.2,
+            "positive_fraction": 0.0
+          },
+          {
+            "bin": 8,
+            "count": 1,
+            "mean_probability": 0.8,
+            "positive_fraction": 1.0
+          }
+        ],
+        "roc_auc": 1.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "threshold": 0.5
+      }
+    },
+    {
+      "best_epoch": 1,
+      "candidate": {
+        "C": 0.1,
+        "complexity": 0,
+        "family": "A",
+        "id": "A_L9_mean_std_C0.1",
+        "layer": 9,
+        "pooling": "mean_std"
+      },
+      "checkpoint": {
+        "synthetic": true
+      },
+      "validation_metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "brier": 0.039999999999999994,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "ece_10_equal_width": 0.19999999999999998,
+        "log_loss": 0.22314355131420974,
+        "macro_f1": 1.0,
+        "precision": 1.0,
+        "record_count": 2,
+        "reliability_bins": [
+          {
+            "bin": 2,
+            "count": 1,
+            "mean_probability": 0.2,
+            "positive_fraction": 0.0
+          },
+          {
+            "bin": 8,
+            "count": 1,
+            "mean_probability": 0.8,
+            "positive_fraction": 1.0
+          }
+        ],
+        "roc_auc": 1.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "threshold": 0.5
+      }
+    },
+    {
+      "best_epoch": 1,
+      "candidate": {
+        "C": 0.1,
+        "complexity": 0,
+        "family": "A",
+        "id": "A_L9_mean_std_C0.1",
+        "layer": 9,
+        "pooling": "mean_std"
+      },
+      "checkpoint": {
+        "synthetic": true
+      },
+      "validation_metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "brier": 0.039999999999999994,
+        "confusion_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "ece_10_equal_width": 0.19999999999999998,
+        "log_loss": 0.22314355131420974,
+        "macro_f1": 1.0,
+        "precision": 1.0,
+        "record_count": 2,
+        "reliability_bins": [
+          {
+            "bin": 2,
+            "count": 1,
+            "mean_probability": 0.2,
+            "positive_fraction": 0.0
+          },
+          {
+            "bin": 8,
+            "count": 1,
+            "mean_probability": 0.8,
+            "positive_fraction": 1.0
+          }
+        ],
+        "roc_auc": 1.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "threshold": 0.5
+      }
+    }
+  ],
+  "mean": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "log_loss": 0.22314355131420974,
+    "macro_f1": 1.0,
+    "roc_auc": 1.0,
+    "sensitivity": 1.0,
+    "specificity": 1.0
+  },
+  "sample_std": {
+    "accuracy": 0.0,
+    "balanced_accuracy": 0.0,
+    "log_loss": 0.0,
+    "macro_f1": 0.0,
+    "roc_auc": 0.0,
+    "sensitivity": 0.0,
+    "specificity": 0.0
+  }
+}

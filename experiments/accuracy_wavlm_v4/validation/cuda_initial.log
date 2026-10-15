@@ -1,0 +1,19 @@
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+CUDA bounded B_last2_mean
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\autograd\graph.py:979: UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\attention_backward.cu:835.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+CUDA bounded B_last4_mean
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+CUDA bounded B_last2_attention
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+{'status': 'PASS', 'report': 'C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\validation\\cuda-8df730f670f54d9d9a18123727af432a\\REPORT.json', 'peak_allocated_GiB': 0.8377676010131836, 'peak_reserved_GiB': 0.927734375, 'seconds': 28.97619040000427}
+Completed Validate; no automatic transition to another mode.

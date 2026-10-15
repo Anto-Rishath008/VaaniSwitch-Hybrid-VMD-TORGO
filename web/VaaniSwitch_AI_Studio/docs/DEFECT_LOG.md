@@ -1,0 +1,21 @@
+# Application defect log
+
+These changes are confined to the separate studio. No protected module files were patched.
+
+| ID | Observed issue | Resolution | Regression evidence |
+| --- | --- | --- | --- |
+| ST-001 | V4 outer-result provenance names the final fit while inference restores its saved best delta. Loading final state directly could differ from the frozen inference path. | Preserve outer-fit identity separately and use exact complete.json best_checkpoint, as original predict_neural does. | `test_v4_best_delta_matches_original_inference_contract`; 3-context real selected-model smoke. |
+| ST-002 | V2 scaler transform lives in training, not data. | Import the existing pure transform from its actual module. | `test_v2_scaler_transform_import_and_label_mapping`; all V2 contexts passed. |
+| ST-003 | Read-only site-packages reuse did not process the source environment's pywin32 bootstrap paths; SAPI import lacked pywintypes. | Install pywin32 312 into the new studio environment only. | `test_windows_tts_bindings_available`; actual Zira synthesis and browser playback/download. |
+| ST-004 | The first non-finite fixture was shorter than the minimum supported input, so duration validation correctly ran first. | Make the non-finite fixture long enough to test its intended boundary. | `test_nonfinite_audio_rejected`; no decoder-policy change for this fixture repair. |
+| ST-005 | Synthesized speech may exceed the 60-second upload budget. | Separate generated-audio validation budget (180s), retaining 60s upload limit and 2,000-character text limit. | `test_synthesized_audio_has_separate_duration_budget`; `test_long_audio_rejected_without_truncation`. |
+| ST-006 | An expired session could be read until the periodic cleanup tick. | Enforce expiry during direct session/asset access as well as cleanup. | `test_expired_session_removes_audio_on_access`. |
+| ST-007 | A typed representation hash contained an extra `e7`, returning unavailable. | Use the exact discovered frozen representation directory. | `test_preserved_representations_are_real_and_bounded`; browser pipeline rendered without errors. |
+| ST-008 | Low-contrast small labels failed automated accessibility; confusion-matrix cells lacked row roles. | Raise observed text contrast and add semantic row wrappers. | Axe scans on 9 routes now have no serious/critical findings; desktop/mobile browser regression. |
+| ST-009 | A microphone permission result arriving after navigation could start hidden recording. | Track mounted state and release late-arriving streams before creating a recorder. | `useRecorder.test.tsx` verifies the late stream is stopped; actual virtual-microphone pause/resume/stop workflow passed. |
+| ST-010 | A Windows default-encoding read during a targeted edit corrupted a generated audio display name. | Preserve UTF-8 source and the exact middle-dot character. | `test_synthesis_display_name_keeps_unicode`; refreshed real conversion browser screenshot. |
+| ST-011 | Previously selected frontend dependency versions had npm audit findings. | Update within the app to audited Vite/React Router/Playwright and compatible current Vitest/plugin versions; lock dependency resolution. | Production build, 10 component tests, browser checks, npm audit: zero findings. |
+| ST-012 | Built-in Swagger pages depended on external script/style hosts blocked by the local CSP. | Expose the typed OpenAPI JSON and link to it directly; disable the unused CDN-backed docs pages. | API schema returned locally; About route works without external resources. |
+| ST-013 | A pipeline explanation initially expanded V3 B2 as equal class/speaker weighting. Source verification shows clipped square-root speaker-count weights, with no extra class weighting. | Correct the explanatory text to the actual frozen weighting.py formula. Fitted checkpoint inference was already unchanged. | Frontend regression asserts the exact weighting description; production rebuild and route checks. |
+
+Remaining boundaries are product/research limitations, not silently substituted implementations: original B2/C2 live-upload adapter parity; physical microphone quality; human synthesis listening; external-data/classifier clinical validation; validated CPU inference.

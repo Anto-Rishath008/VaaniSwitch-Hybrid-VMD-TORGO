@@ -1,0 +1,14 @@
+test_v4_requires_deterministic_attention_backend (test_v4.TrainingContracts.test_v4_requires_deterministic_attention_backend) ... FAIL
+
+======================================================================
+FAIL: test_v4_requires_deterministic_attention_backend (test_v4.TrainingContracts.test_v4_requires_deterministic_attention_backend)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\tests\test_v4.py", line 233, in test_v4_requires_deterministic_attention_backend
+    self.assertFalse(torch.is_deterministic_algorithms_warn_only_enabled())
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 1 test in 1.309s
+
+FAILED (failures=1)

@@ -1,0 +1,47 @@
+schema_version: 1
+study: POST-HOC EXPLORATORY IMPROVEMENT STUDY
+seed: 42
+features:
+  model: facebook/hubert-base-ls960
+  revision: dba3bb02fda4248b6e082697eee756de8fe8aa8a
+  weight_file: pytorch_model.bin
+  weight_sha256: 062249fffb353eab67547a2fbc129f7c31a2f459faf641b19e8fb007cc5c48ad
+  config_sha256: 56be398848bbd9cbc720172b0d45b2f01cac7652f2968f0f31f5faf9f2986acc
+  preprocessor_sha256: 4a93853b74278b7c769d07f5a861e5d12ceb5db2bced5620d335f87238cb9e86
+  layers: [6, 9, 12]
+  sample_rate: 16000
+  segment_seconds: 8
+  crop: center
+  pooling: masked_mean_population_std
+  feature_dimension_per_layer: 1536
+  normalization: checkpoint_zero_mean_unit_variance_on_valid_samples
+  group_norm_batching: exact_length_only_no_padding
+  precision: fp16_autocast_float32_pooling
+  extraction_batch_cap: 4
+  decode_workers: 2
+  decode_lookahead: 32
+training:
+  optimizer: AdamW
+  max_epochs: 20
+  patience: 4
+  min_delta: 0.0001
+  threshold: 0.5
+  learning_rate: 0.0003
+  batch_cap: 16
+  cpu_threads: 2
+  selection_metric: macro_f1
+  weighting: equal_total_loss_per_training_speaker
+  class_weight: null
+  augmentation: none
+  cuda_training_determinism: seeded_warn_on_unsupported_native_b2_backward
+  final_fit: fresh_initialization_all_development_fixed_selected_epoch_count
+  neural_candidates:
+    - {id: baseline, dropout: 0.3, weight_decay: 0.001}
+    - {id: regularized, dropout: 0.5, weight_decay: 0.01}
+  logistic_C: [0.01, 0.1, 1.0]
+  logistic_max_iter: 3000
+  projection_dimension: 128
+execution:
+  minimum_free_disk_gib: 8
+  vram_fraction: 0.80
+  sequential_gpu: true

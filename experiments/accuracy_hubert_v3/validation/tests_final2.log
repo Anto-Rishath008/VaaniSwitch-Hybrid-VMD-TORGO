@@ -1,0 +1,62 @@
+test_B0_B1_equivalence_and_equal_speaker_mass (test_v3.V3Tests.test_B0_B1_equivalence_and_equal_speaker_mass) ... ok
+test_B0_matches_v2_weighting_exactly (test_v3.V3Tests.test_B0_matches_v2_weighting_exactly) ... ok
+test_B2_is_bounded_and_distinct (test_v3.V3Tests.test_B2_is_bounded_and_distinct) ... ok
+test_N0_matches_v2_scaler_transform (test_v3.V3Tests.test_N0_matches_v2_scaler_transform) ... ok
+test_OOM_at_one_and_numerical_failure_stop (test_v3.V3Tests.test_OOM_at_one_and_numerical_failure_stop) ... ok
+test_OOM_retries_bounded_and_no_sample_skipped (test_v3.V3Tests.test_OOM_retries_bounded_and_no_sample_skipped) ... ok
+test_RNG_python_numpy_torch_roundtrip (test_v3.V3Tests.test_RNG_python_numpy_torch_roundtrip) ... ok
+test_ambiguous_outer_claim_never_retries (test_v3.V3Tests.test_ambiguous_outer_claim_never_retries) ... ok
+test_augmentation_bounds_and_seed_identity (test_v3.V3Tests.test_augmentation_bounds_and_seed_identity) ... ok
+test_augmentation_deterministic_and_input_immutable (test_v3.V3Tests.test_augmentation_deterministic_and_input_immutable) ... ok
+test_augmented_cache_roundtrip_checksum_and_corruption (test_v3.V3Tests.test_augmented_cache_roundtrip_checksum_and_corruption) ... ok
+test_augmented_metadata_tampering_is_rejected (test_v3.V3Tests.test_augmented_metadata_tampering_is_rejected) ... ok
+test_augmented_weights_preserve_every_parent_speaker_class_and_C_mass (test_v3.V3Tests.test_augmented_weights_preserve_every_parent_speaker_class_and_C_mass) ... ok
+test_budget_and_record_membership (test_v3.V3Tests.test_budget_and_record_membership) ... ok
+test_cache_bad_shape_nonfinite_and_overwrite_rejected (test_v3.V3Tests.test_cache_bad_shape_nonfinite_and_overwrite_rejected) ... ok
+test_cache_identity_includes_source_audio_seed_and_encoder (test_v3.V3Tests.test_cache_identity_includes_source_audio_seed_and_encoder) ... ok
+test_calibration_uses_three_separate_development_roles (test_v3.V3Tests.test_calibration_uses_three_separate_development_roles) ... ok
+test_channel_bandwidth_attenuates_high_frequency (test_v3.V3Tests.test_channel_bandwidth_attenuates_high_frequency) ... ok
+test_checkpoint_roundtrip_interruption_and_resume (test_v3.V3Tests.test_checkpoint_roundtrip_interruption_and_resume) ... ok
+test_checkpoint_wrong_identity_and_corrupt_payload_stop (test_v3.V3Tests.test_checkpoint_wrong_identity_and_corrupt_payload_stop) ... ok
+test_class_masses_follow_speaker_counts_without_double_balance (test_v3.V3Tests.test_class_masses_follow_speaker_counts_without_double_balance) ... ok
+test_classifier_rejects_augmented_foreign_speaker (test_v3.V3Tests.test_classifier_rejects_augmented_foreign_speaker) ... ok
+test_combined_candidate_requires_two_qualified_factors (test_v3.V3Tests.test_combined_candidate_requires_two_qualified_factors) ... ok
+test_completed_fit_metrics_tampering_rejected_on_resume (test_v3.V3Tests.test_completed_fit_metrics_tampering_rejected_on_resume) ... ok
+test_csv_serialization_stable_across_frozen_json_key_sorting (test_v3.V3Tests.test_csv_serialization_stable_across_frozen_json_key_sorting) ... ok
+test_empty_extractor_output_stops_instead_of_looping (test_v3.V3Tests.test_empty_extractor_output_stops_instead_of_looping) ... ok
+test_exact_length_batches_required (test_v3.V3Tests.test_exact_length_batches_required) ... ok
+test_finite_LR_coefficients_and_convergence_are_enforced (test_v3.V3Tests.test_finite_LR_coefficients_and_convergence_are_enforced) ... ok
+test_fit_rejects_train_validation_overlap (test_v3.V3Tests.test_fit_rejects_train_validation_overlap) ... ok
+test_forbidden_speaker_rejected_before_fit (test_v3.V3Tests.test_forbidden_speaker_rejected_before_fit) ... ok
+test_frozen_config_or_missing_decisions_rejected (test_v3.V3Tests.test_frozen_config_or_missing_decisions_rejected) ... ok
+test_grouped_cv_coverage_and_disjoint_roles (test_v3.V3Tests.test_grouped_cv_coverage_and_disjoint_roles) ... ok
+test_hash_leakage_rejected_even_if_different_speakers (test_v3.V3Tests.test_hash_leakage_rejected_even_if_different_speakers) ... ok
+test_l2_zero_vector_and_scale_invariance (test_v3.V3Tests.test_l2_zero_vector_and_scale_invariance) ... ok
+test_launcher_defaults_development_and_requires_explicit_outer (test_v3.V3Tests.test_launcher_defaults_development_and_requires_explicit_outer) ... ok
+test_live_original_manifest_and_split_contract (test_v3.V3Tests.test_live_original_manifest_and_split_contract) ... ok
+test_live_pinned_v2_sources_match_lineage (test_v3.V3Tests.test_live_pinned_v2_sources_match_lineage) ... ok
+test_metric_hand_calculation_and_undefined_speaker_rates (test_v3.V3Tests.test_metric_hand_calculation_and_undefined_speaker_rates) ... ok
+test_nonfinite_features_scaler_and_weights_rejected (test_v3.V3Tests.test_nonfinite_features_scaler_and_weights_rejected) ... ok
+test_normalizers_train_only_and_validation_outlier_has_no_effect (test_v3.V3Tests.test_normalizers_train_only_and_validation_outlier_has_no_effect) ... ok
+test_once_only_outer_claim_and_seal (test_v3.V3Tests.test_once_only_outer_claim_and_seal) ... ok
+test_outer_partition_rejected (test_v3.V3Tests.test_outer_partition_rejected) ... ok
+test_outer_requires_authorization_before_any_access (test_v3.V3Tests.test_outer_requires_authorization_before_any_access) ... ok
+test_output_cannot_escape_V3 (test_v3.V3Tests.test_output_cannot_escape_V3) ... ok
+test_preservation_mismatch_is_fail_closed (test_v3.V3Tests.test_preservation_mismatch_is_fail_closed) ... ok
+test_readonly_original_cache_forbids_save_and_rebinding (test_v3.V3Tests.test_readonly_original_cache_forbids_save_and_rebinding) ... ok
+test_robust_zero_iqr_and_constant_dimensions (test_v3.V3Tests.test_robust_zero_iqr_and_constant_dimensions) ... ok
+test_silence_and_peak_safety (test_v3.V3Tests.test_silence_and_peak_safety) ... ok
+test_speaker_average_uses_all_predictions_fixed_half_threshold (test_v3.V3Tests.test_speaker_average_uses_all_predictions_fixed_half_threshold) ... ok
+[14:42:26 IST] Development only: outer-fold context 1; no outer inference
+[14:42:28 IST] Development only: outer-fold context 2; no outer inference
+[14:42:30 IST] Development only: outer-fold context 3; no outer inference
+test_synthetic_end_to_end_selection_freeze_outer_reports_and_resume (test_v3.V3Tests.test_synthetic_end_to_end_selection_freeze_outer_reports_and_resume) ... ok
+test_tie_rules_prefer_declared_simplicity (test_v3.V3Tests.test_tie_rules_prefer_declared_simplicity) ... ok
+test_validation_cannot_fit_weights_scaler_or_augment (test_v3.V3Tests.test_validation_cannot_fit_weights_scaler_or_augment) ... ok
+test_variant_foreign_parent_rejected (test_v3.V3Tests.test_variant_foreign_parent_rejected) ... ok
+test_weighted_quantile_definition (test_v3.V3Tests.test_weighted_quantile_definition) ... ok
+
+----------------------------------------------------------------------
+Ran 54 tests in 13.817s
+
+OK

@@ -1,0 +1,232 @@
+{
+  "accumulation_steps": 4,
+  "best_checkpoint": {
+    "identity": "123c40aa3b57eb62c516e684b9c2f9de0d4da37e8ddbce9f34eae5862feb725a",
+    "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\validation\\cuda-6fed1e4df30248de8fdebb378d0ed927\\B_last4_mean\\best\\state-0000002-8290b26447744b6da31da7ace02f2866.pt",
+    "sha256": "3991976d395391b62c4b8164245e9730284149255a180a4083ba769b7e3327a2"
+  },
+  "best_epoch": 1,
+  "candidate": {
+    "complexity": 4,
+    "depth": 4,
+    "family": "B",
+    "id": "B_last4_mean",
+    "pooling": "mean"
+  },
+  "checkpoint": {
+    "identity": "123c40aa3b57eb62c516e684b9c2f9de0d4da37e8ddbce9f34eae5862feb725a",
+    "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\validation\\cuda-6fed1e4df30248de8fdebb378d0ed927\\B_last4_mean\\state-0000002-100337cf056b4b91aaf7de562330af0c.pt",
+    "sha256": "cafd82a15106ba5a07207a64d69a18bd087427f572e80aa346202be9ad8880db"
+  },
+  "completed_epochs": 1,
+  "completed_steps": 2,
+  "curve": [
+    {
+      "epoch": 1,
+      "learning_rates": [
+        0.0,
+        0.0
+      ],
+      "memory": {
+        "allocated": 671775744,
+        "peak_allocated": 899546112,
+        "peak_reserved": 996147200,
+        "reserved": 996147200
+      },
+      "train_weighted_loss": 0.7397934831678867,
+      "validation_macro_f1": 0.3333333333333333,
+      "validation_metrics": {
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.5,
+        "brier": 0.26373522128528926,
+        "confusion_matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "ece_10_equal_width": 0.06737306714057922,
+        "log_loss": 0.7210497009886507,
+        "macro_f1": 0.3333333333333333,
+        "precision": 0.5,
+        "record_count": 2,
+        "reliability_bins": [
+          {
+            "bin": 5,
+            "count": 2,
+            "mean_probability": 0.5673730671405792,
+            "positive_fraction": 0.5
+          }
+        ],
+        "roc_auc": 0.0,
+        "sensitivity": 1.0,
+        "specificity": 0.0,
+        "threshold": 0.5
+      },
+      "validation_seconds": 0.3015830999938771
+    }
+  ],
+  "gradient_norm_max": 6.203609466552734,
+  "identity": "123c40aa3b57eb62c516e684b9c2f9de0d4da37e8ddbce9f34eae5862feb725a",
+  "memory": {
+    "allocated": 671775744,
+    "peak_allocated": 899546112,
+    "peak_reserved": 996147200,
+    "reserved": 996147200
+  },
+  "parameter_count": 28355921,
+  "parameters": {
+    "frozen": 66028320,
+    "total": 94384241,
+    "trainable": 28355921,
+    "trainable_names": [
+      "backbone.encoder.layers.8.attention.gru_rel_pos_const",
+      "backbone.encoder.layers.8.attention.k_proj.weight",
+      "backbone.encoder.layers.8.attention.k_proj.bias",
+      "backbone.encoder.layers.8.attention.v_proj.weight",
+      "backbone.encoder.layers.8.attention.v_proj.bias",
+      "backbone.encoder.layers.8.attention.q_proj.weight",
+      "backbone.encoder.layers.8.attention.q_proj.bias",
+      "backbone.encoder.layers.8.attention.out_proj.weight",
+      "backbone.encoder.layers.8.attention.out_proj.bias",
+      "backbone.encoder.layers.8.attention.gru_rel_pos_linear.weight",
+      "backbone.encoder.layers.8.attention.gru_rel_pos_linear.bias",
+      "backbone.encoder.layers.8.layer_norm.weight",
+      "backbone.encoder.layers.8.layer_norm.bias",
+      "backbone.encoder.layers.8.feed_forward.intermediate_dense.weight",
+      "backbone.encoder.layers.8.feed_forward.intermediate_dense.bias",
+      "backbone.encoder.layers.8.feed_forward.output_dense.weight",
+      "backbone.encoder.layers.8.feed_forward.output_dense.bias",
+      "backbone.encoder.layers.8.final_layer_norm.weight",
+      "backbone.encoder.layers.8.final_layer_norm.bias",
+      "backbone.encoder.layers.9.attention.gru_rel_pos_const",
+      "backbone.encoder.layers.9.attention.k_proj.weight",
+      "backbone.encoder.layers.9.attention.k_proj.bias",
+      "backbone.encoder.layers.9.attention.v_proj.weight",
+      "backbone.encoder.layers.9.attention.v_proj.bias",
+      "backbone.encoder.layers.9.attention.q_proj.weight",
+      "backbone.encoder.layers.9.attention.q_proj.bias",
+      "backbone.encoder.layers.9.attention.out_proj.weight",
+      "backbone.encoder.layers.9.attention.out_proj.bias",
+      "backbone.encoder.layers.9.attention.gru_rel_pos_linear.weight",
+      "backbone.encoder.layers.9.attention.gru_rel_pos_linear.bias",
+      "backbone.encoder.layers.9.layer_norm.weight",
+      "backbone.encoder.layers.9.layer_norm.bias",
+      "backbone.encoder.layers.9.feed_forward.intermediate_dense.weight",
+      "backbone.encoder.layers.9.feed_forward.intermediate_dense.bias",
+      "backbone.encoder.layers.9.feed_forward.output_dense.weight",
+      "backbone.encoder.layers.9.feed_forward.output_dense.bias",
+      "backbone.encoder.layers.9.final_layer_norm.weight",
+      "backbone.encoder.layers.9.final_layer_norm.bias",
+      "backbone.encoder.layers.10.attention.gru_rel_pos_const",
+      "backbone.encoder.layers.10.attention.k_proj.weight",
+      "backbone.encoder.layers.10.attention.k_proj.bias",
+      "backbone.encoder.layers.10.attention.v_proj.weight",
+      "backbone.encoder.layers.10.attention.v_proj.bias",
+      "backbone.encoder.layers.10.attention.q_proj.weight",
+      "backbone.encoder.layers.10.attention.q_proj.bias",
+      "backbone.encoder.layers.10.attention.out_proj.weight",
+      "backbone.encoder.layers.10.attention.out_proj.bias",
+      "backbone.encoder.layers.10.attention.gru_rel_pos_linear.weight",
+      "backbone.encoder.layers.10.attention.gru_rel_pos_linear.bias",
+      "backbone.encoder.layers.10.layer_norm.weight",
+      "backbone.encoder.layers.10.layer_norm.bias",
+      "backbone.encoder.layers.10.feed_forward.intermediate_dense.weight",
+      "backbone.encoder.layers.10.feed_forward.intermediate_dense.bias",
+      "backbone.encoder.layers.10.feed_forward.output_dense.weight",
+      "backbone.encoder.layers.10.feed_forward.output_dense.bias",
+      "backbone.encoder.layers.10.final_layer_norm.weight",
+      "backbone.encoder.layers.10.final_layer_norm.bias",
+      "backbone.encoder.layers.11.attention.gru_rel_pos_const",
+      "backbone.encoder.layers.11.attention.k_proj.weight",
+      "backbone.encoder.layers.11.attention.k_proj.bias",
+      "backbone.encoder.layers.11.attention.v_proj.weight",
+      "backbone.encoder.layers.11.attention.v_proj.bias",
+      "backbone.encoder.layers.11.attention.q_proj.weight",
+      "backbone.encoder.layers.11.attention.q_proj.bias",
+      "backbone.encoder.layers.11.attention.out_proj.weight",
+      "backbone.encoder.layers.11.attention.out_proj.bias",
+      "backbone.encoder.layers.11.attention.gru_rel_pos_linear.weight",
+      "backbone.encoder.layers.11.attention.gru_rel_pos_linear.bias",
+      "backbone.encoder.layers.11.layer_norm.weight",
+      "backbone.encoder.layers.11.layer_norm.bias",
+      "backbone.encoder.layers.11.feed_forward.intermediate_dense.weight",
+      "backbone.encoder.layers.11.feed_forward.intermediate_dense.bias",
+      "backbone.encoder.layers.11.feed_forward.output_dense.weight",
+      "backbone.encoder.layers.11.feed_forward.output_dense.bias",
+      "backbone.encoder.layers.11.final_layer_norm.weight",
+      "backbone.encoder.layers.11.final_layer_norm.bias",
+      "head.0.weight",
+      "head.0.bias",
+      "head.2.weight",
+      "head.2.bias"
+    ],
+    "upper_layers_zero_based": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "physical_batch_size": 1,
+  "sequence_seconds": 4,
+  "training_records_per_second": 8.10613771420305,
+  "training_seconds": 0.9869064999948023,
+  "training_time_scope": "audio decode plus forward/backward/update, excluding model loading/checkpoint I/O/validation",
+  "validation_metrics": {
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "brier": 0.26373522128528926,
+    "confusion_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "ece_10_equal_width": 0.06737306714057922,
+    "log_loss": 0.7210497009886507,
+    "macro_f1": 0.3333333333333333,
+    "precision": 0.5,
+    "record_count": 2,
+    "reliability_bins": [
+      {
+        "bin": 5,
+        "count": 2,
+        "mean_probability": 0.5673730671405792,
+        "positive_fraction": 0.5
+      }
+    ],
+    "roc_auc": 0.0,
+    "sensitivity": 1.0,
+    "specificity": 0.0,
+    "threshold": 0.5
+  },
+  "validation_predictions": [
+    {
+      "evidence_kind": "REAL_DEVELOPMENT",
+      "label": 1,
+      "logical_id": "M03/Session2/0306",
+      "microphone": "head",
+      "prediction": 1,
+      "probability": 0.5582600235939026,
+      "speaker_id": "M03"
+    },
+    {
+      "evidence_kind": "REAL_DEVELOPMENT",
+      "label": 0,
+      "logical_id": "MC02/Session2/0239",
+      "microphone": "array",
+      "prediction": 1,
+      "probability": 0.5764861106872559,
+      "speaker_id": "MC02"
+    }
+  ]
+}

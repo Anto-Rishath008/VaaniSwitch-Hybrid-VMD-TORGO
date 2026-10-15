@@ -1,0 +1,127 @@
+{
+  "cv_provenance": "Unchanged V3 development_cv imported and source-pinned by V3_LINEAGE.json",
+  "rows": [
+    {
+      "caveat": "Historical V3 best frozen-HuBERT reference on identical grouped CV definition; differing grids and previous development selection. Descriptive only; not independent or a selection input.",
+      "hubert_frozen_candidate": {
+        "C": 0.01,
+        "augmentation": false,
+        "complexity": 0,
+        "id": "ref_L09_C0.01_B0_N0_A0",
+        "layer": 9,
+        "normalization": "N0",
+        "weighting": "B0"
+      },
+      "hubert_frozen_development": {
+        "accuracy": 0.6086378230539592,
+        "balanced_accuracy": 0.6600934472756094,
+        "brier": 0.3161580721520622,
+        "ece_10_equal_width": 0.358751902030187,
+        "log_loss": 1.1705241831529105,
+        "macro_f1": 0.549078897827111,
+        "roc_auc": 0.8734139537411377
+      },
+      "macro_f1_difference": 0.01962135137987553,
+      "outer_context": 1,
+      "wavlm_frozen_candidate": {
+        "C": 0.01,
+        "complexity": 0,
+        "family": "A",
+        "id": "A_L12_mean_std_C0.01",
+        "layer": 12,
+        "pooling": "mean_std"
+      },
+      "wavlm_frozen_development": {
+        "accuracy": 0.6208066389166521,
+        "balanced_accuracy": 0.6691260791960749,
+        "log_loss": 1.125977987780378,
+        "macro_f1": 0.5687002492069865,
+        "roc_auc": 0.8670246085836052,
+        "sensitivity": 0.6884334277005051,
+        "specificity": 0.6498187306916446
+      }
+    },
+    {
+      "caveat": "Historical V3 best frozen-HuBERT reference on identical grouped CV definition; differing grids and previous development selection. Descriptive only; not independent or a selection input.",
+      "hubert_frozen_candidate": {
+        "C": 0.01,
+        "augmentation": false,
+        "complexity": 0,
+        "id": "ref_L09_C0.01_B0_N0_A0",
+        "layer": 9,
+        "normalization": "N0",
+        "weighting": "B0"
+      },
+      "hubert_frozen_development": {
+        "accuracy": 0.6892210218592973,
+        "balanced_accuracy": 0.6778499153569882,
+        "brier": 0.22770929240130458,
+        "ece_10_equal_width": 0.2347599729654759,
+        "log_loss": 0.7661787225934648,
+        "macro_f1": 0.6436979004628346,
+        "roc_auc": 0.8036840226824743
+      },
+      "macro_f1_difference": 0.0033917011468488356,
+      "outer_context": 2,
+      "wavlm_frozen_candidate": {
+        "C": 0.01,
+        "complexity": 0,
+        "family": "A",
+        "id": "A_L12_mean_std_C0.01",
+        "layer": 12,
+        "pooling": "mean_std"
+      },
+      "wavlm_frozen_development": {
+        "accuracy": 0.6971522457555207,
+        "balanced_accuracy": 0.6742488265025947,
+        "log_loss": 0.756283939469998,
+        "macro_f1": 0.6470896016096834,
+        "roc_auc": 0.7937053531197318,
+        "sensitivity": 0.608739150012906,
+        "specificity": 0.7397585029922832
+      }
+    },
+    {
+      "caveat": "Historical V3 best frozen-HuBERT reference on identical grouped CV definition; differing grids and previous development selection. Descriptive only; not independent or a selection input.",
+      "hubert_frozen_candidate": {
+        "C": 1.0,
+        "augmentation": false,
+        "complexity": 0,
+        "id": "ref_L09_C1_B0_N0_A0",
+        "layer": 9,
+        "normalization": "N0",
+        "weighting": "B0"
+      },
+      "hubert_frozen_development": {
+        "accuracy": 0.7184963319955192,
+        "balanced_accuracy": 0.7397735836622199,
+        "brier": 0.23883103760770283,
+        "ece_10_equal_width": 0.2394419125460702,
+        "log_loss": 1.2941275839779243,
+        "macro_f1": 0.7020533992370382,
+        "roc_auc": 0.8663700957747379
+      },
+      "macro_f1_difference": 0.07333412020625851,
+      "outer_context": 3,
+      "wavlm_frozen_candidate": {
+        "C": 0.01,
+        "complexity": 0,
+        "family": "A",
+        "id": "A_L12_mean_std_C0.01",
+        "layer": 12,
+        "pooling": "mean_std"
+      },
+      "wavlm_frozen_development": {
+        "accuracy": 0.789556272994074,
+        "balanced_accuracy": 0.8041195509002345,
+        "log_loss": 0.49499285956051264,
+        "macro_f1": 0.7753875194432968,
+        "roc_auc": 0.887323100553692,
+        "sensitivity": 0.8368986378436699,
+        "specificity": 0.7713404639567991
+      }
+    }
+  ],
+  "timing": "Read only after all V4 selections and final fits are frozen",
+  "v3_sha256": "dcd9b28829ad284a05d392d97f00347c27a53dec7bfb79f9e6619f6a38d41ed3"
+}

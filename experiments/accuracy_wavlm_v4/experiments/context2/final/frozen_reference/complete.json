@@ -1,0 +1,50 @@
+{
+  "best_epoch": null,
+  "candidate": {
+    "C": 0.01,
+    "complexity": 0,
+    "family": "A",
+    "id": "A_L12_mean_std_C0.01",
+    "layer": 12,
+    "pooling": "mean_std"
+  },
+  "checkpoint": {
+    "identity": "1cbc939905059326a6638a0c4389c73249902105503055648afe923e9c8bf0c2",
+    "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context2\\final\\frozen_reference\\state-0000000-940247ff07e84724a1d1618b515d252d.pt",
+    "sha256": "90174351c990da0ba3addcfa8c6b8f5e8b93af4a5dd1c91d250242f9446910ed"
+  },
+  "identity": "1cbc939905059326a6638a0c4389c73249902105503055648afe923e9c8bf0c2",
+  "normalizer_fit_speakers": [
+    "F01",
+    "F03",
+    "FC01",
+    "FC03",
+    "M03",
+    "M04",
+    "M05",
+    "MC01",
+    "MC03",
+    "MC04"
+  ],
+  "parameter_count": 1537,
+  "result_digest": "215200358e13545c92b34db9e6883b472f5cf0df1436a6d414513f6cdc5db297",
+  "speaker_mass": {
+    "F01": 579.9999999999993,
+    "F03": 579.999999999999,
+    "FC01": 580.0,
+    "FC03": 580.0000000000086,
+    "M03": 580.0000000000016,
+    "M04": 579.999999999996,
+    "M05": 579.9999999999984,
+    "MC01": 580.0000000000017,
+    "MC03": 580.0000000000036,
+    "MC04": 579.9999999999901
+  },
+  "training_seconds": 1.1210107000079006,
+  "validation_metrics": null,
+  "validation_predictions": [],
+  "weight_class_mass": {
+    "0": 2900.0,
+    "1": 2899.9999999999995
+  }
+}

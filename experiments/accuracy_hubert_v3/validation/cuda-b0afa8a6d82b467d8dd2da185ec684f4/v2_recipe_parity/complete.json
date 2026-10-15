@@ -1,0 +1,40 @@
+{
+  "best_epoch": 0,
+  "candidate": {
+    "C": 0.1,
+    "id": "C_0.1"
+  },
+  "checkpoint": {
+    "epoch": 0,
+    "identity": "2bb84c04d30cd58779b20ba4d333185706be2c5a3c3e6bd3009d5c9e4d398259",
+    "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\validation\\cuda-b0afa8a6d82b467d8dd2da185ec684f4\\v2_recipe_parity\\epoch-000-cf4d36e4c4f4470587fe2b8301877db1.pt",
+    "sha256": "ad8a9636dbc1ac378f4fff1f40d47c259fde15b7bd0f12a83b4267cbc805a553"
+  },
+  "history": [],
+  "layer": 9,
+  "model_name": "E1",
+  "parameter_count": 1537,
+  "training_seconds": 0.024269800007459708,
+  "validation_loss": 1.4193455116094684,
+  "validation_metrics": {
+    "accuracy": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "macro_f1": 0.0,
+    "precision": 0.0,
+    "record_count": 4,
+    "roc_auc": 0.0,
+    "sensitivity": 0.0,
+    "specificity": 0.0,
+    "threshold": 0.5
+  }
+}

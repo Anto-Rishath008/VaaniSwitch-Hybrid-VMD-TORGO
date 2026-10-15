@@ -1,0 +1,62 @@
+{
+  "1": {
+    "reference": {
+      "C": 0.01,
+      "augmentation": false,
+      "complexity": 0,
+      "id": "ref_L09_C0.01_B0_N0_A0",
+      "layer": 9,
+      "normalization": "N0",
+      "weighting": "B0"
+    },
+    "selected": {
+      "C": 0.01,
+      "augmentation": false,
+      "complexity": 1,
+      "id": "weight_L09_C0.01_B2_N0_A0",
+      "layer": 9,
+      "normalization": "N0",
+      "weighting": "B2"
+    }
+  },
+  "2": {
+    "reference": {
+      "C": 0.01,
+      "augmentation": false,
+      "complexity": 0,
+      "id": "ref_L09_C0.01_B0_N0_A0",
+      "layer": 9,
+      "normalization": "N0",
+      "weighting": "B0"
+    },
+    "selected": {
+      "C": 0.01,
+      "augmentation": false,
+      "complexity": 1,
+      "id": "robust_L09_C0.01_B0_N1_A0",
+      "layer": 9,
+      "normalization": "N1",
+      "weighting": "B0"
+    }
+  },
+  "3": {
+    "reference": {
+      "C": 1.0,
+      "augmentation": false,
+      "complexity": 0,
+      "id": "ref_L09_C1_B0_N0_A0",
+      "layer": 9,
+      "normalization": "N0",
+      "weighting": "B0"
+    },
+    "selected": {
+      "C": 1.0,
+      "augmentation": false,
+      "complexity": 0,
+      "id": "ref_L09_C1_B0_N0_A0",
+      "layer": 9,
+      "normalization": "N0",
+      "weighting": "B0"
+    }
+  }
+}

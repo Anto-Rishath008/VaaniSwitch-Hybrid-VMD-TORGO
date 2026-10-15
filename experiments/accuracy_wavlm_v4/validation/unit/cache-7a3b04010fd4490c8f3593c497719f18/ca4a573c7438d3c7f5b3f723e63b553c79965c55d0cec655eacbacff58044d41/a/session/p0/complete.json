@@ -1,0 +1,27 @@
+{
+  "identity": {
+    "extraction": {
+      "model": "synthetic"
+    },
+    "record": {
+      "condition": "control",
+      "duration_seconds": 1.0,
+      "frame_count": 16000,
+      "logical_id": "a/session/p0",
+      "primary_audio_path": "data/raw/a/0.wav",
+      "primary_audio_sha256": "92a72ae8fe30276e8c527c1fc63ed62f37bd2c32f30b974ef3cca5bbfd95890d",
+      "primary_microphone": "head",
+      "sample_rate": 16000,
+      "speaker_id": "a"
+    }
+  },
+  "layers": [
+    9,
+    12
+  ],
+  "pooling": "mean_plus_population_std",
+  "segment": {
+    "start": 0
+  },
+  "sha256": "44e17fe54ef48fd400a40cbada91d1901e21659644d1abe289d61315df71ae06"
+}

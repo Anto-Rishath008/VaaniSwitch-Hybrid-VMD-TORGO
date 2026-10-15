@@ -1,0 +1,8 @@
+test_fold_fingerprint_detects_changed_speaker_assignment (__main__.CanonicalFoldFingerprintRegression.test_fold_fingerprint_detects_changed_speaker_assignment) ... ok
+test_fold_fingerprint_ignores_serialization_whitespace (__main__.CanonicalFoldFingerprintRegression.test_fold_fingerprint_ignores_serialization_whitespace) ... ok
+test_native_outer_evidence_accepts_original_fold_fingerprint (__main__.CanonicalFoldFingerprintRegression.test_native_outer_evidence_accepts_original_fold_fingerprint) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 7.076s
+
+OK

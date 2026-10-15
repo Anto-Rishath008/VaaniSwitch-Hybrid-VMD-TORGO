@@ -1,0 +1,242 @@
+{
+  "corpus": {
+    "core_count": 8673,
+    "cropped_recordings": 235,
+    "folds_canonical_sha256": "5ab4e1af6c54f97af940c3e5ba5d447c77d827102b88656bf19cd5227b5fee27",
+    "folds_file_sha256": "3d0303d9cb8af96da7b0bd4e4ad26b67ea0350c24a5607a7571d067e3a08aa8c",
+    "manifest_sha256": "91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061",
+    "primary_microphones": {
+      "array": 1170,
+      "head": 7503
+    },
+    "rp_config_hash": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d",
+    "speakers": 15,
+    "splits": [
+      {
+        "inner_train": [
+          "F01",
+          "F04",
+          "FC02",
+          "FC03",
+          "M01",
+          "M02",
+          "M05",
+          "MC01"
+        ],
+        "inner_validation": [
+          "M03",
+          "MC02"
+        ],
+        "outer_fold": 1,
+        "outer_test": [
+          "F03",
+          "FC01",
+          "M04",
+          "MC03",
+          "MC04"
+        ]
+      },
+      {
+        "inner_train": [
+          "F01",
+          "FC01",
+          "M03",
+          "M04",
+          "M05",
+          "MC01",
+          "MC03",
+          "MC04"
+        ],
+        "inner_validation": [
+          "F03",
+          "FC03"
+        ],
+        "outer_fold": 2,
+        "outer_test": [
+          "F04",
+          "FC02",
+          "M01",
+          "M02",
+          "MC02"
+        ]
+      },
+      {
+        "inner_train": [
+          "F04",
+          "FC01",
+          "FC02",
+          "M01",
+          "M02",
+          "M04",
+          "MC03",
+          "MC04"
+        ],
+        "inner_validation": [
+          "F03",
+          "MC02"
+        ],
+        "outer_fold": 3,
+        "outer_test": [
+          "F01",
+          "FC03",
+          "M03",
+          "M05",
+          "MC01"
+        ]
+      }
+    ],
+    "vmd_config_hash": "bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685"
+  },
+  "development_cv": {
+    "1": [
+      {
+        "train": [
+          "F01",
+          "F04",
+          "M03",
+          "M05",
+          "MC01",
+          "MC02"
+        ],
+        "validation": [
+          "FC02",
+          "FC03",
+          "M01",
+          "M02"
+        ]
+      },
+      {
+        "train": [
+          "F04",
+          "FC02",
+          "FC03",
+          "M01",
+          "M02",
+          "M03",
+          "MC01"
+        ],
+        "validation": [
+          "F01",
+          "M05",
+          "MC02"
+        ]
+      },
+      {
+        "train": [
+          "F01",
+          "FC02",
+          "FC03",
+          "M01",
+          "M02",
+          "M05",
+          "MC02"
+        ],
+        "validation": [
+          "F04",
+          "M03",
+          "MC01"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "train": [
+          "F01",
+          "F03",
+          "FC03",
+          "M04",
+          "MC01",
+          "MC04"
+        ],
+        "validation": [
+          "FC01",
+          "M03",
+          "M05",
+          "MC03"
+        ]
+      },
+      {
+        "train": [
+          "FC01",
+          "FC03",
+          "M03",
+          "M04",
+          "M05",
+          "MC03"
+        ],
+        "validation": [
+          "F01",
+          "F03",
+          "MC01",
+          "MC04"
+        ]
+      },
+      {
+        "train": [
+          "F01",
+          "F03",
+          "FC01",
+          "M03",
+          "M05",
+          "MC01",
+          "MC03",
+          "MC04"
+        ],
+        "validation": [
+          "FC03",
+          "M04"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "train": [
+          "F03",
+          "FC02",
+          "M01",
+          "M02",
+          "MC03",
+          "MC04"
+        ],
+        "validation": [
+          "F04",
+          "FC01",
+          "M04",
+          "MC02"
+        ]
+      },
+      {
+        "train": [
+          "F04",
+          "FC01",
+          "M01",
+          "M04",
+          "MC02",
+          "MC04"
+        ],
+        "validation": [
+          "F03",
+          "FC02",
+          "M02",
+          "MC03"
+        ]
+      },
+      {
+        "train": [
+          "F03",
+          "F04",
+          "FC01",
+          "FC02",
+          "M02",
+          "M04",
+          "MC02",
+          "MC03"
+        ],
+        "validation": [
+          "M01",
+          "MC04"
+        ]
+      }
+    ]
+  }
+}

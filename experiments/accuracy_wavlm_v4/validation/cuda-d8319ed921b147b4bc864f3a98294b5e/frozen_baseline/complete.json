@@ -1,0 +1,94 @@
+{
+  "best_epoch": null,
+  "candidate": {
+    "C": 0.01,
+    "complexity": 0,
+    "family": "A",
+    "id": "A_L9_mean_C0.01",
+    "layer": 9,
+    "pooling": "mean"
+  },
+  "checkpoint": {
+    "identity": "f2264fbea15969d380cc4cba2f364186e34ab63560998b98cdbf89d91b6a0596",
+    "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\validation\\cuda-d8319ed921b147b4bc864f3a98294b5e\\frozen_baseline\\state-0000000-3ccf7156be6541128d25b40e78524dab.pt",
+    "sha256": "29d5609af1e21b72b105831611058090392979f5ae403dc9973c4f8ea67a356f"
+  },
+  "identity": "f2264fbea15969d380cc4cba2f364186e34ab63560998b98cdbf89d91b6a0596",
+  "normalizer_fit_speakers": [
+    "MC01",
+    "FC03",
+    "F04",
+    "F01"
+  ],
+  "parameter_count": 769,
+  "result_digest": "4e8f6f7b7a36524b26ec204eadcd64632cffd50c15808cb39e52e1bdb681fc53",
+  "speaker_mass": {
+    "F01": 2.0,
+    "F04": 2.0,
+    "FC03": 2.0,
+    "MC01": 2.0
+  },
+  "training_seconds": 0.06941949999600183,
+  "validation_metrics": {
+    "accuracy": 0.0,
+    "balanced_accuracy": 0.0,
+    "brier": 0.6385034295642622,
+    "confusion_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "ece_10_equal_width": 0.786184510640699,
+    "log_loss": 1.8384810010020636,
+    "macro_f1": 0.0,
+    "precision": 0.0,
+    "record_count": 2,
+    "reliability_bins": [
+      {
+        "bin": 3,
+        "count": 1,
+        "mean_probability": 0.3567047639494769,
+        "positive_fraction": 1.0
+      },
+      {
+        "bin": 9,
+        "count": 1,
+        "mean_probability": 0.929073785230875,
+        "positive_fraction": 0.0
+      }
+    ],
+    "roc_auc": 0.0,
+    "sensitivity": 0.0,
+    "specificity": 0.0,
+    "threshold": 0.5
+  },
+  "validation_predictions": [
+    {
+      "evidence_kind": "REAL_DEVELOPMENT",
+      "label": 1,
+      "logical_id": "M03/Session2/0306",
+      "microphone": "head",
+      "prediction": 0,
+      "probability": 0.3567047639494769,
+      "speaker_id": "M03"
+    },
+    {
+      "evidence_kind": "REAL_DEVELOPMENT",
+      "label": 0,
+      "logical_id": "MC02/Session2/0239",
+      "microphone": "array",
+      "prediction": 1,
+      "probability": 0.929073785230875,
+      "speaker_id": "MC02"
+    }
+  ],
+  "weight_class_mass": {
+    "0": 4.0,
+    "1": 4.0
+  }
+}

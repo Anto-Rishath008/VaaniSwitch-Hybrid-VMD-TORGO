@@ -1,0 +1,149 @@
+{
+  "analysis_label": "POST-HOC EXPLORATORY SPEAKER-LEVEL ANALYSIS",
+  "folds_canonical_json_fingerprint": "5ab4e1af6c54f97af940c3e5ba5d447c77d827102b88656bf19cd5227b5fee27",
+  "folds_file_sha256": "3d0303d9cb8af96da7b0bd4e4ad26b67ea0350c24a5607a7571d067e3a08aa8c",
+  "manifest_sha256": "91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061",
+  "signed_closure_manifest_sha256": "f9d4e56917b2bfc63abbf312e2b389457aa2ad29734424f01da5ee03109a8a6d",
+  "sources": [
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "2d20c88ecc273a3df48818fb020eb49b9bd7bd6ffbfb46b7094f4303ad510973",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F03",
+        "FC01",
+        "M04",
+        "MC03",
+        "MC04"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold1_B2_stronger_dropout_seed42_677ad640faf5",
+      "model_variant": "B2",
+      "outer_fold": 1,
+      "outer_record_hash": "2936df532e7ada33d7b571841c1026ddb30219fda3029cd89b3325f0f32d0569",
+      "provenance": "NATIVE",
+      "record_count": 2819,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold1_B2_stronger_dropout_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "764e02548fc383c4eb0671e54eb32256b40cc35c313d8a952c442adf27e9879a",
+      "utterance_metrics_reproduced": true
+    },
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "3e8a11c49869ab5ba5cc797d79c521eb5934612c38dee407e73b959e638d0910",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F04",
+        "FC02",
+        "M01",
+        "M02",
+        "MC02"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold2_B2_stronger_decay_seed42_677ad640faf5",
+      "model_variant": "B2",
+      "outer_fold": 2,
+      "outer_record_hash": "e85a74cb8dd33249ac0f27d42521d5dc0cd2d9abd283970c978f278d9fb97353",
+      "provenance": "NATIVE",
+      "record_count": 2873,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold2_B2_stronger_decay_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "ec05eb39d0dd1ef7e6a18cb74a5c02b96b6cd5e47900e811f24f9e2a8fffe1b2",
+      "utterance_metrics_reproduced": true
+    },
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "9123550a57819f9df7237267e65da05f502fef433abaada9534ae799da9b3f89",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F01",
+        "FC03",
+        "M03",
+        "M05",
+        "MC01"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold3_B2_baseline_seed42_677ad640faf5",
+      "model_variant": "B2",
+      "outer_fold": 3,
+      "outer_record_hash": "72eedd08aa36215e3d998e0d19bdf95f655c9cc7686f83f707a5cb053fde266a",
+      "provenance": "NATIVE",
+      "record_count": 2981,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold3_B2_baseline_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "1f82c96b85883832955163578f6510ef9c752113633b74fbd59d3b9ce28da2de",
+      "utterance_metrics_reproduced": true
+    },
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F03",
+        "FC01",
+        "M04",
+        "MC03",
+        "MC04"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold1_C2_stronger_dropout_seed42_677ad640faf5",
+      "model_variant": "C2",
+      "outer_fold": 1,
+      "outer_record_hash": "2936df532e7ada33d7b571841c1026ddb30219fda3029cd89b3325f0f32d0569",
+      "provenance": "NATIVE",
+      "record_count": 2819,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold1_C2_stronger_dropout_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "f0cac4ed9f6a8fd730d6b0a373cda3255bbb7cb75df54b3ff4c3a14c80382c86",
+      "utterance_metrics_reproduced": true
+    },
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F04",
+        "FC02",
+        "M01",
+        "M02",
+        "MC02"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold2_C2_stronger_decay_seed42_677ad640faf5",
+      "model_variant": "C2",
+      "outer_fold": 2,
+      "outer_record_hash": "e85a74cb8dd33249ac0f27d42521d5dc0cd2d9abd283970c978f278d9fb97353",
+      "provenance": "NATIVE",
+      "record_count": 2873,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold2_C2_stronger_decay_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "3b793a7a7f2ca7dbebbe5f3048cb7c611d916cc98084711dd33a9a31103e4dd3",
+      "utterance_metrics_reproduced": true
+    },
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F01",
+        "FC03",
+        "M03",
+        "M05",
+        "MC01"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold3_C2_baseline_seed42_677ad640faf5",
+      "model_variant": "C2",
+      "outer_fold": 3,
+      "outer_record_hash": "72eedd08aa36215e3d998e0d19bdf95f655c9cc7686f83f707a5cb053fde266a",
+      "provenance": "NATIVE",
+      "record_count": 2981,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold3_C2_baseline_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "343b1938cde0ab792ca079bedf45797c99c82c89404d651d500f3d283eb12a78",
+      "utterance_metrics_reproduced": true
+    }
+  ],
+  "verified_closure_package_files": 8,
+  "verified_signed_input_hashes": 636
+}

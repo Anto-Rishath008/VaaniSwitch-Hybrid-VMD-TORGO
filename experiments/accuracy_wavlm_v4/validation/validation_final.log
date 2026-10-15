@@ -1,0 +1,94 @@
+test_development_reference_preserves_unfavorable_difference (test_reporting.Reporting.test_development_reference_preserves_unfavorable_difference) ... ok
+test_missing_record_rejected (test_reporting.Reporting.test_missing_record_rejected) ... ok
+test_observed_fixture_report_and_sealed_reuse (test_reporting.Reporting.test_observed_fixture_report_and_sealed_reuse) ... ok
+test_prediction_identity_error_rejected (test_reporting.Reporting.test_prediction_identity_error_rejected) ... ok
+test_synthetic_cannot_publish_production_result (test_reporting.Reporting.test_synthetic_cannot_publish_production_result) ... ok
+test_atomic_no_overwrite (test_v4.CacheCheckpointContracts.test_atomic_no_overwrite) ... ok
+test_cache_roundtrip_and_corruption (test_v4.CacheCheckpointContracts.test_cache_roundtrip_and_corruption) ... ok
+test_cache_source_identity_bound (test_v4.CacheCheckpointContracts.test_cache_source_identity_bound) ... ok
+test_checkpoint_checksum_and_identity (test_v4.CacheCheckpointContracts.test_checkpoint_checksum_and_identity) ... ok
+test_output_escape_rejected (test_v4.CacheCheckpointContracts.test_output_escape_rejected) ... ok
+test_rng_restoration (test_v4.CacheCheckpointContracts.test_rng_restoration) ... ok
+test_unpublished_partial_checkpoint_ignored (test_v4.CacheCheckpointContracts.test_unpublished_partial_checkpoint_ignored) ... ok
+test_audio_hash_duplicate_across_roles_rejected (test_v4.DataContracts.test_audio_hash_duplicate_across_roles_rejected) ... ok
+test_duplicate_record_rejected (test_v4.DataContracts.test_duplicate_record_rejected) ... ok
+test_exact_center_crop (test_v4.DataContracts.test_exact_center_crop) ... ok
+test_forbidden_speaker_rejected (test_v4.DataContracts.test_forbidden_speaker_rejected) ... ok
+test_nonfinite_audio_fails (test_v4.DataContracts.test_nonfinite_audio_fails) ... ok
+test_outer_role_rejected (test_v4.DataContracts.test_outer_role_rejected) ... ok
+test_real_core (test_v4.DataContracts.test_real_core) ... ok
+test_real_cv_coverage_and_isolation (test_v4.DataContracts.test_real_cv_coverage_and_isolation) ... ok
+test_resampling_and_stereo (test_v4.DataContracts.test_resampling_and_stereo) ... ok
+test_short_audio_fails_without_exclusion (test_v4.DataContracts.test_short_audio_fails_without_exclusion) ... ok
+test_silence_is_finite (test_v4.DataContracts.test_silence_is_finite) ... ok
+test_speaker_weight_mass (test_v4.DataContracts.test_speaker_weight_mass) ... ok
+test_validation_weight_fit_rejected (test_v4.DataContracts.test_validation_weight_fit_rejected) ... ok
+test_consumed_outer_claim_cannot_retry (test_v4.ExecutionGates.test_consumed_outer_claim_cannot_retry) ... ok
+test_deterministic_tie_prefers_frozen (test_v4.ExecutionGates.test_deterministic_tie_prefers_frozen) ... ok
+test_development_requires_authorization (test_v4.ExecutionGates.test_development_requires_authorization) ... ok
+test_fold_sample_sd_uses_ddof_one (test_v4.ExecutionGates.test_fold_sample_sd_uses_ddof_one) ... ok
+test_full_selection_orchestration_uses_only_development (test_v4.ExecutionGates.test_full_selection_orchestration_uses_only_development) ... ok
+test_outer_claim_race_cannot_forward_twice (test_v4.ExecutionGates.test_outer_claim_race_cannot_forward_twice) ... ok
+test_outer_gate_precedes_any_data_access (test_v4.ExecutionGates.test_outer_gate_precedes_any_data_access) ... ok
+test_outer_requires_separate_authorization (test_v4.ExecutionGates.test_outer_requires_separate_authorization) ... ok
+test_preservation_baseline_excludes_only_v4_study_work (test_v4.ExecutionGates.test_preservation_baseline_excludes_only_v4_study_work) ... ok
+test_sealed_result_reused_without_inference (test_v4.ExecutionGates.test_sealed_result_reused_without_inference) ... ok
+test_selection_rejects_outer_metric (test_v4.ExecutionGates.test_selection_rejects_outer_metric) ... ok
+test_small_grid (test_v4.ExecutionGates.test_small_grid) ... ok
+test_attention_padding_and_gradient (test_v4.ModelContracts.test_attention_padding_and_gradient) ... ok
+test_delta_restore_requires_exact_keys (test_v4.ModelContracts.test_delta_restore_requires_exact_keys) ... ok
+test_mask_invalid_lengths (test_v4.ModelContracts.test_mask_invalid_lengths) ... ok
+test_masked_mean_std_ignores_padding (test_v4.ModelContracts.test_masked_mean_std_ignores_padding) ... ok
+test_nonfinite_pool_fails (test_v4.ModelContracts.test_nonfinite_pool_fails) ... ok
+test_tiny_real_wavlm_selective_gradient (test_v4.ModelContracts.test_tiny_real_wavlm_selective_gradient) ... C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+ok
+test_unapproved_depth_rejected (test_v4.ModelContracts.test_unapproved_depth_rejected) ... ok
+test_official_processor_normalization_is_preserved (test_v4.ProcessorRegression.test_official_processor_normalization_is_preserved) ... ok
+test_lr_publication_recovery (test_v4.TrainingContracts.test_lr_publication_recovery) ... ok
+test_lr_rejects_shared_speaker (test_v4.TrainingContracts.test_lr_rejects_shared_speaker) ... ok
+test_lr_train_only_scaler_and_resume (test_v4.TrainingContracts.test_lr_train_only_scaler_and_resume) ... ok
+test_metrics_known_confusion (test_v4.TrainingContracts.test_metrics_known_confusion) ... ok
+test_nonfinite_optimizer_rejected (test_v4.TrainingContracts.test_nonfinite_optimizer_rejected) ... ok
+test_oom_stops_and_keeps_checkpoint (test_v4.TrainingContracts.test_oom_stops_and_keeps_checkpoint) ... ok
+test_single_class_specificity_is_null (test_v4.TrainingContracts.test_single_class_specificity_is_null) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 14.254s
+
+OK
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+CUDA bounded B_last2_mean
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\autograd\graph.py:979: UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\attention_backward.cu:835.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+CUDA bounded B_last4_mean
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+CUDA bounded B_last2_attention
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\src\pipeline.py", line 125, in <module>
+    main()
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\src\pipeline.py", line 105, in main
+    bounded(corpus, directory, model_lock, cfg, env)
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\src\validation.py", line 86, in bounded
+    require(all(torch.equal(a['model'][k], b['model'][k]) for k in a['model']), 'Resume parameter drift')
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_hubert_v2\src\common.py", line 25, in require
+    raise ValueError(message)
+ValueError: Resume parameter drift
+V4 Validate failed.
+At C:\Users\antor\OneDrive\Desktop\7th sem\Speech 
+processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\run_all.ps1:36 char:36
++         if ($LASTEXITCODE -ne 0) { throw "V4 $Mode failed." }
++                                    ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (V4 Validate failed.:String) [], RuntimeException
+    + FullyQualifiedErrorId : V4 Validate failed.
+ 

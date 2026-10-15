@@ -1,0 +1,65 @@
+{
+  "/": {
+    "violations": [],
+    "load": {
+      "domContentLoaded_ms": 46.900000005960464,
+      "load_ms": 47
+    }
+  },
+  "/studio": {
+    "violations": [],
+    "load": {
+      "domContentLoaded_ms": 19.200000017881393,
+      "load_ms": 19.200000017881393
+    }
+  },
+  "/clear-speech": {
+    "violations": [],
+    "load": {
+      "domContentLoaded_ms": 23.599999994039536,
+      "load_ms": 23.69999998807907
+    }
+  },
+  "/models": {
+    "violations": [],
+    "load": {
+      "domContentLoaded_ms": 18.400000005960464,
+      "load_ms": 18.5
+    }
+  },
+  "/pipeline": {
+    "violations": [],
+    "load": {
+      "domContentLoaded_ms": 32.80000001192093,
+      "load_ms": 33
+    }
+  },
+  "/research": {
+    "violations": [],
+    "load": {
+      "domContentLoaded_ms": 25.799999982118607,
+      "load_ms": 25.900000005960464
+    }
+  },
+  "/speakers": {
+    "violations": [],
+    "load": {
+      "domContentLoaded_ms": 19.30000001192093,
+      "load_ms": 19.30000001192093
+    }
+  },
+  "/limitations": {
+    "violations": [],
+    "load": {
+      "domContentLoaded_ms": 35.39999997615814,
+      "load_ms": 35.39999997615814
+    }
+  },
+  "/about": {
+    "violations": [],
+    "load": {
+      "domContentLoaded_ms": 29.30000001192093,
+      "load_ms": 29.400000005960464
+    }
+  }
+}

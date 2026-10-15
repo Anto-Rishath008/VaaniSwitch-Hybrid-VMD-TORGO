@@ -1,0 +1,15 @@
+{
+  "seed": 42, "threshold": 0.5, "layers": [9, 12], "C": [0.01, 0.1],
+  "pooling": ["mean", "mean_std"], "cv_folds": 3,
+  "frozen_seconds": 8, "fine_tune_seconds": 4, "crop": "center",
+  "precision": "fp32", "attention_backend": "math", "deterministic_algorithms": "strict", "physical_batch_size": 1, "accumulation_steps": 8,
+  "upper_layer_depths": [2, 4], "attention_ablation_depth": 2,
+  "backbone_lr": 0.00001, "head_lr": 0.0001, "weight_decay": 0.01,
+  "max_epochs": 8, "patience": 2, "gradient_clip": 1.0,
+  "gradient_checkpointing": true, "checkpoint_every_updates": 1000,
+  "logistic_max_iter": 3000, "vram_fraction": 0.8,
+  "augmentation": "none", "layerdrop": 0.0, "spec_augment": false,
+  "oom_retries": 0, "oom_policy": "preserve last complete update and failure evidence; stop at physical batch one",
+  "full_development_authorized_by_default": false,
+  "outer_authorized_by_default": false
+}

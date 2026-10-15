@@ -1,0 +1,47 @@
+{
+  "access": "read-only; all payload/per-layer hashes checked; no V2 writer called",
+  "cache_identity": {
+    "config": {
+      "config_sha256": "56be398848bbd9cbc720172b0d45b2f01cac7652f2968f0f31f5faf9f2986acc",
+      "crop": "center",
+      "decode_lookahead": 32,
+      "decode_workers": 2,
+      "extraction_batch_cap": 4,
+      "feature_dimension_per_layer": 1536,
+      "group_norm_batching": "exact_length_only_no_padding",
+      "layers": [
+        6,
+        9,
+        12
+      ],
+      "model": "facebook/hubert-base-ls960",
+      "normalization": "checkpoint_zero_mean_unit_variance_on_valid_samples",
+      "pooling": "masked_mean_population_std",
+      "precision": "fp16_autocast_float32_pooling",
+      "preprocessor_sha256": "4a93853b74278b7c769d07f5a861e5d12ceb5db2bced5620d335f87238cb9e86",
+      "revision": "dba3bb02fda4248b6e082697eee756de8fe8aa8a",
+      "sample_rate": 16000,
+      "segment_seconds": 8,
+      "weight_file": "pytorch_model.bin",
+      "weight_sha256": "062249fffb353eab67547a2fbc129f7c31a2f459faf641b19e8fb007cc5c48ad"
+    },
+    "implementation": "frozen_hubert_exact_length_v1",
+    "model_lock": {
+      "files": {
+        "config.json": "56be398848bbd9cbc720172b0d45b2f01cac7652f2968f0f31f5faf9f2986acc",
+        "preprocessor_config.json": "4a93853b74278b7c769d07f5a861e5d12ceb5db2bced5620d335f87238cb9e86",
+        "pytorch_model.bin": "062249fffb353eab67547a2fbc129f7c31a2f459faf641b19e8fb007cc5c48ad"
+      },
+      "model": "facebook/hubert-base-ls960",
+      "revision": "dba3bb02fda4248b6e082697eee756de8fe8aa8a"
+    },
+    "torch": "2.13.0+cu126",
+    "transformers": "4.57.6"
+  },
+  "cache_root": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert\\cache\\features\\4348769e21399aee8b2323bca50923db3afb015207e75641a799a2f2bd1a2f5d",
+  "count": 8673,
+  "cropped": 235,
+  "new_original_extractions": 0,
+  "status": "PASS",
+  "validation_sha256": "a06ecee325e3c1200a4c824690a9344b600dce4faadc83ce1c12ec47059702a3"
+}

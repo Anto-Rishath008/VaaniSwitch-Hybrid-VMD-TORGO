@@ -1,0 +1,1005 @@
+{
+  "analysis_date": "2026-10-11",
+  "analysis_label": "POST-HOC EXPLORATORY SPEAKER-LEVEL ANALYSIS",
+  "baseline_commit": "2dee81f7656e5b5cae800d9a3c8692e5e8107bf9",
+  "class_counts": {
+    "control": 7,
+    "dysarthric": 8
+  },
+  "class_mapping": {
+    "0": "control",
+    "1": "dysarthric"
+  },
+  "comparison": "B2 and C2 tie on accuracy and macro-F1; neither achieves 90%",
+  "confusion_matrix_order": "rows true [0,1], columns predicted [0,1]; [[TN,FP],[FN,TP]]",
+  "excluded_saved_predictions": 0,
+  "experimental_worktree": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study",
+  "frozen_code_hash": "7696cad010914ec37f494d9f1a11a2e1761e46f353e61d97a07399f746a34ff8",
+  "generated_at": "2026-10-11T15:37:30.573936+05:30",
+  "minimum_correct_for_90_percent_with_15_speakers": 14,
+  "missing_probabilities": 0,
+  "models": {
+    "B2": {
+      "achieved_90_percent": false,
+      "exceeded_90_percent": false,
+      "fold_speaker_mean_sample_std": {
+        "accuracy": {
+          "mean": 0.7333333333333334,
+          "sample_std_ddof1": 0.11547005383792519
+        },
+        "balanced_accuracy": {
+          "mean": 0.7499999999999999,
+          "sample_std_ddof1": 0.14433756729740643
+        },
+        "macro_f1": {
+          "mean": 0.7277777777777777,
+          "sample_std_ddof1": 0.12509255832441898
+        },
+        "precision": {
+          "mean": 0.8333333333333334,
+          "sample_std_ddof1": 0.28867513459481287
+        },
+        "roc_auc": {
+          "mean": 0.9444444444444444,
+          "sample_std_ddof1": 0.0962250448649376
+        },
+        "sensitivity": {
+          "mean": 0.611111111111111,
+          "sample_std_ddof1": 0.0962250448649376
+        },
+        "specificity": {
+          "mean": 0.8888888888888888,
+          "sample_std_ddof1": 0.1924500897298753
+        }
+      },
+      "fold_speaker_metrics": {
+        "1": {
+          "FN": 1,
+          "FP": 1,
+          "TN": 2,
+          "TP": 1,
+          "accuracy": 0.6,
+          "balanced_accuracy": 0.5833333333333333,
+          "confidence_intervals_95": {
+            "accuracy": {
+              "confidence_level": 0.95,
+              "high": 0.9472550494736843,
+              "low": 0.14663279963467257,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 3,
+              "trials": 5
+            },
+            "precision": {
+              "confidence_level": 0.95,
+              "high": 0.987420882906321,
+              "low": 0.01257911709367899,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 1,
+              "trials": 2
+            },
+            "sensitivity": {
+              "confidence_level": 0.95,
+              "high": 0.987420882906321,
+              "low": 0.01257911709367899,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 1,
+              "trials": 2
+            },
+            "specificity": {
+              "confidence_level": 0.95,
+              "high": 0.9915962413403874,
+              "low": 0.09429932405071303,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 3
+            }
+          },
+          "confusion_matrix": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "correct": 3,
+          "count": 5,
+          "incorrect": 2,
+          "macro_f1": 0.5833333333333333,
+          "precision": 0.5,
+          "roc_auc": 0.8333333333333334,
+          "sensitivity": 0.5,
+          "speakers": [
+            "F03",
+            "FC01",
+            "M04",
+            "MC03",
+            "MC04"
+          ],
+          "specificity": 0.6666666666666666,
+          "threshold": 0.5
+        },
+        "2": {
+          "FN": 1,
+          "FP": 0,
+          "TN": 2,
+          "TP": 2,
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.8333333333333333,
+          "confidence_intervals_95": {
+            "accuracy": {
+              "confidence_level": 0.95,
+              "high": 0.9949492366205319,
+              "low": 0.28358206388191054,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 4,
+              "trials": 5
+            },
+            "precision": {
+              "confidence_level": 0.95,
+              "high": 1.0,
+              "low": 0.15811388300839305,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 2
+            },
+            "sensitivity": {
+              "confidence_level": 0.95,
+              "high": 0.9915962413403874,
+              "low": 0.09429932405071303,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 3
+            },
+            "specificity": {
+              "confidence_level": 0.95,
+              "high": 1.0,
+              "low": 0.15811388300839305,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 2
+            }
+          },
+          "confusion_matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "correct": 4,
+          "count": 5,
+          "incorrect": 1,
+          "macro_f1": 0.8,
+          "precision": 1.0,
+          "roc_auc": 1.0,
+          "sensitivity": 0.6666666666666666,
+          "speakers": [
+            "F04",
+            "FC02",
+            "M01",
+            "M02",
+            "MC02"
+          ],
+          "specificity": 1.0,
+          "threshold": 0.5
+        },
+        "3": {
+          "FN": 1,
+          "FP": 0,
+          "TN": 2,
+          "TP": 2,
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.8333333333333333,
+          "confidence_intervals_95": {
+            "accuracy": {
+              "confidence_level": 0.95,
+              "high": 0.9949492366205319,
+              "low": 0.28358206388191054,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 4,
+              "trials": 5
+            },
+            "precision": {
+              "confidence_level": 0.95,
+              "high": 1.0,
+              "low": 0.15811388300839305,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 2
+            },
+            "sensitivity": {
+              "confidence_level": 0.95,
+              "high": 0.9915962413403874,
+              "low": 0.09429932405071303,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 3
+            },
+            "specificity": {
+              "confidence_level": 0.95,
+              "high": 1.0,
+              "low": 0.15811388300839305,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 2
+            }
+          },
+          "confusion_matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "correct": 4,
+          "count": 5,
+          "incorrect": 1,
+          "macro_f1": 0.8,
+          "precision": 1.0,
+          "roc_auc": 1.0,
+          "sensitivity": 0.6666666666666666,
+          "speakers": [
+            "F01",
+            "FC03",
+            "M03",
+            "M05",
+            "MC01"
+          ],
+          "specificity": 1.0,
+          "threshold": 0.5
+        }
+      },
+      "incorrect_speakers": [
+        "F03",
+        "F04",
+        "M03",
+        "MC04"
+      ],
+      "original_signed_utterance_fold_summary": {
+        "accuracy": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5164952110677545,
+            0.8242255482074486,
+            0.7507547802750755
+          ],
+          "mean": 0.6971585131834263,
+          "sample_std": 0.16071375169426855
+        },
+        "balanced_accuracy": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5685036956299602,
+            0.8049750873800847,
+            0.7244841880559301
+          ],
+          "mean": 0.699320990355325,
+          "sample_std": 0.12022715861214563
+        },
+        "macro_f1": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5158362362642382,
+            0.8029517344373409,
+            0.7162138597197275
+          ],
+          "mean": 0.6783339434737689,
+          "sample_std": 0.14725825397544906
+        },
+        "precision": {
+          "available_folds": 3,
+          "fold_values": [
+            0.3797752808988764,
+            0.7287615148413511,
+            0.5821185617103984
+          ],
+          "mean": 0.5635517858168753,
+          "sample_std": 0.17523239353968817
+        },
+        "roc_auc": {
+          "available_folds": 3,
+          "fold_values": [
+            0.6495407427591766,
+            0.8699529525500986,
+            0.8447208902512443
+          ],
+          "mean": 0.7880715285201731,
+          "sample_std": 0.12063269952476677
+        },
+        "sensitivity": {
+          "available_folds": 3,
+          "fold_values": [
+            0.7229946524064171,
+            0.7478991596638656,
+            0.6567982456140351
+          ],
+          "mean": 0.7092306858947726,
+          "sample_std": 0.047084277798208854
+        },
+        "specificity": {
+          "available_folds": 3,
+          "fold_values": [
+            0.4140127388535032,
+            0.862051015096304,
+            0.792170130497825
+          ],
+          "mean": 0.6894112948158774,
+          "sample_std": 0.24104793709485922
+        }
+      },
+      "pooled_speaker_metrics": {
+        "FN": 3,
+        "FP": 1,
+        "TN": 6,
+        "TP": 5,
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.7410714285714286,
+        "confidence_intervals_95": {
+          "accuracy": {
+            "confidence_level": 0.95,
+            "high": 0.922128453708969,
+            "low": 0.44899675896302893,
+            "method": "Clopper-Pearson exact binomial",
+            "successes": 11,
+            "trials": 15
+          },
+          "balanced_accuracy": {
+            "confidence_level": 0.95,
+            "high": 0.9375,
+            "low": 0.5357142857142857,
+            "method": "class-stratified speaker bootstrap percentile",
+            "resamples": 20000,
+            "seed": 20261011
+          },
+          "macro_f1": {
+            "confidence_level": 0.95,
+            "high": 0.9333333333333333,
+            "low": 0.49760765550239233,
+            "method": "class-stratified speaker bootstrap percentile",
+            "resamples": 20000,
+            "seed": 20261011
+          },
+          "precision": {
+            "confidence_level": 0.95,
+            "high": 0.9957892554855104,
+            "low": 0.3587654210025136,
+            "method": "Clopper-Pearson exact binomial",
+            "successes": 5,
+            "trials": 6
+          },
+          "roc_auc": {
+            "confidence_level": 0.95,
+            "high": 1.0,
+            "low": 0.7857142857142857,
+            "method": "class-stratified speaker bootstrap percentile",
+            "resamples": 20000,
+            "seed": 20261011
+          },
+          "sensitivity": {
+            "confidence_level": 0.95,
+            "high": 0.9147665858624069,
+            "low": 0.2448632163664999,
+            "method": "Clopper-Pearson exact binomial",
+            "successes": 5,
+            "trials": 8
+          },
+          "specificity": {
+            "confidence_level": 0.95,
+            "high": 0.9963897031380992,
+            "low": 0.42127680295680187,
+            "method": "Clopper-Pearson exact binomial",
+            "successes": 6,
+            "trials": 7
+          }
+        },
+        "confusion_matrix": [
+          [
+            6,
+            1
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "correct": 11,
+        "count": 15,
+        "incorrect": 4,
+        "macro_f1": 0.7321428571428572,
+        "precision": 0.8333333333333334,
+        "roc_auc": 0.9464285714285715,
+        "sensitivity": 0.625,
+        "specificity": 0.8571428571428571,
+        "threshold": 0.5
+      },
+      "speaker_minus_utterance_fold_mean_accuracy_percentage_points": 3.6174820149907028,
+      "speaker_minus_utterance_fold_mean_macro_f1_percentage_points": 5.380891366908836
+    },
+    "C2": {
+      "achieved_90_percent": false,
+      "exceeded_90_percent": false,
+      "fold_speaker_mean_sample_std": {
+        "accuracy": {
+          "mean": 0.7333333333333334,
+          "sample_std_ddof1": 0.11547005383792519
+        },
+        "balanced_accuracy": {
+          "mean": 0.7222222222222222,
+          "sample_std_ddof1": 0.1272937693043289
+        },
+        "macro_f1": {
+          "mean": 0.7150793650793651,
+          "sample_std_ddof1": 0.11567443300921355
+        },
+        "precision": {
+          "mean": 0.75,
+          "sample_std_ddof1": 0.25
+        },
+        "roc_auc": {
+          "mean": 0.9444444444444444,
+          "sample_std_ddof1": 0.0962250448649376
+        },
+        "sensitivity": {
+          "mean": 0.7222222222222222,
+          "sample_std_ddof1": 0.2545875386086578
+        },
+        "specificity": {
+          "mean": 0.7222222222222222,
+          "sample_std_ddof1": 0.2545875386086578
+        }
+      },
+      "fold_speaker_metrics": {
+        "1": {
+          "FN": 1,
+          "FP": 1,
+          "TN": 2,
+          "TP": 1,
+          "accuracy": 0.6,
+          "balanced_accuracy": 0.5833333333333333,
+          "confidence_intervals_95": {
+            "accuracy": {
+              "confidence_level": 0.95,
+              "high": 0.9472550494736843,
+              "low": 0.14663279963467257,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 3,
+              "trials": 5
+            },
+            "precision": {
+              "confidence_level": 0.95,
+              "high": 0.987420882906321,
+              "low": 0.01257911709367899,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 1,
+              "trials": 2
+            },
+            "sensitivity": {
+              "confidence_level": 0.95,
+              "high": 0.987420882906321,
+              "low": 0.01257911709367899,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 1,
+              "trials": 2
+            },
+            "specificity": {
+              "confidence_level": 0.95,
+              "high": 0.9915962413403874,
+              "low": 0.09429932405071303,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 3
+            }
+          },
+          "confusion_matrix": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "correct": 3,
+          "count": 5,
+          "incorrect": 2,
+          "macro_f1": 0.5833333333333333,
+          "precision": 0.5,
+          "roc_auc": 0.8333333333333334,
+          "sensitivity": 0.5,
+          "speakers": [
+            "F03",
+            "FC01",
+            "M04",
+            "MC03",
+            "MC04"
+          ],
+          "specificity": 0.6666666666666666,
+          "threshold": 0.5
+        },
+        "2": {
+          "FN": 1,
+          "FP": 0,
+          "TN": 2,
+          "TP": 2,
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.8333333333333333,
+          "confidence_intervals_95": {
+            "accuracy": {
+              "confidence_level": 0.95,
+              "high": 0.9949492366205319,
+              "low": 0.28358206388191054,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 4,
+              "trials": 5
+            },
+            "precision": {
+              "confidence_level": 0.95,
+              "high": 1.0,
+              "low": 0.15811388300839305,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 2
+            },
+            "sensitivity": {
+              "confidence_level": 0.95,
+              "high": 0.9915962413403874,
+              "low": 0.09429932405071303,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 3
+            },
+            "specificity": {
+              "confidence_level": 0.95,
+              "high": 1.0,
+              "low": 0.15811388300839305,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 2,
+              "trials": 2
+            }
+          },
+          "confusion_matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "correct": 4,
+          "count": 5,
+          "incorrect": 1,
+          "macro_f1": 0.8,
+          "precision": 1.0,
+          "roc_auc": 1.0,
+          "sensitivity": 0.6666666666666666,
+          "speakers": [
+            "F04",
+            "FC02",
+            "M01",
+            "M02",
+            "MC02"
+          ],
+          "specificity": 1.0,
+          "threshold": 0.5
+        },
+        "3": {
+          "FN": 0,
+          "FP": 1,
+          "TN": 1,
+          "TP": 3,
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.75,
+          "confidence_intervals_95": {
+            "accuracy": {
+              "confidence_level": 0.95,
+              "high": 0.9949492366205319,
+              "low": 0.28358206388191054,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 4,
+              "trials": 5
+            },
+            "precision": {
+              "confidence_level": 0.95,
+              "high": 0.9936905367902901,
+              "low": 0.1941204496832434,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 3,
+              "trials": 4
+            },
+            "sensitivity": {
+              "confidence_level": 0.95,
+              "high": 1.0,
+              "low": 0.2924017738212867,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 3,
+              "trials": 3
+            },
+            "specificity": {
+              "confidence_level": 0.95,
+              "high": 0.987420882906321,
+              "low": 0.01257911709367899,
+              "method": "Clopper-Pearson exact binomial",
+              "successes": 1,
+              "trials": 2
+            }
+          },
+          "confusion_matrix": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "correct": 4,
+          "count": 5,
+          "incorrect": 1,
+          "macro_f1": 0.7619047619047619,
+          "precision": 0.75,
+          "roc_auc": 1.0,
+          "sensitivity": 1.0,
+          "speakers": [
+            "F01",
+            "FC03",
+            "M03",
+            "M05",
+            "MC01"
+          ],
+          "specificity": 0.5,
+          "threshold": 0.5
+        }
+      },
+      "incorrect_speakers": [
+        "F03",
+        "F04",
+        "FC03",
+        "MC04"
+      ],
+      "original_signed_utterance_fold_summary": {
+        "accuracy": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5523235189783611,
+            0.7302471284371737,
+            0.6678966789667896
+          ],
+          "mean": 0.6501557754607747,
+          "sample_std": 0.09027877626341815
+        },
+        "balanced_accuracy": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5021075309104533,
+            0.7365536922733695,
+            0.7162994560470777
+          ],
+          "mean": 0.6516535597436335,
+          "sample_std": 0.1299060028486304
+        },
+        "macro_f1": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5018899065715767,
+            0.7152181695559356,
+            0.6599036682403896
+          ],
+          "mean": 0.6256705814559673,
+          "sample_std": 0.11070756577611708
+        },
+        "precision": {
+          "available_folds": 3,
+          "fold_values": [
+            0.3343465045592705,
+            0.5701823949246629,
+            0.47580645161290325
+          ],
+          "mean": 0.46011178369894556,
+          "sample_std": 0.11869870996268835
+        },
+        "roc_auc": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5740232977962465,
+            0.8180974107498283,
+            0.8077276928425462
+          ],
+          "mean": 0.7332828004628736,
+          "sample_std": 0.13802019654595926
+        },
+        "sensitivity": {
+          "available_folds": 3,
+          "fold_values": [
+            0.35294117647058826,
+            0.7552521008403361,
+            0.8410087719298246
+          ],
+          "mean": 0.649734016413583,
+          "sample_std": 0.26058212532742675
+        },
+        "specificity": {
+          "available_folds": 3,
+          "fold_values": [
+            0.6512738853503185,
+            0.717855283706403,
+            0.5915901401643306
+          ],
+          "mean": 0.653573103073684,
+          "sample_std": 0.06316396456864949
+        }
+      },
+      "pooled_speaker_metrics": {
+        "FN": 2,
+        "FP": 2,
+        "TN": 5,
+        "TP": 6,
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.7321428571428572,
+        "confidence_intervals_95": {
+          "accuracy": {
+            "confidence_level": 0.95,
+            "high": 0.922128453708969,
+            "low": 0.44899675896302893,
+            "method": "Clopper-Pearson exact binomial",
+            "successes": 11,
+            "trials": 15
+          },
+          "balanced_accuracy": {
+            "confidence_level": 0.95,
+            "high": 0.9375,
+            "low": 0.4732142857142857,
+            "method": "class-stratified speaker bootstrap percentile",
+            "resamples": 20000,
+            "seed": 20261011
+          },
+          "macro_f1": {
+            "confidence_level": 0.95,
+            "high": 0.9333333333333333,
+            "low": 0.4642857142857143,
+            "method": "class-stratified speaker bootstrap percentile",
+            "resamples": 20000,
+            "seed": 20261011
+          },
+          "precision": {
+            "confidence_level": 0.95,
+            "high": 0.9681459737500557,
+            "low": 0.34914420558717574,
+            "method": "Clopper-Pearson exact binomial",
+            "successes": 6,
+            "trials": 8
+          },
+          "roc_auc": {
+            "confidence_level": 0.95,
+            "high": 1.0,
+            "low": 0.625,
+            "method": "class-stratified speaker bootstrap percentile",
+            "resamples": 20000,
+            "seed": 20261011
+          },
+          "sensitivity": {
+            "confidence_level": 0.95,
+            "high": 0.9681459737500557,
+            "low": 0.34914420558717574,
+            "method": "Clopper-Pearson exact binomial",
+            "successes": 6,
+            "trials": 8
+          },
+          "specificity": {
+            "confidence_level": 0.95,
+            "high": 0.9633074338239144,
+            "low": 0.2904208637373425,
+            "method": "Clopper-Pearson exact binomial",
+            "successes": 5,
+            "trials": 7
+          }
+        },
+        "confusion_matrix": [
+          [
+            5,
+            2
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "correct": 11,
+        "count": 15,
+        "incorrect": 4,
+        "macro_f1": 0.7321428571428572,
+        "precision": 0.75,
+        "roc_auc": 0.8571428571428571,
+        "sensitivity": 0.75,
+        "specificity": 0.7142857142857143,
+        "threshold": 0.5
+      },
+      "speaker_minus_utterance_fold_mean_accuracy_percentage_points": 8.317755787255853,
+      "speaker_minus_utterance_fold_mean_macro_f1_percentage_points": 10.647227568688988
+    }
+  },
+  "new_model_forwards": 0,
+  "original_project": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project",
+  "original_study_limitations": [
+    "Fold 1/A1 is RECOVERED_PROTOCOL_EXCEPTION and does NOT satisfy uninterrupted native once-only outer evaluation: its prior native model-forward count cannot be established and remains UNKNOWN. Its original claim/state and absent native result are preserved.",
+    "Only 15 speakers and three folds; descriptive variability is not significance.",
+    "Module4 development exposed Fold2/3 speakers; these are not pristine external validation.",
+    "One seed (42), fixed threshold 0.5, no calibration or threshold optimization.",
+    "Common C2-selected settings control ablations; simpler models were not separately tuned.",
+    "Capacity differs across ablations; nonlinear complementarity is descriptive, not causal.",
+    "Small and single-class subgroups; null AUC retained with its reason.",
+    "RMS normalization may suppress amplitude cues; 235 CORE Mel center crops.",
+    "NumPy VMD lacks independent-package cross-validation; 48 valid records hit its ceiling.",
+    "No clinical diagnostic or state-of-the-art claim; no guaranteed accuracy.",
+    "Full raw/cache corpora not rescanned; signed prior audits and 247 files checked."
+  ],
+  "outer_folds": 3,
+  "protocol_hash": "677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9",
+  "records_per_model": 8673,
+  "rule": "Within each model and speaker: arithmetic mean of every saved outer CORE probability; predict 1 iff mean >=0.5; one decision per speaker",
+  "runtime_versions": {
+    "matplotlib": "3.8.3",
+    "numpy": "1.26.4",
+    "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+    "scikit-learn": "1.4.1.post1",
+    "scipy": "1.12.0"
+  },
+  "signed_closure_manifest_sha256": "f9d4e56917b2bfc63abbf312e2b389457aa2ad29734424f01da5ee03109a8a6d",
+  "source_predictions": [
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "2d20c88ecc273a3df48818fb020eb49b9bd7bd6ffbfb46b7094f4303ad510973",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F03",
+        "FC01",
+        "M04",
+        "MC03",
+        "MC04"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold1_B2_stronger_dropout_seed42_677ad640faf5",
+      "model_variant": "B2",
+      "outer_fold": 1,
+      "outer_record_hash": "2936df532e7ada33d7b571841c1026ddb30219fda3029cd89b3325f0f32d0569",
+      "provenance": "NATIVE",
+      "record_count": 2819,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold1_B2_stronger_dropout_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "764e02548fc383c4eb0671e54eb32256b40cc35c313d8a952c442adf27e9879a",
+      "utterance_metrics_reproduced": true
+    },
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "3e8a11c49869ab5ba5cc797d79c521eb5934612c38dee407e73b959e638d0910",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F04",
+        "FC02",
+        "M01",
+        "M02",
+        "MC02"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold2_B2_stronger_decay_seed42_677ad640faf5",
+      "model_variant": "B2",
+      "outer_fold": 2,
+      "outer_record_hash": "e85a74cb8dd33249ac0f27d42521d5dc0cd2d9abd283970c978f278d9fb97353",
+      "provenance": "NATIVE",
+      "record_count": 2873,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold2_B2_stronger_decay_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "ec05eb39d0dd1ef7e6a18cb74a5c02b96b6cd5e47900e811f24f9e2a8fffe1b2",
+      "utterance_metrics_reproduced": true
+    },
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "9123550a57819f9df7237267e65da05f502fef433abaada9534ae799da9b3f89",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F01",
+        "FC03",
+        "M03",
+        "M05",
+        "MC01"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold3_B2_baseline_seed42_677ad640faf5",
+      "model_variant": "B2",
+      "outer_fold": 3,
+      "outer_record_hash": "72eedd08aa36215e3d998e0d19bdf95f655c9cc7686f83f707a5cb053fde266a",
+      "provenance": "NATIVE",
+      "record_count": 2981,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold3_B2_baseline_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "1f82c96b85883832955163578f6510ef9c752113633b74fbd59d3b9ce28da2de",
+      "utterance_metrics_reproduced": true
+    },
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F03",
+        "FC01",
+        "M04",
+        "MC03",
+        "MC04"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold1_C2_stronger_dropout_seed42_677ad640faf5",
+      "model_variant": "C2",
+      "outer_fold": 1,
+      "outer_record_hash": "2936df532e7ada33d7b571841c1026ddb30219fda3029cd89b3325f0f32d0569",
+      "provenance": "NATIVE",
+      "record_count": 2819,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold1_C2_stronger_dropout_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "f0cac4ed9f6a8fd730d6b0a373cda3255bbb7cb75df54b3ff4c3a14c80382c86",
+      "utterance_metrics_reproduced": true
+    },
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F04",
+        "FC02",
+        "M01",
+        "M02",
+        "MC02"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold2_C2_stronger_decay_seed42_677ad640faf5",
+      "model_variant": "C2",
+      "outer_fold": 2,
+      "outer_record_hash": "e85a74cb8dd33249ac0f27d42521d5dc0cd2d9abd283970c978f278d9fb97353",
+      "provenance": "NATIVE",
+      "record_count": 2873,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold2_C2_stronger_decay_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "3b793a7a7f2ca7dbebbe5f3048cb7c611d916cc98084711dd33a9a31103e4dd3",
+      "utterance_metrics_reproduced": true
+    },
+    {
+      "all_probabilities_valid": true,
+      "checkpoint_sha256": "a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508",
+      "development_test_speakers_disjoint": true,
+      "evaluation_speakers": [
+        "F01",
+        "FC03",
+        "M03",
+        "M05",
+        "MC01"
+      ],
+      "exact_core_record_coverage": true,
+      "experiment_id": "fold3_C2_baseline_seed42_677ad640faf5",
+      "model_variant": "C2",
+      "outer_fold": 3,
+      "outer_record_hash": "72eedd08aa36215e3d998e0d19bdf95f655c9cc7686f83f707a5cb053fde266a",
+      "provenance": "NATIVE",
+      "record_count": 2981,
+      "saved_status": "OUTER_EVALUATED",
+      "source_relative_path": "artifacts/module5/677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9/experiments/runs/fold3_C2_baseline_seed42_677ad640faf5/outer_result.json",
+      "source_sha256": "343b1938cde0ab792ca079bedf45797c99c82c89404d651d500f3d283eb12a78",
+      "utterance_metrics_reproduced": true
+    }
+  ],
+  "threshold_optimized": false,
+  "training_runs": 0,
+  "uncertainty_limitations": "Descriptive conditional intervals; independence/representativeness uncertain. No model-refitting, fold-design, prior-exposure or post-hoc selection uncertainty captured. Bootstrap retains observed class composition. Pooled AUC combines uncalibrated fold models.",
+  "unique_speakers_per_model": 15,
+  "unreliable_speaker_ids": 0
+}

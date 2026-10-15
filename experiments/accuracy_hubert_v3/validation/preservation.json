@@ -1,0 +1,16 @@
+{
+  "changes": {},
+  "corpus_scope": "Raw/processed original corpus: path/size/mtime only; primary audio hashes separately checked",
+  "counts": {
+    "accuracy_hubert": 17540,
+    "accuracy_hubert_v2": 835,
+    "experimental_tracked": 417,
+    "original": 191833,
+    "original_git": 3,
+    "speaker_analysis": 23,
+    "study_git": 2
+  },
+  "original_hashed_files": 22175,
+  "predecessor_scope": "All V1/V2 files: SHA256 + size + mtime, including existing bytecode",
+  "status": "PASS"
+}

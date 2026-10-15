@@ -1,0 +1,15 @@
+study: V3 POST-HOC EXPLORATORY STUDY
+seed: 42
+threshold: 0.5
+layers: [6, 9, 12]
+C: [0.01, 0.1, 1.0]
+logistic_max_iter: 3000
+cpu_threads: 2
+cv_folds: 3
+augmentation_per_speaker: 16
+vram_fraction: 0.80
+calibration: false
+combination_min_macro_f1_gain: 0.01
+combination_min_improved_splits: 2
+primary: logistic_regression
+mlp: not_implemented_without_development_evidence

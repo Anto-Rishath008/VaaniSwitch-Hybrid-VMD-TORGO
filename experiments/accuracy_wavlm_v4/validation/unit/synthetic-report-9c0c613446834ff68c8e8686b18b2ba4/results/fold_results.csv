@@ -1,0 +1,7 @@
+accuracy,balanced_accuracy,candidate,evaluation_seconds,fold,macro_f1,model,roc_auc,sensitivity,specificity,trainable_parameters,training_seconds
+1.0,1.0,synthetic_A,0.0,1,1.0,frozen_reference,1.0,1.0,1.0,4,0.0
+1.0,1.0,synthetic_A,0.0,2,1.0,frozen_reference,1.0,1.0,1.0,4,0.0
+1.0,1.0,synthetic_A,0.0,3,1.0,frozen_reference,1.0,1.0,1.0,4,0.0
+1.0,1.0,synthetic_A,0.0,1,1.0,selected,1.0,1.0,1.0,4,0.0
+1.0,1.0,synthetic_A,0.0,2,1.0,selected,1.0,1.0,1.0,4,0.0
+1.0,1.0,synthetic_A,0.0,3,1.0,selected,1.0,1.0,1.0,4,0.0

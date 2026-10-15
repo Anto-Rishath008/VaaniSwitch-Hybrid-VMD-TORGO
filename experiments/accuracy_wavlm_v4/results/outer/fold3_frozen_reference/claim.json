@@ -1,0 +1,13 @@
+{
+  "identity": {
+    "decisions": "2af0179bb51ebfbba0cbce31a45523ab756fb3d94a8ceebb52624b4c5487a366",
+    "fit": {
+      "identity": "264fc3c93ce6c41cc3628812565c86303247c3113a94428995b5573a2c4eaafd",
+      "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context3\\final\\frozen_reference\\state-0000000-81b7ac95998a464a882500139e31f9ec.pt",
+      "sha256": "582fc88b51e9b2bf32cfe78094cf4d1d3741cd72d19030ea79d4007f5b2d05c4"
+    },
+    "fold": 3,
+    "name": "frozen_reference"
+  },
+  "status": "CONSUMED_BEFORE_FORWARD"
+}

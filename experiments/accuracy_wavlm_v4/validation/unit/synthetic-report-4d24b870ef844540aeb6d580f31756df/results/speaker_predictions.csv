@@ -1,0 +1,13 @@
+label,model,prediction,probability,recording_accuracy,recording_count,sensitivity,speaker_id,specificity
+0,frozen_reference,0,0.2,1.0,1,,s10,1.0
+1,frozen_reference,1,0.8,1.0,1,1.0,s11,
+0,frozen_reference,0,0.2,1.0,1,,s20,1.0
+1,frozen_reference,1,0.8,1.0,1,1.0,s21,
+0,frozen_reference,0,0.2,1.0,1,,s30,1.0
+1,frozen_reference,1,0.8,1.0,1,1.0,s31,
+0,selected,0,0.2,1.0,1,,s10,1.0
+1,selected,1,0.8,1.0,1,1.0,s11,
+0,selected,0,0.2,1.0,1,,s20,1.0
+1,selected,1,0.8,1.0,1,1.0,s21,
+0,selected,0,0.2,1.0,1,,s30,1.0
+1,selected,1,0.8,1.0,1,1.0,s31,

@@ -1,0 +1,4 @@
+accuracy,accuracy_sample_std,balanced_accuracy,balanced_accuracy_sample_std,candidate,evidence,log_loss,log_loss_sample_std,macro_f1,macro_f1_sample_std,outer_context,roc_auc,roc_auc_sample_std,sensitivity,sensitivity_sample_std,specificity,specificity_sample_std
+1.0,0.0,1.0,0.0,synthetic_A,DEVELOPMENT_GROUPED_CV,0.22314355131420974,0.0,1.0,0.0,1,1.0,0.0,1.0,0.0,1.0,0.0
+1.0,0.0,1.0,0.0,synthetic_A,DEVELOPMENT_GROUPED_CV,0.22314355131420974,0.0,1.0,0.0,2,1.0,0.0,1.0,0.0,1.0,0.0
+1.0,0.0,1.0,0.0,synthetic_A,DEVELOPMENT_GROUPED_CV,0.22314355131420974,0.0,1.0,0.0,3,1.0,0.0,1.0,0.0,1.0,0.0

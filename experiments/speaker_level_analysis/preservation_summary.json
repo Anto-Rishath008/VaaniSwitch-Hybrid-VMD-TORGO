@@ -1,0 +1,17 @@
+{
+  "both_branch_refs_preserved": true,
+  "checkpoints_unchanged": true,
+  "commits": 0,
+  "experimental_tracked_files": 417,
+  "modules_0_to_6_unchanged": true,
+  "new_model_forwards": 0,
+  "original_git_status_preserved": true,
+  "original_hashed_files": 22175,
+  "original_inventory_files": 191833,
+  "pushes": 0,
+  "raw_processed_content_rehashed": false,
+  "raw_processed_metadata_files": 169658,
+  "signed_input_hashes_verified": 636,
+  "status": "PASS",
+  "training_runs": 0
+}

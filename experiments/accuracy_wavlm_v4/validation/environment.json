@@ -1,0 +1,18 @@
+{
+  "cuda": "12.6",
+  "executable": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\.venv-accuracy\\Scripts\\python.exe",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "precision": "fp32",
+  "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+  "total_vram": 8585216000,
+  "versions": {
+    "huggingface-hub": "0.36.2",
+    "matplotlib": "3.10.9",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.16.3",
+    "soundfile": "0.14.0",
+    "torch": "2.13.0+cu126",
+    "transformers": "4.57.6"
+  }
+}

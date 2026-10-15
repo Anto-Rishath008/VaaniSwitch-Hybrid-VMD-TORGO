@@ -1,0 +1,73 @@
+test_atomic_no_overwrite (test_v4.CacheCheckpointContracts.test_atomic_no_overwrite) ... ok
+test_cache_roundtrip_and_corruption (test_v4.CacheCheckpointContracts.test_cache_roundtrip_and_corruption) ... ok
+test_cache_source_identity_bound (test_v4.CacheCheckpointContracts.test_cache_source_identity_bound) ... ok
+test_checkpoint_checksum_and_identity (test_v4.CacheCheckpointContracts.test_checkpoint_checksum_and_identity) ... ok
+test_output_escape_rejected (test_v4.CacheCheckpointContracts.test_output_escape_rejected) ... ok
+test_rng_restoration (test_v4.CacheCheckpointContracts.test_rng_restoration) ... ok
+test_unpublished_partial_checkpoint_ignored (test_v4.CacheCheckpointContracts.test_unpublished_partial_checkpoint_ignored) ... ok
+test_audio_hash_duplicate_across_roles_rejected (test_v4.DataContracts.test_audio_hash_duplicate_across_roles_rejected) ... ok
+test_duplicate_record_rejected (test_v4.DataContracts.test_duplicate_record_rejected) ... ok
+test_exact_center_crop (test_v4.DataContracts.test_exact_center_crop) ... ok
+test_forbidden_speaker_rejected (test_v4.DataContracts.test_forbidden_speaker_rejected) ... ok
+test_nonfinite_audio_fails (test_v4.DataContracts.test_nonfinite_audio_fails) ... ok
+test_outer_role_rejected (test_v4.DataContracts.test_outer_role_rejected) ... ok
+test_real_core (test_v4.DataContracts.test_real_core) ... ok
+test_real_cv_coverage_and_isolation (test_v4.DataContracts.test_real_cv_coverage_and_isolation) ... ok
+test_resampling_and_stereo (test_v4.DataContracts.test_resampling_and_stereo) ... ok
+test_short_audio_fails_without_exclusion (test_v4.DataContracts.test_short_audio_fails_without_exclusion) ... ok
+test_silence_is_finite (test_v4.DataContracts.test_silence_is_finite) ... ok
+test_speaker_weight_mass (test_v4.DataContracts.test_speaker_weight_mass) ... ok
+test_validation_weight_fit_rejected (test_v4.DataContracts.test_validation_weight_fit_rejected) ... ok
+test_consumed_outer_claim_cannot_retry (test_v4.ExecutionGates.test_consumed_outer_claim_cannot_retry) ... ok
+test_deterministic_tie_prefers_frozen (test_v4.ExecutionGates.test_deterministic_tie_prefers_frozen) ... ok
+test_development_requires_authorization (test_v4.ExecutionGates.test_development_requires_authorization) ... ok
+test_outer_gate_precedes_any_data_access (test_v4.ExecutionGates.test_outer_gate_precedes_any_data_access) ... ok
+test_outer_requires_separate_authorization (test_v4.ExecutionGates.test_outer_requires_separate_authorization) ... ok
+test_preservation_baseline_excludes_only_v4_study_work (test_v4.ExecutionGates.test_preservation_baseline_excludes_only_v4_study_work) ... ok
+test_sealed_result_reused_without_inference (test_v4.ExecutionGates.test_sealed_result_reused_without_inference) ... ok
+test_selection_rejects_outer_metric (test_v4.ExecutionGates.test_selection_rejects_outer_metric) ... ok
+test_small_grid (test_v4.ExecutionGates.test_small_grid) ... ok
+test_attention_padding_and_gradient (test_v4.ModelContracts.test_attention_padding_and_gradient) ... ok
+test_delta_restore_requires_exact_keys (test_v4.ModelContracts.test_delta_restore_requires_exact_keys) ... ok
+test_mask_invalid_lengths (test_v4.ModelContracts.test_mask_invalid_lengths) ... ok
+test_masked_mean_std_ignores_padding (test_v4.ModelContracts.test_masked_mean_std_ignores_padding) ... ok
+test_nonfinite_pool_fails (test_v4.ModelContracts.test_nonfinite_pool_fails) ... ok
+test_tiny_real_wavlm_selective_gradient (test_v4.ModelContracts.test_tiny_real_wavlm_selective_gradient) ... C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\torch\nn\functional.py:6802: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  key_padding_mask = _canonical_mask(
+ok
+test_unapproved_depth_rejected (test_v4.ModelContracts.test_unapproved_depth_rejected) ... ok
+test_official_processor_normalization_is_preserved (test_v4.ProcessorRegression.test_official_processor_normalization_is_preserved) ... ok
+test_lr_publication_recovery (test_v4.TrainingContracts.test_lr_publication_recovery) ... ok
+test_lr_rejects_shared_speaker (test_v4.TrainingContracts.test_lr_rejects_shared_speaker) ... ok
+test_lr_train_only_scaler_and_resume (test_v4.TrainingContracts.test_lr_train_only_scaler_and_resume) ... FAIL
+test_metrics_known_confusion (test_v4.TrainingContracts.test_metrics_known_confusion) ... ok
+test_nonfinite_optimizer_rejected (test_v4.TrainingContracts.test_nonfinite_optimizer_rejected) ... ok
+test_oom_stops_and_keeps_checkpoint (test_v4.TrainingContracts.test_oom_stops_and_keeps_checkpoint) ... ok
+test_single_class_specificity_is_null (test_v4.TrainingContracts.test_single_class_specificity_is_null) ... ok
+
+======================================================================
+FAIL: test_lr_train_only_scaler_and_resume (test_v4.TrainingContracts.test_lr_train_only_scaler_and_resume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\tests\test_v4.py", line 239, in test_lr_train_only_scaler_and_resume
+    np.testing.assert_allclose(payload['scaler'].mean_, np.average(x, axis=0, weights=train.weights()))
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\numpy\testing\_private\utils.py", line 1504, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "C:\Users\antor\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\.venv-accuracy\Lib\site-packages\numpy\testing\_private\utils.py", line 797, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-07, atol=0
+
+Mismatched elements: 1 / 2 (50%)
+Max absolute difference: 2.98023219e-08
+Max relative difference: 4.96705373e-09
+ x: array([-2.980232e-08,  3.000000e+00])
+ y: array([0., 3.])
+
+----------------------------------------------------------------------
+Ran 44 tests in 8.857s
+
+FAILED (failures=1)

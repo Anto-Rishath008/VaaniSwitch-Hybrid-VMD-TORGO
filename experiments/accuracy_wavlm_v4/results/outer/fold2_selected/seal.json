@@ -1,0 +1,13 @@
+{
+  "identity": {
+    "decisions": "2af0179bb51ebfbba0cbce31a45523ab756fb3d94a8ceebb52624b4c5487a366",
+    "fit": {
+      "identity": "addcc9592f5d6de822846c2f46f019006ecc1503985629343ea0818891dae9a6",
+      "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context2\\final\\selected\\state-0000725-3518e7545a3a4ed39ca4a129b62652bc.pt",
+      "sha256": "cbf9af37ce265d2a7520247474395a8cebebe7626e678661ff44671c1409c2b7"
+    },
+    "fold": 2,
+    "name": "selected"
+  },
+  "sha256": "f3a60a5f30267a3b34fc030d9a830865f12a7b6c4d82307c65b8a9f511820d53"
+}

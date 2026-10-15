@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\figures\\accuracy_comparison.png": "e3162c294a6461a54a779659d1f83a4e093548360ca310f5d465f1d08b8c5fee",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\figures\\confusion_matrix.png": "d13faa11bac550cf287aadb51235f9913dbb64d24453aac2ebc3a13a8523ca01",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\figures\\microphone_analysis.png": "171f1368ddbce2819706ecfc6f71ca8d4fdc165d13a641dca8a4cc5a40f3e240",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\figures\\speaker_accuracy_analysis.png": "bcad3844ff37dac0fc8678ff5459c827164822110533fefb36ba09008a3cf6d5",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\figures\\training_curves.png": "fda029df32c9505440fc083f83fec7c8a8511d201cac46ec9cc61a73d0c4735e",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\results\\DEVELOPMENT_REPORT.md": "4fe6a88bd58f58850d69217ce0d0d95000789eaca4d475838ecb969e29d2c52a",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\results\\FINAL_EXPERIMENT_REPORT.md": "fd89a8390466e0e23238d2c4abb6ea977fd7f0b3a7c72181d6878931fc640609",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\results\\ablation_results.csv": "dcded58d72a2ff72f77912369be6a643109aa480fd381787dda45256f311dfb1",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\results\\final_results.json": "be7de1265afffba71f5be1fd1fe0042adc1095d8242cc0d7581dd711ad7c32b4",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\results\\fold_results.csv": "c6538ee1b4f3c8ca83e42fa3754793b2464bc54c8cec2944d9a1b2825275606f",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\results\\record_predictions.csv": "9217a9682a606a76112b2ca4779dc976dd5764cfd08e912e9f5c88e341872b7a",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\results\\selected_configurations.json": "d12a54fe85db45930429cbe88f0cde072afd021dcbac90754fcd7637898104d0",
+    "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\results\\speaker_predictions.csv": "d57398569386120fc59f193ab3a6225a0bbc992e4a8d6af01b8571fb0cb508f0"
+  },
+  "identity": "e5225670961ecc903ef8d1d1db3dede1231dff6827030e85baffd92dcfcce40c"
+}

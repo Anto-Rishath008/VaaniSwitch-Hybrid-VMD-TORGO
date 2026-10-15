@@ -1,0 +1,623 @@
+{
+  "baselines": {},
+  "frozen_decisions_digest": "46ecd0e99e3f130de203bc8dab42005d0701975fe8bbb1be72ca72ea236c3739",
+  "independent_confirmation": false,
+  "limitations": [
+    "15 speakers and previously exposed outer results; no untouched external test set.",
+    "No clinical diagnostic validity, significance, SOTA or guaranteed 90 percent claim.",
+    "Equal-fold mean and sample SD; speaker aggregation is descriptive.",
+    "Development search, early stopping, overlapping development contexts and one seed limit inference."
+  ],
+  "models": {
+    "frozen_reference": {
+      "fold_aggregation": {
+        "accuracy": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "macro_f1": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "roc_auc": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "sensitivity": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "specificity": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        }
+      },
+      "folds": [
+        {
+          "candidate": {
+            "family": "A",
+            "id": "synthetic_A"
+          },
+          "evaluation_seconds": 0.0,
+          "fold": 1,
+          "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "brier": 0.039999999999999994,
+            "confusion_matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "ece_10_equal_width": 0.19999999999999998,
+            "log_loss": 0.22314355131420974,
+            "macro_f1": 1.0,
+            "precision": 1.0,
+            "record_count": 2,
+            "reliability_bins": [
+              {
+                "bin": 2,
+                "count": 1,
+                "mean_probability": 0.2,
+                "positive_fraction": 0.0
+              },
+              {
+                "bin": 8,
+                "count": 1,
+                "mean_probability": 0.8,
+                "positive_fraction": 1.0
+              }
+            ],
+            "roc_auc": 1.0,
+            "sensitivity": 1.0,
+            "specificity": 1.0,
+            "threshold": 0.5
+          },
+          "name": "frozen_reference",
+          "predictions": [
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 0,
+              "logical_id": "s10/session/p0",
+              "microphone": "head",
+              "prediction": 0,
+              "probability": 0.2,
+              "speaker_id": "s10"
+            },
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 1,
+              "logical_id": "s11/session/p0",
+              "microphone": "head",
+              "prediction": 1,
+              "probability": 0.8,
+              "speaker_id": "s11"
+            }
+          ]
+        },
+        {
+          "candidate": {
+            "family": "A",
+            "id": "synthetic_A"
+          },
+          "evaluation_seconds": 0.0,
+          "fold": 2,
+          "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "brier": 0.039999999999999994,
+            "confusion_matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "ece_10_equal_width": 0.19999999999999998,
+            "log_loss": 0.22314355131420974,
+            "macro_f1": 1.0,
+            "precision": 1.0,
+            "record_count": 2,
+            "reliability_bins": [
+              {
+                "bin": 2,
+                "count": 1,
+                "mean_probability": 0.2,
+                "positive_fraction": 0.0
+              },
+              {
+                "bin": 8,
+                "count": 1,
+                "mean_probability": 0.8,
+                "positive_fraction": 1.0
+              }
+            ],
+            "roc_auc": 1.0,
+            "sensitivity": 1.0,
+            "specificity": 1.0,
+            "threshold": 0.5
+          },
+          "name": "frozen_reference",
+          "predictions": [
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 0,
+              "logical_id": "s20/session/p0",
+              "microphone": "head",
+              "prediction": 0,
+              "probability": 0.2,
+              "speaker_id": "s20"
+            },
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 1,
+              "logical_id": "s21/session/p0",
+              "microphone": "head",
+              "prediction": 1,
+              "probability": 0.8,
+              "speaker_id": "s21"
+            }
+          ]
+        },
+        {
+          "candidate": {
+            "family": "A",
+            "id": "synthetic_A"
+          },
+          "evaluation_seconds": 0.0,
+          "fold": 3,
+          "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "brier": 0.039999999999999994,
+            "confusion_matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "ece_10_equal_width": 0.19999999999999998,
+            "log_loss": 0.22314355131420974,
+            "macro_f1": 1.0,
+            "precision": 1.0,
+            "record_count": 2,
+            "reliability_bins": [
+              {
+                "bin": 2,
+                "count": 1,
+                "mean_probability": 0.2,
+                "positive_fraction": 0.0
+              },
+              {
+                "bin": 8,
+                "count": 1,
+                "mean_probability": 0.8,
+                "positive_fraction": 1.0
+              }
+            ],
+            "roc_auc": 1.0,
+            "sensitivity": 1.0,
+            "specificity": 1.0,
+            "threshold": 0.5
+          },
+          "name": "frozen_reference",
+          "predictions": [
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 0,
+              "logical_id": "s30/session/p0",
+              "microphone": "head",
+              "prediction": 0,
+              "probability": 0.2,
+              "speaker_id": "s30"
+            },
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 1,
+              "logical_id": "s31/session/p0",
+              "microphone": "head",
+              "prediction": 1,
+              "probability": 0.8,
+              "speaker_id": "s31"
+            }
+          ]
+        }
+      ],
+      "speaker_descriptive": {
+        "incorrect_speakers": [],
+        "metrics": {
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier": 0.039999999999999994,
+          "confusion_matrix": [
+            [
+              3,
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "ece_10_equal_width": 0.19999999999999996,
+          "log_loss": 0.22314355131420974,
+          "macro_f1": 1.0,
+          "precision": 1.0,
+          "record_count": 6,
+          "reliability_bins": [
+            {
+              "bin": 2,
+              "count": 3,
+              "mean_probability": 0.20000000000000004,
+              "positive_fraction": 0.0
+            },
+            {
+              "bin": 8,
+              "count": 3,
+              "mean_probability": 0.8000000000000002,
+              "positive_fraction": 1.0
+            }
+          ],
+          "roc_auc": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "threshold": 0.5
+        },
+        "recording_accuracy_sample_std_between_speakers": 0.0,
+        "unit": "descriptive speaker mean probability >=0.5"
+      }
+    },
+    "selected": {
+      "fold_aggregation": {
+        "accuracy": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "macro_f1": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "roc_auc": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "sensitivity": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "specificity": {
+          "fold_values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sample_std": 0.0
+        }
+      },
+      "folds": [
+        {
+          "candidate": {
+            "family": "A",
+            "id": "synthetic_A"
+          },
+          "evaluation_seconds": 0.0,
+          "fold": 1,
+          "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "brier": 0.039999999999999994,
+            "confusion_matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "ece_10_equal_width": 0.19999999999999998,
+            "log_loss": 0.22314355131420974,
+            "macro_f1": 1.0,
+            "precision": 1.0,
+            "record_count": 2,
+            "reliability_bins": [
+              {
+                "bin": 2,
+                "count": 1,
+                "mean_probability": 0.2,
+                "positive_fraction": 0.0
+              },
+              {
+                "bin": 8,
+                "count": 1,
+                "mean_probability": 0.8,
+                "positive_fraction": 1.0
+              }
+            ],
+            "roc_auc": 1.0,
+            "sensitivity": 1.0,
+            "specificity": 1.0,
+            "threshold": 0.5
+          },
+          "name": "selected",
+          "predictions": [
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 0,
+              "logical_id": "s10/session/p0",
+              "microphone": "head",
+              "prediction": 0,
+              "probability": 0.2,
+              "speaker_id": "s10"
+            },
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 1,
+              "logical_id": "s11/session/p0",
+              "microphone": "head",
+              "prediction": 1,
+              "probability": 0.8,
+              "speaker_id": "s11"
+            }
+          ]
+        },
+        {
+          "candidate": {
+            "family": "A",
+            "id": "synthetic_A"
+          },
+          "evaluation_seconds": 0.0,
+          "fold": 2,
+          "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "brier": 0.039999999999999994,
+            "confusion_matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "ece_10_equal_width": 0.19999999999999998,
+            "log_loss": 0.22314355131420974,
+            "macro_f1": 1.0,
+            "precision": 1.0,
+            "record_count": 2,
+            "reliability_bins": [
+              {
+                "bin": 2,
+                "count": 1,
+                "mean_probability": 0.2,
+                "positive_fraction": 0.0
+              },
+              {
+                "bin": 8,
+                "count": 1,
+                "mean_probability": 0.8,
+                "positive_fraction": 1.0
+              }
+            ],
+            "roc_auc": 1.0,
+            "sensitivity": 1.0,
+            "specificity": 1.0,
+            "threshold": 0.5
+          },
+          "name": "selected",
+          "predictions": [
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 0,
+              "logical_id": "s20/session/p0",
+              "microphone": "head",
+              "prediction": 0,
+              "probability": 0.2,
+              "speaker_id": "s20"
+            },
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 1,
+              "logical_id": "s21/session/p0",
+              "microphone": "head",
+              "prediction": 1,
+              "probability": 0.8,
+              "speaker_id": "s21"
+            }
+          ]
+        },
+        {
+          "candidate": {
+            "family": "A",
+            "id": "synthetic_A"
+          },
+          "evaluation_seconds": 0.0,
+          "fold": 3,
+          "metrics": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "brier": 0.039999999999999994,
+            "confusion_matrix": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "ece_10_equal_width": 0.19999999999999998,
+            "log_loss": 0.22314355131420974,
+            "macro_f1": 1.0,
+            "precision": 1.0,
+            "record_count": 2,
+            "reliability_bins": [
+              {
+                "bin": 2,
+                "count": 1,
+                "mean_probability": 0.2,
+                "positive_fraction": 0.0
+              },
+              {
+                "bin": 8,
+                "count": 1,
+                "mean_probability": 0.8,
+                "positive_fraction": 1.0
+              }
+            ],
+            "roc_auc": 1.0,
+            "sensitivity": 1.0,
+            "specificity": 1.0,
+            "threshold": 0.5
+          },
+          "name": "selected",
+          "predictions": [
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 0,
+              "logical_id": "s30/session/p0",
+              "microphone": "head",
+              "prediction": 0,
+              "probability": 0.2,
+              "speaker_id": "s30"
+            },
+            {
+              "evidence_kind": "SYNTHETIC_TEST_FIXTURE",
+              "label": 1,
+              "logical_id": "s31/session/p0",
+              "microphone": "head",
+              "prediction": 1,
+              "probability": 0.8,
+              "speaker_id": "s31"
+            }
+          ]
+        }
+      ],
+      "speaker_descriptive": {
+        "incorrect_speakers": [],
+        "metrics": {
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "brier": 0.039999999999999994,
+          "confusion_matrix": [
+            [
+              3,
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "ece_10_equal_width": 0.19999999999999996,
+          "log_loss": 0.22314355131420974,
+          "macro_f1": 1.0,
+          "precision": 1.0,
+          "record_count": 6,
+          "reliability_bins": [
+            {
+              "bin": 2,
+              "count": 3,
+              "mean_probability": 0.20000000000000004,
+              "positive_fraction": 0.0
+            },
+            {
+              "bin": 8,
+              "count": 3,
+              "mean_probability": 0.8000000000000002,
+              "positive_fraction": 1.0
+            }
+          ],
+          "roc_auc": 1.0,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "threshold": 0.5
+        },
+        "recording_accuracy_sample_std_between_speakers": 0.0,
+        "unit": "descriptive speaker mean probability >=0.5"
+      }
+    }
+  },
+  "threshold": 0.5,
+  "title": "SYNTHETIC TEST FIXTURE"
+}

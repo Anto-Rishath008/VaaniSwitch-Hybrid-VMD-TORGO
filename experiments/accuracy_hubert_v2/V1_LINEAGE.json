@@ -1,0 +1,15 @@
+{
+  "classifier_checkpoints_reused": false,
+  "feature_policy": "read-only validated references; never write V1 caches",
+  "pinned_artifacts": {
+    "logs/extraction_summary.json": "5e646d03a217546d9fc46c6beac044e0725c9fe4d90e831cbdc227af07e39e64",
+    "logs/feature_validation.json": "1884b92b341852e9e60e2df53a1ff80377a6aa867abf23f8049df0b7c2e33738",
+    "logs/frozen_run.json": "8413cfebd979ff7c9b5e72f305c26834c937623a37fc18a82123a3ad8420e4d2",
+    "logs/stages/features.json": "3b32be347bd0f566bfe829c065ca1a1a5beb4e8a74e3b077a18b425d31d8394d"
+  },
+  "reason": "Reproduced FP16 loss-scaled backward overflow; new FP32 classifier study",
+  "repair_of": "accuracy_hubert",
+  "study": "accuracy_hubert_v2",
+  "v1_outer_evaluation_occurred": false,
+  "v1_status": "INCOMPLETE; E1 fold1 completed; E2 fold1 failed; no outer evaluation"
+}

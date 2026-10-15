@@ -1,0 +1,871 @@
+{
+  "scope": "Engineering smoke on new Microsoft Zira synthesized speech. No TORGO outer evaluation or accuracy measurement.",
+  "source_text": "Every voice deserves to be understood. This is a local speech research demonstration.",
+  "tests": {
+    "tts": {
+      "ok": true,
+      "result": {
+        "voice": "Microsoft Zira Desktop - English (United States)",
+        "engine": "pyttsx3 2.99 / SAPI5",
+        "rate": 175,
+        "sample_rate": 22050,
+        "duration_seconds": 5.248208616780046,
+        "processing_duration_seconds": 0.5018478999845684,
+        "synthesis_text": "Every voice deserves to be understood. This is a local speech research demonstration.",
+        "warnings": [
+          "Standard synthetic voice; no voice cloning or original voice recovery."
+        ]
+      }
+    },
+    "asr": {
+      "ok": true,
+      "result": {
+        "recognized_text": " Every voice deserves to be understood. This is a local speech research demonstration.",
+        "processing_duration_seconds": 1.352937000017846,
+        "model_load_seconds": 1.8525594999955501,
+        "model_identity": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+        "model": "Whisper small.en",
+        "reference_context_used": false,
+        "raw_transcript_immutable": true,
+        "decoding": {
+          "task": "transcribe",
+          "language": "en",
+          "temperature": 0.0,
+          "beam_size": null,
+          "best_of": null,
+          "initial_prompt": null,
+          "prefix": null,
+          "condition_on_previous_text": false,
+          "carry_initial_prompt": false,
+          "word_timestamps": false,
+          "clip_timestamps": "0",
+          "verbose": null,
+          "compression_ratio_threshold": 2.4,
+          "logprob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "hallucination_silence_threshold": null,
+          "patience": null,
+          "length_penalty": null,
+          "sample_len": null,
+          "suppress_tokens": "-1",
+          "suppress_blank": true,
+          "without_timestamps": false,
+          "max_initial_timestamp": 1.0,
+          "prepend_punctuations": "\"'\u201c\u00bf([{-",
+          "append_punctuations": "\"'.\u3002,\uff0c!\uff01?\uff1f:\uff1a\u201d)]}\u3001",
+          "fp16": true
+        },
+        "input_sha256": "4d73b0e762616d4c13970252d1eb211c01cfc31cbecb5c052734e721c616bc67",
+        "gpu": {
+          "peak_allocated_bytes": 1471339520,
+          "peak_reserved_bytes": 1646264320
+        },
+        "warnings": [
+          "Batch English ASR. Review recognition errors before synthesis."
+        ],
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "hubert-v2-context1": {
+      "ok": true,
+      "result": {
+        "model_id": "hubert-v2",
+        "model_version": "HuBERT V2",
+        "research_role": "historical evaluated model",
+        "fold_context": 1,
+        "configuration": {
+          "layer": 12
+        },
+        "checkpoint_identity": "7af26ae46b1e464cc9da123e1c2cfba1a59b9fa322367916b363a8adbf988afd",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.9988352796089203,
+          "Dysarthric": 0.001164720391079764
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 0,
+          "end_sample_16k": 83972,
+          "valid_samples": 83972,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 8,
+          "hidden_layer": 12,
+          "extraction_precision": "FP16 autocast, FP32 pooled features",
+          "vmd": false
+        },
+        "model_load_seconds": 4.369476699997904,
+        "inference_duration_ms": 684.2208000016399,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 468071424,
+          "peak_reserved_bytes": 557842432
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "hubert-v2-context2": {
+      "ok": true,
+      "result": {
+        "model_id": "hubert-v2",
+        "model_version": "HuBERT V2",
+        "research_role": "historical evaluated model",
+        "fold_context": 2,
+        "configuration": {
+          "layer": 6
+        },
+        "checkpoint_identity": "93bd95bf6e4ed4a2e62a1f5a6a16d90fd765c0a2d4567a342fc5d5a56cbb3db0",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.999673008225856,
+          "Dysarthric": 0.0003269917741439621
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 0,
+          "end_sample_16k": 83972,
+          "valid_samples": 83972,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 8,
+          "hidden_layer": 6,
+          "extraction_precision": "FP16 autocast, FP32 pooled features",
+          "vmd": false
+        },
+        "model_load_seconds": 4.14835000000312,
+        "inference_duration_ms": 393.46219997969456,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 468071424,
+          "peak_reserved_bytes": 557842432
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "hubert-v2-context3": {
+      "ok": true,
+      "result": {
+        "model_id": "hubert-v2",
+        "model_version": "HuBERT V2",
+        "research_role": "historical evaluated model",
+        "fold_context": 3,
+        "configuration": {
+          "layer": 12
+        },
+        "checkpoint_identity": "1d15715b00d9cf72ab32afce1785904f4b4023e4009660d5e345a4fdb62776ec",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.9745227092129772,
+          "Dysarthric": 0.02547729078702275
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 0,
+          "end_sample_16k": 83972,
+          "valid_samples": 83972,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 8,
+          "hidden_layer": 12,
+          "extraction_precision": "FP16 autocast, FP32 pooled features",
+          "vmd": false
+        },
+        "model_load_seconds": 3.7329529999988154,
+        "inference_duration_ms": 570.9156000229996,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 468071424,
+          "peak_reserved_bytes": 557842432
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "hubert-v3-context1": {
+      "ok": true,
+      "result": {
+        "model_id": "hubert-v3",
+        "model_version": "HuBERT V3",
+        "research_role": "historical evaluated model",
+        "fold_context": 1,
+        "configuration": {
+          "reference": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C0.01_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          },
+          "selected": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 1,
+            "id": "weight_L09_C0.01_B2_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B2"
+          }
+        },
+        "checkpoint_identity": "61fbb044d3221ead1c34e2015f8952a2d2d5a3995f59e6a5af55d17aaf87606b",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.9998054164151651,
+          "Dysarthric": 0.0001945835848349137
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 0,
+          "end_sample_16k": 83972,
+          "valid_samples": 83972,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 8,
+          "hidden_layer": 9,
+          "extraction_precision": "FP16 autocast, FP32 pooled features",
+          "vmd": false
+        },
+        "model_load_seconds": 3.724183799989987,
+        "inference_duration_ms": 765.9852999786381,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 468071424,
+          "peak_reserved_bytes": 557842432
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "hubert-v3-context2": {
+      "ok": true,
+      "result": {
+        "model_id": "hubert-v3",
+        "model_version": "HuBERT V3",
+        "research_role": "historical evaluated model",
+        "fold_context": 2,
+        "configuration": {
+          "reference": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C0.01_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          },
+          "selected": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 1,
+            "id": "robust_L09_C0.01_B0_N1_A0",
+            "layer": 9,
+            "normalization": "N1",
+            "weighting": "B0"
+          }
+        },
+        "checkpoint_identity": "58c4d59b93e8a60e95d771ab34550d1773ce5a3bc338f55f080c177428238823",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.9862647438424629,
+          "Dysarthric": 0.013735256157537084
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 0,
+          "end_sample_16k": 83972,
+          "valid_samples": 83972,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 8,
+          "hidden_layer": 9,
+          "extraction_precision": "FP16 autocast, FP32 pooled features",
+          "vmd": false
+        },
+        "model_load_seconds": 3.421459200006211,
+        "inference_duration_ms": 374.77140000555664,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 468071424,
+          "peak_reserved_bytes": 557842432
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "hubert-v3-context3": {
+      "ok": true,
+      "result": {
+        "model_id": "hubert-v3",
+        "model_version": "HuBERT V3",
+        "research_role": "historical evaluated model",
+        "fold_context": 3,
+        "configuration": {
+          "reference": {
+            "C": 1.0,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C1_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          },
+          "selected": {
+            "C": 1.0,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C1_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          }
+        },
+        "checkpoint_identity": "a20b496d10e47e3b66f11625f4b6a1799df8de968ac1a4b88c55b614fdcdce80",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.9999999983200775,
+          "Dysarthric": 1.6799225698905164e-09
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 0,
+          "end_sample_16k": 83972,
+          "valid_samples": 83972,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 8,
+          "hidden_layer": 9,
+          "extraction_precision": "FP16 autocast, FP32 pooled features",
+          "vmd": false
+        },
+        "model_load_seconds": 3.642014300014125,
+        "inference_duration_ms": 359.3933999945875,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 468071424,
+          "peak_reserved_bytes": 557842432
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "wavlm-reference-context1": {
+      "ok": true,
+      "result": {
+        "model_id": "wavlm-reference",
+        "model_version": "WavLM V4",
+        "research_role": "Best Observed Reference",
+        "fold_context": 1,
+        "configuration": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        },
+        "checkpoint_identity": "6f41ca12ca6563b99d6faf3281b80896d98e78a5a002017679b317d4a4172355",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.8469553767810026,
+          "Dysarthric": 0.1530446232189974
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 0,
+          "end_sample_16k": 83972,
+          "valid_samples": 83972,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 8,
+          "extraction_precision": "FP32",
+          "vmd": false
+        },
+        "model_load_seconds": 3.6332731999864336,
+        "inference_duration_ms": 411.59579998929985,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 447266304,
+          "peak_reserved_bytes": 511705088
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "wavlm-reference-context2": {
+      "ok": true,
+      "result": {
+        "model_id": "wavlm-reference",
+        "model_version": "WavLM V4",
+        "research_role": "Best Observed Reference",
+        "fold_context": 2,
+        "configuration": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        },
+        "checkpoint_identity": "90174351c990da0ba3addcfa8c6b8f5e8b93af4a5dd1c91d250242f9446910ed",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.9970693431206495,
+          "Dysarthric": 0.002930656879350443
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 0,
+          "end_sample_16k": 83972,
+          "valid_samples": 83972,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 8,
+          "extraction_precision": "FP32",
+          "vmd": false
+        },
+        "model_load_seconds": 3.918514699995285,
+        "inference_duration_ms": 391.961999994237,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 447266304,
+          "peak_reserved_bytes": 511705088
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "wavlm-reference-context3": {
+      "ok": true,
+      "result": {
+        "model_id": "wavlm-reference",
+        "model_version": "WavLM V4",
+        "research_role": "Best Observed Reference",
+        "fold_context": 3,
+        "configuration": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        },
+        "checkpoint_identity": "582fc88b51e9b2bf32cfe78094cf4d1d3741cd72d19030ea79d4007f5b2d05c4",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.9981096301174288,
+          "Dysarthric": 0.001890369882571203
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 0,
+          "end_sample_16k": 83972,
+          "valid_samples": 83972,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 8,
+          "extraction_precision": "FP32",
+          "vmd": false
+        },
+        "model_load_seconds": 3.429436500009615,
+        "inference_duration_ms": 288.0213000171352,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 447266304,
+          "peak_reserved_bytes": 511705088
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "wavlm-selected-context1": {
+      "ok": true,
+      "result": {
+        "model_id": "wavlm-selected",
+        "model_version": "WavLM V4",
+        "research_role": "Development-Selected V4",
+        "fold_context": 1,
+        "configuration": {
+          "complexity": 2,
+          "depth": 2,
+          "family": "B",
+          "id": "B_last2_mean",
+          "pooling": "mean"
+        },
+        "checkpoint_identity": "b1b726d435b5f3ce66a558d28f53269b0c3725862e50b9f14e40f7cd4a232f37",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.9938374566845596,
+          "Dysarthric": 0.006162543315440416
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 9986,
+          "end_sample_16k": 73986,
+          "valid_samples": 64000,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 4,
+          "extraction_precision": "FP32",
+          "vmd": false
+        },
+        "model_load_seconds": 3.4982016000139993,
+        "inference_duration_ms": 556.7260000098031,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 433150464,
+          "peak_reserved_bytes": 513802240
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "wavlm-selected-context2": {
+      "ok": true,
+      "result": {
+        "model_id": "wavlm-selected",
+        "model_version": "WavLM V4",
+        "research_role": "Development-Selected V4",
+        "fold_context": 2,
+        "configuration": {
+          "complexity": 3,
+          "depth": 2,
+          "family": "B",
+          "id": "B_last2_attention",
+          "pooling": "attention"
+        },
+        "checkpoint_identity": "4dac189f3bfdbe5a4671f6370cbdeebd85f4fb77e07ebf3e7b1a2d3593ea964d",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.9860197398811579,
+          "Dysarthric": 0.013980260118842125
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 9986,
+          "end_sample_16k": 73986,
+          "valid_samples": 64000,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 4,
+          "extraction_precision": "FP32",
+          "vmd": false
+        },
+        "model_load_seconds": 3.8825299000018276,
+        "inference_duration_ms": 463.89740001177415,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 433249792,
+          "peak_reserved_bytes": 513802240
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    },
+    "wavlm-selected-context3": {
+      "ok": true,
+      "result": {
+        "model_id": "wavlm-selected",
+        "model_version": "WavLM V4",
+        "research_role": "Development-Selected V4",
+        "fold_context": 3,
+        "configuration": {
+          "complexity": 4,
+          "depth": 4,
+          "family": "B",
+          "id": "B_last4_mean",
+          "pooling": "mean"
+        },
+        "checkpoint_identity": "76212226dac39657807c233a4fd434e0e6a4347fc01de6b9141e73d9697aab27",
+        "prediction_label": "Control",
+        "class_probabilities": {
+          "Control": 0.999916810891591,
+          "Dysarthric": 8.318910840898752e-05
+        },
+        "threshold": 0.5,
+        "preprocessing_metadata": {
+          "source_samples_16k": 83972,
+          "start_sample_16k": 9986,
+          "end_sample_16k": 73986,
+          "valid_samples": 64000,
+          "right_padding_samples": 0,
+          "source_rate": 22050,
+          "target_rate": 16000,
+          "crop": "center",
+          "maximum_seconds": 4,
+          "extraction_precision": "FP32",
+          "vmd": false
+        },
+        "model_load_seconds": 4.707731500006048,
+        "inference_duration_ms": 323.4844000253361,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+          "peak_allocated_bytes": 433150464,
+          "peak_reserved_bytes": 513802240
+        },
+        "warnings": [
+          "Exploratory TORGO evaluation; no independent clinical validation.",
+          "Fold-context weights are not a universal deployed classifier.",
+          "External audio is outside the validated evaluation distribution."
+        ],
+        "execution_status": "succeeded",
+        "provenance": "Exact frozen preprocessing and saved fitted head; explicit research fold context; no ensemble.",
+        "input_audio_metadata": {
+          "duration_seconds": 5.248208616780046,
+          "sample_rate": 22050,
+          "channels": 1,
+          "codec": "WAV / PCM_16",
+          "bytes": 231492,
+          "rms": 0.08972445899145427,
+          "clipped_fraction": 0.0,
+          "warnings": [],
+          "sha256": "5f8a46a91429cf093de0f9e011f09c5d12acf059707ec7ceb89f73e9e75cdc65",
+          "downmix": "arithmetic mean; amplitude not normalized"
+        }
+      }
+    }
+  },
+  "versions": {
+    "torch": "2.13.0+cu126",
+    "transformers": "4.57.6",
+    "scikit-learn": "1.7.2",
+    "openai-whisper": "20250625",
+    "pyttsx3": "2.99",
+    "fastapi": "0.143.1",
+    "soundfile": "0.14.0"
+  },
+  "status": "PASS"
+}

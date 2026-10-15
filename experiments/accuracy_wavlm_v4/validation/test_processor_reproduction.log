@@ -1,0 +1,19 @@
+test_official_processor_normalization_is_preserved (test_v4.ProcessorRegression.test_official_processor_normalization_is_preserved) ... ERROR
+
+======================================================================
+ERROR: test_official_processor_normalization_is_preserved (test_v4.ProcessorRegression.test_official_processor_normalization_is_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\tests\test_v4.py", line 21, in test_official_processor_normalization_is_preserved
+    _, actual, _ = load_backbone(ROOT/'cache/model/4c66d4806a428f2e922ccfa1a962776e232d487b')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_wavlm_v4\src\model.py", line 54, in load_backbone
+    require(processor.sampling_rate == 16000 and processor.do_normalize, 'Unexpected processor')
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\accuracy_hubert_v2\src\common.py", line 25, in require
+    raise ValueError(message)
+ValueError: Unexpected processor
+
+----------------------------------------------------------------------
+Ran 1 test in 4.559s
+
+FAILED (errors=1)

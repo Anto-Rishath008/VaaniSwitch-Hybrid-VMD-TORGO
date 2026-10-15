@@ -1,0 +1,19 @@
+test_native_outer_evidence_accepts_original_fold_fingerprint (__main__.CanonicalFoldFingerprintRegression.test_native_outer_evidence_accepts_original_fold_fingerprint) ... ERROR
+
+======================================================================
+ERROR: test_native_outer_evidence_accepts_original_fold_fingerprint (__main__.CanonicalFoldFingerprintRegression.test_native_outer_evidence_accepts_original_fold_fingerprint)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\speaker_level_analysis\test_analysis_regression.py", line 11, in test_native_outer_evidence_accepts_original_fold_fingerprint
+    rows, provenance, _, _ = analysis.validate_sources(before["original_files"])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\speaker_level_analysis\analyze_speakers.py", line 250, in validate_sources
+    require(split["manifest_fingerprint"] == manifest_hash and split["folds_fingerprint"] == folds_hash, "Manifest/split hash differs")
+  File "C:\Users\antor\OneDrive\Desktop\7th sem\Speech processing\Project\VaaniSwitch_Accuracy_Study\experiments\speaker_level_analysis\analyze_speakers.py", line 50, in require
+    raise ValueError(message)
+ValueError: Manifest/split hash differs
+
+----------------------------------------------------------------------
+Ran 1 test in 0.421s
+
+FAILED (errors=1)

@@ -1,0 +1,672 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "id": "c2",
+      "display_name": "Hybrid CNN\u2013GCN Cross-Attention",
+      "family": "Original",
+      "architecture": "Shared VMD \u2192 16 Mel + 17 nonlinear tokens \u2192 cross-attention",
+      "checkpoint_reference": [
+        "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\artifacts\\module5\\677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9\\experiments\\runs\\fold1_C2_stronger_dropout_seed42_677ad640faf5\\final\\d32bc51dce71ab37afd02471c5cfe874ce03f737e8191acad7f31663c6fe4e24.pt",
+        "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\artifacts\\module5\\677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9\\experiments\\runs\\fold2_C2_stronger_decay_seed42_677ad640faf5\\final\\cf54f92b2e06c6c544e4b9efb91d3e248f9207f9ce773fc510fd4f23b3649d8d.pt",
+        "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\artifacts\\module5\\677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9\\experiments\\runs\\fold3_C2_baseline_seed42_677ad640faf5\\final\\a0c0b3520ef6f04a11e29c32dd11a65fda363b3bbd8793c82f75f1e53ac37508.pt"
+      ],
+      "source_project": "original",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "historical_only",
+      "research_role": "historical evaluated model",
+      "evaluation_metrics": {
+        "accuracy": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5523235189783611,
+            0.7302471284371737,
+            0.6678966789667896
+          ],
+          "mean": 0.6501557754607747,
+          "sample_std": 0.09027877626341815
+        },
+        "macro_f1": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5018899065715767,
+            0.7152181695559356,
+            0.6599036682403896
+          ],
+          "mean": 0.6256705814559673,
+          "sample_std": 0.11070756577611708
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": null,
+      "integrity_status": "verified local assets",
+      "runtime_validated": false,
+      "blocker": "Frozen corpus-bound VMD/representation normalization and model adapters have not been validated for arbitrary uploads.",
+      "preprocessing": "Shared all-mode VMD; frozen representation settings and train-only normalization."
+    },
+    {
+      "id": "b2",
+      "display_name": "Recurrence CNN Baseline",
+      "family": "Original",
+      "architecture": "Shared VMD \u2192 recurrence plot \u2192 CNN",
+      "checkpoint_reference": [
+        "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\artifacts\\module5\\677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9\\experiments\\runs\\fold1_B2_stronger_dropout_seed42_677ad640faf5\\final\\2d20c88ecc273a3df48818fb020eb49b9bd7bd6ffbfb46b7094f4303ad510973.pt",
+        "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\artifacts\\module5\\677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9\\experiments\\runs\\fold2_B2_stronger_decay_seed42_677ad640faf5\\final\\3e8a11c49869ab5ba5cc797d79c521eb5934612c38dee407e73b959e638d0910.pt",
+        "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\artifacts\\module5\\677ad640faf584d1b3420ac32eebec7c496ba048f3f40782d4f6d886e04442a9\\experiments\\runs\\fold3_B2_baseline_seed42_677ad640faf5\\final\\9123550a57819f9df7237267e65da05f502fef433abaada9534ae799da9b3f89.pt"
+      ],
+      "source_project": "original",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "historical_only",
+      "research_role": "historical evaluated model",
+      "evaluation_metrics": {
+        "accuracy": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5164952110677545,
+            0.8242255482074486,
+            0.7507547802750755
+          ],
+          "mean": 0.6971585131834263,
+          "sample_std": 0.16071375169426855
+        },
+        "macro_f1": {
+          "available_folds": 3,
+          "fold_values": [
+            0.5158362362642382,
+            0.8029517344373409,
+            0.7162138597197275
+          ],
+          "mean": 0.6783339434737689,
+          "sample_std": 0.14725825397544906
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": null,
+      "integrity_status": "verified local assets",
+      "runtime_validated": false,
+      "blocker": "Frozen corpus-bound VMD/representation normalization and model adapters have not been validated for arbitrary uploads.",
+      "preprocessing": "Shared all-mode VMD; frozen representation settings and train-only normalization."
+    },
+    {
+      "id": "hubert-v2",
+      "display_name": "HuBERT Feature Classifier",
+      "family": "HuBERT V2",
+      "architecture": "Frozen HuBERT \u2192 mean + population std \u2192 logistic regression",
+      "checkpoint_reference": {
+        "1": {
+          "epoch": 0,
+          "identity": "6afc5b20abb4704e464aee6d9e40537e29d07658b10d4e8a486c4635f08c643f",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v2\\checkpoints\\fold1_E1_final\\epoch-000-4c3d387ceae84562820a38cd3c97f42a.pt",
+          "sha256": "7af26ae46b1e464cc9da123e1c2cfba1a59b9fa322367916b363a8adbf988afd"
+        },
+        "2": {
+          "epoch": 0,
+          "identity": "21e8935f8d4f9e1926b169c32cd18ef1d3807862ae1b13f4c391c4be6f6fa3f1",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v2\\checkpoints\\fold2_E1_final\\epoch-000-5f502af041d04acaa3c921474e9fb3a8.pt",
+          "sha256": "93bd95bf6e4ed4a2e62a1f5a6a16d90fd765c0a2d4567a342fc5d5a56cbb3db0"
+        },
+        "3": {
+          "epoch": 0,
+          "identity": "df3e38f4fe030ffe4a600d26af06085a7f14e83c7f11aac0215c968838fd74c0",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v2\\checkpoints\\fold3_E1_final\\epoch-000-688740166e9047dab8264aa43c0e5adf.pt",
+          "sha256": "1d15715b00d9cf72ab32afce1785904f4b4023e4009660d5e345a4fdb62776ec"
+        }
+      },
+      "source_project": "study",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60,
+        "segment_seconds": 8
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "research_only",
+      "research_role": "historical evaluated model",
+      "evaluation_metrics": {
+        "accuracy": {
+          "fold_values": [
+            0.6715147215324583,
+            0.8339714584058475,
+            0.7383428379738343
+          ],
+          "mean": 0.7479430059707134,
+          "sample_std": 0.08165274188944076
+        },
+        "macro_f1": {
+          "fold_values": [
+            0.6479728454065368,
+            0.813972483172736,
+            0.7179808751255343
+          ],
+          "mean": 0.7266420679016024,
+          "sample_std": 0.0833380593117904
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": "hubert-v2",
+      "integrity_status": "verified local assets",
+      "runtime_validated": true,
+      "configurations": {
+        "1": {
+          "layer": 12
+        },
+        "2": {
+          "layer": 6
+        },
+        "3": {
+          "layer": 12
+        }
+      },
+      "preprocessing": "Mono arithmetic mean; polyphase resample to 16 kHz; center crop at 8s; no VMD; no right padding."
+    },
+    {
+      "id": "hubert-v3",
+      "display_name": "Improved HuBERT Classifier",
+      "family": "HuBERT V3",
+      "architecture": "Frozen layer 9 \u2192 context-specific normalization / weighting \u2192 logistic regression",
+      "checkpoint_reference": {
+        "1": {
+          "epoch": 0,
+          "identity": "07cf9e1114b33392eadcfca7313dd01b3ae2531768c61ed0ebea3319be2810ce",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\checkpoints\\fold1\\final\\selected\\epoch-000-77c417190bbb4745bc9665eb466c1ea5.pt",
+          "sha256": "61fbb044d3221ead1c34e2015f8952a2d2d5a3995f59e6a5af55d17aaf87606b"
+        },
+        "2": {
+          "epoch": 0,
+          "identity": "f19a007cb71dfc21bba564987748ddec722f7fbbf3a22084d5847ac0afe9f98e",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\checkpoints\\fold2\\final\\selected\\epoch-000-c4cf9211d1f347e199584bb145ea86b4.pt",
+          "sha256": "58c4d59b93e8a60e95d771ab34550d1773ce5a3bc338f55f080c177428238823"
+        },
+        "3": {
+          "epoch": 0,
+          "identity": "998407601fd72d2ec2950daa69ffb98776bf6a81edc400514e51bf725b432df0",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\checkpoints\\fold3\\final\\reference\\epoch-000-a4b6ad4a44c84d2eb3f3dac44f0b1945.pt",
+          "sha256": "a20b496d10e47e3b66f11625f4b6a1799df8de968ac1a4b88c55b614fdcdce80"
+        }
+      },
+      "source_project": "study",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60,
+        "segment_seconds": 8
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "research_only",
+      "research_role": "historical evaluated model",
+      "evaluation_metrics": {
+        "accuracy": {
+          "fold_values": [
+            0.7335934728627173,
+            0.8357117995127045,
+            0.7316336799731634
+          ],
+          "mean": 0.7669796507828617,
+          "sample_std": 0.059531851968575654
+        },
+        "macro_f1": {
+          "fold_values": [
+            0.7030569271952137,
+            0.816620327797912,
+            0.7072083132802294
+          ],
+          "mean": 0.7422951894244517,
+          "sample_std": 0.06440091728603121
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": "hubert-v3",
+      "integrity_status": "verified local assets",
+      "runtime_validated": true,
+      "configurations": {
+        "1": {
+          "reference": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C0.01_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          },
+          "selected": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 1,
+            "id": "weight_L09_C0.01_B2_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B2"
+          }
+        },
+        "2": {
+          "reference": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C0.01_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          },
+          "selected": {
+            "C": 0.01,
+            "augmentation": false,
+            "complexity": 1,
+            "id": "robust_L09_C0.01_B0_N1_A0",
+            "layer": 9,
+            "normalization": "N1",
+            "weighting": "B0"
+          }
+        },
+        "3": {
+          "reference": {
+            "C": 1.0,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C1_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          },
+          "selected": {
+            "C": 1.0,
+            "augmentation": false,
+            "complexity": 0,
+            "id": "ref_L09_C1_B0_N0_A0",
+            "layer": 9,
+            "normalization": "N0",
+            "weighting": "B0"
+          }
+        }
+      },
+      "speaker_accuracy": 0.7333333333333333,
+      "preprocessing": "Mono arithmetic mean; polyphase resample to 16 kHz; center crop at 8s; no VMD; no right padding."
+    },
+    {
+      "id": "wavlm-selected",
+      "display_name": "WavLM Adaptive Fine-Tuning",
+      "family": "WavLM V4",
+      "architecture": "Last 2 / 4 layers \u2192 mean / attention pooling \u2192 linear head",
+      "checkpoint_reference": {
+        "1": {
+          "identity": "04cdb28f73ff414693296096bd6e63885040c23ec2be7ac1220f77ec2a41e736",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context1\\final\\selected\\best\\state-0000732-b21f3ca25fb340eaaf58e9f8b7b393ba.pt",
+          "sha256": "b1b726d435b5f3ce66a558d28f53269b0c3725862e50b9f14e40f7cd4a232f37"
+        },
+        "2": {
+          "identity": "addcc9592f5d6de822846c2f46f019006ecc1503985629343ea0818891dae9a6",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context2\\final\\selected\\best\\state-0000725-c3c778eaa3694a1284f2fd5ec7027b40.pt",
+          "sha256": "4dac189f3bfdbe5a4671f6370cbdeebd85f4fb77e07ebf3e7b1a2d3593ea964d"
+        },
+        "3": {
+          "identity": "13b6ebf545d4142177c62af8124362597a9776d59df263bcb9d30555aece2568",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context3\\final\\selected\\best\\state-0001424-215a0349fbed4399902b5888e78fd3c2.pt",
+          "sha256": "76212226dac39657807c233a4fd434e0e6a4347fc01de6b9141e73d9697aab27"
+        }
+      },
+      "source_project": "study",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60,
+        "segment_seconds": 4
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "research_only",
+      "research_role": "Development-Selected V4",
+      "evaluation_metrics": {
+        "accuracy": {
+          "fold_values": [
+            0.773323873714083,
+            0.8994082840236687,
+            0.7037906742703791
+          ],
+          "mean": 0.7921742773360436,
+          "sample_std": 0.09916181522607728
+        },
+        "macro_f1": {
+          "fold_values": [
+            0.7396366153964009,
+            0.8801365665635681,
+            0.6841139709522281
+          ],
+          "mean": 0.7679623843040657,
+          "sample_std": 0.10103453066011417
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": "wavlm-selected",
+      "integrity_status": "verified local assets",
+      "runtime_validated": true,
+      "outer_fit_reference": {
+        "1": {
+          "identity": "04cdb28f73ff414693296096bd6e63885040c23ec2be7ac1220f77ec2a41e736",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context1\\final\\selected\\state-0000732-85aca5c99c5a4ae994bdc7f171eb46b4.pt",
+          "sha256": "b9375ff96c6e2723848cecfe8274823f8e984f6b323b4b90e61cba6e784e5eef"
+        },
+        "2": {
+          "identity": "addcc9592f5d6de822846c2f46f019006ecc1503985629343ea0818891dae9a6",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context2\\final\\selected\\state-0000725-3518e7545a3a4ed39ca4a129b62652bc.pt",
+          "sha256": "cbf9af37ce265d2a7520247474395a8cebebe7626e678661ff44671c1409c2b7"
+        },
+        "3": {
+          "identity": "13b6ebf545d4142177c62af8124362597a9776d59df263bcb9d30555aece2568",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context3\\final\\selected\\state-0001424-dc62166b1d0c4d54b870b5c607d4727e.pt",
+          "sha256": "11f1b13c930cdae1968da6d7095391a33717247cd8d5eaad7fe43e054e00d1d8"
+        }
+      },
+      "configurations": {
+        "1": {
+          "complexity": 2,
+          "depth": 2,
+          "family": "B",
+          "id": "B_last2_mean",
+          "pooling": "mean"
+        },
+        "2": {
+          "complexity": 3,
+          "depth": 2,
+          "family": "B",
+          "id": "B_last2_attention",
+          "pooling": "attention"
+        },
+        "3": {
+          "complexity": 4,
+          "depth": 4,
+          "family": "B",
+          "id": "B_last4_mean",
+          "pooling": "mean"
+        }
+      },
+      "speaker_accuracy": 0.7333333333333333,
+      "preprocessing": "Mono arithmetic mean; polyphase resample to 16 kHz; center crop at 4s; no VMD; no right padding."
+    },
+    {
+      "id": "wavlm-reference",
+      "display_name": "WavLM Frozen Reference",
+      "family": "WavLM V4",
+      "architecture": "Frozen layer 12 \u2192 mean + population std \u2192 logistic regression C=0.01",
+      "checkpoint_reference": {
+        "1": {
+          "identity": "37934c23fd6006468e18b20e1510fcfc80628ca6eaa2d0d4d81cefa7c985667f",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context1\\final\\frozen_reference\\state-0000000-f6cb2c5d01ce4659916e45294fa31f1e.pt",
+          "sha256": "6f41ca12ca6563b99d6faf3281b80896d98e78a5a002017679b317d4a4172355"
+        },
+        "2": {
+          "identity": "1cbc939905059326a6638a0c4389c73249902105503055648afe923e9c8bf0c2",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context2\\final\\frozen_reference\\state-0000000-940247ff07e84724a1d1618b515d252d.pt",
+          "sha256": "90174351c990da0ba3addcfa8c6b8f5e8b93af4a5dd1c91d250242f9446910ed"
+        },
+        "3": {
+          "identity": "264fc3c93ce6c41cc3628812565c86303247c3113a94428995b5573a2c4eaafd",
+          "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\experiments\\context3\\final\\frozen_reference\\state-0000000-81b7ac95998a464a882500139e31f9ec.pt",
+          "sha256": "582fc88b51e9b2bf32cfe78094cf4d1d3741cd72d19030ea79d4007f5b2d05c4"
+        }
+      },
+      "source_project": "study",
+      "input_contract": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "max_source_seconds": 60,
+        "segment_seconds": 8
+      },
+      "output_contract": {
+        "labels": {
+          "0": "Control",
+          "1": "Dysarthric"
+        },
+        "threshold": 0.5,
+        "score": "uncalibrated model probability"
+      },
+      "fold_context": [
+        1,
+        2,
+        3
+      ],
+      "availability": "research_only",
+      "research_role": "Best Observed Reference",
+      "evaluation_metrics": {
+        "accuracy": {
+          "fold_values": [
+            0.7981553742461865,
+            0.893491124260355,
+            0.7138544112713855
+          ],
+          "mean": 0.8018336365926424,
+          "sample_std": 0.08987482614051263
+        },
+        "macro_f1": {
+          "fold_values": [
+            0.7653529300327904,
+            0.8740397576441137,
+            0.6985346500565457
+          ],
+          "mean": 0.7793091125778165,
+          "sample_std": 0.0885809910237717
+        }
+      },
+      "limitations": [
+        "Exploratory TORGO evaluation; no independent clinical validation.",
+        "Fold-context weights are not a universal deployed classifier.",
+        "External audio is outside the validated evaluation distribution."
+      ],
+      "inference_adapter": "wavlm-reference",
+      "integrity_status": "verified local assets",
+      "runtime_validated": true,
+      "configurations": {
+        "1": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        },
+        "2": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        },
+        "3": {
+          "C": 0.01,
+          "complexity": 0,
+          "family": "A",
+          "id": "A_L12_mean_std_C0.01",
+          "layer": 12,
+          "pooling": "mean_std"
+        }
+      },
+      "speaker_accuracy": 0.8,
+      "preprocessing": "Mono arithmetic mean; polyphase resample to 16 kHz; center crop at 8s; no VMD; no right padding."
+    },
+    {
+      "id": "asr",
+      "display_name": "Whisper small.en",
+      "family": "Frozen utility",
+      "availability": "available",
+      "research_role": "English recognition",
+      "checkpoint_reference": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project\\artifacts\\module6\\models\\whisper\\small.en.pt",
+      "expected_sha256": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+      "input_contract": {
+        "sample_rate": 16000,
+        "max_source_seconds": 60
+      },
+      "preprocessing": "Mono, 16 kHz, unchanged amplitude; frozen Module 6 decoding.",
+      "limitations": [
+        "Batch recognition; review text before synthesis."
+      ],
+      "integrity_status": "verified local assets",
+      "runtime_validated": true
+    },
+    {
+      "id": "tts",
+      "display_name": "Microsoft Zira",
+      "family": "Frozen utility",
+      "availability": "available",
+      "research_role": "Clear synthesized English speech",
+      "checkpoint_reference": "Windows SAPI5 installed voice",
+      "input_contract": {
+        "max_characters": 2000
+      },
+      "preprocessing": "Module 6 Zira; 175 words/minute; volume 1.0.",
+      "limitations": [
+        "Standard synthetic voice; no original voice preservation."
+      ],
+      "integrity_status": "installed runtime; probe required",
+      "runtime_validated": true
+    }
+  ],
+  "backbones": {
+    "hubert": {
+      "directory": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert\\cache\\checkpoint\\dba3bb02fda4248b6e082697eee756de8fe8aa8a",
+      "files": {
+        "config.json": "56be398848bbd9cbc720172b0d45b2f01cac7652f2968f0f31f5faf9f2986acc",
+        "preprocessor_config.json": "4a93853b74278b7c769d07f5a861e5d12ceb5db2bced5620d335f87238cb9e86",
+        "pytorch_model.bin": "062249fffb353eab67547a2fbc129f7c31a2f459faf641b19e8fb007cc5c48ad"
+      },
+      "model": "facebook/hubert-base-ls960",
+      "revision": "dba3bb02fda4248b6e082697eee756de8fe8aa8a"
+    },
+    "wavlm": {
+      "directory": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\cache\\model\\4c66d4806a428f2e922ccfa1a962776e232d487b",
+      "files": {
+        "README.md": "d417fc16b08e2f66f0af6b371e47a5f9f1f596f6c1c593f1214d360c41d7a27e",
+        "config.json": "fea6df1c2700a3954fc07e70588aecc9055eeb28db2ff57151a2db0d19180ed4",
+        "preprocessor_config.json": "99272fe8ccfab114b68b478681ea47ee3a1ce62bb788cb92dd6e4f69fb1f1da2",
+        "pytorch_model.bin": "3bb273a6ace99408b50cfc81afdbb7ef2de02da2eab0234e18db608ce692fe51"
+      },
+      "processor_configuration": {
+        "do_normalize": false,
+        "feature_extractor_type": "Wav2Vec2FeatureExtractor",
+        "feature_size": 1,
+        "padding_side": "right",
+        "padding_value": 0.0,
+        "return_attention_mask": true,
+        "sampling_rate": 16000
+      },
+      "repository": "microsoft/wavlm-base-plus",
+      "revision": "4c66d4806a428f2e922ccfa1a962776e232d487b",
+      "verification": "Pinned official Git blobs and LFS SHA256",
+      "versions_at_acquisition": {
+        "huggingface-hub": "0.36.2",
+        "matplotlib": "3.10.9",
+        "numpy": "1.26.4",
+        "scikit-learn": "1.7.2",
+        "scipy": "1.16.3",
+        "soundfile": "0.14.0",
+        "torch": "2.13.0+cu126",
+        "transformers": "4.57.6"
+      }
+    }
+  },
+  "source_roots": {
+    "original": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_FINAL_Hybrid_VMD_TORGO_Project",
+    "study": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study"
+  },
+  "runtime_versions": {
+    "huggingface-hub": "0.36.2",
+    "matplotlib": "3.10.9",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.16.3",
+    "soundfile": "0.14.0",
+    "torch": "2.13.0+cu126",
+    "transformers": "4.57.6",
+    "openai-whisper": "20250625",
+    "pyttsx3": "2.99"
+  }
+}

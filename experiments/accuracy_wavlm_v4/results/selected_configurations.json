@@ -1,0 +1,65 @@
+{
+  "1": {
+    "final_fit_epochs": {
+      "frozen_reference": null,
+      "selected": 1
+    },
+    "frozen_reference": {
+      "C": 0.01,
+      "complexity": 0,
+      "family": "A",
+      "id": "A_L12_mean_std_C0.01",
+      "layer": 12,
+      "pooling": "mean_std"
+    },
+    "selected": {
+      "complexity": 2,
+      "depth": 2,
+      "family": "B",
+      "id": "B_last2_mean",
+      "pooling": "mean"
+    }
+  },
+  "2": {
+    "final_fit_epochs": {
+      "frozen_reference": null,
+      "selected": 1
+    },
+    "frozen_reference": {
+      "C": 0.01,
+      "complexity": 0,
+      "family": "A",
+      "id": "A_L12_mean_std_C0.01",
+      "layer": 12,
+      "pooling": "mean_std"
+    },
+    "selected": {
+      "complexity": 3,
+      "depth": 2,
+      "family": "B",
+      "id": "B_last2_attention",
+      "pooling": "attention"
+    }
+  },
+  "3": {
+    "final_fit_epochs": {
+      "frozen_reference": null,
+      "selected": 2
+    },
+    "frozen_reference": {
+      "C": 0.01,
+      "complexity": 0,
+      "family": "A",
+      "id": "A_L12_mean_std_C0.01",
+      "layer": 12,
+      "pooling": "mean_std"
+    },
+    "selected": {
+      "complexity": 4,
+      "depth": 4,
+      "family": "B",
+      "id": "B_last4_mean",
+      "pooling": "mean"
+    }
+  }
+}

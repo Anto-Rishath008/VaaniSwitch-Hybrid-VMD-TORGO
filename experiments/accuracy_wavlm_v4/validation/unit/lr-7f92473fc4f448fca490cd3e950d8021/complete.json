@@ -1,0 +1,84 @@
+{
+  "best_epoch": null,
+  "candidate": {
+    "C": 0.01,
+    "complexity": 0,
+    "family": "A",
+    "id": "A_L9_mean_C0.01",
+    "layer": 9,
+    "pooling": "mean"
+  },
+  "checkpoint": {
+    "identity": "1dca9ca842bfcbe1c2d1ebf11374a7d89556572c8105fef11ac40b95159e64ea",
+    "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_wavlm_v4\\validation\\unit\\lr-7f92473fc4f448fca490cd3e950d8021\\state-0000000-3a6dd1c5c815429c901559b9de983b2f.pt",
+    "sha256": "93acff758585dfd86a9aa9db6dd69970eda3c5e410fc278f862de4a7e5d679e6"
+  },
+  "identity": "1dca9ca842bfcbe1c2d1ebf11374a7d89556572c8105fef11ac40b95159e64ea",
+  "normalizer_fit_speakers": [
+    "a",
+    "b"
+  ],
+  "parameter_count": 3,
+  "result_digest": "7d550bb6997b5b78b71c16340843a4ffdc68539fb235eb7bdf184f6d8737cf5d",
+  "speaker_mass": {
+    "a": 2.0,
+    "b": 2.0
+  },
+  "training_seconds": 0.00991490000160411,
+  "validation_metrics": {
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "brier": 0.4785499439389674,
+    "confusion_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "ece_10_equal_width": 0.48906259564052146,
+    "log_loss": 1.9156575012143222,
+    "macro_f1": 0.3333333333333333,
+    "precision": 0.5,
+    "record_count": 2,
+    "reliability_bins": [
+      {
+        "bin": 9,
+        "count": 2,
+        "mean_probability": 0.9890625956405215,
+        "positive_fraction": 0.5
+      }
+    ],
+    "roc_auc": 1.0,
+    "sensitivity": 1.0,
+    "specificity": 0.0,
+    "threshold": 0.5
+  },
+  "validation_predictions": [
+    {
+      "evidence_kind": "REAL_DEVELOPMENT",
+      "label": 0,
+      "logical_id": "c/session/p0",
+      "microphone": "head",
+      "prediction": 1,
+      "probability": 0.9783148020579511,
+      "speaker_id": "c"
+    },
+    {
+      "evidence_kind": "REAL_DEVELOPMENT",
+      "label": 1,
+      "logical_id": "d/session/p0",
+      "microphone": "head",
+      "prediction": 1,
+      "probability": 0.9998103892230917,
+      "speaker_id": "d"
+    }
+  ],
+  "weight_class_mass": {
+    "0": 2.0,
+    "1": 2.0
+  }
+}

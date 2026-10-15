@@ -1,0 +1,13 @@
+evidence_kind,label,logical_id,microphone,model,prediction,probability,speaker_id
+SYNTHETIC_TEST_FIXTURE,0,s10/session/p0,head,frozen_reference,0,0.2,s10
+SYNTHETIC_TEST_FIXTURE,1,s11/session/p0,head,frozen_reference,1,0.8,s11
+SYNTHETIC_TEST_FIXTURE,0,s20/session/p0,head,frozen_reference,0,0.2,s20
+SYNTHETIC_TEST_FIXTURE,1,s21/session/p0,head,frozen_reference,1,0.8,s21
+SYNTHETIC_TEST_FIXTURE,0,s30/session/p0,head,frozen_reference,0,0.2,s30
+SYNTHETIC_TEST_FIXTURE,1,s31/session/p0,head,frozen_reference,1,0.8,s31
+SYNTHETIC_TEST_FIXTURE,0,s10/session/p0,head,selected,0,0.2,s10
+SYNTHETIC_TEST_FIXTURE,1,s11/session/p0,head,selected,1,0.8,s11
+SYNTHETIC_TEST_FIXTURE,0,s20/session/p0,head,selected,0,0.2,s20
+SYNTHETIC_TEST_FIXTURE,1,s21/session/p0,head,selected,1,0.8,s21
+SYNTHETIC_TEST_FIXTURE,0,s30/session/p0,head,selected,0,0.2,s30
+SYNTHETIC_TEST_FIXTURE,1,s31/session/p0,head,selected,1,0.8,s31

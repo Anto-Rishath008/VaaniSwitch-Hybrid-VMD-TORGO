@@ -1,0 +1,13 @@
+{
+  "startup_script": "scripts/Start.ps1",
+  "website_url": "http://127.0.0.1:8000",
+  "backend_url": "http://127.0.0.1:8000/api/health",
+  "startup_verified": true,
+  "http_checks": {
+    "/": 200,
+    "/api/health": 200,
+    "/openapi.json": 200
+  },
+  "qa_server_stopped": true,
+  "remaining_session_directories": 0
+}

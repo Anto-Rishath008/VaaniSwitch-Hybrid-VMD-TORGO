@@ -1,0 +1,305 @@
+{
+  "config": {
+    "C": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "augmentation_per_speaker": 16,
+    "calibration": false,
+    "combination_min_improved_splits": 2,
+    "combination_min_macro_f1_gain": 0.01,
+    "cpu_threads": 2,
+    "cv_folds": 3,
+    "layers": [
+      6,
+      9,
+      12
+    ],
+    "logistic_max_iter": 3000,
+    "mlp": "not_implemented_without_development_evidence",
+    "primary": "logistic_regression",
+    "seed": 42,
+    "study": "V3 POST-HOC EXPLORATORY STUDY",
+    "threshold": 0.5,
+    "vram_fraction": 0.8
+  },
+  "cv": {
+    "1": [
+      [
+        [
+          "F01",
+          "F04",
+          "M03",
+          "M05",
+          "MC01",
+          "MC02"
+        ],
+        [
+          "FC02",
+          "FC03",
+          "M01",
+          "M02"
+        ]
+      ],
+      [
+        [
+          "F04",
+          "FC02",
+          "FC03",
+          "M01",
+          "M02",
+          "M03",
+          "MC01"
+        ],
+        [
+          "F01",
+          "M05",
+          "MC02"
+        ]
+      ],
+      [
+        [
+          "F01",
+          "FC02",
+          "FC03",
+          "M01",
+          "M02",
+          "M05",
+          "MC02"
+        ],
+        [
+          "F04",
+          "M03",
+          "MC01"
+        ]
+      ]
+    ],
+    "2": [
+      [
+        [
+          "F01",
+          "F03",
+          "FC03",
+          "M04",
+          "MC01",
+          "MC04"
+        ],
+        [
+          "FC01",
+          "M03",
+          "M05",
+          "MC03"
+        ]
+      ],
+      [
+        [
+          "FC01",
+          "FC03",
+          "M03",
+          "M04",
+          "M05",
+          "MC03"
+        ],
+        [
+          "F01",
+          "F03",
+          "MC01",
+          "MC04"
+        ]
+      ],
+      [
+        [
+          "F01",
+          "F03",
+          "FC01",
+          "M03",
+          "M05",
+          "MC01",
+          "MC03",
+          "MC04"
+        ],
+        [
+          "FC03",
+          "M04"
+        ]
+      ]
+    ],
+    "3": [
+      [
+        [
+          "F03",
+          "FC02",
+          "M01",
+          "M02",
+          "MC03",
+          "MC04"
+        ],
+        [
+          "F04",
+          "FC01",
+          "M04",
+          "MC02"
+        ]
+      ],
+      [
+        [
+          "F04",
+          "FC01",
+          "M01",
+          "M04",
+          "MC02",
+          "MC04"
+        ],
+        [
+          "F03",
+          "FC02",
+          "M02",
+          "MC03"
+        ]
+      ],
+      [
+        [
+          "F03",
+          "F04",
+          "FC01",
+          "FC02",
+          "M02",
+          "M04",
+          "MC02",
+          "MC03"
+        ],
+        [
+          "M01",
+          "MC04"
+        ]
+      ]
+    ]
+  },
+  "dataset": {
+    "core_count": 8673,
+    "cropped_recordings": 235,
+    "folds_canonical_sha256": "5ab4e1af6c54f97af940c3e5ba5d447c77d827102b88656bf19cd5227b5fee27",
+    "folds_file_sha256": "3d0303d9cb8af96da7b0bd4e4ad26b67ea0350c24a5607a7571d067e3a08aa8c",
+    "manifest_sha256": "91c3327ea1f6a6b2057ffa02198f86d682668d22f247beef27f1466e959a9061",
+    "primary_microphones": {
+      "array": 1170,
+      "head": 7503
+    },
+    "rp_config_hash": "d8a36c6ab8c48b15e61ecd63194ffa30ede4e7e7e7ab0a30c197002652f9d65d",
+    "speakers": 15,
+    "splits": [
+      {
+        "inner_train": [
+          "F01",
+          "F04",
+          "FC02",
+          "FC03",
+          "M01",
+          "M02",
+          "M05",
+          "MC01"
+        ],
+        "inner_validation": [
+          "M03",
+          "MC02"
+        ],
+        "outer_fold": 1,
+        "outer_test": [
+          "F03",
+          "FC01",
+          "M04",
+          "MC03",
+          "MC04"
+        ]
+      },
+      {
+        "inner_train": [
+          "F01",
+          "FC01",
+          "M03",
+          "M04",
+          "M05",
+          "MC01",
+          "MC03",
+          "MC04"
+        ],
+        "inner_validation": [
+          "F03",
+          "FC03"
+        ],
+        "outer_fold": 2,
+        "outer_test": [
+          "F04",
+          "FC02",
+          "M01",
+          "M02",
+          "MC02"
+        ]
+      },
+      {
+        "inner_train": [
+          "F04",
+          "FC01",
+          "FC02",
+          "M01",
+          "M02",
+          "M04",
+          "MC03",
+          "MC04"
+        ],
+        "inner_validation": [
+          "F03",
+          "MC02"
+        ],
+        "outer_fold": 3,
+        "outer_test": [
+          "F01",
+          "FC03",
+          "M03",
+          "M05",
+          "MC01"
+        ]
+      }
+    ],
+    "vmd_config_hash": "bfd7aec36d99a88cfacc72df85e124d3f4b99b76ed47d71c3ced9a153fa92685"
+  },
+  "environment": {
+    "cuda": "12.6",
+    "executable": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\.venv-accuracy\\Scripts\\python.exe",
+    "free_disk_bytes": 107206389760,
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "gpu_total_bytes": 8585216000,
+    "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+    "versions": {
+      "numpy": "1.26.4",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.16.3",
+      "soundfile": "0.14.0",
+      "torch": "2.13.0+cu126",
+      "transformers": "4.57.6"
+    }
+  },
+  "source_files": {
+    "AUGMENTATION_PROTOCOL.md": "dd0f9ffb226059d093273ee2bd96c667fd9ba4dda7b3228344976a5d999a0010",
+    "EXPERIMENT_PROTOCOL.md": "0ea6d93de1b7cf29fd2cc467333d6965560c8a5cdce704e1f464022ad26bcc63",
+    "MODEL_SELECTION_PROTOCOL.md": "6beae1a0800cacca9ec7d36234ebffaf5d9baf4041e980d1cb1f82ffbf5b10c7",
+    "V2_LINEAGE.json": "4dc86015c000fd4890f0ee96f91d9ed58d2784a195efc4e01bd06984b414e749",
+    "configs/study.yaml": "57ad6940a00de87fee9c648041e5bb701be3a18e790bb85decba6f47289c2d5b",
+    "run_all.ps1": "d95811f8e3ca61649f1353482e6110592ef199a732fb85b51cb8ee1f91ccaf1f",
+    "src/__init__.py": "95bcee099e8d7b431dfa5d724d7caede3a40a04c1b8d346dcab1de7715561a38",
+    "src/augmentation.py": "b86322fb1e9bb637abb1a3a578301eed752da35c73b33b64795907a19e997002",
+    "src/calibration.py": "d5341155230dd36d8de5ba042a11a60548cba2a9e409b0790a3bddc554a8eb36",
+    "src/common.py": "54ca68f3052d898dc8e7d597cf9112cc6e042288b727ae283d3decb521ffa1c1",
+    "src/data.py": "40d843ad9129ae2008bf08eee2fa68f3277a47b129e95c7a2826e4ed74ad8586",
+    "src/features.py": "9e4299cf168c48ad5a25857e71220fe5b7f29956988ab945579fdb431a50175b",
+    "src/normalization.py": "33f7ae53e203e86c5ab1cf10094062c5f46a0e66d8979b02e572021a1f14a6b8",
+    "src/pipeline.py": "d59208b99eb1f95eb013f81839cc8c6211f036c5cf6d3c162330a7bcbaeeae98",
+    "src/reporting.py": "812d7964ab07c034112fc15ab174ea3f6d084b9e766a671494284c8c5855a27f",
+    "src/reuse.py": "dba61e621b60d9b2b1754d7082215d5ae408536f5b00c65e51168097bfd764e8",
+    "src/selection.py": "193ff74c1a27efd89828bd9da3dec438481864b9dd1de85abfb1bdf7f846dd88",
+    "src/training.py": "4c6702100576750b8b097b50f2ec53813dac109a521e2f2c7ba1ebd8e53580e3",
+    "src/validation.py": "1a126cabd697012066a559015564c007c145f4145bb8e1b1960f67ce49691055",
+    "src/weighting.py": "25fb5627b5738223e7c2cad58140ac63603178405fec771eb0f32e6743270fe4"
+  }
+}

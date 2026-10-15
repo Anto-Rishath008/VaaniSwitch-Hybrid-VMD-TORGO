@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "checkpoint": {
+      "epoch": 0,
+      "identity": "07cf9e1114b33392eadcfca7313dd01b3ae2531768c61ed0ebea3319be2810ce",
+      "path": "C:\\Users\\antor\\OneDrive\\Desktop\\7th sem\\Speech processing\\Project\\VaaniSwitch_Accuracy_Study\\experiments\\accuracy_hubert_v3\\checkpoints\\fold1\\final\\selected\\epoch-000-77c417190bbb4745bc9665eb466c1ea5.pt",
+      "sha256": "61fbb044d3221ead1c34e2015f8952a2d2d5a3995f59e6a5af55d17aaf87606b"
+    },
+    "fold": 1,
+    "frozen_decisions": "78c094fe874a2da0eb651aba21dd3bfb134ecb8bef92ba6369246a5f6d66383a",
+    "model": "selected",
+    "threshold": 0.5
+  },
+  "result_sha256": "e34df76330be1bbf14e0f6aff669aaeaecb709c1d53d0e2df5e1a339e21eee18",
+  "status": "SEALED"
+}
